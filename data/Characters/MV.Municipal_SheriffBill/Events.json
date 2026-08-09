@@ -1,0 +1,488 @@
+{
+    "Changes": [
+        //Vanilla Event Changes
+        {
+            "LogName": "Minor CC Opening Change",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "Fields": {
+                "611439/j 4/t 800 1300/w sunny/a 0 54/H": {
+                    "153": "speak Lewis \"{{i18n:MV.Municipal.CC.Edit}}\""
+                }
+            }
+        },
+        {
+            "LogName": "Adds topic for Morris being punched",
+            "Action": "EditData",
+            "Target": "Data/Events/CommunityCenter",
+            "Priority": "Late + 100",
+            "Fields": {
+                "Punch": {
+                    "1": "addConversationTopic MV.MorrisPunch/pause 100"
+                }
+            }
+        },
+        {
+            "LogName": "Bill Attends Elliott's Reading",
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "1848481/f Elliott 2000/t 1300 1900/n elliottReading",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 10 11 1",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "1848481/f Elliott 2000/t 1300 1900/n elliottReading"
+                    ],
+                    "Search": "faceDirection Emily 0 true",
+                    "Value": "emote {{ModID}}_SheriffBill? 32/faceDirection Emily 0 true",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Sam's Show",
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "4081148/e 47/t 1600 1900",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 20 15 3",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "4081148/e 47/t 1600 1900"
+                    ],
+                    "Search": "warp farmer 18 20",
+                    "Value": "warp {{ModID}}_SheriffBill? 17 19/faceDirection {{ModID}}_SheriffBill? 0/warp farmer 18 20",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=maggplays.immersivesam": false
+            }
+        },
+        {
+            "LogName": "Bill Attends Leah's Art Show",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "53/e 55/t 1500 1700",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 28 56 2",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Haley's Cakewalk",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "6184644/e 8675611/O Haley/A haleyCakewalk2/t 600 1500/w sunny/i 220",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 35 68 3",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "6184644/e 8675611/O Haley/A haleyCakewalk2/t 600 1500/w sunny/i 220"
+                    ],
+                    "Search": "emote Vincent 28",
+                    "Value": "emote Vincent 28/textAboveHead {{ModID}}_SheriffBill? \"{{i18n:MV.Municipal.Cakewalk}}\"",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        //Mod Public Event Attendance
+        {
+            "LogName": "Bill Attends Bearfam Town Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=MadDog.HashtagBearFam": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MadDog.BearFam.16192007/e MadDog.BearFam.16192006/n SondraBotbInvite/w sunny/f MadDog.HashtagBearFam.Sondra 2000/t 1200 1900",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 36 63 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MadDog.BearFam.16199006/e MadDog.BearFam.16199005/DayOfWeek Sat Sun/f MadDog.HashtagBearFam.Teren 1500/w sunny/F/t 1000 1800",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 18 23 3",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MadDog.BearFam.16193012/e MadDog.BearFam.16193011/e MadDog.BearFam.16193009/n GunnarDubiousHonor/t 900 1600/w sunny/!DayOfWeek Fri/F/f MadDog.HashtagBearFam.Gunnar 2500",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 22 64 1",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Bearfam Caritas Event",
+            "Action": "EditData",
+            "Target": "Data/Events/MadDog.HashtagBearFam_CharityShop",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=MadDog.HashtagBearFam": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MadDog.BearFam.16199010/e MadDog.BearFam.16199007/F/!DayOfWeek Fri/f MadDog.HashtagBearFam.Teren 2250/n MadDog.HashtagBearFam_CaritasOpens/t 800 1800",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 13 8 3",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Sig's Medal Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=MadDog.HashtagBearFam": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MadDog.BearFam.16191013/e MadDog.BearFam.16191012/F/f MadDog.HashtagBearFam.Sigurd 2250/t 1600 2200/DayOfWeek Wed Thu Fri",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 13 17 2",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Rodney's Book Launch",
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "134371010/t 1800 2300/DayOfWeek Friday/f RodneyOBrien 2000/n WWWA.RodneyBookLaunchInvite",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 9 23 0",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        //Weddings
+        {
+            "LogName": "Vanilla Wedding Position",
+            "Action": "EditData",
+            "Target": "Data/Weddings",
+            "TargetField": [
+                "Attendees"
+            ],
+            "Entries": {
+                "{{ModID}}_SheriffBill": {
+                    "ID": "{{ModID}}_SheriffBill",
+                    "Setup": "{{ModID}}_SheriffBill 33 68 0"
+                }
+            }
+        },
+        {
+            "LogName": "Enchanted Ceremony Wedding Position",
+            "Action": "EditData",
+            "Target": "Strings/Nom0ri.WizardWedding/Guests",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Setup"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? -100 -100 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Warp"
+                    ],
+                    "Value": "warp {{ModID}}_SheriffBill? 25 13",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=Nom0ri.WizardWedding": true
+            }
+        },
+        //New Events
+        {
+            "LogName": "Sheriff Bill's Intro Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_Intro/e 3102768": "springtown/44 60/farmer -1000 -1000 2 {{Morris}} 43 60 1 {{ModId}}_SheriffBill 44 60 3/addConversationTopic MV.NewSheriff/addConversationTopic MV.NewSheriffTimer/mailReceived {{ModID}}_MetBill/skippable/pause 100/playSound doorClose/warp farmer 44 57/pause 100/emote farmer 8/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.Intro.01}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.Intro.02}}\"/pause 400/faceDirection {{ModId}}_SheriffBill 0/move farmer 0 1 2/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.Intro.03}}\"/pause 400/emote farmer 32/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.Intro.04}}\"/pause 400/emote farmer 56/pause 400/advancedMove farmer false -2 0 0 -1 4 5000/faceDirection {{ModId}}_SheriffBill 3/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.Intro.05}}\"/speak {{Morris}} \"{{i18n:MV.Municipal.Intro.06}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.Intro.07}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.Intro.08}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.Intro.09}}\"/pause 400//speak {{Morris}} \"{{i18n:MV.Municipal.Intro.10}}\"/pause 400/animate {{ModId}}_SheriffBill true true 250 33 34 35 34/pause 1000/speak {{Morris}} \"{{i18n:MV.Municipal.Intro.11}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.Intro.12}}\"/pause 400/animate {{Morris}} true true 1000 19/shake {{Morris}} 1000/speak {{Morris}} \"{{i18n:MV.Municipal.Intro.13.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 800/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's Adventurer's Guild Intro",
+            "Action": "EditData",
+            "Target": "Data/Events/AdventureGuild",
+            "Entries": {
+                "{{ModId}}_GuildIntro/e {{ModId}}_Intro/GameStateQuery PLAYER_VISITED_LOCATION Current AdventureGuild/A MV.NewSheriffTimer": "MarlonsTheme/7 13/farmer -1000 -1000 0 Gil -1000 -1000 0 {{Marlon}} 4 11 2 {{ModId}}_SheriffBill 7 12 3/addConversationTopic MV.SheriffGuild/addConversationTopic MV.SheriffGuildTimer/skippable/pause 1500/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.01}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.02.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.03}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.04}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.05}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.06}}\"/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.07}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.08}}\"/pause 400/playSound doorClose/warp farmer 6 18/move farmer 0 -4 0/pause 100/emote farmer 32/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.09}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.10.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.11}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.12}}\"/move {{ModId}}_SheriffBill 0 6 2/move {{ModId}}_SheriffBill -1 0 3/move {{ModId}}_SheriffBill 0 1 2/warp {{ModId}}_SheriffBill -1000 -1000/playSound doorClose/pause 400/emote farmer 8/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.13}}\"/pause 400/emote farmer 8/speak Gil \"{{i18n:MV.Municipal.GuildIntro.14}}\"/facedirection farmer 1/emote farmer 8/speak Gil \"{{i18n:MV.Municipal.GuildIntro.15}}\"/pause 400/emote farmer 40/facedirection farmer 0/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.16}}\"/pause 800/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's Wizard Intro",
+            "Action": "EditData",
+            "Target": "Data/Events/WizardHouse",
+            "Entries": {
+                "{{ModId}}_WizardIntro/e 112/e {{ModId}}_GuildIntro/GameStateQuery PLAYER_VISITED_LOCATION Current WizardHouse/A MV.SheriffGuildTimer": "WizardSong/7 17/farmer 7 17 1 Wizard 8 17 3 {{ModId}}_SheriffBill -1000 -1000 0/addConversationTopic MV.SheriffWizard/addConversationTopic MV.SheriffWizardTimer/skippable/pause 1500/speak Wizard \"{{i18n:MV.Municipal.RasIntro.01}}\"/pause 100/faceDirection Wizard 2/pause 100/emote farmer 8/faceDirection farmer 2/pause 400/playSound doorClose/warp {{ModId}}_SheriffBill 8 23/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.02}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.03}}\"/move {{ModId}}_SheriffBill 0 -4 0/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.04}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.05}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.06}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.07.{{HasMod |contains=Nom0ri.RomRas}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.08}}\"/pause 100/emote farmer 8/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.09}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.10}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.11}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.12}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.13}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.14}}\"/faceDirection Wizard 3/faceDirection farmer 1/move {{ModId}}_SheriffBill 0 4 2/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.15.{{HasMod |contains=Nom0ri.RomRas}}}}\"/pause 1800/end"
+            }
+        },
+        {
+            "LogName": "Followup with Morris",
+            "Action": "EditData",
+            "Target": "Data/Events/MunicipalFloor1",
+            "Entries": {
+                "{{ModId}}_MorrisFollowup/t 900 1600/e {{ModId}}_WizardIntro/A MV.SheriffWizardTimer": "libraryTheme/10 13/farmer 8 12 0 {{Morris}} -1000 -1000 0 {{ModId}}_SheriffBill 12 11 3/addTemporaryActor {{ModId}}_ClerkAlicia 1 1 10 8 2 false Character/changeName {{ModId}}_ClerkAlicia {{i18n:MV.Municipal.Alicia}}/hideShadow {{ModId}}_ClerkAlicia true/addConversationTopic MV.SheriffMorris/skippable/pause 1500/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.01}}\"/pause 400/speak {{ModId}}_ClerkAlicia \"{{i18n:MV.Municipal.MorrisFollowup.02}}\"/playSound doorClose/emote {{ModId}}_SheriffBill 16 true/facedirection {{ModId}}_SheriffBill 2 true/emote {{ModId}}_ClerkAlicia 16 true/emote farmer 16 true/facedirection farmer 2 true/jump farmer/warp {{Morris}} 10 19/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.03}}\"/move {{Morris}} 0 -6 1/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.04}}\"/textAboveHead {{ModId}}_ClerkAlicia \"{{i18n:MV.Municipal.MorrisFollowup.05}}\"/emote farmer 28 true/facedirection farmer 0 true/move {{ModId}}_SheriffBill 0 2 3 true/move {{Morris}} 1 0 1 true/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.06}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.07}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.08}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.09}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.10}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.11}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.12}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.13}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.14.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.15}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.16.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.17}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.18}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.19}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.20.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.21}}\"/pause 400/speak {{Morris}} \"{{i18n:MV.Municipal.MorrisFollowup.22.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.MorrisFollowup.23}}\"/pause 800/end"
+            }
+        },
+        {
+            "LogName": "Followup with Sam after Lewis Scold",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_SamLewisFollowup/e {{ModId}}_Intro/e 45/t 900 1800/w sunny/r 0.5": "breezy/11 90/farmer -1000 -1000 0 Sam -1000 -1000 2 {{ModId}}_SheriffBill 17 90 3/addConversationTopic MV.SheriffSam/skippable/move {{ModId}}_SheriffBill -4 0 3 false/playSound doorClose/warp Sam 10 86/emote Sam 16/jump Sam/speak Sam \"{{i18n:MV.Municipal.SamLewis.01}}\"/faceDirection {{ModId}}_SheriffBill 0 false/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.02}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.03}}\"/pause 400/move Sam 0 4 1 true/move {{ModId}}_SheriffBill -1 0 3 false/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.04}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.05}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.06}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.07}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.08}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.09}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.10}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.11}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.12}}\"/viewport move 2 1 2000/pause 1800/end"
+            }
+        },
+        {
+            "LogName": "Followup with Linus after Dumpster Diving",
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries": {
+                "{{ModID}}_BillLinus/e {{ModId}}_Intro/e 502969/f {{ModID}}_SheriffBill 1000 Linus 1000/w sunny/t 900 1800/A MV.SheriffWizardTimer": "woodsTheme/-1000 -1000/farmer -1000 -1000 0 {{ModID}}_SheriffBill 34 23 1 Linus 42 15 1/viewport 41 15 clamp true/addConversationTopic MV.SheriffLinus/addConversationTopic MV.SheriffLinusTimer/skippable/move {{ModId}}_SheriffBill 6 0 1 false/move {{ModId}}_SheriffBill 0 -4 0 false/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillLinus.01}}\"/showFrame Linus 22/jump Linus/shake Linus 1000/pause 1000/move Linus -2 0 2/speak Linus \"{{i18n:MV.Municipal.BillLinus.02}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillLinus.03}}\"/pause 400/speak Linus \"{{i18n:MV.Municipal.BillLinus.04}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillLinus.05}}\"/pause 400/speak Linus \"{{i18n:MV.Municipal.BillLinus.06}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillLinus.07}}\"/pause 400/move {{ModId}}_SheriffBill 0 2 2 false/speak Linus \"{{i18n:MV.Municipal.BillLinus.08}}\"/pause 400/emote {{ModID}}_SheriffBill 8 true/faceDirection {{ModID}}_SheriffBill 0 false/move Linus 0 2 2/speak Linus \"{{i18n:MV.Municipal.BillLinus.09}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillLinus.10}}\"/pause 400/speak Linus \"{{i18n:MV.Municipal.BillLinus.11}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillLinus.12}}\"/pause 400/speak Linus \"{{i18n:MV.Municipal.BillLinus.13}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillLinus.14}}\"/pause 1800/end"
+            }
+        },
+        {
+            "LogName": "Followup with Sebastian after Linus",
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries": {
+                "{{ModID}}_BillSeb/e {{ModId}}_BillLinus/f Linus 1000 Sebastian 1000/w rainy/t 900 1800/A MV.SheriffLinusTimer": "rain/46 30/farmer -1000 -1000 0 Sebastian 47 30 1 {{ModId}}_SheriffBill 39 31 1/addConversationTopic MV.SebRocks/mailReceived {{ModID}}_SebRocks/skippable/move {{ModId}}_SheriffBill 7 0 1 false/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillSeb.01}}\"/pause 400/speak Sebastian \"{{i18n:MV.Municipal.BillSeb.02}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillSeb.03}}\"/pause 400/speak Sebastian \"{{i18n:MV.Municipal.BillSeb.04}}\"/pause 1500/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillSeb.05}}\"/pause 400/speak Sebastian \"{{i18n:MV.Municipal.BillSeb.06}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillSeb.07}}\"/pause 1500/speak Sebastian \"{{i18n:MV.Municipal.BillSeb.08}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillSeb.09}}\"/jump Sebastian/faceDirection Sebastian 2/speak Sebastian \"{{i18n:MV.Municipal.BillSeb.10}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillSeb.11}}\"/pause 1500/facedirection Sebastian 1/speak Sebastian \"{{i18n:MV.Municipal.BillSeb.12}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillSeb.13}}\"/pause 400/speak Sebastian \"{{i18n:MV.Municipal.BillSeb.14}}\"/pause 1500/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillSeb.15}}\"/pause 400/speak Sebastian \"{{i18n:MV.Municipal.BillSeb.16}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillSeb.17}}\"/pause 2000/speak Sebastian \"{{i18n:MV.Municipal.BillSeb.18}}\"/pause 1000/globalFade/viewport -2000 -2000/pause 2000/playSound dropItemInWater/pause 200/playSound dropItemInWater/pause 200/playSound dropItemInWater/pause 2000/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's Joja Lightning Strike Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_BillJojaClosed/e {{ModId}}_Intro/Hn abandonedJojaMartAccessible": "playful/96 52/farmer 87 52 1 {{ModId}}_SheriffBill 96 52 1/skippable/animate {{ModId}}_SheriffBill false true 120 33 33 33 33 33 33 33 33 33 33 33 33 33 33 34 34 34 35 34 35 34 35 34 35 34 35 34 35 34 35 34 35 33 33 33 33 33 33 33 33 34 35 34 35 34 35 34 35 34 35/move farmer 8 0 1/pause 100/emote farmer 8/stopAnimation {{ModId}}_SheriffBill 33/jump {{ModId}}_SheriffBill 4/emote {{ModId}}_SheriffBill 16/showframe {{ModId}}_SheriffBill 12/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillJojaClosed.01}}\"/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillJojaClosed.02}}\"/pause 400/showframe {{ModId}}_SheriffBill 8/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillJojaClosed.03}}\"/facedirection farmer 0/viewport move 0 -1 2000/pause 2000/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillJojaClosed.04}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillJojaClosed.05}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillJojaClosed.06}}\"/viewport move 2 -1 2000/pause 2000/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill Meets Krobus",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModID}}_BillKrobus/e 691039/e {{ModId}}_Intro/t 900 1800/w sunny/!DayOfWeek Friday": "breezy/35 96/farmer 27 101 1 George 35 100 0 Krobus -1000 -1000 2 {{ModId}}_SheriffBill -1000 -1000 0/addConversationTopic MV.SheriffKrobus/skippable/advancedMove farmer false 7 0 4 10 0 -1 1 10/waitForAllStationary/emote farmer 8/pause 100/speak George \"{{i18n:MV.Municipal.BillKrobus.01}}\"/jump farmer/speed farmer 4/emote farmer 28/move farmer 0 -3 0/emote George 8/globalFade/viewport -1000 -1000/changeLocation Sewer/viewport -1000 -1000/playSound stairsdown/warp George -1000 -1000/warp farmer 16 11/warp Krobus {{KrobusEventSpot}}/warp {{ModId}}_SheriffBill 31 18/globalFadeToClear 0.007 true/viewport 23 15 true/playMusic Overcast/pause 500/emote farmer 8 true/emote {{ModId}}_SheriffBill 28 true/move farmer 0 10 1/emote Krobus 32 true/move farmer 7 0 1/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.02}}\"/pause 400/speak Krobus \"{{i18n:MV.Municipal.BillKrobus.03}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.04}}\"/pause 400/speak Krobus \"{{i18n:MV.Municipal.BillKrobus.05}}\"/move {{ModId}}_SheriffBill 0 3 3/emote {{ModId}}_SheriffBill 16/move {{ModId}}_SheriffBill -6 0 3/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.06}}\"/pause 400/emote farmer 8/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.07.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.BillKrobus.08.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"#\"{{i18n:MV.Municipal.BillKrobus.09}}\"(break)speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.10.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"\\pause 400\\emote farmer 32\\pause 400\\speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.12}}\"\\globalFade\\viewport -2000 -2000\\pause 2000\\speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.13}}\"\\end(break)speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.11.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"\\pause 400\\emote farmer 32\\pause 400\\speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.12}}\"\\globalFade\\viewport -2000 -2000\\pause 2000\\speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillKrobus.14}}\"\\end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's Shane Otis Event 1",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_BillShane1/e {{ModId}}_Intro/e 3910674/w sunny/t 2000 2600": "shaneTheme/26 51/Shane 26 51 2 farmer 35 57 3 {{ModId}}_SheriffBill -1000 -1000 0/addConversationTopic MV.SheriffShane1/showFrame Shane 19/skippable/advancedMove farmer false -9 0 4 10/shake Shane 600/pause 800/shake Shane 600/proceedPosition farmer/emote farmer 8/advancedMove farmer false 0 -4 4 10/pause 800/shake Shane 600/proceedPosition farmer/emote farmer 8/speak Shane \"{{i18n:MV.Municipal.BillShane1.01}}\"/pause 400/message \"{{i18n:MV.Municipal.BillShane1.02}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.BillShane1.03}}\"#\"{{i18n:MV.Municipal.BillShane1.04}}\"#\"{{i18n:MV.Municipal.BillShane1.05}}\"#\"{{i18n:MV.Municipal.BillShane1.06}}\"(break)speak Shane \"{{i18n:MV.Municipal.BillShane1.07}}\"(break)speak Shane \"{{i18n:MV.Municipal.BillShane1.08}}\"(break)speak Shane \"{{i18n:MV.Municipal.BillShane1.09}}\"(break)speak Shane \"{{i18n:MV.Municipal.BillShane1.10}}\"/warp {{ModID}}_SheriffBill 27 59/pause 200/emote {{ModID}}_SheriffBill 8/pause 200/advancedMove {{ModID}}_SheriffBill false 0 -7 3 10/proceedPosition {{ModID}}_SheriffBill/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane1.11}}\"/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane1.12}}\"/emote farmer 16/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane1.13}}\"/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane1.14}}\"/pause 400/message \"{{i18n:MV.Municipal.BillShane1.15}}\"/pause 400/question null #\"{{i18n:MV.Municipal.BillShane1.16}}\"#\"{{i18n:MV.Municipal.BillShane1.17}}\"/shake Shane 400/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane1.18}}\"/emote farmer 28/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane1.19}}\"/shake Shane 600/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane1.20}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane1.21}}\"/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane1.22}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane1.23}}\"/playSound pickUpItem/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane1.24}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane1.25}}\"/pause 400/message \"{{i18n:MV.Municipal.BillShane1.26}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane1.27}}\"/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane1.28}}\"/globalfade/viewport -1000 -1000/pause 400/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's Shane Otis Event 2",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_BillShane2/e {{ModId}}_BillShane1/e 3910974/e 2118991/w sunny/t 900 1800": "shaneTheme/26 49/Shane 27 56 0 Jas -1000 -1000 0 farmer -1000 -1000 1 {{ModId}}_SheriffBill 29 48 2/addConversationTopic MV.SheriffShane2/showFrame {{ModId}}_SheriffBill 26/positionOffset {{ModID}}_SheriffBill 0 24 true/skippable/advancedMove Shane false 0 -7 4 10/pause 400/warp farmer 19 54/emote farmer 8/advancedMove farmer false 6 0 1 10/proceedPosition Shane/advancedMove Shane false 1 0 1 10/waitForAllStationary/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane2.01}}\"/playSound pickUpItem/showFrame {{ModId}}_SheriffBill 27/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane2.02}}\"/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane2.03}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane2.04}}\"/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane2.05}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane2.06}}\"/pause 400/warp Jas 27 57/emote Jas 16/speed Jas 5/advancedMove Jas false 0 -8 1 10/facedirection Shane 2/emote Shane 8/waitForAllStationary/advancedMove Shane false 0 0 3 10/waitForAllStationary/speak Jas \"{{i18n:MV.Municipal.BillShane2.07}}\"/pause 400/speak Shane \"{{i18n:MV.Municipal.BillShane2.08}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillShane2.09}}\"/emote Jas 20/advancedMove Shane false 0 12 2 10/advancedMove {{ModID}}_SheriffBill false -1 0 2 10 0 12 2 10/advancedMove Jas false 0 5 3 10/proceedPosition Jas/speak Jas \"{{i18n:MV.Municipal.BillShane2.10}}\"/emote farmer 32/advancedMove Jas false 0 6 2 10/advancedMove farmer false 0 6 2 10/globalfade/viewport -1000 -1000/pause 400/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's Pam Event",
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries": {
+                "{{ModId}}_BillPam/e {{ModId}}_Intro/Hn ccVault/w sunny/t 1000 1700": "shaneTheme/24 23/Pam 22 16 1 farmer 11 23 1 {{ModId}}_SheriffBill 23 16 3/addConversationTopic MV.SheriffPam/skippable/advancedMove farmer false 3 0 1 10/waitForAllStationary/speak Pam \"{{i18n:MV.Municipal.BillPam.01}}\"/emote farmer 16/pause 400/message \"{{i18n:MV.Municipal.BillPam.02}}\"/pause 400/speak Pam \"{{i18n:MV.Municipal.BillPam.03}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillPam.04}}\"/speak Pam \"{{i18n:MV.Municipal.BillPam.05}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillPam.06}}\"/pause 400/message \"{{i18n:MV.Municipal.BillPam.07}}\"/pause 400/speak Pam \"{{i18n:MV.Municipal.BillPam.08}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillPam.09}}\"/pause 400/speak Pam \"{{i18n:MV.Municipal.BillPam.10}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillPam.11}}\"/pause 400//speak Pam \"{{i18n:MV.Municipal.BillPam.12}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillPam.13}}\"/pause 400/speak Pam \"{{i18n:MV.Municipal.BillPam.14}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.BillPam.15}}\"/pause 400/message \"{{i18n:MV.Municipal.BillPam.16}}\"/advancedMove farmer false 15 0 3 10/globalfade/viewport -1000 -1000/pause 600/end"
+            }
+        },
+        //HEART EVENTS
+        {
+            "LogName": "Sheriff Bill's 2 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/MunicipalFloor1",
+            "Entries": {
+                "{{ModId}}_Bill2Heart/f {{ModID}}_SheriffBill 500/e {{ModId}}_WizardIntro/t 900 1600/": "CloudCountry/18 11/Lewis -1000 -1000 1 farmer 14 16 1 {{ModID}}_SheriffBill 20 7 0/addTemporaryActor {{ModId}}_ClerkAlicia 1 1 10 8 2 false Character/changeName {{ModId}}_ClerkAlicia {{i18n:MV.Municipal.Alicia}}/hideShadow {{ModId}}_ClerkAlicia true/addConversationTopic MV.Sheriff2H/mailReceived {{ModID}}_BillFam/skippable/playsound doorClose/emote {{ModId}}_ClerkAlicia 32/emote farmer 32/advancedMove farmer false 6 0 4 10/waitForAllStationary/advancedMove farmer false 0 -1 4 10/waitForAllStationary/doAction 20 14/playsound doorClose/advancedMove farmer false 0 -2 4 10/waitForAllStationary/advancedMove {{ModID}}_SheriffBill false 0 0 2 10/waitForAllStationary/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.01}}\"/pause 400/emote farmer 32/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.02}}\"/advancedMove farmer false 0 -3 4 10/waitForAllStationary/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.03}}\"/pause 400/question null #\"{{i18n:MV.Municipal.Bill2HeartEvent.04}}\"#\"{{i18n:MV.Municipal.Bill2HeartEvent.05}}\"#\"{{i18n:MV.Municipal.Bill2HeartEvent.06}}\"#\"{{i18n:MV.Municipal.Bill2HeartEvent.07}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.08}}\"/pause 400/emote farmer 8/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.09}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.10}}\"/pause 400/emote farmer 32/pause 400/advancedMove farmer false -1 0 4 10/waitForAllStationary/emote farmer 8/advancedMove farmer false 0 0 1 10/waitForAllStationary/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.11}}\"/pause 400/message \"{{i18n:MV.Municipal.Bill2HeartEvent.12}}\"/pause 400/globalFade/viewport -2000 -2000/warp {{ModID}}_SheriffBill -3000 -3000/warp farmer -3000 -3000/changeToTemporaryMap MunicipalPhotos/viewport 7 5/pause 600/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.13}}\"/viewport 7 30/pause 600/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.14}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill2HeartEvent.15}}\"#\"{{i18n:MV.Municipal.Bill2HeartEvent.16}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.17}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.18}}\"/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.19}}\"/pause 400/playsound doorClose/globalFade/viewport -2000 -2000/changeLocation MunicipalFloor1/warp farmer 19 10/warp {{ModID}}_SheriffBill 20 7/warp Lewis 14 16/advancedMove Lewis false 6 0 4 10/globalFadeToClear 0.007 true/viewport 18 11/emote Lewis 32/pause 400/emote {{ModId}}_ClerkAlicia 16/waitForAllStationary/advancedMove Lewis false 0 -1 4 10/waitForAllStationary/doAction 20 14/playsound doorClose/pause 200/advancedMove farmer false 0 0 2 10/waitForAllStationary/emote farmer 8/emote {{ModId}}_ClerkAlicia 28/pause 200/speak Lewis \"{{i18n:MV.Municipal.Bill2HeartEvent.20}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.21}}\"/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill2HeartEvent.22}}\"/pause 400/advancedMove Lewis false 0 -2 4 10/waitForAllStationary/advancedMove Lewis false 0 -3 4 10/waitForAllStationary/advancedMove farmer false 0 0 1 10/waitForAllStationary/speak Lewis \"{{i18n:MV.Municipal.Bill2HeartEvent.23}}\"/pause 400/playsound pickUpItem/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.24}}\"/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill2HeartEvent.25}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.26}}\"/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill2HeartEvent.27}}\"/pause 400/advancedMove Lewis false 0 0 3 10/waitForAllStationary/speak Lewis \"{{i18n:MV.Municipal.Bill2HeartEvent.28}}\"/pause 400/emote {{ModID}}_SheriffBill 28/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill2HeartEvent.29}}\"/pause 400/emote farmer 32/pause 400/advancedMove Lewis false 0 6 2 10/advancedMove farmer false 1 0 0 5 2 10/waitForAllStationary/emote {{ModID}}_SheriffBill 28/advancedMove Lewis false -4 0 3 10/advancedMove farmer false 0 1 -3 0 3 10/waitForAllStationary/showFrame {{ModId}}_SheriffBill 36/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill2HeartEvent.30}}\"/advancedMove Lewis false -6 0 0 2 3 10/advancedMove farmer false -7 0 0 2 3 10/pause 400/emote Lewis 8/pause 400/emote farmer 32/proceedPosition Lewis/playsound doorClose/warp Lewis -2000 -2000/proceedPosition farmer/playsound doorClose/warp farmer -2000 -2000/globalfade/viewport -1000 -1000/pause 600/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's 4 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "{{ModId}}_Bill4Heart/f {{ModID}}_SheriffBill 1000/e {{ModId}}_Bill2Heart/t 900 1800/w sunny": "desolate/43 25/Lewis 37 22 1 farmer 42 12 2/addTemporaryActor Willy 16 64 44 25 2/addTemporaryActor {{ModId}}_SheriffBill 16 64 43 25 2/addConversationTopic MV.Sheriff4H/positionOffset Willy 0 32 true/positionOffset {{ModID}}_SheriffBill 0 32 true/animate Willy false true 500 8 9 10 11/animate {{ModID}}_SheriffBill false true 500 9 10 11 8/skippable/advancedMove Lewis false 5 0 0 2 1 10/playSound slosh/pause 500/emote Lewis 12/playSound slosh/advancedMove farmer false 0 8 2 10/pause 500/playSound slosh/waitForAllStationary/speak Lewis \"{{i18n:MV.Municipal.Bill4HeartEvent.01}}\"/emote {{ModID}}_SheriffBill 8/playSound slosh/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.02}}\"/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill4HeartEvent.03}}\"/emote farmer 28/pause 400/message \"{{i18n:MV.Municipal.Bill4HeartEvent.04}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.05}}\"/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill4HeartEvent.06}}\"/emote {{ModID}}_SheriffBill 28/pause 400/speak Willy \"{{i18n:MV.Municipal.Bill4HeartEvent.07}}\"/emote Lewis 12/pause 400/emote farmer 28/pause 400/advancedMove Lewis false 0 0 4 10/waitForAllStationary/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill4HeartEvent.08}}\"/emote farmer 32/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill4HeartEvent.09}}\"/pause 400/playSound slosh/advancedMove Lewis false 0 0 1 10/pause 400/playSound slosh/pause 600/playSound slosh/pause 400/advancedMove Lewis false -5 0 0 -15 2 10/pause 400/playSound slosh/pause 400/speak Willy \"{{i18n:MV.Municipal.Bill4HeartEvent.10}}\"/playSound slosh/emote farmer 32/pause 400/playSound slosh/advancedMove farmer false 0 4 2 10/waitForAllStationary/warp Lewis -2000 -2000/pause 400/speak Willy \"{{i18n:MV.Municipal.Bill4HeartEvent.11}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.12}}\"/pause 400/emote farmer 8/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.13}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill4HeartEvent.14}}\" #\"{{i18n:MV.Municipal.Bill4HeartEvent.15}}\" #\"{{i18n:MV.Municipal.Bill4HeartEvent.16}}\" #\"{{i18n:MV.Municipal.Bill4HeartEvent.17}}\" #\"{{i18n:MV.Municipal.Bill4HeartEvent.18}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.19}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.19}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.20}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.21}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.21}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.22}}\"/pause 400/speak Willy \"{{i18n:MV.Municipal.Bill4HeartEvent.23}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.24}}\"/quickQuestion #\"{{i18n:MV.Municipal.Bill4HeartEvent.25}}\" #\"{{i18n:MV.Municipal.Bill4HeartEvent.26}}\" #\"{{i18n:MV.Municipal.Bill4HeartEvent.27}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.28}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.29}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.30}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.31}}\"/pause 400/speak Willy \"{{i18n:MV.Municipal.Bill4HeartEvent.32.{{WillyDSV}}}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.33}}\"/pause 400/speak Willy \"{{i18n:MV.Municipal.Bill4HeartEvent.34}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.35}}\"/pause 500/playSound slosh/pause 1500/playSound slosh/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.36}}\"/pause 400/speak Willy \"{{i18n:MV.Municipal.Bill4HeartEvent.37}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.38}}\"/emote farmer 32/pause 500/playSound slosh/pause 1500/playSound slosh/pause 500/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill4HeartEvent.39}}\"/pause 400/viewport move 1 0 5500/pause 1500/playSound seagulls/pause 1500/playSound seagulls/pause 2000/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's 6 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_Bill6Heart/f {{ModID}}_SheriffBill 1500/e {{ModId}}_Bill4Heart/t 900 1800/w sunny": "MarlonsTheme/44 78/farmer 46 81 3 {{ModID}}_SheriffBill 43 78 2/positionOffset {{ModID}}_SheriffBill 0 -32 true/showFrame {{ModID}}_SheriffBill 44/addConversationTopic MV.Sheriff6H/skippable/advancedMove farmer false -2 0 0 -3 3 10/textAboveHead {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.01}}\"/pause 2400/playSound openBox/showFrame {{ModID}}_SheriffBill 45/pause 600/showFrame {{ModID}}_SheriffBill 46/pause 400/waitForAllStationary/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.02}}\"/pause 400/emote farmer 8/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.03}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill6HeartEvent.04}}\" #\"{{i18n:MV.Municipal.Bill6HeartEvent.05}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.06}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.07}}\"/pause 400/emote farmer 32/pause 400/advancedMove farmer false 0 0 2 10/waitForAllStationary/animate farmer false true 1000 70/positionOffset farmer 0 -44 true/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.08}}\"/pause 1000/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.09}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill6HeartEvent.10}}\" #\"{{i18n:MV.Municipal.Bill6HeartEvent.11}}\" #\"{{i18n:MV.Municipal.Bill6HeartEvent.12}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.13}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.14}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.15}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.16}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill6HeartEvent.17}}\" #\"{{i18n:MV.Municipal.Bill6HeartEvent.18}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.19}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.20}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.21}}\"/pause 400/emote farmer 32/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.22}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill6HeartEvent.23}}\" #\"{{i18n:MV.Municipal.Bill6HeartEvent.24}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.25}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.26}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.27}}\"/pause 400/emote farmer 16/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.28}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill6HeartEvent.29}}\" #\"{{i18n:MV.Municipal.Bill6HeartEvent.30}}\" #\"{{i18n:MV.Municipal.Bill6HeartEvent.31}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.32}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.33}}\"(break)emote {{ModID}}_SheriffBill 32/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.34}}\"/pause 400/emote farmer 32/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill6HeartEvent.35}}\"/pause 400/emote farmer 32/globalfade/viewport -1000 -1000/pause 600/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's 8 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/MunicipalFloor2",
+            "Entries": {
+                "{{ModId}}_Bill8Heart/f {{ModID}}_SheriffBill 2000/t 900 2200/e {{ModId}}_Bill6Heart": "desolate/19 8/farmer -1000 -1000 3 {{ModID}}_SheriffBill 14 8 1/addTemporaryActor {{ModId}}_BillMom 16 32 -3000 -3000 1 false Character/changeName {{ModId}}_BillMom {{i18n:MV.Municipal.SheriffBill.Mom}}/addTemporaryActor {{ModId}}_BillDad 16 32 -3000 -3000 3 false Character/changeName {{ModId}}_BillDad {{i18n:MV.Municipal.SheriffBill.Dad}}/addTemporaryActor {{ModId}}_BillYoung 16 32 -3000 -3000 1 false Character/changeName {{ModId}}_BillYoung {{i18n:MV.Municipal.SheriffBill}}/positionOffset {{ModID}}_SheriffBill 16 64 true/showFrame {{ModID}}_SheriffBill 24/changeToTemporaryMap MunicipalFloor2-Temp/viewport 19 8/addConversationTopic MV.Sheriff8H/skippable/playSound doorClose/warp farmer 28 7/advancedMove farmer false -11 0 3 10/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.01}}\"/waitForAllStationary/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.02}}\"/pause 400/message \"{{i18n:MV.Municipal.Bill8HeartEvent.03}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill8HeartEvent.04}}\" #\"{{i18n:MV.Municipal.Bill8HeartEvent.05}}\" #\"{{i18n:MV.Municipal.Bill8HeartEvent.06}}\"(break)showFrame {{ModID}}_SheriffBill 47\\emote {{ModID}}_SheriffBill 16\\pause 400\\speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.07}}\"(break)showFrame {{ModID}}_SheriffBill 47\\emote {{ModID}}_SheriffBill 16\\pause 400\\speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.08}}\"(break)showFrame {{ModID}}_SheriffBill 47\\pause 400\\emote {{ModID}}_SheriffBill 16\\speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.09}}\"/pause 400/advancedMove farmer false 0 0 2 10/pause 400/playSound shwip/addObject 17 8 102/pause 400/message \"{{i18n:MV.Municipal.Bill8HeartEvent.10}}\"/pause 400/advancedMove farmer false 0 0 3 10/emote farmer 8/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.11}}\"/pause 400/emote farmer 16/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.12}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill8HeartEvent.13}}\" #\"{{i18n:MV.Municipal.Bill8HeartEvent.14}}\" #\"{{i18n:MV.Municipal.Bill8HeartEvent.15}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.16}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.17}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.18}}\"/pause 400/emote farmer 8/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.19}}\"/pause 800/advancedMove farmer false 0 0 2 10/animate farmer false true 1000 70/positionOffset farmer -64 16 true/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.20}}\"/pause 400/globalFade/viewport -1000 -1000/changeToTemporaryMap Municipal-Flashback/viewport -1000 -1000/warp {{ModID}}_SheriffBill -3000 -3000/warp farmer -3000 -3000/warp {{ModId}}_BillYoung 7 6/showFrame {{ModID}}_BillYoung 16/warp {{ModId}}_BillDad 8 7/warp {{ModId}}_BillMom 6 7/globalFadeToClear 0.007 true/viewport 7 6 true/pause 600/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.21}}\"/pause 400/speak {{ModID}}_BillMom \"{{i18n:MV.Municipal.Bill8HeartEvent.22}}\"/pause 400/speak {{ModID}}_BillDad \"{{i18n:MV.Municipal.Bill8HeartEvent.23}}\"/pause 400/showFrame {{ModID}}_BillYoung 17/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.24}}\"/pause 400/speak {{ModID}}_BillMom \"{{i18n:MV.Municipal.Bill8HeartEvent.25}}\"/pause 400/speak {{ModID}}_BillDad \"{{i18n:MV.Municipal.Bill8HeartEvent.26}}\"/pause 400/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.27}}\"/pause 400/speak {{ModID}}_BillMom \"{{i18n:MV.Municipal.Bill8HeartEvent.28}}\"/pause 400/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.29}}\"/pause 400/speak {{ModID}}_BillMom \"{{i18n:MV.Municipal.Bill8HeartEvent.30}}\"/pause 400/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.31}}\"/pause 400/speak {{ModID}}_BillMom \"{{i18n:MV.Municipal.Bill8HeartEvent.32}}\"/pause 400/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.33}}\"/pause 400/speak {{ModID}}_BillMom \"{{i18n:MV.Municipal.Bill8HeartEvent.34}}\"/pause 400/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.35}}\"/pause 400/speak {{ModID}}_BillDad \"{{i18n:MV.Municipal.Bill8HeartEvent.36}}\"/pause 400/advancedMove {{ModID}}_BillDad false 1 0 1 10/waitForAllStationary/pause 400/speak {{ModID}}_BillDad \"{{i18n:MV.Municipal.Bill8HeartEvent.37}}\"/pause 400/advancedMove {{ModID}}_BillDad false -1 0 3 10/waitForAllStationary/pause 400/speak {{ModID}}_BillDad \"{{i18n:MV.Municipal.Bill8HeartEvent.38}}\"/pause 400/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.39}}\"/pause 400/speak {{ModID}}_BillMom \"{{i18n:MV.Municipal.Bill8HeartEvent.40}}\"/pause 400/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.41}}\"/pause 400/showFrame {{ModID}}_BillYoung 0/playSound shwip/addObject 7 7 897/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.42}}\"/pause 400/advancedMove {{ModID}}_BillYoung false 0 3 2 10/advancedMove {{ModID}}_BillDad false 0 0 2 10/advancedMove {{ModID}}_BillMom false 0 0 2 10/speak {{ModID}}_BillDad \"{{i18n:MV.Municipal.Bill8HeartEvent.43}}\"/pause 400/waitForAllStationary/speak {{ModID}}_BillYoung \"{{i18n:MV.Municipal.Bill8HeartEvent.44}}\"/pause 400/advancedMove {{ModID}}_BillYoung false 0 2 2 10/speak {{ModID}}_BillDad \"{{i18n:MV.Municipal.Bill8HeartEvent.45}}\"/advancedMove {{ModID}}_BillMom false 1 0 1 10/proceedPosition {{ModID}}_BillMom/speak {{ModID}}_BillMom \"{{i18n:MV.Municipal.Bill8HeartEvent.46}}\"/proceedPosition {{ModID}}_BillYoung/playSound doorClose/warp {{ModID}}_BillYoung -3000 -3000/pause 400/speed {{ModID}}_BillMom 6/advancedMove {{ModID}}_BillMom false 0 4 2 10/emote {{ModID}}_BillDad 12/waitForAllStationary/warp {{ModID}}_BillMom -3000 -3000/playSound doorClose/globalFade/viewport -1000 -1000/warp {{ModId}}_BillDad -3000 -3000/changeToTemporaryMap MunicipalFloor2-Temp/viewport -1000 -1000/warp farmer 17 7/warp {{ModID}}_SheriffBill 14 8/animate farmer false true 1000 70/positionOffset farmer -64 16 true/positionOffset {{ModID}}_SheriffBill 16 64 true/showFrame {{ModID}}_SheriffBill 24/addObject 17 8 102/globalFadeToClear 0.007 true/viewport 19 8 true/pause 600/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.47}}\"/pause 400/showFrame {{ModID}}_SheriffBill 24/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.48}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.Bill8HeartEvent.49}}\" #\"{{i18n:MV.Municipal.Bill8HeartEvent.50}}\" #\"{{i18n:MV.Municipal.Bill8HeartEvent.51}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.52}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.53}}\"(break)speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.54}}\"/pause 1600/showFrame {{ModID}}_SheriffBill 47/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.55}}\"/pause 400/emote farmer 32/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill8HeartEvent.56}}\"/pause 400/emote farmer 20/globalfade/viewport -1000 -1000/pause 600/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill's 10 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_Bill10Heart/Hn {{ModID}}_Bill10HEvent/t 1300 1800/w sunny": "sadpiano/53 26/farmer 52 24 0 {{ModID}}_SheriffBill 53 22 2 Marlon 48 21 2 Wizard 47 22 1 Linus 46 22 1 Alex 49 24 1 George 50 25 0 Evelyn 51 25 0 Lewis 54 24 0 Gus 53 25 0 Marnie 55 25 0 Shane 56 25 0 Elliott 58 25 3 Demetrius 51 26 0 Robin 52 26 0 Maru 53 26 0 Haley 55 26 0 Emily 56 26 0 Leah 57 26 0 Clint 51 27 0 Kent? 53 27 0 Jodi 54 27 0 Caroline 56 27 0 Pierre 57 27 0 Pam 52 28 0 Penny 53 28 0 Harvey 55 28 0 Willy 57 28 0 Sam 53 29 0 Abigail 54 29 0 Sebastian 55 29 0 Jas 47 33 1 Vincent 48 33 3 Leo? 47 34 0 {{Gunther}} {{GuntherEvent}}/showFrame {{ModID}}_SheriffBill 36/addConversationTopic MV.Sheriff10H/broadcastEvent true/skippable/pause 400/emote Jas 56/emote Vincent 56/emote Leo? 56/emote Kent? 8/emote Jodi 40/emote Sam 8/emote Leah 40/emote Haley 8/emote Gus 40/emote Marnie 8/emote George 40/showFrame {{ModID}}_SheriffBill 40/pause 200/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.01}}\"/pause 400/textAboveHead Willy \"{{i18n:MV.Municipal.Bill10HeartEvent.03}}\"/pause 200/textAboveHead Clint \"{{i18n:MV.Municipal.Bill10HeartEvent.02}}\"/pause 200/textAboveHead Lewis \"{{i18n:MV.Municipal.Bill10HeartEvent.04}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.05}}\"/pause 400/emote Leah 16/jump Leah/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.06}}\"/pause 400/speak Leah \"{{i18n:MV.Municipal.Bill10HeartEvent.07}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.08}}\"/pause 400/speak Jodi \"{{i18n:MV.Municipal.Bill10HeartEvent.09}}\"/pause 400/speak Demetrius \"{{i18n:MV.Municipal.Bill10HeartEvent.10}}\"/pause 400/speak Pierre \"{{i18n:MV.Municipal.Bill10HeartEvent.11}}\"/pause 400/speak George \"{{i18n:MV.Municipal.Bill10HeartEvent.12}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.13}}\"/pause 400/speak Penny \"{{i18n:MV.Municipal.Bill10HeartEvent.14}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.15}}\"/pause 400/speak Gus \"{{i18n:MV.Municipal.Bill10HeartEvent.16}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.17}}\"/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill10HeartEvent.18}}\"/pause 400/speak Elliott \"{{i18n:MV.Municipal.Bill10HeartEvent.19}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.20}}\"/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill10HeartEvent.21}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.22}}\"/pause 400/speak Lewis \"{{i18n:MV.Municipal.Bill10HeartEvent.23}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.24}}\"/pause 400/speak Pam \"{{i18n:MV.Municipal.Bill10HeartEvent.25}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.26}}\"/pause 400/textAboveHead Lewis \"{{i18n:MV.Municipal.Bill10HeartEvent.27}}\"/pause 200/textAboveHead Pierre \"{{i18n:MV.Municipal.Bill10HeartEvent.28}}\"/pause 200/textAboveHead Pam \"{{i18n:MV.Municipal.Bill10HeartEvent.29}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.30}}\"/pause 600/speak Caroline \"{{i18n:MV.Municipal.Bill10HeartEvent.31}}\"/pause 400/speak Emily \"{{i18n:MV.Municipal.Bill10HeartEvent.32}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.33}}\"/pause 400/speak Jodi \"{{i18n:MV.Municipal.Bill10HeartEvent.34}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.35}}\"/pause 400//textAboveHead Jodi \"{{i18n:MV.Municipal.Bill10HeartEvent.36}}\"/pause 200/textAboveHead Emily \"{{i18n:MV.Municipal.Bill10HeartEvent.37}}\"/pause 200/textAboveHead Sebastian \"{{i18n:MV.Municipal.Bill10HeartEvent.38}}\"/pause 400/speak Caroline \"{{i18n:MV.Municipal.Bill10HeartEvent.39}}\"/pause 400/showFrame {{ModID}}_SheriffBill 36/emote {{ModID}}_SheriffBill 28/pause 400/emote Lewis 8/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.40}}\"/pause 400/emote Willy 32/emote Elliott 32/emote Marlon 32/{{Wizard10HEmote}}/quickQuestion #\"{{i18n:MV.Municipal.Bill10HeartEvent.41}}\" #\"{{i18n:MV.Municipal.Bill10HeartEvent.42}}\"(break)emote farmer 32\\pause 400(break)pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.43}}\"/pause 400/showFrame {{ModID}}_SheriffBill 40/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.44}}\"/pause 400/beginSimultaneousCommand/emote Lewis 16/emote Marnie 16/emote Jodi 16/emote Caroline 16/textAboveHead Pam \"{{i18n:MV.Municipal.Bill10HeartEvent.45}}\"/endSimultaneousCommand/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.46}}\"/pause 400/textAboveHead Clint \"{{i18n:MV.Municipal.Bill10HeartEvent.47}}\"/pause 200/textAboveHead Alex \"{{i18n:MV.Municipal.Bill10HeartEvent.48}}\"/pause 200/textAboveHead Sam \"{{i18n:MV.Municipal.Bill10HeartEvent.49}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.50}}\"/pause 1000/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.51}}\"/pause 400/textAboveHead Abigail \"{{i18n:MV.Municipal.Bill10HeartEvent.52}}\"/pause 200/textAboveHead Harvey \"{{i18n:MV.Municipal.Bill10HeartEvent.53}}\"/pause 200/textAboveHead Elliott \"{{i18n:MV.Municipal.Bill10HeartEvent.54}}\"/pause 400/speak {{ModID}}_SheriffBill \"{{i18n:MV.Municipal.Bill10HeartEvent.55}}\"/pause 400/speak Robin \"{{i18n:MV.Municipal.Bill10HeartEvent.56}}\"/pause 200/advancedMove Maru false 0 0 3 10/waitForAllStationary/pause 200/speak Maru \"{{i18n:MV.Municipal.Bill10HeartEvent.57}}\"/pause 400/emote Robin 8/advancedMove Robin false 0 0 1 10/waitForAllStationary/emote Robin 20/pause 400/emote farmer 32/globalfade/viewport -1000 -1000/pause 600/end"
+            }
+        },
+        //RIVAL HEARTS
+        {
+            "LogName": "Sheriff Bill/Rasmodius Rival Hearts Event",
+            "Action": "EditData",
+            "Target": "Data/Events/WizardHouse",
+            "Entries": {
+                "{{ModID}}_BillRivalHeartsEvent/Hn {{ModID}}_RivalHeartsRasMail2": "woodsTheme/7 17/farmer 5 16 3 Wizard 2 15 3/broadcastEvent true/addConversationTopic MV.BillRivalHearts 999/skippable/pause 400/emote Wizard 20/pause 400/advancedMove Wizard false 0 0 1 10/waitForAllStationary/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.01}}\"/pause 400/advancedMove Wizard false 0 0 3 10/advancedMove farmer false -4 0 4 10/waitForAllStationary/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.02}}\"/pause 400/emote farmer 32/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.03}}\"/pause 400/emote farmer 8/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.04}}\"/pause 400/emote farmer 8/advancedMove Wizard false 5 0 1 10/advancedMove farmer false 0 0 1 10/waitForAllStationary/advancedMove farmer false 1 0 0 -1 1 10/waitForAllStationary/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.05}}\"/advancedMove Wizard false -3 0 3 10/waitForAllStationary/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.06}}\"/advancedMove Wizard false 3 0 1 10/waitForAllStationary/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.07}}\"/advancedMove Wizard false 0 0 3 10/waitForAllStationary/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.08}}\"/advancedMove farmer false 4 0 1 10/waitForAllStationary/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.09.{{WizardApprentice}}}}\"/pause 400/emote farmer 28/pause 400/quickQuestion #\"{{i18n:MV.Municipal.BillRivalHeartsEvent.10}}\" #\"{{i18n:MV.Municipal.BillRivalHeartsEvent.12}}\"(break)speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.11}}\"(break)speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.13}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.BillRivalHeartsEvent.14}}\" #\"{{i18n:MV.Municipal.BillRivalHeartsEvent.16}}\" #\"{{i18n:MV.Municipal.BillRivalHeartsEvent.18}}\"(break)speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.15}}\"(break)speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.17}}\"(break)speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.19}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.20}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.BillRivalHeartsEvent.21}}\" #\"{{i18n:MV.Municipal.BillRivalHeartsEvent.23}}\"(break)speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.22}}\"(break)speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.24}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.25}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.BillRivalHeartsEvent.26}}\" #\"{{i18n:MV.Municipal.BillRivalHeartsEvent.28}}\"(break)speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.27}}\"(break)speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.27}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRivalHeartsEvent.29}}\"/pause 800/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill/Rasmodius Date - Spring",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "{{ModId}}_BillRasDate1/Time 800 1700/Hn {{ModID}}_BillRivalHeartsFin/w sunny/Season Spring": "springtown/72 25/farmer 75 25 3 Wizard 34 25 2 {{ModID}}_SheriffBill 33 25 2/addConversationTopic MV.BillRasDate1/skippable/advancedMove farmer false -3 0 3 10/waitForAllStationary/emote farmer 8/message \"{{i18n:MV.Municipal.BillRasDate1.01}}\"/globalFade/viewport -1000 -1000/warp farmer 40 17/globalFadeToClear 0.007 true/viewport 34 25 true/advancedMove farmer false -6 0 0 3 2 10/emote Wizard 56/pause 400/emote {{ModId}}_SheriffBill 56/waitForAllStationary/emote farmer 8/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate1.02}}\"/pause 800/speak Wizard \"{{i18n:MV.Municipal.BillRasDate1.03}}\"/pause 400/emote {{ModId}}_SheriffBill 56/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate1.04}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate1.05}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate1.06}}\"/emote Wizard 32/pause 400/emote farmer 32/advancedMove farmer false 0 -3 20 0 1 10/pause 400/emote {{ModId}}_SheriffBill 56/pause 400/emote Wizard 20/pause 400/globalFade/viewport -1000 -1000/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill/Rasmodius Date - Summer",
+            "Action": "EditData",
+            "Target": "Data/Events/WizardHouse",
+            "Entries": {
+                "{{ModId}}_BillRasDate2/Hn {{ModID}}_BillRivalHeartsFin/Season Summer": "woodsTheme/7 19/farmer 6 22 2 Wizard 5 5 1 {{ModID}}_SheriffBill 6 5 3/addConversationTopic MV.BillRasDate2/skippable/pause 2000/message \"{{i18n:MV.Municipal.BillRasDate2.01}}\"/pause 2000/message \"{{i18n:MV.Municipal.BillRasDate2.02}}\"/pause 800/advancedMove farmer false 1 0 0 -1 4 10/waitForAllStationary/pause 800/message \"{{i18n:MV.Municipal.BillRasDate2.03}}\"/pause 800/advancedMove farmer false 0 -10 4 10/waitForAllStationary/viewport 7 6/advancedMove farmer false 0 -3 4 10/waitForAllStationary/pause 400/emote farmer 8/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate2.04}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate2.05}}\"/pause 800/emote farmer 60/pause 400/message \"{{i18n:MV.Municipal.BillRasDate2.06}}\"/pause 800/advancedMove farmer false 0 14 2 10/globalfade/viewport -1000 -1000/playSound doorClose/pause 400/end warpOut"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, jenf1.wizardenhanced, Wolf.RomRas": false
+            }
+        },
+        {
+            "LogName": "Sheriff Bill/Rasmodius Date - Summer - SVE or Wizard Enhanced",
+            "Action": "EditData",
+            "Target": "Data/Events/WizardHouse",
+            "Entries": {
+                "{{ModId}}_BillRasDate2/Hn {{ModID}}_BillRivalHeartsFin/Season Summer": "woodsTheme/7 29/farmer 8 28 3 Wizard 4 15 1 {{ModID}}_SheriffBill 5 15 3/addConversationTopic MV.BillRasDate2/skippable/pause 2000/message \"{{i18n:MV.Municipal.BillRasDate2.01}}\"/pause 2000/message \"{{i18n:MV.Municipal.BillRasDate2.02}}\"/pause 800/advancedMove farmer false 0 -5 4 10/waitForAllStationary/pause 800/viewport 7 17/pause 800/emote farmer 8/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate2.04}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate2.05}}\"/pause 800/emote farmer 60/pause 400/message \"{{i18n:MV.Municipal.BillRasDate2.06}}\"/pause 800/advancedMove farmer false 0 6 2 10/globalfade/viewport -1000 -1000/playSound doorClose/pause 400/end warpOut"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, jenf1.wizardenhanced": true
+            }
+        },
+        {
+            "LogName": "Sheriff Bill/Rasmodius Date - Summer - RomRas",
+            "Action": "EditData",
+            "Target": "Data/Events/WizardHouse",
+            "Entries": {
+                "{{ModId}}_BillRasDate2/Hn {{ModID}}_BillRivalHeartsFin/Season Summer": "woodsTheme/18 8/farmer 2 6 3 Wizard 18 11 1 {{ModID}}_SheriffBill 19 11 3/addConversationTopic MV.BillRasDate2/skippable/pause 2000/message \"{{i18n:MV.Municipal.BillRasDate2.01}}\"/pause 800/message \"{{i18n:MV.Municipal.BillRasDate2.02}}\"/pause 800/advancedMove farmer false 1 0 1 10/waitForAllStationary/message \"{{i18n:MV.Municipal.BillRasDate2.03}}\"/pause 800/advancedMove farmer false 9 0 1 10/waitForAllStationary/pause 400/emote farmer 8/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate2.04}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate2.05}}\"/pause 800/emote farmer 60/pause 400/message \"{{i18n:MV.Municipal.BillRasDate2.06}}\"/pause 800/advancedMove farmer false -5 0 0 0 15 10/globalfade/viewport -1000 -1000/pause 1000/playSound doorClose/pause 400/end warpOut"
+            },
+            "When": {
+                "HasMod |contains=jenf1.wizardenhanced": false,
+                "HasMod |contains=Wolf.RomRas": true
+            }
+        },
+        {
+            "LogName": "Sheriff Bill/Rasmodius Date - Fall",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "{{ModId}}_BillRasDate3/Time 800 1700/Hn {{ModID}}_BillRivalHeartsFin/w sunny/Season Fall": "Majestic/97 78/farmer 99 78 3 Jas 96 78 1 Wizard 92 73 2 {{ModID}}_SheriffBill 91 73 2/addConversationTopic MV.BillRasDate3/skippable/advancedMove Wizard false 0 3 2 10/advancedMove {{ModID}}_SheriffBill false 0 3 2 10/waitForAllStationary/speak Jas \"{{i18n:MV.Municipal.BillRasDate3.01}}\"/emote Wizard 8/pause 400/advancedMove Wizard false 0 2 2 0 1 10/emote {{ModID}}_SheriffBill 8/advancedMove {{ModID}}_SheriffBill false 0 2 1 0 1 10/proceedPosition Wizard/pause 400/emote Jas 8/faceDirection Jas 3 false/jump Jas/shake Jas 1800/advancedMove {{ModID}}_SheriffBill false 0 1 2 0 1 10/waitForAllStationary/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate3.02}}\"/pause 400/speak Jas \"{{i18n:MV.Municipal.BillRasDate3.03}}\"/pause 400/speed Jas 6/advancedMove Jas false 0 1 -1 0 3 10/waitForAllStationary/pause 400/speak Jas \"{{i18n:MV.Municipal.BillRasDate3.04}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate3.05}}\"/pause 400/speak Jas \"{{i18n:MV.Municipal.BillRasDate3.06}}\"/pause 400/emote farmer 56/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate3.07}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate3.08}}\"/pause 200/faceDirection Jas 0 false/pause 200/emote Jas 8/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate3.09}}\"/pause 400/faceDirection Jas 1 false/pause 400/showFrame Wizard 16/pause 800/playSound wand/screenFlash 3/pause 400/emote Jas 16/pause 800/doAction 97 78/playSound leafrustle/temporaryAnimatedSprite Characters\\TripodSquirrel 0 0 16 32 150 2 0 96 77 false false 1 0 1 0 0 0 motion 0 0 acceleration 0 0 hold_last_frame/pause 400/emote Jas 16/showFrame Wizard 4/pause 400/advancedMove farmer false 0 1 -2 0 3 10/waitForAllStationary/pause 400/speak Jas \"{{i18n:MV.Municipal.BillRasDate3.10}}\"/pause 400/emote farmer 32/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate3.11}}\"/pause 400/speak Jas \"{{i18n:MV.Municipal.BillRasDate3.12}}\"/pause 400/quickQuestion #\"{{i18n:MV.Municipal.BillRasDate3.13}}\"#\"{{i18n:MV.Municipal.BillRasDate3.14}}\"(break)speak Jas \"{{i18n:MV.Municipal.BillRasDate3.15}}\"(break)speak Jas \"{{i18n:MV.Municipal.BillRasDate3.15}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate3.16}}\"/pause 200/faceDirection Jas 3 false/pause 200/speak Jas \"{{i18n:MV.Municipal.BillRasDate3.17}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate3.18}}\"/pause 400/faceDirection Jas 3 false/pause 400/speak Jas \"{{i18n:MV.Municipal.BillRasDate3.19}}\"/pause 400/beginSimultaneousCommand/emote Wizard 60/emote {{ModID}}_SheriffBill 32/faceDirection farmer 2/animate farmer false true 100 102 103/endSimultaneousCommand/pause 1000/globalFade/viewport -1000 -1000/pause 800/stopAnimation farmer/speak Wizard \"{{i18n:MV.Municipal.BillRasDate3.20}}\"/pause 400/end"
+            }
+        },
+        {
+            "LogName": "Sheriff Bill/Rasmodius Date - Winter",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_BillRasDate4/Time 600 1000/Hn {{ModID}}_BillRivalHeartsFin/w Snow/Season Winter": "winter1/25 50/farmer 20 30 2 Wizard 24 48 2 {{ModID}}_SheriffBill 23 48 2/positionOffset {{ModID}}_SheriffBill 12 24 true/showFrame Wizard 20/showFrame {{ModId}}_SheriffBill 26/addConversationTopic MV.BillRasDate4/skippable/pause 2000/showFrame {{ModId}}_SheriffBill 27/emote {{ModId}}_SheriffBill 8/advancedMove farmer false 0 18 1 10/pause 1000/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate4.01}}\"/pause 400/showFrame Wizard 21/positionOffset Wizard 0 4 true/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate4.02}}\"/pause 800/playSound wand/screenFlash 3/temporaryAnimatedSprite Effects\\SnowDome 0 0 32 16 500 4 0 23 46 false false 4 0 1 0 0 0 hold_last_frame/waitForAllStationary/emote farmer 16/pause 1600/message \"{{i18n:MV.Municipal.BillRasDate4.03}}\"/pause 400/emote farmer 32/pause 400/advancedMove farmer false 0 7 6 0 0 4 20 0 1 10/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate4.04}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate4.05}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.BillRasDate4.06}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.BillRasDate4.07}}\"/pause 400/emote {{ModId}}_SheriffBill 32/pause 400/emote Wizard 56/globalFade/viewport -1000 -1000/pause 600/end"
+            }
+        }
+    ]
+}

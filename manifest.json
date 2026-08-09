@@ -1,0 +1,105 @@
+{
+	"Name": "Pelican Town Municipal",
+	"Author": "MidnightVoyager",
+	"Version": "3.0.7",
+	"Description": "A municipal building and sheriff for Pelican Town.",
+	"UniqueID": "MV.Municipal",
+	"UpdateKeys": [
+		"Nexus:38698"
+	],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+    "MinimumApiVersion": "4.4.0",
+	"Dependencies": [
+		{
+			"UniqueID": "spacechase0.SpaceCore",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "Spiderbuttons.CMCT",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "Spiderbuttons.BETAS",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "mushymato.PeliQ",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "MV.MiscTilesheets",
+            "MinimumVersion": "2.9.0",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "DaisyNiko.Tilesheets",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Rafseazz.RSVCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "agentlyoko.uniquewinterstar",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "gizzymo.canonfriendlyexpansion",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "nuu.overgrownmap",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "andril11.charlie",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Pathoschild.CentralStation.Content",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "DTZ.DowntownZuzuCP",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "kabulla.bakery",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "KaileyStardew.FeastOfTheSun",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "beyondrecovery.immersivesandy",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "AtlasV.PavedValley",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "VegasOctober.BetterItemCategories",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "MV.PelicanTownAccessibility",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Nom0ri.WizardWedding",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "MV.SpousesMoveHouse",
+			"IsRequired": false
+		}
+	]
+}

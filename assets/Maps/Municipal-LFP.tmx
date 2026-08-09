@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="45">
+ <tileset firstgid="1" name="spring_municipalbuilding_tiles" tilewidth="16" tileheight="16" tilecount="112" columns="8">
+  <image source="spring_municipalbuilding_tiles.png" width="128" height="224"/>
+ </tileset>
+ <layer id="4" name="Buildings" width="1" height="2">
+  <data encoding="csv">
+0,
+105
+</data>
+ </layer>
+ <layer id="7" name="Front" width="1" height="2">
+  <data encoding="csv">
+97,
+0
+</data>
+ </layer>
+ <objectgroup id="12" name="Buildings">
+  <object id="39" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="OpenShop MV.Municipal_Pantry none"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

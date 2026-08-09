@@ -1,0 +1,327 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Elliott",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 5,
+                "Y": 1,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Elliott's Cabin": false,
+                "HasSeenEvent |contains=ElliottPennyWedding": false,
+                "HasFlag |contains=ElliottPennyHouseUpgradeMail": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Elliott - LUTI",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 4,
+                "Y": 1,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=MV.SpousesMoveHouse": false,
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Elliott's Cabin": true,
+                "HasSeenEvent |contains=ElliottPennyWedding": false,
+                "HasFlag |contains=ElliottPennyHouseUpgradeMail": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Elliott - LUTI - Spouses Move House",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 4,
+                "Y": 1,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Relationship:Elliott |contains=married": false,
+                "HasMod |contains=MV.SpousesMoveHouse": true,
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Elliott's Cabin": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Elliott - LUTI - Spouses Move House - Married",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 15,
+                "Y": 6,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Relationship:Elliott": "married",
+                "HasMod |contains=MV.SpousesMoveHouse": true,
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Elliott's Cabin": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Hospital",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 3,
+                "Y": 11,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Hospital Interior": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Hospital - LUTI",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 12,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 12,
+                        "Y": 13
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": null
+                }
+            ],
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Hospital Interior": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - JojaMart",
+            "Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 16,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, JojaMart": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - JojaMart - LUTI",
+            "Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 21,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, JojaMart": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Mullners",
+            "Action": "EditMap",
+            "Target": "Maps/JoshHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 1,
+                "Y": 18,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Alex's House": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Mullners - LUTI",
+            "Action": "EditMap",
+            "Target": "Maps/JoshHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 6,
+                "Y": 18,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Alex's House": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Sam House",
+            "Action": "EditMap",
+            "Target": "Maps/SamHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 10,
+                "Y": 5,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Jodi's House": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Sam House - LUTI",
+            "Action": "EditMap",
+            "Target": "Maps/SamHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallF1.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 1,
+                "Y": 1,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Jodi's House": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Science House - Lab",
+            "Action": "EditMap",
+            "Target": "Maps/ScienceHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 23,
+                "Y": 22,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Robin's House": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Science House - Lab - LUTI",
+            "Action": "EditMap",
+            "Target": "Maps/ScienceHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 23,
+                "Y": 22,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Robin's House": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Haley and Emily's",
+            "Action": "EditMap",
+            "Target": "Maps/HaleyHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 15,
+                "Y": 13,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Haley's House": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Haley and Emily's - LUTI",
+            "Action": "EditMap",
+            "Target": "Maps/HaleyHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 12,
+                "Y": 13,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Haley's House": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        }
+    ]
+}

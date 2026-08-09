@@ -1,0 +1,56 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Tourists",
+            "Action": "EditData",
+            "Target": "Mods/Pathoschild.CentralStation/Tourists",
+            "Entries": {
+                "{{ModId}}_Tourists": {
+                    "FromMap": "{{InternalAssetKey: assets/MunicipalTourists.tmx}}",
+                    "Tourists": {
+                        "SadDuke": {
+                            "Index": 0,
+                            "Dialogue": [
+                                "{{i18n:MV.Municipal.Tourists.SadDuke.1}}",
+                                "{{i18n:MV.Municipal.Tourists.SadDuke.2}}"
+                            ]
+                        },
+                        "Alicia": {
+                            "Index": 1,
+                            "Dialogue": [
+                                "{{i18n:MV.Municipal.Tourists.Alicia.1}}",
+                                "{{i18n:MV.Municipal.Tourists.Alicia.2}}"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Municipal Tourists - They Deserve It Too",
+            "Action": "EditData",
+            "Target": "Mods/Pathoschild.CentralStation/Tourists",
+            "TargetField": [
+                "{{ModId}}_Tourists",
+                "Tourists"
+            ],
+            "Fields": {
+                "Alicia": {
+                    "Dialogue": [
+                        "Portraits/MV.Municipal_ClerkAlicia \"{{i18n:MV.Municipal.Alicia}}\"🐬{{i18n:MV.Municipal.Tourists.Alicia.1}}",
+                        "Portraits/MV.Municipal_ClerkAlicia \"{{i18n:MV.Municipal.Alicia}}\"🐬{{i18n:MV.Municipal.Tourists.Alicia.2}}"
+                    ]
+                },
+                "SadDuke": {
+                    "Dialogue": [
+                        "Portraits/MV.Municipal_SadDuke \"{{i18n:MV.Municipal.SadDuke}}\"🐬{{i18n:MV.Municipal.Tourists.SadDuke.1}}",
+                        "Portraits/MV.Municipal_SadDuke \"{{i18n:MV.Municipal.SadDuke}}\"🐬{{i18n:MV.Municipal.Tourists.SadDuke.2}}"
+                    ]
+                }
+            },
+            "When": {
+                "HasMod": "mushymato.PortraitsForAll"
+            }
+        }
+    ]
+}

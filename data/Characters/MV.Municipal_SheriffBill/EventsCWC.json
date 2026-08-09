@@ -1,0 +1,16 @@
+{
+    "Changes": [
+        {
+            "LogName": "Custom Wedding Ceremony Wedding Position",
+            "Action": "EditData",
+            "Target": "Data/Weddings",
+            "TargetField": [
+                "Attendees",
+                "{{ModID}}_SheriffBill"
+            ],
+            "Entries": {
+                "Setup": "{{ModID}}_SheriffBill? {{Query: {{Spiderbuttons.CMCT/Dynamic: Airyn.CWC, FarmerXValue}} + 5}} {{Query: {{Spiderbuttons.CMCT/Dynamic: Airyn.CWC, FarmerYValue}} + 10}} 0"
+            }
+        }
+    ]
+}

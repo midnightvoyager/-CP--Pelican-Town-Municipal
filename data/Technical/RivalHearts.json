@@ -1,0 +1,80 @@
+{
+    "Changes": [
+        {
+            "LogName": "Wizard Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "wizard_sleep": "{{WizardSleep}}/{{WizardSleep}}/{{WizardSleep}}",
+                "{{ModID}}_wizard_warp": "16/16 16 16 16 16 16 16 16 16 16 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23/23",
+                "{{ModID}}_wizard_warp_arrive": "23/23 23 23 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/16"
+            }
+        },
+        {
+            "LogName": "Wizard Animations for Spacecore",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ScheduleAnimationExtensionData",
+            "Entries": {
+                "{{ModID}}_wizard_warp": {
+                    "SourceRectSize": "16, 32",
+                    "DrawOffset": "0, -0",
+                    "AppearanceOverride": null,
+                    "OnStart": {
+                        "Emote": null,
+                        "PlaySound": null
+                    },
+                    "OnEnd": {
+                        "Emote": null,
+                        "PlaySound": "wand"
+                    },
+                    "OnFrame": {}
+                },
+                "{{ModID}}_wizard_warp_arrive": {
+                    "SourceRectSize": "16, 32",
+                    "DrawOffset": "0, -0",
+                    "AppearanceOverride": null,
+                    "OnStart": {
+                        "Emote": null,
+                        "PlaySound": "wand"
+                    },
+                    "OnEnd": {
+                        "Emote": null,
+                        "PlaySound": null
+                    },
+                    "OnFrame": {}
+                }
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Wizard",
+            "When": {
+                "HasSeenEvent": "112",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Entries": {
+                "Mon": "610 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Tue": "610 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Wed": "610 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Thu": "610 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Fri": "610 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Sat": "610 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Sun": "610 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "rain": "610 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "GreenRain": "610 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Bouquet Rejection",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Entries": {
+                "RejectBouquet": "{{i18n:MV.Municipal.RejectBouquet.Ras}}"
+            }
+        }
+    ]
+}

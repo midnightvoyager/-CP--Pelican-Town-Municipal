@@ -1,0 +1,29 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Cooking Recipes - Cornucopia Cooking Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModID}}_HushPuppies": "-5 1 -6 1 246 1 Cornucopia_CornFlour 1/25 5/{{ModID}}_HushPuppies/f {{ModID}}_SheriffBill 3/"
+            }
+        },
+        {
+            "LogName": "Municipal Cooking Recipes - Cornucopia Cooking Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "When": {
+                "Spiderbuttons.CMCT/Config: Cornucopia.CookingRecipes, World Traveler": true,
+                "HasMod|contains=Cornucopia.MoreFlowers": true,
+                "HasMod|contains=Cornucopia.ArtisanMachines": true,
+                "HasMod|contains=Cornucopia.MoreCrops": true,
+                "HasReadLetter: hostPlayer |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true,
+                "HasReadLetter: hostPlayer |contains=Cornucopia.MoreCrops_ExtendedTreesPackEnabled": true,
+                "HasReadLetter: hostPlayer |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true
+            },
+            "Entries": {
+                "{{ModID}}_BiscuitandGravy": "Cornucopia_Biscuit 1 Cornucopia_Peppercorn 1 -6 1 246 1/25 5/{{ModID}}_BiscuitandGravy/f {{ModID}}_SheriffBill 7/"
+            }
+        }
+    ]
+}

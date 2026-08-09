@@ -1,0 +1,424 @@
+{
+	"Changes": [
+		//Egg Festival
+		{
+			"LogName": "Bill's Egg Festival Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.EggFestivalDialogue.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.EggFestivalDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Egg Festival Dialog - Ras",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.EggFestivalDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.EggFestivalDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		//Flower Dance
+		{
+			"LogName": "Bill's Flower Dance Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.FlowerDanceDialogue.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.FlowerDanceDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Bill's Flower Dance Dialog - RH",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.FlowerDanceDialogue.RH.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.FlowerDanceDialogue.RH.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Flower Dance Dialog - Ras",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.FlowerDanceDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.FlowerDanceDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		//Luau
+		{
+			"LogName": "Bill's Luau Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false,
+				"HasFlag: hostPlayer |contains={{ModID}}_Bill10H": false
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.LuauDialogue.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.LuauDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Bill's Luau Dialog - RH before 10H",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true,
+				"HasFlag: hostPlayer |contains={{ModID}}_Bill10H": false
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.LuauDialogue.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.LuauDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Bill's Luau Dialog after 10h",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_Bill10H": true
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.LuauDialogue.10.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.LuauDialogue.10.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Luau Dialog - Ras",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true,
+				"HasFlag: hostPlayer |contains={{ModID}}_Bill10H": false
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.LuauDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.LuauDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Luau Dialog - Ras after Bill's 10H",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true,
+				"HasFlag: hostPlayer |contains={{ModID}}_Bill10H": true
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.LuauDialogue.Ras.{{Random:{{Range: 2, 4}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.LuauDialogue.Ras.{{Random:{{Range: 2, 4}}}}}}"
+			}
+		},
+		//Moonlight Jellies
+		{
+			"LogName": "Bill's Moonlight Jellies Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Moonlight Jellies Dialog - Ras Y1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_MetBill": true,
+				"HasMod: |contains=Parrot.RomRas": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Year": "1"
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras}}"
+			}
+		},
+		{
+			"LogName": "Moonlight Jellies Dialog - Ras Y1 - RR",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_MetBill": true,
+				"HasMod: |contains=Wolf.RomRas": true,
+				"Hearts:Wizard": "0, 1",
+                "Year": "1"
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras}}"
+			}
+		},
+		{
+			"LogName": "Moonlight Jellies Dialog - Ras Y2+",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_MetBill": true,
+                "Year |contains= 1": false
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Moonlight Jellies Dialog - Ras Y2+ - RR",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_MetBill": true,
+				"HasMod: |contains=Wolf.RomRas": true,
+				"Hearts:Wizard": "0, 1",
+                "Year |contains= 1": false
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Moonlight Jellies Dialog - Ras RH - SVE and SVE RR",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_MetBill": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.MoonlightJelliesDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		//Fair
+		{
+			"LogName": "Bill's Fair Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.FairDialogue.{{Random:{{Range: 1, 2}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.FairDialogue.3}}"
+			}
+		},
+		{
+			"LogName": "Bill's Fair Dialog - SVE",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall6",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.FairDialogue.3}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.FairDialogue.{{Random:{{Range: 1, 2}}}}}}"
+			}
+		},
+		//Spirit's Eve
+		{
+			"LogName": "Bill's Spirit's Eve Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.SpiritsEveDialogue.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.SpiritsEveDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Spirit's Eve Dialog - Ras",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.SpiritsEveDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.SpiritsEveDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		//Ice Festival
+		{
+			"LogName": "Bill's Ice Festival Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.IceFestivalDialogue.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.IceFestivalDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Ice Festival Dialog - Ras",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.IceFestivalDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.IceFestivalDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		//Winter Star
+		{
+			"LogName": "Bill's Winter Star Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.WinterStarDialogue.{{Random:{{Range: 1, 3}}}}}}",
+				"{{ModID}}_SheriffBill_y2": "{{i18n:MV.Municipal.WinterStarDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Winter Star Dialog - Ras",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Priority": "Late + 100",
+			"When": {
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.WinterStarDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}",
+				"Wizard_y2": "{{i18n:MV.Municipal.WinterStarDialogue.Ras.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		//Ridgeside
+		{
+			"LogName": "Bill's Ridgeside Village Gathering Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"When": {
+				"HasMod |contains=Rafseazz.RSVCP": true
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.RidgesideGatheringDialogue.{{Random: 1, 2, 3.{{HasMod |contains=skellady.SBVCP}}}}}}"
+			}
+		},
+		{
+			"LogName": "Bill's Ember of Resolutions Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"HasMod |contains=Rafseazz.RSVCP": true,
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.EmberOfResolutionsDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Bill's Ember of Resolutions Dialog - RH",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"HasMod |contains=Rafseazz.RSVCP": true,
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.EmberOfResolutionsDialogue.RH.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Ember of Resolutions Dialog - Ras",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"Priority": "Late + 100",
+			"When": {
+				"HasMod |contains=Rafseazz.RSVCP": true,
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.EmberOfResolutionsDialogue.Ras}}"
+			}
+		},
+		//Fireworks Festival
+		{
+			"LogName": "Bill's Fireworks Festival Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/Summer20",
+			"When": {
+				"HasMod |contains=violetlizabet.FireworksFestival": true
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.FireworksFestivalDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		//Fashion Show
+		{
+			"LogName": "Bill's Fashion Show Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/Spring19",
+			"When": {
+				"HasMod |contains=UNA.FF.CP": true
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.FashionShowDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		//Love Festival
+		{
+			"LogName": "Bill and Wizard's Love Festival Dialog - RH Only",
+			"Action": "EditData",
+			"Target": "Data/Festivals/Winter6",
+			"When": {
+				"HasMod |contains=AvalonMFX.LoveFestival": true,
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.LoveFestivalDialogue.RH}}",
+				"Wizard": "{{i18n:MV.Municipal.LoveFestivalDialogue.Ras}}"
+			}
+		},
+		//Reveillon
+		{
+			"LogName": "Bill's Reveillon Dialog",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"HasMod |contains=marizoocamd.NewYearsEve": true
+			},
+			"Entries": {
+				"{{ModID}}_SheriffBill": "{{i18n:MV.Municipal.ReveillonDialogue.{{Random:{{Range: 1, 3}}}}}}"
+			}
+		},
+		{
+			"LogName": "Reveillon Dialog - Ras",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"HasMod |contains=marizoocamd.NewYearsEve": true,
+				"HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+			},
+			"Entries": {
+				"Wizard": "{{i18n:MV.Municipal.ReveillonDialogue.Ras}}"
+			}
+		}
+	]
+}

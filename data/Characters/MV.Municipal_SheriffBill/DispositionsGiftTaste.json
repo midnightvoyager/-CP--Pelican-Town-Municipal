@@ -1,0 +1,167 @@
+{
+    "Changes": [
+        {
+            "LogName": "Sheriff Bill Dispositions",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "{{ModId}}_SheriffBill": {
+                    "DisplayName": "{{i18n:MV.Municipal.SheriffBill}}",
+                    "Breather": true,
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "BirthSeason": "winter",
+                    "Birthday": "4",
+                    "HomeRegion": "Town",
+                    "IsDarkSkinned": false,
+                    "CanSocialize": true,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": true,
+                    "CanCommentOnPurchasedShopItems": false,
+                    "CanGreetNearbyCharacters": true,
+                    "CanVisitIsland": true,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "SocialTabIconSourceRect": null,
+                    "IntroductionsQuest": "False",
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": "{{IncludePerfection}}",
+                    "EndSlideShow": "TrailingGroup",
+                    "FlowerDanceCanDance": false,
+                    "ShakePortraits": [],
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "DumpsterDiveEmote": 8,
+                    "FriendsAndFamily": {
+                        "Wizard": "",
+                        "Willy": "",
+                        "Marlon": "",
+                        "Elliott": ""
+                    },
+                    "WinterStarGifts": [
+                        {
+                            //Dressed Spinner
+                            "ItemId": "(O)687",
+                            "MinStack": 1
+                        },
+                        {
+                            //Barbed Hook
+                            "ItemId": "(O)691",
+                            "MinStack": 1
+                        },
+                        {
+                            //Wild Bait
+                            "ItemId": "(O)774",
+                            "MinStack": 50
+                        }
+                    ],
+                    "WinterStarParticipant": true,
+                    "UnlockConditions": "PLAYER_HAS_MAIL Host {{ModID}}_MetBill",
+                    "SpawnIfMissing": true,
+					"Home": [
+						{
+							"Id": "WaitingRoom",
+							"Location": "Municipal-BillZone",
+							"Tile": {
+								"X": 0,
+								"Y": 1
+							},
+							"Direction": "down"
+						}
+					],
+                    "TextureName": null,
+                    "Appearance": [
+                        {
+                            "ID": "{{ModId}}_SheriffBill",
+                            "Portrait": "Portraits/{{ModId}}_SheriffBill",
+                            "Sprite": "Characters/{{ModId}}_SheriffBill",
+                            "Precedence": 0,
+                            "Weight": 1,
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "IsIslandAttire": false
+                        },
+                        {
+                            "ID": "{{ModId}}_SheriffBill_Winter",
+                            "Season": "winter",
+                            "Portrait": "Portraits/{{ModId}}_SheriffBill_Winter",
+                            "Sprite": "Characters/{{ModId}}_SheriffBill_Winter",
+                            "Precedence": -100,
+                            "Weight": 1,
+                            "Outdoors": true,
+                            "Indoors": false,
+                            "IsIslandAttire": false
+                        },
+                        {
+                            "ID": "{{ModId}}_SheriffBill_Beach",
+                            "Portrait": "Portraits/{{ModId}}_SheriffBill_Beach",
+                            "Sprite": "Characters/{{ModId}}_SheriffBill_Beach",
+                            "Precedence": -1,
+                            "Weight": 1,
+                            "Outdoors": true,
+                            "Indoors": false,
+                            "IsIslandAttire": true
+                        },
+                        {
+                            "ID": "{{ModId}}_SheriffBill_SpiritsEve",
+                            "Condition": "EVENT_ID festival_fall27",
+                            "Portrait": "Portraits/{{ModId}}_SheriffBill_SpiritsEve",
+                            "Sprite": "Characters/{{ModId}}_SheriffBill_SpiritsEve",
+                            "Weight": 1,
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "IsIslandAttire": false,
+                            "Precedence": -1000
+                        },
+                        {
+                            "ID": "{{ModId}}_SheriffBill_Pride",
+                            "Condition": "SEASON_DAY summer 15, LOCATION_NAME TARGET CommunityCenter, {{HasMod|contains=sapphicsaph_pitv}}",
+                            "Portrait": "Portraits/{{ModId}}_SheriffBill_Pride",
+                            "Sprite": "Characters/{{ModId}}_SheriffBill_Pride",
+                            "Weight": 1,
+                            "Outdoors": false,
+                            "Indoors": true,
+                            "IsIslandAttire": false,
+                            "Precedence": -1000
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Bill's Gift Tastes Empty Data",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "{{ModId}}_SheriffBill": "//////////"
+            }
+        },
+        {
+            "LogName": "Bill's Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Fields": {
+                "{{ModId}}_SheriffBill": {
+                    //Love
+                    "0": "{{i18n:MV.Municipal.SheriffBill.gift.love}}",
+                    "1": "{{ModID}}_HushPuppies {{ModID}}_BiscuitandGravy item_gay bh.specialty_mead bh.healing_mead bh.aged_mead Squeaks.MGC.CP_BloodStarfruitMead Squeaks.MGC.CP_CoffeeInfusedMead TenebrousNova.EliDylan.CP_Scolymia food_caritas_bakery_item maddog_bearfam_coffee_item WWWA.Book.ArcanaCatcherPrunus WWWA.Book.ArtifactOrCutlery WWWA.Book.CrabsAndWhyIHateThem WWWA.Book.DeferenceArlington WWWA.Book.FishingForDumbDumbs WWWA.Book.GettingChicksToLoveYou WWWA.Book.Goblins WWWA.Book.GuideToSculptingWithGold WWWA.Book.HerpetologyOfFerngill WWWA.Book.LunarkinTrollTales WWWA.Book.MysteriesOfTheDwarves WWWA.Book.PepperRexes WWWA.Book.TheGreatBookOfSlimes WWWA.Book.TheGreatTomeOfMayo WWWA.Book.TheJojaConspiracy WWWA.Book.WhyPepperRexesAreTheBest sapphicsaph_pitv.GaylacticCookie 397 395 873 category_tackle ginger_beer sns_ginger_beer_item ginger_beer_item MadDog.HashtagBearFam_FerskenPeach_Mead MadDog.HashtagBearFam_FerskenPeach_PotentMead MadDog.HashtagBearFam_FerskenPeach_Mead_Tankard 392 253 (TR)BasiliskPaw (TR)IridiumSpur book_item bc_book Daine.TPOChoice_GotoranCoffee Cornucopia_Ambrosia Cornucopia_CinnamonApplePie Cornucopia_BakedApple Cornucopia_Baklava Cornucopia_BananaBread Cornucopia_Cinderdoodles Cornucopia_CinnamonRoll MadDog.STW_FriedTomatoes MadDog.STW_CowboyChili MadDog.STW_Snakerdoodle",
+                    //Like
+                    "2": "{{i18n:MV.Municipal.SheriffBill.gift.like}}",
+                    "3": "bh.stock_mead bh.sparkling_mead bh.bubble_mead Squeaks.MGC.CP_RoastedCoffeeBeans TenebrousNova.EliDylan.CP_Marimo food_caritas_savory_item 376 sapphicsaph_pitv.PridePop bh.cider DN.SnS_Hand_Pressed_Apple_Cider MadDog.HashtagBearFam_PeachJoja MadDog.HashtagBearFam_PumpkinJoja MadDog.HashtagBearFam_JojaFloat 459 393",
+                    //Dislike
+                    "4": "{{i18n:MV.Municipal.SheriffBill.gift.dislike}}",
+                    "5": "Squeaks.MGC.CP_ElderLilyDrink gunnar_potion_item 80 346 232 404 281 20 257 399 16 259 420 408 422 412 416 stw_cowboy_flavored_beer",
+                    //Hate
+                    "6": "{{i18n:MV.Municipal.SheriffBill.gift.hate}}",
+                    "7": "bomb_item 272 231 109 (TR)MagicQuiver Squeaks.MGC.CP_VoidTaintedMead, Cornucopia_Ratatouille, Cornucopia_BabaGhanoush, Cornucopia_Caponata, Cornucopia_FishHeadCurry, Cornucopia_GreenCurry, Cornucopia_Laghman, Cornucopia_OctopusCurry",
+                    //Neutral
+                    "8": "{{i18n:MV.Municipal.SheriffBill.gift.neutral}}",
+                    "9": "Squeaks.MGC.CP_ElderLilyMead Book_PriceCatalogue WWWA.Book.TheBookOfYoba Si.BC_YobaBook WWWA.Book.TheTarotRevealed egg_item milk_item category_bait 349 351 772 18 22 296 396 402 406 410 414 418 88 90 283 167"
+                }
+            }
+        }
+    ]
+}

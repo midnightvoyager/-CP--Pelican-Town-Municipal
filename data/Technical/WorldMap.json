@@ -1,0 +1,147 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Mini Map - Spring",
+            "Action": "Load",
+            "Target": "LooseSprites/Municipal_Map",
+            "FromFile": "Assets/Maps/Minimap/{{MapRecolorTag}}/Municipal_Map_spring.png",
+            "Priority": "High",
+            "When": {
+                "Season": "Spring"
+            }
+        },
+        {
+            "LogName": "Municipal Mini Map - Summer",
+            "Action": "Load",
+            "Target": "LooseSprites/Municipal_Map",
+            "FromFile": "Assets/Maps/Minimap/{{MapRecolorTag}}/Municipal_Map_summer.png",
+            "Priority": "High",
+            "When": {
+                "Season": "Summer"
+            }
+        },
+        {
+            "LogName": "Municipal Mini Map - Fall",
+            "Action": "Load",
+            "Target": "LooseSprites/Municipal_Map",
+            "FromFile": "Assets/Maps/Minimap/{{MapRecolorTag}}/Municipal_Map_fall.png",
+            "Priority": "High",
+            "When": {
+                "Season": "Fall"
+            }
+        },
+        {
+            "LogName": "Municipal Mini Map - Winter",
+            "Action": "Load",
+            "Target": "LooseSprites/Municipal_Map",
+            "FromFile": "Assets/Maps/Minimap/{{MapRecolorTag}}/Municipal_Map_winter.png",
+            "Priority": "High",
+            "When": {
+                "Season": "Winter"
+            }
+        },
+        {
+            "LogName": "Municipal Mini Map - Apply",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [
+                "Valley",
+                "MapAreas",
+                "Town",
+                "Textures"
+            ],
+            "Entries": {
+                "{{ModId}}_MunicipalMap": {
+                    "Id": "{{ModId}}_MunicipalMap",
+                    "Texture": "LooseSprites/Municipal_Map",
+                    "MapPixelArea": {
+                        "X": 163,
+                        "Y": 74,
+                        "Width": 8,
+                        "Height": 14
+                    }
+                }
+            }
+        },
+        ///Tags
+        {
+            "LogName": "Municipal Mini Map Tags",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [
+                "Valley",
+                "MapAreas"
+            ],
+            "Entries": {
+                "MV.Municipal.MunMapClosed": {
+                    "Id": "MV.Municipal.MunMapClosed",
+                    "Condition": "!PLAYER_HAS_MAIL Any {{ModID}}_Municipal_Open Any",
+                    "PixelArea": {
+                        "X": 163,
+                        "Y": 75,
+                        "Width": 8,
+                        "Height": 8
+                    },
+                    "Tooltips": [
+                        {
+                            "Id": "MV.Municipal.MunMap_01Closed",
+                            "Text": "{{i18n:MV.Municipal.MapInfo.1}}"
+                        }
+                    ]
+                },
+                "MV.Municipal.MunMap": {
+                    "Id": "MV.Municipal.MunMap",
+                    "Condition": "PLAYER_HAS_MAIL Any {{ModID}}_Municipal_Open Any",
+                    "PixelArea": {
+                        "X": 163,
+                        "Y": 75,
+                        "Width": 8,
+                        "Height": 8
+                    },
+                    "Tooltips": [
+                        {
+                            "Id": "MV.Municipal.MunMap_01",
+                            "Text": "\n                  {{i18n:MV.Municipal.MapInfo.1}}\n                  {{i18n:MV.Municipal.MapInfo.2}}\n                "
+                        }
+                    ],
+                    "WorldPositions": [
+                        {
+                            "Id": "MV.MunicipalFloor1",
+                            "LocationName": "MunicipalFloor1",
+                            "ExtendedTileArea": null,
+                            "MapPixelArea": {
+                                "X": 163,
+                                "Y": 75,
+                                "Width": 8,
+                                "Height": 8
+                            },
+                            "ScrollText": "{{i18n:MV.Municipal.MapInfo.1}}"
+                        },
+                        {
+                            "Id": "MV.MunicipalCells",
+                            "LocationName": "MunicipalCells",
+                            "MapPixelArea": {
+                                "X": 163,
+                                "Y": 75,
+                                "Width": 8,
+                                "Height": 8
+                            },
+                            "ScrollText": "{{i18n:MV.Municipal.MapInfo.4}}"
+                        },
+                        {
+                            "Id": "MV.MunicipalFloor2",
+                            "LocationName": "MunicipalFloor2",
+                            "MapPixelArea": {
+                                "X": 163,
+                                "Y": 75,
+                                "Width": 8,
+                                "Height": 8
+                            },
+                            "ScrollText": "{{i18n:MV.Municipal.MapInfo.3}}"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

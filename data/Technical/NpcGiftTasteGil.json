@@ -1,0 +1,146 @@
+{
+    "Changes": [
+        ////Character specific gift taste
+        {
+            "LogName": "Municipal Blank Load for Gil",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Priority": "Early",
+            "Entries": {
+                "Gil": ""
+            }
+        },
+        {
+            "LogName": "Gift Tastes for Gil - Before 8H",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "HasSeenEvent |contains=7018013": false
+            },
+            "TextOperations": [
+                ///Gil
+                {
+                    // Love
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "1"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Like
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "3"
+                    ],
+                    "Value": "{{ModID}}_StampShadow {{ModID}}_StampDwarvishHelm",
+                    "Delimiter": " "
+                },
+                {
+                    // Dislike
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "5"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Hate
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "7"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Neutral
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "9"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Gift Tastes for Gil - After 8H",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "HasSeenEvent |contains=7018013": true
+            },
+            "TextOperations": [
+                ///Gil
+                {
+                    // Love
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "1"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Like
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "3"
+                    ],
+                    "Value": "{{ModID}}_StampShadow {{ModID}}_StampDwarvishHelm",
+                    "Delimiter": " "
+                },
+                {
+                    // Dislike
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "5"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Hate
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "7"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Neutral
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Gil",
+                        "9"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

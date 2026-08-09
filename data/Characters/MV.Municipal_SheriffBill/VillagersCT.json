@@ -1,0 +1,808 @@
+{
+    "Changes": [
+        {
+            "LogName": "Bill CT Dialogue: Abigail",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Abigail.{{HasMod |contains=ghingerbread.SamOverhaul}}}}",
+                "MV.SheriffSam": "{{i18n:MV.SheriffSam_Abigail}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Alex",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Alex}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Caroline",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Caroline}}",
+                "MV.Sheriff4H": "{{i18n:MV.Sheriff4H_Caroline}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Caroline}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Clint",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Clint}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Demetrius",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Demetrius}}",
+                "MV.SheriffLinus": "{{i18n:MV.SheriffLinus_Demetrius}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Demetrius}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Elliott",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Elliott}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Elliott}}",
+                "MV.BillRivalHearts_memory_oneweek": "{{i18n:MV.BillRivalHearts_Elliott}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Emily",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Emily}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Emily}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Evelyn",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Evelyn",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Evelyn}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Evelyn}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: George",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/George",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_George}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_George}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Gunther",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gunther",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Gunther}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Gunther}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Gunther SVE",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/GuntherSilvian",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Gunther}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Gunther}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Gus",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Gus}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Gus}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Haley",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Haley}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Haley}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Harvey",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Harvey}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Harvey}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Jas",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Jas}}",
+                "MV.BillRasDate3": "{{i18n:MV.BillRasDate3_Jas}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Jodi",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Jodi}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Jodi}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Kent",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kent",
+            "Entries": {
+                "eventSeen_63_memory_oneday": "{{i18n:MV.KentHome_Kent}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Krobus",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Krobus",
+            "Entries": {
+                "MV.SheriffKrobus": "{{i18n:MV.SheriffKrobus_Krobus}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Leah",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Leah}}",
+                "MV.Sheriff4H": "{{i18n:MV.Sheriff4H_Leah}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Lewis",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Lewis",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Lewis}}",
+                "MV.Sheriff2H": "{{i18n:MV.Sheriff2H_Lewis}}",
+                "MV.Sheriff4H": "{{i18n:MV.Sheriff4H_Lewis}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Lewis}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Linus",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Linus",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Linus}}",
+                "MV.SheriffLinus": "{{i18n:MV.SheriffLinus_Linus}}",
+                "MV.SebRocks": "{{i18n:MV.SebRocks_Linus}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Marlon",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Marlon}}",
+                "MV.SheriffGuild": "{{i18n:MV.SheriffGuild_Marlon}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Marlon}}",
+                "MV.BillRivalHearts_memory_oneweek": "{{i18n:MV.BillRivalHearts_Marlon}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Marlon SVE",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarlonFay",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Marlon}}",
+                "MV.SheriffGuild": "{{i18n:MV.SheriffGuild_Marlon}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Marlon}}",
+                "MV.BillRivalHearts_memory_oneweek": "{{i18n:MV.BillRivalHearts_Marlon}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Marnie",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Marnie}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Maru",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Maru}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Maru}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Pam",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Pam}}",
+                "MV.SheriffPam": "{{i18n:MV.SheriffPam_Pam}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Pam}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Penny",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Penny}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Penny}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Pierre",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Pierre}}",
+                "MV.Sheriff4H": "{{i18n:MV.Sheriff4H_Pierre}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Pierre}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Robin",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Robin}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Robin}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Sam",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Sam.{{HasMod |contains=ghingerbread.SamOverhaul}}}}",
+                "MV.SheriffSam": "{{i18n:MV.SheriffSam_Sam}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Sandy",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sandy",
+            "Entries": {
+                "MV.SheriffSandy": "{{i18n:MV.SheriffSandy_Sandy}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Sebastian",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Sebastian}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Shane",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Shane}}",
+                "MV.BillShane1": "{{i18n:MV.SheriffShane1_Shane}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Vincent",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Vincent}}",
+                "MV.Sheriff4H": "{{i18n:MV.Sheriff4H_Vincent}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Willy",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Willy",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Willy}}",
+                "MV.Sheriff4H": "{{i18n:MV.Sheriff4H_Willy}}",
+                "MV.BillRivalHearts_memory_oneweek": "{{i18n:MV.BillRivalHearts_Willy}}"
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Wizard",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Wizard}}",
+                "MV.SheriffWizard": "{{i18n:MV.SheriffWizard_Wizard}}",
+                "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Wizard}}",
+                "MV.RHEnd": "{{i18n:MV.BillRivalHearts_Wizard}}",
+                "MV.BillRasDate1": "{{i18n:MV.BillRasDate1_Wizard}}",
+                "MV.BillRasDate2": "{{i18n:MV.BillRasDate2_Wizard}}",
+                "MV.BillRasDate3": "{{i18n:MV.BillRasDate3_Wizard}}"
+            }
+        },
+        //Lasting CTs Compatibility
+        {
+            "LogName": "MV.NewSheriff Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.NewSheriff": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.NewSheriff",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffGuild Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffGuild": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffGuild",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffWizard Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffWizard": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffWizard",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffSam Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffSam": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffSam",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffLinus Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffLinus": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffLinus",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SebRocks Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SebRocks": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SebRocks",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffMorris Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffMorris": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffMorris",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffKrobus Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffKrobus": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffKrobus",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffShane1 Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffShane1": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffShane1",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffShane2 Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffShane2": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffShane2",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffPam Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffPam": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffPam",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.Sheriff2H Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.Sheriff2H": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.Sheriff2H",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.Sheriff4H Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.Sheriff4H": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.Sheriff4H",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.Sheriff6H Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.Sheriff6H": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.Sheriff6H",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.Sheriff8H Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.Sheriff8H": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.Sheriff8H",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.Sheriff10H Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.Sheriff10H": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.Sheriff10H",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.BillRivalHearts Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.BillRivalHearts": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.BillRivalHearts",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.RHEnd Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.BillRivalHearts": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.RHEnd",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "RailroadAccessible Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "RailroadAccessible": "true"
+            },
+            "When": {
+                "HasConversationTopic": "RailroadAccessible",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "leoMoved Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "leoMoved": "true"
+            },
+            "When": {
+                "HasConversationTopic": "leoMoved",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "jojaComplete Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "jojaComplete": "true"
+            },
+            "When": {
+                "HasConversationTopic": "jojaComplete",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "ccComplete Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "ccComplete": "true"
+            },
+            "When": {
+                "HasConversationTopic": "ccComplete",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "abandonedJojaMartAccessible Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "abandonedJojaMartAccessible": "true"
+            },
+            "When": {
+                "HasConversationTopic": "abandonedJojaMartAccessible",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "willyBoatFixed Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "willyBoatFixed": "true"
+            },
+            "When": {
+                "HasConversationTopic": "willyBoatFixed",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "Island_Resort Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "Island_Resort": "true"
+            },
+            "When": {
+                "HasConversationTopic": "Island_Resort",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "adoptionLetter Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.adoptionLetter": "true"
+            },
+            "When": {
+                "HasConversationTopic": "adoptionLetter",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "ChildArrive Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "ChildArrive": "true"
+            },
+            "When": {
+                "HasConversationTopic": "ChildArrive",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SheriffSandy Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SheriffSandy": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SheriffSandy",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.CaughtLegend Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.CaughtLegend": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.CaughtLegend",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.KrobusSen_memory_oneweek Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.KrobusSen_memory_oneweek": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.KrobusSen_memory_oneweek",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.RangerMentionSmuggler Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.RangerMentionSmuggler": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.RangerMentionSmuggler",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.SchoolRepaired Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.SchoolRepaired": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.SchoolRepaired",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.AlchemistryStabilizer Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "MV.AlchemistryStabilizer": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.AlchemistryStabilizer",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "questComplete_22743207 Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "questComplete_22743207": "true"
+            },
+            "When": {
+                "HasConversationTopic": "questComplete_22743207",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "questComplete_22743207 Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "questComplete_22743207": "true"
+            },
+            "When": {
+                "HasConversationTopic": "questComplete_22743207",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.BillRasDate1 Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "questComplete_22743207": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.BillRasDate1",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.BillRasDate2 Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "questComplete_22743207": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.BillRasDate2",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.BillRasDate3 Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "questComplete_22743207": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.BillRasDate3",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        },
+        {
+            "LogName": "MV.BillRasDate4 Lasting CT",
+            "Action": "EditData",
+            "Target": "sophie.ConversationTopics",
+            "Entries": {
+                "questComplete_22743207": "true"
+            },
+            "When": {
+                "HasConversationTopic": "MV.BillRasDate4",
+                "HasMod": "sophie.LastingConversationTopics"
+            }
+        }
+    ]
+}

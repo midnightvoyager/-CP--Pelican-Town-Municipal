@@ -1,0 +1,2629 @@
+{
+	"Changes": [
+		////Character specific gift taste
+		{
+			"LogName": "Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				///Anton
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Anton",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Anton",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampGridball",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Anton",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Anton",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Anton",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Alissa
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Alissa",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Alissa",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampSunflower",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Alissa",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Alissa",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Alissa",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Ariah
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ariah",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ariah",
+						"3"
+					],
+					"Value": "{{ModID}}_StampCat",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ariah",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ariah",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ariah",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Bert
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bert",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bert",
+						"3"
+					],
+					"Value": "{{ModID}}_StampGridball",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bert",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bert",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bert",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Blair
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Blair",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Blair",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride, {{ModID}}_StampPufferfish",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Blair",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Blair",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Blair",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Carmen
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Carmen",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Carmen",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPufferfish",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Carmen",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Carmen",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Carmen",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Corine
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Corine",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Corine",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampPlane",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Corine",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Corine",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Corine",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Ezekiel
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ezekiel",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ezekiel",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPlane",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ezekiel",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ezekiel",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ezekiel",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Faye
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Faye",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Faye",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampSunflower",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Faye",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Faye",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Faye",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Flor
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Flor",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Flor",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampSunflower",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Flor",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Flor",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Flor",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Freddie
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Freddie",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Freddie",
+						"3"
+					],
+					"Value": "{{ModID}}_StampShadow",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Freddie",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Freddie",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Freddie",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Ian
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ian",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ian",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampGridball",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ian",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ian",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ian",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Irene
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Irene",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Irene",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampChicken",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Irene",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Irene",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Irene",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Keahi
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Keahi",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Keahi",
+						"3"
+					],
+					"Value": "{{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Keahi",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Keahi",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Keahi",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Kenneth
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kenneth",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kenneth",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampRobot",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kenneth",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kenneth",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kenneth",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Kiarra
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiarra",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiarra",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampParrot",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiarra",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiarra",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiarra",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Kimpoi
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kimpoi",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kimpoi",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPufferfish",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kimpoi",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kimpoi",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kimpoi",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Lenny
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lenny",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lenny",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lenny",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lenny",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lenny",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Lorenzo
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lorenzo",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lorenzo",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPlane",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lorenzo",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lorenzo",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lorenzo",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Louie
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Louie",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Louie",
+						"3"
+					],
+					"Value": "{{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Louie",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Louie",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Louie",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Maddie
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maddie",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maddie",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampWinterStar",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maddie",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maddie",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maddie",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Maive
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maive",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maive",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPlane",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maive",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maive",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Maive",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Malaya
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Malaya",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Malaya",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPufferfish",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Malaya",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Malaya",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Malaya",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Aguar
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Aguar",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Aguar",
+						"3"
+					],
+					"Value": "{{ModID}}_StampDwarvishHelm",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Aguar",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Aguar",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Aguar",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Naomi
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Naomi",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Naomi",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPlane",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Naomi",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Naomi",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Naomi",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Olga
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olga",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olga",
+						"3"
+					],
+					"Value": "{{ModID}}_StampWinterStar",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olga",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olga",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olga",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Paula
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Paula",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Paula",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampPlane",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Paula",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Paula",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Paula",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Philip
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Philip",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Philip",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampRobot",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Philip",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Philip",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Philip",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Pika
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Pika",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Pika",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPossum",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Pika",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Pika",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Pika",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Richard
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Richard",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Richard",
+						"3"
+					],
+					"Value": "{{ModID}}_StampChicken",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Richard",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Richard",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Richard",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Sean
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sean",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sean",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampGridball",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sean",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sean",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sean",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Shanice
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shanice",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shanice",
+						"3"
+					],
+					"Value": "{{ModID}}_StampSunflower",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shanice",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shanice",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shanice",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Shiro
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shiro",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shiro",
+						"3"
+					],
+					"Value": "{{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shiro",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shiro",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shiro",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Sonny
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sonny",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sonny",
+						"3"
+					],
+					"Value": "{{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sonny",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sonny",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sonny",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Trinnie
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Trinnie",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Trinnie",
+						"3"
+					],
+					"Value": "{{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Trinnie",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Trinnie",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Trinnie",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Jeric
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jeric",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jeric",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampGridball",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jeric",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jeric",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jeric",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///June
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"June",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"June",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampParrot",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"June",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"June",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"June",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Kiwi
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiwi",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiwi",
+						"3"
+					],
+					"Value": "{{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiwi",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiwi",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Kiwi",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Lola
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lola",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lola",
+						"3"
+					],
+					"Value": "{{ModID}}_StampShadow",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lola",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lola",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lola",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Ysabelle
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ysabelle",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ysabelle",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampSunflower",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ysabelle",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ysabelle",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Ysabelle",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Yuuma
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Yuuma",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Yuuma",
+						"3"
+					],
+					"Value": "{{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Yuuma",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Yuuma",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Yuuma",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				}
+			]
+		},
+		//these need extra conditions
+		{
+			"LogName": "Gift Tastes for Bryle",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": {
+				"HasSeenEvent: hostPlayer |contains=75160375": true
+			},
+			"TextOperations": [
+				///Bryle
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bryle",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bryle",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampDuck",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bryle",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bryle",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Bryle",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Gift Tastes for Daia and Jio",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": {
+				"HasSeenEvent: hostPlayer |contains=75160263": true
+			},
+			"TextOperations": [
+				///Daia
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Daia",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Daia",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_Junimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Daia",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Daia",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Daia",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Jio
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jio",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jio",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jio",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jio",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Jio",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Gift Tastes for Undreya",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": {
+				"HasSeenEvent: hostPlayer |contains=75160273, 75160386": true
+			},
+			"TextOperations": [
+				///Undreya
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Undreya",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Undreya",
+						"3"
+					],
+					"Value": "{{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Undreya",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Undreya",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Undreya",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Gift Tastes for Zayne",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": {
+				"HasSeenEvent: hostPlayer |contains=75160338": true
+			},
+			"TextOperations": [
+				///Zayne
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Zayne",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Zayne",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampPlane",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Zayne",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Zayne",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Zayne",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				}
+			]
+		}
+	]
+}

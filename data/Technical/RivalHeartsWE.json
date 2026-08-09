@@ -1,0 +1,110 @@
+{
+    "Changes": [
+        {
+            "LogName": "Wizard Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "wizard_sleep": "{{WizardSleep}}/{{WizardSleep}}/{{WizardSleep}}",
+                "{{ModID}}_wizard_warp": "16/16 16 16 16 16 16 16 16 16 16 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23/23",
+                "{{ModID}}_wizard_warp_arrive": "23/23 23 23 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/16"
+            }
+        },
+        {
+            "LogName": "Wizard Animations for Spacecore",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ScheduleAnimationExtensionData",
+            "Entries": {
+                "{{ModID}}_wizard_warp": {
+                    "SourceRectSize": "16, 32",
+                    "DrawOffset": "0, -0",
+                    "AppearanceOverride": null,
+                    "OnStart": {
+                        "Emote": null,
+                        "PlaySound": null
+                    },
+                    "OnEnd": {
+                        "Emote": null,
+                        "PlaySound": "wand"
+                    },
+                    "OnFrame": {}
+                },
+                "{{ModID}}_wizard_arrive": {
+                    "SourceRectSize": "16, 32",
+                    "DrawOffset": "0, -0",
+                    "AppearanceOverride": null,
+                    "OnStart": {
+                        "Emote": null,
+                        "PlaySound": "wand"
+                    },
+                    "OnEnd": {
+                        "Emote": null,
+                        "PlaySound": null
+                    },
+                    "OnFrame": {}
+                }
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Wizard",
+            "When": {
+                "HasSeenEvent": "112",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true,
+                "Spiderbuttons.CMCT/Config: jenf1.wizardenhanced, Schedule": true
+            },
+            "Entries": {
+                "Mon": "0 WizardHouse 8 5 0/700 WizardHouse 10 5 0/900 WizardHouse 11 6 1/1100 WizardHouse 3 19 2/1800 WizardHouse 10 17 2 wizard_meditate/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Tue": "610 WizardHouse 3 19 2/1230 WizardHouse 10 17 2 wizard_meditate/1900 WizardHouse 8 5 0/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Wed": "610 WizardHouse 11 29 0/800 WizardHouse 11 29 1/1140 WizardHouse 5 29 0/1300 WizardHouse 3 29 0/1740 WizardHouse 5 29 0/2000 WizardHouse 11 29 1/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Thu": "610 WizardHouse 10 17 2 wizard_meditate/1220 WizardHouse 13 9 2/1600 WizardHouse 4 7 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Fri": "610 WizardHouse 11 29 0/800 WizardHouse 11 29 1/950 WizardHouse 5 29 0/1100 WizardHouse 3 29 0/1200 Forest 10 36 2 wizard_meditate/1630 WizardHouse 3 19 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Sat": "610 Forest 51 97 1 \"Strings\\schedules\\Wizard:Wizard_WaterfallVisit\"/1200 Forest 10 36 2 wizard_meditate/1920 WizardHouse 3 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "Sun": "610 Forest 10 36 2 wizard_meditate/1300 WizardHouse 2 30 3/1500 WizardHouse 5 29 0/1600 WizardHouse 3 17 2/2000 WizardHouse 11 6 1/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "rain": "0 WizardHouse 8 5 0/700 WizardHouse 10 5 0/900 WizardHouse 11 6 1/1100 WizardHouse 3 19 2/1800 WizardHouse 10 17 2 wizard_meditate/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "GreenRain": "610 Forest 10 36 2 wizard_meditate/1800 WizardHouse 3 19 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule - Halloween",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Wizard",
+            "When": {
+                "HasSeenEvent": "112",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true,
+                "Spiderbuttons.CMCT/Config: jenf1.wizardenhanced, Schedule": true
+            },
+            "Entries": {
+                "fall_26": "610 Town 20 37 wizard_magic \"Strings\\schedules\\Wizard:fall_26.000\"/1000 Town 25 33 wizard_magic \"Strings\\schedules\\Wizard:fall_26.000\"/1100 Town 37 32 wizard_magic \"Strings\\schedules\\Wizard:fall_26.000\"/1200 Town 41 23 wizard_magic \"Strings\\schedules\\Wizard:fall_26.000\"/1300 Town 39 19 wizard_magic \"Strings\\schedules\\Wizard:fall_26.001\"/1400 Town 35 20 wizard_magic \"Strings\\schedules\\Wizard:fall_26.001\"/1500 Town 30 13 wizard_magic \"Strings\\schedules\\Wizard:fall_26.002\"/1600 Town 19 8 wizard_magic \"Strings\\schedules\\Wizard:fall_26.002\"/1700 Town 12 12 wizard_magic \"Strings\\schedules\\Wizard:fall_26.003\"/1800 Town 19 15 wizard_magic \"Strings\\schedules\\Wizard:fall_26.003\"/1900 Town 18 22 wizard_magic \"Strings\\schedules\\Wizard:fall_26.004\"/2000 Town 23 27 wizard_magic \"Strings\\schedules\\Wizard:fall_26.004\"/2100 Town 26 30 wizard_magic \"Strings\\schedules\\Wizard:fall_26.005\"/2200 Town 14 30 wizard_magic \"Strings\\schedules\\Wizard:fall_26.006\"/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "fall_27": "700 Town 51 60 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule - Bookseller",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Wizard",
+            "When": {
+                "HasSeenEvent": "112",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true,
+                "spacechase0.SpaceCore/BooksellerInTown": true,
+                "HasMod |contains=spacechase0.SpaceCore": "true",
+                "Spiderbuttons.CMCT/Config: jenf1.wizardenhanced, Schedule": true
+            },
+            "Entries": {
+                "{{Season}}_{{Day}}": "610 Town 108 27 0 \"Strings\\schedules\\Wizard:Wizard_Bookseller.1\"/1300 Town 111 27 0 \"Strings\\schedules\\Wizard:Wizard_Bookseller.2\"/1600 WizardHouse 3 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Bouquet Rejection",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Entries": {
+                "RejectBouquet": "{{i18n:MV.Municipal.RejectBouquet.Ras}}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,2983 @@
+{
+    "Changes": [
+        {
+            "LogName": "Map Patch Municipal Closed",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalClosed.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVEClosed.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 12,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVE.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 12,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal SVE - Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVE2.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 33,
+                "Y": 37,
+                "Width": 3,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDSClosed.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 16,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins - Seasonal Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDSClosed-Shop.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 16,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open - Seven Deadly Sins",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 16,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open - Seven Deadly Sins - Seasonal Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-Shop.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 16,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVEClosed.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 15,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE - Seasonal Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVEClosed-Shop.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 15,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE - Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVE2.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 36,
+                "Y": 38,
+                "Width": 2,
+                "Height": 10
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Map Patch Municipal Open - Seven Deadly Sins and SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVE.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 15,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open - Seven Deadly Sins and SVE - Seasonal Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVE-Shop.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 15,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        ///Misc story related map changes
+        {
+            "LogName": "Map Patch Municipal Snowgoon",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSnowGoon.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 23,
+                "Y": 51,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Season": "winter",
+                "HasSeenEvent |contains=63, Zilch.ALittleMoreCutscenes_FamilyReunited": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Little Free Pantry",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-LFP.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 74,
+                "Y": 90,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Bill10H": true
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late"
+        },
+        // Festival Maps
+        //Vanilla
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/Municipal-EggFestival.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/Municipal-EggFestival2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/Municipal-Fair.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/Municipal-Fair2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/Municipal-Halloween.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween2",
+            "FromFile": "Assets/Maps/Municipal-Halloween2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/Municipal-Christmas.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/Municipal-Christmas2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        //Vanilla + RSV
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/MunicipalRSV-EggFestival.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/MunicipalRSV-EggFestival2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/MunicipalRSV-Fair.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/MunicipalRSV-Fair2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        //This bit is to fudge an inconsistency with Ridgeside vs recent Vanilla changes
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1 PATCH RSV Vanilla",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/MunicipalRSV-HalloweenTEMP.tmx",
+            "ToArea": {
+                "X": 35,
+                "Y": 6,
+                "Width": 13,
+                "Height": 5
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/MunicipalRSV-Christmas.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 2 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/MunicipalRSV-Christmas2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        //The nefarious fair litterer
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 Litterer",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/Municipal-FairLitterer.tmx",
+            "ToArea": {
+                "X": 35,
+                "Y": 88,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        //SVE
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/MunicipalSVE-EggFestival.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/MunicipalSVE-EggFestival2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/MunicipalSVE-Fair.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/MunicipalSVE-Fair2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/MunicipalSVE-Halloween.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Year": "1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 2 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween2",
+            "FromFile": "Assets/Maps/MunicipalSVE-Halloween2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 3 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/MunicipalSVE-Halloween3.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97"
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/MunicipalSVE-Christmas.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 2 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/MunicipalSVE-Christmas2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Priority": "Late"
+        },
+        //SVE Expanded + RSV
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-EggFestival.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-EggFestival2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-Fair.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        //This bit is to fudge an inconsistency with Ridgeside's SVE patch vs recent SVE changes
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 PATCH SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-FairTEMP.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 34,
+                "Width": 19,
+                "Height": 4
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-Fair2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-Christmas.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-Christmas2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        //This boat was pissing me off
+        {
+            "LogName": "Map Patch Municipal Festival Luau 2",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Luau2",
+            "FromFile": "Assets/Maps/Municipal-Luau2.tmx",
+            "ToArea": {
+                "X": 54,
+                "Y": 7,
+                "Width": 3,
+                "Height": 2
+            },
+            "Priority": "Late"
+        },
+        //Other Modded Festivals
+        {
+            "LogName": "Map Patch Municipal Festival Zuzu Block Party",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DTZ_ZuzuBlockParty",
+            "FromFile": "Assets/Maps/Municipal-ZuzuBlockParty.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 36,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=DTZ.DowntownZuzuCP": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fashion Show",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_FF_FashionShow",
+            "FromFile": "Assets/Maps/Municipal-FashionShow.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=UNA.FF.CP": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Love Festival",
+            "Action": "EditMap",
+            "Target": "Maps/LoveFestivalMap",
+            "FromFile": "Assets/Maps/Municipal-LoveFest.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=AvalonMFX.LoveFestival": true
+            },
+            "Priority": "Late"
+        },
+        //Interior Patches
+        {
+            "LogName": "Map Patch Municipal Floor 1 Donations",
+            "Action": "EditMap",
+            "Target": "Maps/MunicipalFloor1",
+            "FromFile": "Assets/Maps/MunicipalFloor1Resources.tmx",
+            "ToArea": {
+                "X": 8,
+                "Y": 3,
+                "Width": 5,
+                "Height": 4
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Bill10H": true
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Floor 1 Pamphlets",
+            "Action": "EditMap",
+            "Target": "Maps/MunicipalFloor1",
+            "FromFile": "Assets/Maps/MunicipalFloor1Resources2.tmx",
+            "ToArea": {
+                "X": 16,
+                "Y": 14,
+                "Width": 2,
+                "Height": 3
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Bill10H": true
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Floor 1 Sometimes the Wolf Poster",
+            "Action": "EditMap",
+            "Target": "Maps/MunicipalFloor1",
+            "FromFile": "Assets/Maps/MunicipalFloor1STW.tmx",
+            "ToArea": {
+                "X": 18,
+                "Y": 14,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=MadDog.STW": true
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Floor 2 Book 1",
+            "Action": "EditMap",
+            "Target": "Maps/MunicipalFloor2,Maps/MunicipalFloor2-Temp",
+            "FromFile": "Assets/Maps/MunicipalFloor2Book1.tmx",
+            "ToArea": {
+                "X": 25,
+                "Y": 14,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA": false,
+                "HasSeenEvent |contains=1848481": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Floor 2 Book 2",
+            "Action": "EditMap",
+            "Target": "Maps/MunicipalFloor2,Maps/MunicipalFloor2-Temp",
+            "FromFile": "Assets/Maps/MunicipalFloor2Book2.tmx",
+            "ToArea": {
+                "X": 25,
+                "Y": 14,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA": true,
+                "HasSeenEvent |contains=1848481": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Floor 2 Book 3",
+            "Action": "EditMap",
+            "Target": "Maps/MunicipalFloor2,Maps/MunicipalFloor2-Temp",
+            "FromFile": "Assets/Maps/MunicipalFloor2Book3.tmx",
+            "ToArea": {
+                "X": 25,
+                "Y": 14,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA": true,
+                "HasSeenEvent |contains=1848481": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Floor 2 Fish 1",
+            "Action": "EditMap",
+            "Target": "Maps/MunicipalFloor2,Maps/MunicipalFloor2-Temp",
+            "FromFile": "Assets/Maps/MunicipalFloor2Fish1.tmx",
+            "ToArea": {
+                "X": 13,
+                "Y": 12,
+                "Width": 1,
+                "Height": 3
+            },
+            "When": {
+                "DaysPlayed": "50"
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Floor 2 Fish 2",
+            "Action": "EditMap",
+            "Target": "Maps/MunicipalFloor2,Maps/MunicipalFloor2-Temp",
+            "FromFile": "Assets/Maps/MunicipalFloor2Fish2.tmx",
+            "ToArea": {
+                "X": 15,
+                "Y": 3,
+                "Width": 2,
+                "Height": 3
+            },
+            "When": {
+                "DaysPlayed": "98"
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Floor 2 Chime",
+            "Action": "EditMap",
+            "Target": "Maps/MunicipalFloor2,Maps/MunicipalFloor2-Temp",
+            "FromFile": "Assets/Maps/MunicipalFloor2Chime.tmx",
+            "ToArea": {
+                "X": 26,
+                "Y": 3,
+                "Width": 1,
+                "Height": 3
+            },
+            "When": {
+                "HasSeenEvent |contains={{ModID}}_BillKrobus": true
+            },
+            "Priority": "Late"
+        },
+        ///Rival Hearts Stuff
+        {
+            "LogName": "Map Patch Municipal Rasmodius Flower",
+            "Action": "EditMap",
+            "Target": "Maps/WizardHouse",
+            "FromFile": "Assets/Maps/Municipal-RasFlower.tmx",
+            "ToArea": {
+                "X": 1,
+                "Y": 14,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_RivalHeartsRasMail2": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Rasmodius Flower - SVE",
+            "Action": "EditMap",
+            "Target": "Maps/WizardHouse",
+            "FromFile": "Assets/Maps/MunicipalSVE-RasFlower.tmx",
+            "ToArea": {
+                "X": 1,
+                "Y": 14,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_RivalHeartsRasMail2": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Rasmodius Teleport Warp",
+            "Action": "EditMap",
+            "Target": "Maps/WizardHouse",
+            "AddNpcWarps": [
+                "3 12 Municipal-WizardTeleport 0 0"
+            ],
+            "When": {
+                "HasFlag |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Map Patch Municipal - Rival Hearts Flower Festival Y1",
+            "Action": "EditMap",
+            "Target": "Maps/Forest-FlowerFestival",
+            "FromFile": "assets/Maps/Municipal-FlowerFestivalRH.tmx",
+            "ToArea": {
+                "X": 8,
+                "Y": 9,
+                "Width": 9,
+                "Height": 11
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal - Vanilla and SVE Rival Hearts Flower Festival Y2",
+            "Action": "EditMap",
+            "Target": "Maps/Forest-FlowerFestival2",
+            "FromFile": "assets/Maps/Municipal-FlowerFestivalRH.tmx",
+            "ToArea": {
+                "X": 8,
+                "Y": 9,
+                "Width": 9,
+                "Height": 11
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal - Rival Hearts Winter Star Y1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "assets/Maps/Municipal-ChristmasRH.tmx",
+            "ToArea": {
+                "X": 16,
+                "Y": 73,
+                "Width": 3,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal - Rival Hearts Winter Star 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "assets/Maps/Municipal-ChristmasRH.tmx",
+            "ToArea": {
+                "X": 16,
+                "Y": 73,
+                "Width": 3,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Lemurkat.EastScarp": false,
+                "HasFlag |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal - Rival Hearts Winter Star 2 - ESR",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "assets/Maps/Municipal-ChristmasRH2-ESR.tmx",
+            "ToArea": {
+                "X": 16,
+                "Y": 73,
+                "Width": 3,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Lemurkat.EastScarp": true,
+                "HasFlag |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal - SVE Rival Hearts Winter Star",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "assets/Maps/Municipal-ChristmasRH.tmx",
+            "ToArea": {
+                "X": 16,
+                "Y": 73,
+                "Width": 3,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal - SVE Rival Hearts Winter Star Y2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "assets/Maps/Municipal-ChristmasRH.tmx",
+            "ToArea": {
+                "X": 16,
+                "Y": 73,
+                "Width": 3,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal - SVE Rival Hearts Winter Star 2 - ESR",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "assets/Maps/Municipal-ChristmasRH2-ESR.tmx",
+            "ToArea": {
+                "X": 16,
+                "Y": 73,
+                "Width": 3,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Lemurkat.EastScarp": true,
+                "HasFlag |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Priority": "Late"
+        },
+        ///Other Compatibility stuff
+        {
+            "LogName": "Paved Valley Compatibility",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalPaved.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 3,
+                "Height": 10
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=AtlasV.PavedValley": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Paved Valley Compatibility - SVE 1",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVEPaved1.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 3,
+                "Height": 10
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=AtlasV.PavedValley": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Paved Valley Compatibility - SVE 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVEPaved2.tmx",
+            "ToArea": {
+                "X": 30,
+                "Y": 37,
+                "Width": 6,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=AtlasV.PavedValley": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Chase Compatibility",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalChase.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 39,
+                "Width": 2,
+                "Height": 10
+            },
+            "When": {
+                "HasMod |contains=Bridunow.ChaseNPC": true,
+                "HasMod |contains=MV.PelicanTownAccessibility": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Nicer Sewer Compatibility",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "FromFile": "Assets/Maps/MunicipalNicerSewer.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 30,
+                "Y": 11,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=LemurKat.CleanerSewer.CP": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Haley's Bakery Abandoned",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-HB1.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 28,
+                "Y": 48,
+                "Width": 5,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=kabulla.bakery": true,
+                "HasMod |contains=inaiinai.SVEbakery": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+                "HasSeenEvent |contains=80801010": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Haley's Bakery Open",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-HB2.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 28,
+                "Y": 48,
+                "Width": 5,
+                "Height": 6
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=kabulla.bakery": true,
+                "HasMod |contains=inaiinai.SVEbakery": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+                "HasSeenEvent |contains=80801010": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Haley's Bakery Abandoned - inaiinai SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVE-HBSVE1.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 27,
+                "Y": 48,
+                "Width": 6,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=kabulla.bakery": true,
+                "HasMod |contains=inaiinai.SVEbakery": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+                "HasSeenEvent |contains=80801010": false
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Haley's Bakery Open - inaiinai SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVE-HBSVE2.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 27,
+                "Y": 48,
+                "Width": 6,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=kabulla.bakery": true,
+                "HasMod |contains=inaiinai.SVEbakery": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+                "HasSeenEvent |contains=80801010": true
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal - Mayor Mod Pavement",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-MayorPave.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 4,
+                "Height": 6
+            },
+            "When": {
+                "HasFlag: hostPlayer | contains=EmuEngine.MayorModCP_TownRoads": true,
+                "HasMod |contains=EmuEngine.MayorModCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=MV.PelicanTownAccessibility": false
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late + 10"
+        },
+        {
+            "LogName": "Map Patch Municipal - Mayor Mod Pavement SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVE-MayorPave.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 4,
+                "Height": 6
+            },
+            "When": {
+                "HasFlag: hostPlayer | contains=EmuEngine.MayorModCP_TownRoads": true,
+                "HasMod |contains=EmuEngine.MayorModCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent: hostPlayer|contains=5553210": false,
+                "HasMod |contains=MV.PelicanTownAccessibility": false
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late + 10"
+        },
+        ///Garbage
+        {
+            "LogName": "Municipal Garbage Can",
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "TargetField": [
+                "GarbageCans"
+            ],
+            "Entries": {
+                "MV.Municipal": {
+                    "BaseChance": 1.0,
+                    "Items": [],
+                    "CustomFields": null
+                }
+            }
+        },
+        //Fire Safety
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Adventurer's Guild",
+            "Action": "EditMap",
+            "Target": "Maps/AdventureGuild",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 11,
+                "Y": 9,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Animal Shop",
+            "Action": "EditMap",
+            "Target": "Maps/AnimalShop",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 2,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Archaeology House - Desk",
+            "Action": "EditMap",
+            "Target": "Maps/ArchaeologyHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 2,
+                "Y": 8,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Archaeology House - Wall",
+            "Action": "EditMap",
+            "Target": "Maps/ArchaeologyHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 45,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Archaeology House - Wall - SVE",
+            "Action": "EditMap",
+            "Target": "Maps/ArchaeologyHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 42,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Blacksmith",
+            "Action": "EditMap",
+            "Target": "Maps/Blacksmith",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 5,
+                "Y": 9,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Community Center",
+            "Action": "EditMap",
+            "Target": "Maps/CommunityCenter_Refurbished",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 30,
+                "Y": 6,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Community Center Kitchen",
+            "Action": "EditMap",
+            "Target": "Maps/CommunityCenter_Refurbished",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 9,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Community Center - SVE Kitchen",
+            "Action": "EditMap",
+            "Target": "Maps/CommunityCenter_Refurbished",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 7,
+                "Y": 1,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Elliott",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 5,
+                "Y": 2,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": false,
+                "HasMod |contains=uglynt.elliott.home": false,
+                "HasSeenEvent |contains=ElliottPennyWedding": false,
+                "HasFlag |contains=ElliottPennyHouseUpgradeMail": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Elliott - Less Ugly",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 4,
+                "Y": 2,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=MV.SpousesMoveHouse": false,
+                "HasMod |contains=uglynt.elliott.home": true,
+                "HasSeenEvent |contains=ElliottPennyWedding": false,
+                "HasFlag |contains=ElliottPennyHouseUpgradeMail": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Elliott - Less Ugly - Spouses Move House",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 4,
+                "Y": 2,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Relationship:Elliott |contains=married": false,
+                "HasMod |contains=MV.SpousesMoveHouse": true,
+                "HasMod |contains=uglynt.elliott.home": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Elliott - Less Ugly - Spouses Move House - Married",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 15,
+                "Y": 6,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Relationship:Elliott": "married",
+                "HasMod |contains=MV.SpousesMoveHouse": true,
+                "HasMod |contains=uglynt.elliott.home": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Fish Shop",
+            "Action": "EditMap",
+            "Target": "Maps/FishShop",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 6,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Haley and Emily's",
+            "Action": "EditMap",
+            "Target": "Maps/HaleyHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 15,
+                "Y": 13,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": false,
+                "HasMod |contains=uglynt.haley.home": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Haley and Emily's - Less Ugly",
+            "Action": "EditMap",
+            "Target": "Maps/HaleyHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 12,
+                "Y": 13,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=uglynt.haley.home": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Harvey's Room",
+            "Action": "EditMap",
+            "Target": "Maps/HarveyRoom",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 17,
+                "Y": 6,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasSeenEvent |contains=HarveyMaruHouseUpgrade": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Harvey's Room - SVE",
+            "Action": "EditMap",
+            "Target": "Maps/HarveyRoom",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 18,
+                "Y": 3,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent |contains=HarveyMaruHouseUpgrade": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Hospital",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 3,
+                "Y": 11,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Morghoula.AlchemistryCP": false,
+                "HasMod |contains=uglynt.town.interiors": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Hospital - SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 7,
+                "Y": 11,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Morghoula.AlchemistryCP": false,
+                "HasMod |contains=uglynt.town.interiors": false,
+                "HasMod |contains=uglynt.hospital": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Hospital - Less Ugly",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 12,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 12,
+                        "Y": 13
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": null
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Morghoula.AlchemistryCP": false,
+                "HasMod |contains=uglynt.hospital": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - JojaMart",
+            "Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 16,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Mullners",
+            "Action": "EditMap",
+            "Target": "Maps/JoshHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 1,
+                "Y": 18,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Leah",
+            "Action": "EditMap",
+            "Target": "Maps/LeahHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 10,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Leo",
+            "Action": "EditMap",
+            "Target": "Maps/LeoTreeHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 1,
+                "Y": 3,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Lewis",
+            "Action": "EditMap",
+            "Target": "Maps/ManorHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 10,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag: hostPlayer | contains=EmuEngine.MayorModCP_ElectedAsMayor": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Linus",
+            "Action": "EditMap",
+            "Target": "Maps/Tent",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 1,
+                "Y": 3,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Movie Theater",
+            "Action": "EditMap",
+            "Target": "Maps/MovieTheater",
+            "FromFile": "Assets/Maps/FireSafety-WallB2Low.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 10,
+                "Y": 3,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Saloon",
+            "Action": "EditMap",
+            "Target": "Maps/Saloon",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 19,
+                "Y": 15,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Sam House",
+            "Action": "EditMap",
+            "Target": "Maps/SamHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 10,
+                "Y": 5,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": false,
+                "HasMod |contains=uglynt.jodi.home": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Sam House - Less Ugly",
+            "Action": "EditMap",
+            "Target": "Maps/SamHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallF1.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 1,
+                "Y": 1,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=uglynt.jodi.home": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Science House",
+            "Action": "EditMap",
+            "Target": "Maps/ScienceHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 24,
+                "Y": 9,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Science House - Lab",
+            "Action": "EditMap",
+            "Target": "Maps/ScienceHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 23,
+                "Y": 22,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=uglynt.robin.home": false,
+                "HasMod |contains=uglynt.town.interiors": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Science House - Lab - Less Ugly",
+            "Action": "EditMap",
+            "Target": "Maps/ScienceHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 23,
+                "Y": 22,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=uglynt.robin.home": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Seed Shop",
+            "Action": "EditMap",
+            "Target": "Maps/SeedShop",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 3,
+                "Y": 15,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Seed Shop - Kitchen",
+            "Action": "EditMap",
+            "Target": "Maps/SeedShop",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 33,
+                "Y": 1,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Trailer",
+            "Action": "EditMap",
+            "Target": "Maps/Trailer",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 13,
+                "Y": 5,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Trailer Upgrade",
+            "Action": "EditMap",
+            "Target": "Maps/Trailer_Big",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 20,
+                "Y": 4,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Trailer Upgrade",
+            "Action": "EditMap",
+            "Target": "Maps/Trailer_Big",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 20,
+                "Y": 13,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        //Fire Safety for SVE Residents
+        {
+            "LogName": "Municipal Fire Safety Map Patch - SVE Andy",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_AndyHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 20,
+                "Y": 13,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - SVE Claire",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ClaireHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 4,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - SVE Jenkins House",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_JenkinsHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 27,
+                "Y": 33,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - SVE Joja Emporium",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_JojaEmporium",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 24,
+                "Y": 13,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - SVE Morris",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_MorrisHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 11,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - SVE Scarlett",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ScarlettHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 8,
+                "Y": 17,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - SVE Sophia",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SophiaHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 23,
+                "Y": 19,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - SVE Susan",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SusanHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 26,
+                "Y": 11,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        //Fire Safety for Susan of Emerald Farm
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Susan of Emerald Farm",
+            "Action": "EditMap",
+            "Target": "Maps/DolphINaF.Susan_House",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 26,
+                "Y": 11,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=DolphINaF.Susan": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        //Fire Safety for Star Crossed
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Star Crossed - Shane",
+            "Action": "EditMap",
+            "Target": "Maps/StarCrossedShaneHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 7,
+                "Y": 1,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Star Crossed - Sebastian",
+            "Action": "EditMap",
+            "Target": "Maps/StarCrossedSebastianHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 26,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Star Crossed - Harvey",
+            "Action": "EditMap",
+            "Target": "Maps/HarveyRoom",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 18,
+                "Y": 16,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "HasSeenEvent": "HarveyMaruHouseUpgrade",
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Star Crossed - Elliott",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 6,
+                "Y": 4,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "HasSeenEvent": "ElliottPennyWedding",
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Star Crossed - Elliott Upgrade",
+            "Action": "EditMap",
+            "Target": "Maps/ElliottHouse",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 18,
+                "Y": 2,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "HasFlag |contains=ElliottPennyHouseUpgradeMail": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        //Fire Safety for Downhill Project
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Church",
+            "Action": "EditMap",
+            "Target": "Maps/DH.Church",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 18,
+                "Y": 22,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=DH.Kiyuga.Main": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Anderson",
+            "Action": "EditMap",
+            "Target": "Maps/DH.Anderson.House",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 18,
+                "Y": 14,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=DH.Kiyuga.Main": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Arthur",
+            "Action": "EditMap",
+            "Target": "Maps/DH.Arthur.House",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 15,
+                "Y": 6,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=DH.Kiyuga.Main": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Julia",
+            "Action": "EditMap",
+            "Target": "Maps/DH.Julia.House",
+            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 22,
+                "Y": 6,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=DH.Kiyuga.Main": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        //Fire Safety for Misc
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Haley's Bakery",
+            "Action": "EditMap",
+            "Target": "Maps/kabulla.bakery_Interior",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 6,
+                "Y": 1,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=kabulla.bakery": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        }
+    ]
+}

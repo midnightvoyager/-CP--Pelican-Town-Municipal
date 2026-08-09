@@ -1,0 +1,18 @@
+{
+	"Changes": [
+		{
+			"LogName": "CJB Cheats Warp - Municipal",
+			"Action": "EditData",
+			"Target": "Mods/CJBok.CheatsMenu/Warps",
+			"Entries": {
+				"{{ModId}}_Municipal": {
+					"Id": "{{ModId}}_Municipal",
+					"SectionId": "Town",
+					"DisplayName": "{{i18n:MV.Municipal.MapInfo.1}}",
+					"Location": "Town",
+					"Tile": "27, 48"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,78 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Blank Load for Marlon",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Priority": "Early",
+            "Entries": {
+                "Marlon": ""
+            }
+        },
+        ////Character specific gift taste
+        {
+            "LogName": "Gift Tastes for Marlon",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Priority": "Late",
+            "TextOperations": [
+                ///Marlon 
+                {
+                    // Love
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Marlon",
+                        "1"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Like
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Marlon",
+                        "3"
+                    ],
+                    "Value": "{{ModID}}_StampShadow {{ModID}}_StampDwarvishHelm",
+                    "Delimiter": " "
+                },
+                {
+                    // Dislike
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Marlon",
+                        "5"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Hate
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Marlon",
+                        "7"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Neutral
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Marlon",
+                        "9"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

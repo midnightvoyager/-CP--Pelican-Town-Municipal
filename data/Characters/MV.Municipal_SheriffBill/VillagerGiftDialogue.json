@@ -1,0 +1,33 @@
+{
+    "Changes": [
+        {
+            "LogName": "Elliott's Stamp Gift Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries": {
+                "AcceptGift_stamp_item": "{{i18n:MV.Municipal.Elliott.gift.stamps}}"
+            }
+        },
+        {
+            "LogName": "Wizard's Mana Bloom and Elixir Gift Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "Entries": {
+                "AcceptGift_(O)MV.Municipal_ManaBloom": "{{i18n:MV.Municipal.Wizard.gift.manabloom}}",
+                "AcceptGift_(O)MV.Municipal_ManaElixir": "{{i18n:MV.Municipal.Wizard.gift.manaelixir}}"
+            }
+        },
+        {
+            "LogName": "Dwarf's Last Smoluanu Stamp Gift Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dwarf",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasSeenEvent |contains=96420011": true
+            },
+            "Entries": {
+                "AcceptGift_stamp_item": "{{i18n:MV.Municipal.Dwarf.gift.shadowlike}}"
+            }
+        }
+    ]
+}

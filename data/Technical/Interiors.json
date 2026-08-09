@@ -1,0 +1,32 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Municipal Tilesheets Interior Vanilla",
+            "Action": "Load",
+            "Target": "Maps/z_municipalbuilding_interior_tiles",
+            "FromFile": "Assets/Maps/TileSheets/VanillaInterior/{{TargetWithoutPath}}.png",
+            "Priority": "Low"
+        },
+        {
+            "LogName": "Load Municipal Tilesheets Interior Earthy",
+            "Action": "Load",
+            "Target": "Maps/z_municipalbuilding_interior_tiles",
+            "FromFile": "Assets/Maps/TileSheets/EarthyInterior/{{TargetWithoutPath}}.png",
+            "Priority": "Medium",
+			"When": {
+				"HasMod": "DaisyNiko.EarthyInteriors"
+			}
+        },
+		{
+			"LogName": "Load Municipal Tilesheets Interior Vibrant",
+			"Action": "Load",
+			"Target": "Maps/z_municipalbuilding_interior_tiles",
+			"FromFile": "Assets/Maps/TileSheets/VibrantInterior/{{TargetWithoutPath}}.png",
+			"Priority": "Medium",
+			"When": {
+				"VibrantPastoral.C/Interiors": true,
+				"HasMod": "VibrantPastoral.C"
+			}
+		}
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Objects - Vegas Better Item Categories - Category Change",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Fields": {
+                "{{ModID}}_ManaBloomElixir": {
+                    "Category": -26 //Artisan Goods
+                }
+            }
+        },
+        {
+            "LogName": "Municipal Objects - Vegas Better Item Categories - Category Cosmetic Override",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": {
+                "{{ModID}}_ManaBloomElixir": {
+                    "CategoryTextOverride": "{{Spiderbuttons.CMCT/Translation: VegasOctober.BetterItemCategories, VegasOctober.BetterItemCategories.AlchemicalPotion}}"
+                }
+            }
+        }
+    ]
+}

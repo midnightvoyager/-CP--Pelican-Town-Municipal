@@ -1,0 +1,133 @@
+{
+    "Changes": [
+        ////Character specific gift taste
+        {
+            "LogName": "Gift Tastes for Museum Expansion",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Priority": "Late",
+            "TextOperations": [
+                ///Charlie
+                {
+                    // Love
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Charlie",
+                        "1"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Like
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Charlie",
+                        "3"
+                    ],
+                    "Value": "{{ModID}}_StampShadow {{ModID}}_StampDwarvishHelm",
+                    "Delimiter": " "
+                },
+                {
+                    // Dislike
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Charlie",
+                        "5"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Hate
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Charlie",
+                        "7"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Neutral
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Charlie",
+                        "9"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Gift Tastes for Gunther, non-SVE",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Priority": "Late",
+            "TextOperations": [
+                ///Gunther
+                {
+                    // Love
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherWoods",
+                        "1"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Like
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherWoods",
+                        "3"
+                    ],
+                    "Value": "{{ModID}}_StampDwarvishHelm",
+                    "Delimiter": " "
+                },
+                {
+                    // Dislike
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherWoods",
+                        "5"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Hate
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherWoods",
+                        "7"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Neutral
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherWoods",
+                        "9"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

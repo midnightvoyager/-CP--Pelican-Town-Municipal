@@ -1,0 +1,22 @@
+{
+	"Changes": [
+		{
+			"LogName": "Map Patch Municipal Overgrown Valley",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "Assets/Maps/MunicipalOV.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 21,
+				"Y": 37,
+				"Width": 15,
+				"Height": 2
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: lune.overgrown, Town": "on"
+			},
+			"Priority": "Late"
+		}
+	]
+}

@@ -1,0 +1,469 @@
+{
+    "Changes": [
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "mv.municipal_bill_sleep": "32/32/32",
+                "{{ModID}}_bill_sit": "36/36/36",
+                "{{ModID}}_bill_saloon_lunch": "43/43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 43 42 42 41 41 42 42/43//offset 16 16/laying_down",
+                "{{ModID}}_bill_fish": "8/8 8 9 9 10 10 11 11/8",
+                "{{ModID}}_bill_beach_towel": "16 17/18/17 16///laying_down",
+                "{{ModID}}_bill_readsidebench": "37/37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 38 39 38/37//offset 45 64/laying_down",
+                "{{ModID}}_bill_readside": "37/37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 37 38 39 38/37//offset 20 44/laying_down",
+                "{{ModID}}_bill_readfront": "26/26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 25 25 25/26//offset 0 -32/laying_down",
+                "{{ModID}}_bill_ticket": "33/33 33 33 33 33 33 33 33 33 33 33 33 33 33 34 34 34 35 34 35 34 35 34 35 34 35 34 35 34 35 34 35 33 33 33 33 33 33 33 33 34 35 34 35 34 35 34 35 34 35/33",
+                "{{ModID}}_bill_working": "28/28 28 28 28 28 28 28 28 28 28 28 28 28 28 29 29 29 30 29 30 29 30 29 30 29 30 29 30 29 30 29 30 28 28 28 28 28 28 28 28 29 30 29 30 29 30 29 30 29 30/31//offset 1 39/laying_down",
+                "{{ModID}}_bill_drink": "48/48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 48 49 50 50 50 51 51 50 50 51 51 50 49 48 48 48 48 48 48 48 48 48 48 48 48/48"
+            }
+        },
+        {
+            "LogName": "Animations for Spacecore",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ScheduleAnimationExtensionData",
+            "Entries": {
+                "{{ModID}}_bill_fish": {
+                    "SourceRectSize": "16, 64",
+                    "DrawOffset": "0, 100",
+                    "AppearanceOverride": null,
+                    "OnStart": {
+                        "Emote": null,
+                        "PlaySound": "slosh"
+                    },
+                    "OnEnd": {
+                        "Emote": null,
+                        "PlaySound": null
+                    },
+                    "OnFrame": {}
+                }
+            }
+        },
+        {
+            "LogName": "Bill Schedule Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "{{ModId}}_SheriffBillSleeping": "{{i18n:MV.Municipal.SheriffBill.Sleep}}",
+                "{{ModId}}_SheriffBillStakeout": "{{i18n:MV.Municipal.SheriffBill.Stakeout}}",
+                "{{ModId}}_SheriffBillShopping": "{{i18n:MV.Municipal.SheriffBill.Shopping}}",
+                "{{ModId}}_SheriffBillSaloon": "{{i18n:MV.Municipal.SheriffBill.Saloon}}",
+                "{{ModId}}_SheriffBillWizard": "{{i18n:MV.Municipal.SheriffBill.Wizard}}",
+                "{{ModId}}_SheriffBillGuild": "{{i18n:MV.Municipal.SheriffBill.Guild}}",
+                "{{ModId}}_SheriffBillCC": "{{i18n:MV.Municipal.SheriffBill.CC}}",
+                "{{ModId}}_SheriffBillBookClub": "{{i18n:MV.Municipal.BookClubDialogue}}",
+                "{{ModId}}_SheriffBillDesertFestival": "{{i18n:MV.Municipal.DesertFestivalDialogue.{{Random:{{Range: 1, 3}}}}}}",
+                "{{ModId}}_SheriffBillTroutDerby": "{{i18n:MV.Municipal.TroutDerbyDialogue.{{Random:{{Range: 1, 3}}}}}}",
+                "{{ModId}}_SheriffBillNM": "{{i18n:MV.Municipal.NightMarketDialogue.{{Random:{{Range: 1, 3}}}}}}",
+                "{{ModId}}_SheriffBillSquidfest": "{{i18n:MV.Municipal.SquidfestDialogue.{{Random:{{Range: 1, 3}}}}}}",
+                "{{ModId}}_SheriffBillPride": "{{i18n:MV.Municipal.PrideDialogue.{{Random:{{Range: 1, 3}}}}}}",
+                "{{ModId}}_SheriffBillCommunityDay": "{{i18n:MV.Municipal.CommunityDayDialogue.{{Random:{{Range: 1, 3}}}}}}",
+                "{{ModId}}_SheriffBillTwilightFestival": "{{i18n:MV.Municipal.TwilightFestivalDialogue.{{Random:{{Range: 1, 3}}}}}}",
+                "{{ModId}}_SheriffBillBookFair": "{{i18n:MV.Municipal.BookFairDialogue}}"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Strings - Night Market Ras Birthday",
+            "Action": "EditData",
+            "Target": "Strings/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "{{ModId}}_SheriffBillNMRas": "{{i18n:MV.Municipal.NightMarketDialogue.Ras.false}}"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Strings - Night Market Ras Birthday Quest",
+            "Action": "EditData",
+            "Target": "Strings/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "{{ModId}}_SheriffBillNMRas": "{{i18n:MV.Municipal.NightMarketDialogue.Ras.true}}"
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": "false",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsQuest": "true"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Unmet",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "spring": "610 Municipal-WizardTeleport 0 2 2/2200 Municipal-WizardTeleport 0 1 2"
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "false"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "GreenRain": "0 Town 44 72 2",
+                "spring": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met - Monday",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 MunicipalFloor2 24 7 0/1700 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 MunicipalFloor2 24 7 0/1700 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "DesertFestival_1": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Desert 17 8 1 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillDesertFestival\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_15": "610 Town 24 49 2 {{ModID}}_bill_readfront/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1650 Beach 14 39 1 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillNM\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Mon": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Mon": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "false",
+                "DayOfWeek": "Monday"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met - Monday + Snow",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_15": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1650 Beach 14 39 1 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillNM\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Mon": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "Season": "Winter",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "true",
+                "DayOfWeek": "Monday"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met - Tuesday",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 MunicipalFloor2 24 7 0/1700 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 MunicipalFloor2 24 7 0/1700 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "DesertFestival_2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Desert 16 15 2 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillDesertFestival\"/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_16": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 41 78 2 {{ModID}}_bill_readfront/1600 Town 55 103 1/1650 Beach 14 39 1 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillNMRas\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Tue": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 24 49 2 {{ModID}}_bill_readfront/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Tue": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 41 78 2 {{ModID}}_bill_readsidebench/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "false",
+                "DayOfWeek": "Tuesday"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met - Tuesday + Snow",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_16": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 Town 55 103 1/1650 Beach 14 39 1 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillNMRas\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Tue": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "Season": "Winter",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "true",
+                "DayOfWeek": "Tuesday"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met - Wednesday",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 MunicipalFloor2 24 7 0/1700 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 MunicipalFloor2 24 7 0/1700 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "DesertFestival_3": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Desert 17 8 1 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillDesertFestival\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_17": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1650 Beach 14 39 1 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillNM\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Wed": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Wed": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "false",
+                "DayOfWeek": "Wednesday"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met - Wednesday + Snow",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_17": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1650 Beach 14 39 1 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillNM\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Wed": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "Season": "Winter",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "true",
+                "DayOfWeek": "Wednesday"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Thursday + Rasmodius",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 24 49 2 {{ModID}}_bill_readfront/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 41 78 2 {{ModID}}_bill_readsidebench/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasMod |contains=Nom0ri.RomRas": "false",
+                "DayOfWeek": "Thursday",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "false"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Thursday + Rasmodius + Snow",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "winter_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasMod |contains=Nom0ri.RomRas": "false",
+                "DayOfWeek": "Thursday",
+                "Season": "Winter",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "true"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Thursday + Rasmodia",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 MunicipalFloor2 24 7 0/1700 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 MunicipalFloor2 24 7 0/1700 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 24 49 2 {{ModID}}_bill_readfront/1600 MunicipalFloor2 24 7 0/1800 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 41 78 2 {{ModID}}_bill_readsidebench/1600 MunicipalFloor2 24 7 0/1800 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasFlag |contains=GreenRainGus": "false",
+                "HasMod": "Nom0ri.RomRas",
+                "DayOfWeek": "Thursday",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "false"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Thursday + Rasmodia + Snow",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "winter_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 MunicipalFloor2 24 7 0/1800 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasFlag |contains=GreenRainGus": "false",
+                "HasMod": "Nom0ri.RomRas",
+                "DayOfWeek": "Thursday",
+                "Season": "Winter",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "true"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Thursday + Rasmodia Befriended",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 24 49 2 {{ModID}}_bill_readfront/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 41 78 2 {{ModID}}_bill_readsidebench/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasFlag |contains=GreenRainGus": "true",
+                "HasMod": "Nom0ri.RomRas",
+                "DayOfWeek": "Thursday",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "false"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Thursday + Rasmodia Befriended + Snow",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "winter_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasFlag |contains=GreenRainGus": "true",
+                "HasMod": "Nom0ri.RomRas",
+                "DayOfWeek": "Thursday",
+                "Season": "Winter",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "true"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Friday",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Saloon 43 21 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSaloon\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Saloon 43 21 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSaloon\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_12": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 Beach 25 34 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSquidfest\"/1700 Saloon 43 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSaloon\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Fri": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1600 Saloon 43 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSaloon\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "DayOfWeek": "Friday"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Saturday",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_13": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 Beach 24 34 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSquidfest\"/1700  AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "summer_20": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1000 Forest 89 40 2 {{ModID}}_bill_fish \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillTroutDerby\"/1700 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Sat": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 24 49 2 {{ModID}}_bill_readfront/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Sat": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 24 49 2 {{ModID}}_bill_readfront/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasMod |contains=Daine.TPOChoice": "false",
+                "DayOfWeek": "Saturday",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "false"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Saturday + Snow",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "winter_Sat": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasMod |contains=Daine.TPOChoice": "false",
+                "DayOfWeek": "Saturday",
+                "Season": "Winter",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "true"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Saturday + TPO Book Club",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_20": "a1000 Daine.TPOChoice_Aliyah_House 4 27 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillBookClub\"/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_13": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 Beach 24 34 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSquidfest\"/1700  AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "fall_20": "a1000 Daine.TPOChoice_Aliyah_House 4 27 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillBookClub\"/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "summer_20": "a1000 Daine.TPOChoice_Aliyah_House 4 27 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillBookClub\"/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_20": "a1000 Daine.TPOChoice_Aliyah_House 4 27 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillBookClub\"/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_Sat": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 24 49 2 {{ModID}}_bill_readfront/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Sat": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 24 49 2 {{ModID}}_bill_readfront/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasMod |contains=Daine.TPOChoice": "true",
+                "DayOfWeek": "Saturday",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "false"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Saturday + TPO Book Club + Snow",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "winter_Sat": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1500 AdventureGuild 7 12 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillGuild\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasMod |contains=Daine.TPOChoice": "true",
+                "DayOfWeek": "Saturday",
+                "Season": "Winter",
+                "HasFlag: hostPlayer |contains={{ModID}}_SnowTomorrow": "true"
+            }
+        },
+        {
+            "LogName": "Bill Schedule Met + Sunday",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "rain": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "summer_21": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1000 Forest 89 40 2 {{ModID}}_bill_fish \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillTroutDerby\"/1700 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1850 MunicipalFloor2 24 7 0/1930 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "spring_Sun": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 {{JojaLocation}}\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "DayOfWeek": "Sunday"
+            }
+        },
+        {
+            "LogName": "Bill Pride Festival Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "sapphicsaph_pitv.PrideFestival_1": "610 Town 24 49 2 {{ModID}}_bill_readfront/800 CommunityCenter 42 10 0 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillPride\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasMod": "sapphicsaph_pitv"
+            }
+        },
+        {
+            "LogName": "SVE Community Day",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "spring_22": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 55 13 2 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "summer_22": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 55 13 2 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "fall_22": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 55 13 2 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_22": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 55 13 2 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "IsCommunityCenterComplete": true,
+                "HasSeenEvent: hostPlayer |contains=221961715": true,
+                "HasMod: |contains=FlashShifter.SVECode": true
+            }
+        },
+        {
+            "LogName": "Bill Twilight Festival Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "skellady.SBVCP_TwilightFestival": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 41 78 2 {{ModID}}_bill_readsidebench/1500 Custom_SBV_SunberryVillage 43 27 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillTwilightFestival\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasMod": "skellady.SBVCP"
+            }
+        },
+        {
+            "LogName": "Bill Book Fair Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "spring_9": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 Town 62 27 1 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillBookFair\"/1600 Town 55 103 1/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "HasMod": "Si.BC"
+            }
+        }
+    ]
+}

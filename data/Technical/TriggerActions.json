@@ -1,0 +1,298 @@
+{
+    "Changes": [
+        {
+            "LogName": "Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_SendMunicipal_Prelude": {
+                    "Id": "{{ModID}}_SendMunicipal_Prelude",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_Municipal_Prelude now"
+                    ]
+                },
+                "{{ModID}}_SendMunicipal_Open": {
+                    "Id": "{{ModID}}_SendMunicipal_Open",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Host fertilizers",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_Municipal_Open now"
+                    ]
+                },
+                "{{ModId}}_TomorrowSnow": {
+                    "Id": "{{ModId}}_TomorrowSnow",
+                    "Trigger": "DayEnding",
+                    "Action": "IF ANY \"WORLD_STATE_FIELD WeatherForTomorrow Snow\" \"WORLD_STATE_FIELD WeatherForTomorrow Sleet\" \"WORLD_STATE_FIELD WeatherForTomorrow Kana.WeatherWonders_Blizzard\" \"WORLD_STATE_FIELD WeatherForTomorrow Kana.WeatherWonders_RainSnowMix\" \"WORLD_STATE_FIELD WeatherForTomorrow kath.weathering_Hail\" \"WORLD_STATE_FIELD WeatherForTomorrow kath.weathering_Blizzard\" ## AddMail All {{ModID}}_SnowTomorrow Received ## RemoveMail All {{ModID}}_SnowTomorrow Received",
+                    "HostOnly": true,
+                    "MarkActionApplied": false
+                },
+                "{{ModID}}_SendBill10HEvent": {
+                    "Id": "{{ModID}}_SendBill10HEvent",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HEARTS Current {{ModID}}_SheriffBill 10, PLAYER_HAS_SEEN_EVENT Current {{ModId}}_Bill8Heart, WEATHER Here Sun Wind",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_Bill10HEvent now"
+                    ]
+                },
+                "{{ModID}}_Bill10HTimer": {
+                    "Id": "{{ModID}}_Bill10HTimer",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Bill10Heart, PLAYER_STAT Current {{ModID}}_Bill10HTimer 0 3",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "IncrementStat {{ModID}}_Bill10HTimer 1"
+                    ]
+                },
+                "{{ModID}}_SendBill10H": {
+                    "Id": "{{ModID}}_SendBill10H",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_STAT Current {{ModID}}_Bill10HTimer 3",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_Bill10H now",
+                        "MarkActionApplied Current {{ModId}}_Bill10HTimer true"
+                    ]
+                },
+                "{{ModID}}_BillRivalHearts1": {
+                    "Id": "{{ModID}}_BillRivalHearts1",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON fall, {{RivalHeartsRas}}, {{WizardSingle}}, PLAYER_HEARTS Current Wizard 2, PLAYER_HEARTS Current {{ModID}}_SheriffBill 2",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_RivalHeartsRasMail1 now"
+                    ]
+                },
+                "{{ModID}}_BillRivalHearts2": {
+                    "Id": "{{ModID}}_BillRivalHearts2",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON_DAY winter 18, PLAYER_HAS_MAIL Current {{ModID}}_BillRivalHeartsQuest",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_RivalHeartsRasMail2 now"
+                    ]
+                },
+                "{{ModID}}_BillRivalHeartsTimer": {
+                    "Id": "{{ModID}}_BillRivalHeartsTimer",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_BillRivalHeartsEvent, PLAYER_STAT Current {{ModID}}_BillRivalHeartsTimer 0 3",
+                    "MarkActionApplied": false,
+                    "Actions": [
+                        "IncrementStat {{ModID}}_BillRivalHeartsTimer 1"
+                    ]
+                },
+                "{{ModID}}_BillRivalHeartsFin": {
+                    "Id": "{{ModID}}_BillRivalHeartsFin",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_STAT Current {{ModID}}_BillRivalHeartsTimer 3",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_BillRivalHeartsFin now",
+                        "AddConversationTopic MV.RHEnd",
+                        "MarkActionApplied Current {{ModId}}_BillRivalHeartsTimer true"
+                    ]
+                },
+                "{{ModID}}_ManaBloomSeedMailRH": {
+                    "Id": "{{ModID}}_ManaBloomSeedMailRH",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_BillRivalHeartsFin, PLAYER_HAS_MET Current Krobus, {{RivalHeartsRas}}",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_ManaBloomSeedMailRH tomorrow"
+                    ]
+                },
+                "{{ModID}}_ManaBloomSeedMail": {
+                    "Id": "{{ModID}}_ManaBloomSeedMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 112, !PLAYER_HAS_MAIL Current {{ModID}}_BillRivalHeartsFin, PLAYER_HAS_MET Current Krobus, PLAYER_VISITED_LOCATION Current Sewer, !{{RivalHeartsRas}}",
+                    "Actions": [
+                        "AddMail Current {{ModID}}_ManaBloomSeedMail tomorrow"
+                    ]
+                },
+                "{{ModID}}_ManaElixirRecipe": {
+                    "Id": "{{ModID}}_ElixirRecipe",
+                    "Trigger": "LocationChanged",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_ManaBloomSeedMail Received, !{{RivalHeartsRas}}",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModID}}_ManaBloomElixir true"
+                    ]
+                },
+                "{{ModID}}_ManaElixirRecipeRH": {
+                    "Id": "{{ModID}}_ElixirRecipeRH",
+                    "Trigger": "LocationChanged",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_ManaBloomSeedMailRH Received, {{RivalHeartsRas}}",
+                    "Actions": [
+                        "MarkCookingRecipeKnown Current {{ModID}}_ManaBloomElixir true"
+                    ]
+                },
+                //CT Triggers
+                "{{ModId}}_OnRailroadAccessible": {
+                    "Id": "{{ModId}}_OnRailroadAccessible",
+                    "Trigger": "DayStarted",
+                    "Condition": "LOCATION_ACCESSIBLE Railroad",
+                    "Actions": [
+                        "AddConversationTopic RailroadAccessible"
+                    ]
+                },
+                "{{ModId}}_OnLeoMoved": {
+                    "Id": "{{ModId}}_OnLeoMoved",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current leoMoved",
+                    "Actions": [
+                        "AddConversationTopic leoMoved"
+                    ]
+                },
+                "{{ModId}}_OnJojaComplete": {
+                    "Id": "{{ModId}}_OnJojaComplete",
+                    "Trigger": "DayStarted",
+                    "Condition": "{{IsJojaMartComplete}}",
+                    "Actions": [
+                        "AddConversationTopic jojaComplete"
+                    ]
+                },
+                "{{ModId}}_OnCCComplete": {
+                    "Id": "{{ModId}}_OnCCComplete",
+                    "Trigger": "DayStarted",
+                    "Condition": "{{IsCommunityCenterComplete}}",
+                    "Actions": [
+                        "AddConversationTopic ccComplete"
+                    ]
+                },
+                "{{ModId}}_OnJojaStruck": {
+                    "Id": "{{ModId}}_OnJojaStruck",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current abandonedJojaMartAccessible",
+                    "Actions": [
+                        "AddConversationTopic abandonedJojaMartAccessible"
+                    ]
+                },
+                "{{ModId}}_OnWillyBoatFixed": {
+                    "Id": "{{ModId}}_OnWillyBoatFixed",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current willyBoatFixed",
+                    "Actions": [
+                        "AddConversationTopic willyBoatFixed"
+                    ]
+                },
+                "{{ModId}}_OnIslandResortOpen": {
+                    "Id": "{{ModId}}_OnIslandResortOpen",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current Island_Resort",
+                    "Actions": [
+                        "AddConversationTopic Island_Resort"
+                    ]
+                },
+                "{{ModId}}_OnAdoption": {
+                    "Id": "{{ModId}}_OnAdoption",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current adoptionLetter",
+                    "Actions": [
+                        "AddConversationTopic adoptionLetter"
+                    ]
+                },
+                "{{ModId}}_OnChildArrive": {
+                    "Id": "{{ModId}}_OnChildArrive",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CHILDREN Current 1",
+                    "Actions": [
+                        "AddConversationTopic ChildArrive"
+                    ]
+                },
+                "{{ModId}}_OnSandyMet": {
+                    "Id": "{{ModId}}_OnSandyMet",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_VISITED_LOCATION Current SandyHouse",
+                    "Actions": [
+                        "AddConversationTopic MV.SheriffSandy"
+                    ]
+                },
+                "{{ModId}}_AfterCaughtLegend": {
+                    "Id": "{{ModId}}_AfterCaughtLegend",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CAUGHT_FISH Current (O)159 (O)160 (O)163 (O)682 (O)775",
+                    "Actions": [
+                        "AddConversationTopic MV.CaughtLegend"
+                    ]
+                },
+                //Mod CT Triggers
+                "{{ModId}}_OnKrobusMetLitD": {
+                    "Id": "{{ModId}}_OnKrobusMetLitD",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_BillKrobus, {{HasMod |contains = 7thAxis.LitD}}",
+                    "Actions": [
+                        "AddConversationTopic MV.KrobusSen"
+                    ]
+                },
+                "{{ModId}}_OnSchoolRepaired": {
+                    "Id": "{{ModId}}_OnSchoolRepaired",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 9695001, {{HasMod |contains = Xiddav.LittleRedSchoolHouse}}",
+                    "Actions": [
+                        "AddConversationTopic MV.SchoolRepaired"
+                    ]
+                },
+                "{{ModId}}_OnAlchemistryStabilizer": {
+                    "Id": "{{ModId}}_OnAlchemistryStabilizer",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 22743109",
+                    "Actions": [
+                        "AddConversationTopic MV.AlchemistryStabilizer"
+                    ]
+                },
+                "{{ModId}}_OnRangerMentionSmuggler": {
+                    "Id": "{{ModId}}_OnRangerMentionSmuggler",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 21226",
+                    "Actions": [
+                        "AddConversationTopic MV.RangerMentionSmuggler"
+                    ]
+                },
+                "{{ModId}}_OnJulietMet": {
+                    "Id": "{{ModId}}_OnJulietMet",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MET Current Juliet",
+                    "Actions": [
+                        "AddConversationTopic MV.SheriffJuliet"
+                    ]
+                },
+                "{{ModId}}_AliyahFamily": {
+                    "Id": "{{ModId}}_AliyahFamily",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MET Current Daine.TPOChoice_Aliyah, PLAYER_HAS_SEEN_EVENT Current MV.Municipal_Bill2Heart",
+                    "Actions": [
+                        "AddConversationTopic MV.AliyahFamily"
+                    ]
+                },
+                "{{ModId}}_TallLadies": {
+                    "Id": "{{ModId}}_TallLadies",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MET Current Clara.Ripley, PLAYER_HAS_MET Current Daine.TPOChoice_Aliyah, !PLAYER_HAS_RUN_TRIGGER_ACTION {{ModId}}_TallLadies2 {{ModId}}_TallLadies3",
+                    "Actions": [
+                        "AddConversationTopic MV.TallLadies"
+                    ]
+                },
+                "{{ModId}}_TallLadies2": {
+                    "Id": "{{ModId}}_TallLadies2",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MET Current Clara.Ripley, PLAYER_HAS_MET Current NassiLove.AikawaAsakaiCP_Arumi, !PLAYER_HAS_RUN_TRIGGER_ACTION {{ModId}}_TallLadies {{ModId}}_TallLadies3",
+                    "Actions": [
+                        "AddConversationTopic MV.TallLadies"
+                    ]
+                },
+                "{{ModId}}_TallLadies3": {
+                    "Id": "{{ModId}}_TallLadies3",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MET Current NassiLove.AikawaAsakaiCP_Arumi, PLAYER_HAS_MET Current Daine.TPOChoice_Aliyah, !PLAYER_HAS_RUN_TRIGGER_ACTION {{ModId}}_TallLadies {{ModId}}_TallLadies2",
+                    "Actions": [
+                        "AddConversationTopic MV.TallLadies"
+                    ]
+                },
+                //Auto Reset Terrain Features zone
+                "{{ModId}}_RTF": {
+                    "Id": "{{ModId}}_RTF",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_ClearTerrainFeatures Town All 23 40 32 51",
+                        "Spiderbuttons.BETAS_ClearObjects Town All 23 40 32 51",
+                        "Spiderbuttons.BETAS_RegeneratePathsLayer Town 23 40 9 11"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,818 @@
+{
+	"Changes": [
+		////Character specific gift taste
+		{
+			"LogName": "Gift Tastes for SVE",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				///Andy
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Andy",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Andy",
+						"3"
+					],
+					"Value": "{{ModID}}_StampGridball",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Andy",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Andy",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Andy",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Claire
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Claire",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Claire",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampSunflower",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Claire",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Claire",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Claire",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+
+                ///Gunther
+                {
+                    // Love
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherSilvian",
+                        "1"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Like
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherSilvian",
+                        "3"
+                    ],
+                    "Value": "{{ModID}}_StampDwarvishHelm",
+                    "Delimiter": " "
+                },
+                {
+                    // Dislike
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherSilvian",
+                        "5"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Hate
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherSilvian",
+                        "7"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Neutral
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "GuntherSilvian",
+                        "9"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                ///Marlon 
+                {
+                    // Love
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MarlonFay",
+                        "1"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Like
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MarlonFay",
+                        "3"
+                    ],
+                    "Value": "{{ModID}}_StampShadow {{ModID}}_StampDwarvishHelm",
+                    "Delimiter": " "
+                },
+                {
+                    // Dislike
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MarlonFay",
+                        "5"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Hate
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MarlonFay",
+                        "7"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Neutral
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MarlonFay",
+                        "9"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+				///Martin
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Martin",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Martin",
+						"3"
+					],
+					"Value": "{{ModID}}_StampWinterStar",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Martin",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Martin",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Martin",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Morris
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"MorrisTod",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"MorrisTod",
+						"3"
+					],
+					"Value": "{{ModID}}_StampWinterStar",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"MorrisTod",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"MorrisTod",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"MorrisTod",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Morgan
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Morgan",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Morgan",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampJunimo {{ModID}}_StampFrog",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Morgan",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Morgan",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Morgan",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Olivia
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olivia",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olivia",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampSunflower",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olivia",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olivia",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Olivia",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Scarlett
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Scarlett",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Scarlett",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampDuck",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Scarlett",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Scarlett",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Scarlett",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Sophia
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sophia",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sophia",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampDuck",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sophia",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sophia",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Sophia",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Susan
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Susan",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Susan",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampSunflower",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Susan",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Susan",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Susan",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				///Victor
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Victor",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Victor",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampDuck",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Victor",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Victor",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Victor",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				}
+			]
+		},
+		//these two need extra conditions
+		{
+			"LogName": "Gift Tastes for Apples",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": {
+				"HasSeenEvent: hostPlayer |contains=7775927": true
+			},
+			"TextOperations": [
+				///Apples
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Apples",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Apples",
+						"3"
+					],
+					"Value": "{{ModID}}_StampJunimo",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Apples",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Apples",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Apples",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Gift Tastes for Lance",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": {
+				"HasSeenEvent: hostPlayer |contains=6951319": true
+			},
+			"TextOperations": [
+				///Lance
+				{
+					// Love
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lance",
+						"1"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Like
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lance",
+						"3"
+					],
+					"Value": "{{ModID}}_StampPride {{ModID}}_StampDwarvishHelm {{ModID}}_StampShadow",
+					"Delimiter": " "
+				},
+				{
+					// Dislike
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lance",
+						"5"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Hate
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lance",
+						"7"
+					],
+					"Value": "",
+					"Delimiter": " "
+				},
+				{
+					// Neutral
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Lance",
+						"9"
+					],
+					"Value": "",
+					"Delimiter": " "
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="6" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="36" nextobjectid="254">
+ <properties>
+  <property name="DefaultWarpLocation" value="60 13"/>
+ </properties>
+ <tileset firstgid="1" name="municipalbuilding_tiles" tilewidth="16" tileheight="16" tilecount="96" columns="8">
+  <image source="spring_municipalbuilding_tiles.png" width="128" height="192"/>
+  <tile id="86">
+   <animation>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="81" duration="50"/>
+    <frame tileid="89" duration="50"/>
+    <frame tileid="81" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+    <frame tileid="86" duration="50"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="2" name="Buildings" width="6" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,
+96,95,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="35" name="Front" width="6" height="8">
+  <data encoding="csv">
+88,87,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+</map>

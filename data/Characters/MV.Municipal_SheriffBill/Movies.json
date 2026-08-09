@@ -1,0 +1,281 @@
+{
+    "Changes": [
+        {
+            "LogName": "Bill's Concession Tastes",
+            "Action": "EditData",
+            "Target": "Data/ConcessionTastes",
+            "Entries": {
+                "{{ModID}}_SheriffBill": {
+                    "Name": "{{ModID}}_SheriffBill",
+                    "LovedTags": [
+                        "Sweet",
+                        "Hot"
+                    ],
+                    "LikedTags": [
+                        "Salty"
+                    ],
+                    "DislikedTags": [
+                        "Joja",
+                        "Gourmet"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Bill's Movie Reactions",
+            "Action": "EditData",
+            "Target": "Data/MoviesReactions",
+            "Entries": {
+                "{{ModID}}_SheriffBill": {
+                    "NPCName": "{{ModID}}_SheriffBill",
+                    "Reactions": [
+                        {
+                            "Tag": "spring_movie_0", //Brave Little Sapling
+                            "Response": "reject",
+                            "Whitelist": [],
+                            "SpecialResponses": {},
+                            "ID": "reaction_0"
+                        },
+                        {
+                            "Tag": "spring_movie_1", //Natural Wonders
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.NaturalWonders.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:MV.Municipal.NaturalWonders.2}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.NaturalWonders.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "summer_movie_0", //Prairie King
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.PrairieKing.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": "PK_villain",
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.PrairieKing.2}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.PrairieKing.3}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "summer_movie_1", //Wumbus
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.Wumbus.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:MV.Municipal.Wumbus.2}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.Wumbus.3}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "fall_movie_0", //Mysterium
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.Mysterium.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.Mysterium.2}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.Mysterium.3}}"
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "fall_movie_1", //It Howls In The Rain
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MV.Municipal.ItHowlsInTheRain.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.ItHowlsInTheRain.2}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.ItHowlsInTheRain.3}}"
+                                }
+                            },
+                            "ID": "reaction_5"
+                        },
+                        {
+                            "Tag": "winter_movie_0", //Miracle At Coldstar Ranch
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.MiracleAtColdstarRanch.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:MV.Municipal.MiracleAtColdstarRanch.2}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.MiracleAtColdstarRanch.3}}"
+                                }
+                            },
+                            "ID": "reaction_6"
+                        },
+                        {
+                            "Tag": "winter_movie_1", //Zuzu City Express
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.ZuzuExpress.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": "null",
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.ZuzuExpress.2}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:MV.Municipal.ZuzuExpress.3}}"
+                                }
+                            },
+                            "ID": "reaction_7"
+                        },
+                        {
+                            "Tag": "Evgen1310.ClaireFilm", //Thief of Justice Movie
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MV.Municipal.ThiefOfJustice.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:MV.Municipal.ThiefOfJustice.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MV.Municipal.ThiefOfJustice.3}}"
+                                }
+                            },
+                            "ID": "reaction_9"
+                        },
+                        {
+                            "Tag": "DolphINaF.Claire_ToJMovie", //Also Thief of Justice Movie
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MV.Municipal.ThiefOfJustice.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:MV.Municipal.ThiefOfJustice.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MV.Municipal.ThiefOfJustice.3}}"
+                                }
+                            },
+                            "ID": "reaction_9"
+                        },
+                        {
+                            "Tag": "TheLimeyDragon.Movie_Summer1", //The Limey Dragon Movie
+                            "Response": "reject",
+                            "Whitelist": [],
+                            "SpecialResponses": {},
+                            "ID": "reaction_10"
+                        },
+                        {
+                            "Tag": "*", //Generic
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MV.Municipal.GenericMovie.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:MV.Municipal.GenericMovie.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:MV.Municipal.GenericMovie.3}}"
+                                }
+                            },
+                            "ID": "reaction_11"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+{
+       "Changes": [
+              {
+                     "LogName": "Municipal Interior Locations",
+                     "Action": "EditData",
+                     "Target": "Data/Locations",
+                     "Entries": {
+                            "MunicipalFloor1": {
+                                   "DisplayName": "{{i18n:MV.Municipal.MapInfo1}}",
+                                   "CreateOnLoad": {
+                                          "MapPath": "Maps/MunicipalFloor1",
+                                          "AlwaysActive": true
+                                   },
+                                   "DefaultArrivalTile": {
+                                          "X": 3,
+                                          "Y": 6
+                                   },
+                                   "ExcludeFromNpcPathfinding": false,
+                                   "ArtifactSpots": [],
+                                   "FishAreas": {},
+                                   "Fish": [],
+                                   "Forage": [],
+                                   "CustomFields": {}
+                            },
+                            "MunicipalCells": {
+                                   "DisplayName": "{{i18n:MV.Municipal.MapInfo3}}",
+                                   "CreateOnLoad": {
+                                          "MapPath": "Maps/MunicipalCells",
+                                          "AlwaysActive": true
+                                   },
+                                   "DefaultArrivalTile": {
+                                          "X": 0,
+                                          "Y": 1
+                                   },
+                                   "ExcludeFromNpcPathfinding": false,
+                                   "ArtifactSpots": [],
+                                   "FishAreas": {},
+                                   "Fish": [],
+                                   "Forage": [],
+                                   "CustomFields": {}
+                            },
+                            "MunicipalFloor2": {
+                                   "DisplayName": "{{i18n:MV.Municipal.MapInfo2}}",
+                                   "CreateOnLoad": {
+                                          "MapPath": "Maps/MunicipalFloor2",
+                                          "AlwaysActive": true
+                                   },
+                                   "DefaultArrivalTile": {
+                                          "X": 3,
+                                          "Y": 6
+                                   },
+                                   "ExcludeFromNpcPathfinding": false,
+                                   "ArtifactSpots": [],
+                                   "FishAreas": {},
+                                   "Fish": [],
+                                   "Forage": [],
+                                   "CustomFields": {}
+                            },
+                            "Municipal-WizardTeleport": {
+                                   "CreateOnLoad": {
+                                          "MapPath": "Maps/Municipal-WizardTeleport",
+                                          "AlwaysActive": true
+                                   },
+                                   "DefaultArrivalTile": {
+                                          "X": 0,
+                                          "Y": 1
+                                   },
+                                   "ExcludeFromNpcPathfinding": false,
+                                   "ArtifactSpots": [],
+                                   "FishAreas": {},
+                                   "Fish": [],
+                                   "Forage": [],
+                                   "CustomFields": {}
+                            },
+                            "Municipal-BillZone": {
+                                   "CreateOnLoad": {
+                                          "MapPath": "Maps/Municipal-BillZone",
+                                          "AlwaysActive": true
+                                   },
+                                   "DefaultArrivalTile": {
+                                          "X": 0,
+                                          "Y": 1
+                                   },
+                                   "ExcludeFromNpcPathfinding": false,
+                                   "ArtifactSpots": [],
+                                   "FishAreas": {},
+                                   "Fish": [],
+                                   "Forage": [],
+                                   "CustomFields": {}
+                            }
+                     }
+              },
+              {
+                     "LogName": "Remove Teleport Waiting Room From NPC Map Locations",
+                     "Action": "EditData",
+                     "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+                     "Entries": {
+                            "Municipal-WizardTeleport": {
+                                   "Exclude": true
+                            },
+                            "Municipal-BillZone": {
+                                   "Exclude": true
+                            }
+                     },
+                     "When": {
+                            "HasMod |contains=Bouhm.NPCMapLocations": true
+                     }
+              }
+       ]
+}

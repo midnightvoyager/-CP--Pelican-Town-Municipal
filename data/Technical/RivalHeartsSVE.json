@@ -1,0 +1,175 @@
+{
+    "Changes": [
+        {
+            "LogName": "Wizard Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "wizard_sleep": "{{WizardSleep}}/{{WizardSleep}}/{{WizardSleep}}",
+                "{{ModID}}_wizard_warp": "16/16 16 16 16 16 16 16 16 16 16 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23/23",
+                "{{ModID}}_wizard_warp_arrive": "23/23 23 23 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/16"
+            }
+        },
+        {
+            "LogName": "Wizard Animations for Spacecore",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ScheduleAnimationExtensionData",
+            "Entries": {
+                "{{ModID}}_wizard_warp": {
+                    "SourceRectSize": "16, 32",
+                    "DrawOffset": "0, -0",
+                    "AppearanceOverride": null,
+                    "OnStart": {
+                        "Emote": null,
+                        "PlaySound": null
+                    },
+                    "OnEnd": {
+                        "Emote": null,
+                        "PlaySound": "wand"
+                    },
+                    "OnFrame": {}
+                },
+                "{{ModID}}_wizard_arrive": {
+                    "SourceRectSize": "16, 32",
+                    "DrawOffset": "0, -0",
+                    "AppearanceOverride": null,
+                    "OnStart": {
+                        "Emote": null,
+                        "PlaySound": "wand"
+                    },
+                    "OnEnd": {
+                        "Emote": null,
+                        "PlaySound": null
+                    },
+                    "OnFrame": {}
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "Wizard"
+            ],
+            "Entries": {
+                "CanBeRomanced": "{{WizardAvailable}}"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule - Olivia Meetings Cut Off",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Wizard",
+            "When": {
+                "Spouse |contains=Olivia, Wizard": false,
+                "Relationship:Wizard": "unmet, friendly",
+                "Relationship:Olivia": "unmet, friendly",
+                "Season |contains=Summer": true,
+                "Day |contains=25": true,
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHearts1": false
+            },
+            "Entries": {
+                "25": "630 WizardHouse 10 17 2 Wizard_Meditate/1210 WizardHouse 10 29 0/1240 WizardHouse 11 32 1/1300 WizardHouse 7 32 3/1320 WizardHouse 2 29 0/1340 WizardHouse 2 29 3/1400 WizardHouse 5 17 2/2230 WizardHouse 7 21 1 \"Strings\\schedules\\Wizard:OliviaVisitWhichTotallyIsNotWhatYouThinkItIs.001\"/2250 WizardHouse 2 4 1 wizard_sleep \"Strings\\schedules\\Wizard:OliviaVisitWhichTotallyIsNotWhatYouThinkItIs.002\""
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule - Olivia Meetings Cut Off - Strings",
+            "Action": "EditData",
+            "Target": "Strings/Schedules/Wizard",
+            "When": {
+                "Relationship:Wizard": "unmet, friendly",
+                "Relationship:Olivia": "unmet, friendly",
+                "Season |contains=Summer": true,
+                "Day |contains=25": true,
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHearts1": false
+            },
+            "Entries": {
+                "OliviaVisitWhichTotallyIsNotWhatYouThinkItIs.001": "{{i18n:WizardOlivia.01}}",
+                "OliviaVisitWhichTotallyIsNotWhatYouThinkItIs.002": "{{i18n:WizardOlivia.02}}"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule - Olivia Stops Visiting",
+            "Action": "EditData",
+            "Target": "Characters/Schedules/Olivia",
+            "When": {
+                "Spouse |contains=Olivia, Wizard": false,
+                "Relationship:Wizard": "unmet, friendly",
+                "Relationship:Olivia": "unmet, friendly",
+                "Season |contains=Summer": true,
+                "Day |contains=25": true,
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHearts1": false
+            },
+            "Entries": {
+                "25": "0 Custom_JenkinsHouse 19 5 0/610 Custom_JenkinsHouse 5 8 0/700 Custom_JenkinsHouse 34 37 0 Olivia_Wash/1030 Custom_JenkinsHouse 16 12 0 Olivia_Art/1310 Town 24 72 3/1600 Custom_JenkinsHouse 32 37 2 Olivia_Wine2/1910 WizardHouse 9 21 3 \"Strings\\schedules\\Olivia:WizardVisitWhichTotallyIsNotWhatYouThinkItIs.001\"/2250 WizardHouse 3 4 1 Olivia_Sleep \"Strings\\schedules\\Olivia:WizardVisitWhichTotallyIsNotWhatYouThinkItIs.002\""
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule - Olivia Stops Visiting - Strings",
+            "Action": "EditData",
+            "Target": "Strings/Schedules/Olivia",
+            "When": {
+                "Relationship:Wizard": "unmet, friendly",
+                "Relationship:Olivia": "unmet, friendly",
+                "Season |contains=Summer": true,
+                "Day |contains=25": true,
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHearts1": false
+            },
+            "Entries": {
+                "WizardVisitWhichTotallyIsNotWhatYouThinkItIs.001": "{{i18n:WizardOlivia.03}}",
+                "WizardVisitWhichTotallyIsNotWhatYouThinkItIs.002": "{{i18n:WizardOlivia.04}}"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Wizard",
+            "When": {
+                "HasSeenEvent": "112",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Entries": {
+                //Checks books in room, brews potions, meditates in basement, meditates upstairs
+                "Mon": "610 WizardHouse 1 5 0/900 WizardHouse 3 19 2/950 WizardHouse 2 22 0/1030 WizardHouse 1 19 0/1100 WizardHouse 3 22 0/1130 WizardHouse 8 13 0/1200 Custom_WizardBasement 23 6 2 Wizard_Meditate/1630 WizardHouse 5 17 2/1800 WizardHouse 10 17 2 Wizard_Meditate/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                //Brews potions, meditates, goes to sleep
+                "Tue": "930 WizardHouse 3 22 0/1130 WizardHouse 2 17 3/1150 WizardHouse 8 13 0/1240 WizardHouse 10 17 2 Wizard_Meditate/1600 WizardHouse 3 19 2 Wizard_LookDown/1700 WizardHouse 4 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                //In basement all day
+                "Wed": "900 WizardHouse 3 17 1/1130 Custom_WizardBasement 23 6 2 Wizard_Meditate/1800 Custom_WizardBasement 14 5 0/1840 Custom_WizardBasement 18 5 0/1940 WizardHouse 3 22 0/2120 WizardHouse 4 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                //Meditates all morning, checks plants, brews potions
+                "Thu": "630 WizardHouse 10 17 2 Wizard_Meditate/1210 WizardHouse 10 29 0/1240 WizardHouse 11 32 1/1300 WizardHouse 7 32 3/1320 WizardHouse 2 29 0/1340 WizardHouse 2 29 3/1400 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                //In basement all morning reading, goes outside and meditates, brews potions
+                "Fri": "610 WizardHouse 2 17 3/630 Custom_WizardBasement 4 18 3/730 Custom_WizardBasement 4 16 3/750 Custom_WizardBasement 4 14 3/820 Custom_WizardBasement 4 10 3/850 Custom_WizardBasement 10 13 0/920 Custom_WizardBasement 11 13 0/940 Custom_WizardBasement 13 13 0/1000 Custom_WizardBasement 19 13 0/1020 Custom_WizardBasement 21 13 0/1040 Custom_WizardBasement 14 5 0/1110 Custom_WizardBasement 19 5 0/1130 Custom_WizardBasement 23 5 0/1210 WizardHouse 4 17 2/1330 Forest 14 29 2 Wizard_Meditate/1640 WizardHouse 4 17 2/1740 WizardHouse 3 22 0/1840 WizardHouse 3 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                //Stands in one spot for the day (it's like the "CLASSIC" spot in vanilla SDV)
+                "Sat": "730 WizardHouse 5 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                //Meditates outside, gathers samples from magic crops, goes inside
+                "Sun": "610 WizardHouse 5 17 2/630 Forest 14 29 2 Wizard_Meditate/830 WizardHouse 5 15 2/1050 Forest 5 21 3/1140 Forest 3 19 2/1220 Forest 3 23 0/1240 Forest 5 21 3/1300 WizardHouse 8 13 0/1400 WizardHouse 2 17 3/1430 WizardHouse 10 17 2 Wizard_Concentrate2/1600 WizardHouse 4 17 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                //Checks books in room, brews potions, meditates in basement, meditates upstairs
+                "rain": "610 WizardHouse 1 5 0/900 WizardHouse 3 19 2/950 WizardHouse 2 22 0/1030 WizardHouse 1 19 0/1100 WizardHouse 3 22 0/1130 WizardHouse 8 13 0/1200 Custom_WizardBasement 23 6 2 Wizard_Meditate/1630 WizardHouse 5 17 2/1800 WizardHouse 10 17 2 Wizard_Meditate/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "marriage_DesertFestival_1": "800 Desert 37 17 0 \"Strings\\schedules\\Wizard:DesertFestival_Wizard_marriage\"/2510 bed"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Schedule - Halloween",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Wizard",
+            "When": {
+                "HasMod |contains=Parrot.RomRas": true,
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Entries": {
+                "fall_26": "610 Town 20 37 wizard_magic \"Strings\\schedules\\Wizard:fall_26.000\"/1000 Town 28 33 wizard_magic \"Strings\\schedules\\Wizard:fall_26.000\"/1100 Town 37 32 wizard_magic \"Strings\\schedules\\Wizard:fall_26.000\"/1200 Town 41 23 wizard_magic \"Strings\\schedules\\Wizard:fall_26.000\"/1300 Town 39 19 wizard_magic \"Strings\\schedules\\Wizard:fall_26.001\"/1400 Town 35 20 wizard_magic \"Strings\\schedules\\Wizard:fall_26.001\"/1500 Town 30 13 wizard_magic \"Strings\\schedules\\Wizard:fall_26.002\"/1600 Town 19 8 wizard_magic \"Strings\\schedules\\Wizard:fall_26.002\"/1700 Town 12 12 wizard_magic \"Strings\\schedules\\Wizard:fall_26.003\"/1800 Town 19 15 wizard_magic \"Strings\\schedules\\Wizard:fall_26.003\"/1900 Town 18 22 wizard_magic \"Strings\\schedules\\Wizard:fall_26.004\"/2000 Town 23 27 wizard_magic \"Strings\\schedules\\Wizard:fall_26.004\"/2100 Town 26 30 wizard_magic \"Strings\\schedules\\Wizard:fall_26.005\"/2200 Town 14 30 wizard_magic \"Strings\\schedules\\Wizard:fall_26.006\"/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep",
+                "fall_27": "700 Town 51 60 2/2200 WizardHouse 3 13 0 {{ModID}}_wizard_warp/2210 Municipal-WizardTeleport 0 1 2/2220 MunicipalFloor2 25 7 0 {{ModID}}_wizard_warp_arrive/2230 MunicipalFloor2 4 7 2 wizard_sleep"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Bouquet Rejection",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Entries": {
+                "RejectBouquet": "{{i18n:MV.Municipal.RejectBouquet.Ras}}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Crafting Recipes",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModID}}_ManaBloomElixir": "{{ModID}}_ManaBloom 1 422 1 766 20/Home/{{ModID}}_ManaBloomElixir 1/false/none/"
+            }
+        },
+        {
+            "LogName": "Municipal Cooking Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModID}}_HushPuppies": "-5 1 -6 1 246 1 270 1/25 5/{{ModID}}_HushPuppies/f {{ModID}}_SheriffBill 3/",
+                "{{ModID}}_BiscuitandGravy": "-6 1 246 2/25 5/{{ModID}}_BiscuitandGravy/f {{ModID}}_SheriffBill 7/"
+            }
+        }
+    ]
+}

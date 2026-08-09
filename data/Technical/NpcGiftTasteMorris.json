@@ -1,0 +1,142 @@
+{
+    "Changes": [
+        ////Character specific gift taste
+        {
+            "LogName": "Gift Tastes for Morris Redeemed",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "HasMod |contains=SiTheGreat.MorrisRedeemed": true,
+                "HasSeenEvent": "26220101"
+            },
+            "Priority": "Late",
+            "TextOperations": [
+                ///Morris
+                {
+                    // Love
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Si_MR_Morris",
+                        "1"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Like
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Si_MR_Morris",
+                        "3"
+                    ],
+                    "Value": "{{ModID}}_StampWinterStar",
+                    "Delimiter": " "
+                },
+                {
+                    // Dislike
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Si_MR_Morris",
+                        "5"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Hate
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Si_MR_Morris",
+                        "7"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Neutral
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Si_MR_Morris",
+                        "9"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        ////Character specific gift taste
+        {
+            "LogName": "Gift Tastes for Marry Morris",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "HasMod |contains=Yoshimax.MarryMorris": true,
+                "HasSeenEvent": "191393"
+            },
+            "Priority": "Late",
+            "TextOperations": [
+                ///Morris
+                {
+                    // Love
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MorrisTod",
+                        "1"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Like
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MorrisTod",
+                        "3"
+                    ],
+                    "Value": "{{ModID}}_StampWinterStar {{ModID}}_StampPride",
+                    "Delimiter": " "
+                },
+                {
+                    // Dislike
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MorrisTod",
+                        "5"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Hate
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MorrisTod",
+                        "7"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                },
+                {
+                    // Neutral
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "MorrisTod",
+                        "9"
+                    ],
+                    "Value": "",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

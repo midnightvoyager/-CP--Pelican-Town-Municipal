@@ -1,0 +1,94 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Hospital",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 3,
+                "Y": 11,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Morghoula.AlchemistryCP, HarveysClinic": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Hospital - SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 7,
+                "Y": 11,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Morghoula.AlchemistryCP, HarveysClinic": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Hospital - Less Ugly",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 12,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 12,
+                        "Y": 13
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": null
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Morghoula.AlchemistryCP": false,
+                "HasMod |contains=uglynt.hospital": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Fire Safety Map Patch - Hospital - Alchemistry",
+            "Action": "EditMap",
+            "Target": "Maps/Hospital",
+            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 4,
+                "Y": 12,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Morghoula.AlchemistryCP, HarveysClinic": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "FireSafety": true
+            },
+            "Priority": "Late + 1"
+        }
+    ]
+}

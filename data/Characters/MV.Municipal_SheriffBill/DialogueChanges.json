@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "LogName": "Sebastian Y2 Snowgoon Dialog Changes",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "When": {
+                "HasSeenEvent: hostPlayer |contains=63": true
+            },
+            "Entries": {
+                "winter_Sun": "{{i18n:MV.Municipal.Dialogue.SebSnow.1.{{HasMod |contains=Kantrip.OlderSebastian}}}}",
+                "winter_Sun6": "{{i18n:MV.Municipal.Dialogue.SebSnow.2.{{HasMod |contains=Kantrip.OlderSebastian}}}}"
+            }
+        },
+        {
+            "LogName": "Haley's Donation Change After Bill's 10H",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_Bill10H": true
+            },
+            "Entries": {
+                "winter_Thu6": "{{i18n:MV.Municipal.Dialogue.HaleyDonate}}"
+            }
+        }
+    ]
+}

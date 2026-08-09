@@ -1,0 +1,38 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Pantry - Chance of Snail",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "{{ModId}}_Pantry",
+                "Items"
+            ],
+            "Entries": {
+                "7thAxis.LitD_Items.VoidLavaSnail": {
+                    "Id": "7thAxis.LitD_Items.VoidLavaSnail",
+                    "ItemId": "7thAxis.LitD_Items.VoidLavaSnail"
+                }
+            },
+			"When": {
+				"Spiderbuttons.CMCT/Config: 7thAxis.LitD, Void Snail Content": true,
+                "Query: {{Random: {{Range: 1, 20}}|key=SNAIL}} = 1": true
+			}
+        },
+		{
+			"LogName": "Bill's Lurking in the Dark Alpha Content Dialogue Override",
+			"Action": "EditData",
+			"Update": "OnLocationChange",
+			"Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+			"Priority": "Late",
+			"Entries": {
+				"{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.LitD.{{Random:{{Range: 1, 3}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+			},
+			"When": {
+				"Query: {{Random: {{Range: 1, 20}}|key=LitDDO}} = 1": true,
+				"HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+				"Spiderbuttons.CMCT/Config: 7thAxis.LitD, Void Snail Content": true
+			}
+		}
+    ]
+}

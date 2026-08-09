@@ -1,0 +1,12 @@
+{
+  "Changes": [
+    {
+      "LogName": "Municipal Dynamic Strings",
+      "Action": "EditData",
+      "Target": "Strings/MV.Municipal",
+      "Entries": {
+        "WinterStarRas": "{{i18n:MV.Municipal.WinterStarRas.{{Spiderbuttons.CMCT/Config: BURAKMESE.SKE, EnableDouglas}}}}"
+      }
+    }
+  ]
+}

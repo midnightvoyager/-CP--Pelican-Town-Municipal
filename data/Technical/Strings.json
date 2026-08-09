@@ -1,0 +1,156 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Dynamic Strings",
+            "Action": "EditData",
+            "Target": "Strings/MV.Municipal",
+            "Entries": {
+                //Bill's Family
+                "BillHusband": "{{i18n:MV.Municipal.Husband.{{HasFlag |contains=BillFam}}}}",
+                "BillDaughter": "{{i18n:MV.Municipal.Daughter.{{HasFlag |contains=BillFam}}}}",
+                "BillMother": "{{i18n:MV.Municipal.Mother.{{HasFlag |contains=BillFam}}}}",
+                "BillMotherHM": "{{i18n:MV.Municipal.Mother.HM.{{HasFlag |contains=BillFam}}}}",
+                //Rasmodius/Rasmodia
+                "RasName": "{{i18n:MV.Municipal.Ras.Name.{{HasMod |contains=Nom0ri.RomRas}}}}",
+                "RasJob": "{{i18n:MV.Municipal.Ras.Job.{{HasMod |contains=Nom0ri.RomRas}}}}",
+                "RasGenderHis": "{{i18n:MV.Municipal.Ras.Gender.His.{{HasMod |contains=Nom0ri.RomRas}}}}",
+                "RasGenderHim": "{{i18n:MV.Municipal.Ras.Gender.Him.{{HasMod |contains=Nom0ri.RomRas}}}}",
+                "RasGenderHe": "{{i18n:MV.Municipal.Ras.Gender.He.{{HasMod |contains=Nom0ri.RomRas}}}}",
+                "RasGenderHimself": "{{i18n:MV.Municipal.Ras.Gender.Himself.{{HasMod |contains=Nom0ri.RomRas}}}}",
+                "RasGenderGuy": "{{i18n:MV.Municipal.Ras.Gender.Guy.{{HasMod |contains=Nom0ri.RomRas}}}}",
+                //Pierre/Piper
+                "PierreName": "{{i18n:MV.Municipal.Pierre.Name.{{HasMod |contains=Heliax.PiperAPierreRewrite}}}}",
+                "PierreGenderHe": "{{i18n:MV.Municipal.Pierre.Gender.He.{{HasMod |contains=Heliax.PiperAPierreRewrite}}}}",
+                "PierreGenderHis": "{{i18n:MV.Municipal.Pierre.Gender.His.{{HasMod |contains=Heliax.PiperAPierreRewrite}}}}",
+                //Marlon/Marlen
+                "MarlonName": "{{i18n:MV.Municipal.Marlon.Name.{{HasMod |contains=DolphINaF.Marlen}}}}",
+                "MarlonFella": "{{i18n:MV.Municipal.Marlon.Fella.{{HasMod |contains=DolphINaF.Marlen}}}}",
+                "MarlonGenderHe": "{{i18n:MV.Municipal.Marlon.Gender.He.{{HasMod |contains=DolphINaF.Marlen}}}}",
+                "MarlonGenderHim": "{{i18n:MV.Municipal.Marlon.Gender.Him.{{HasMod |contains=DolphINaF.Marlen}}}}",
+                //Morris/Morrissa
+                "MorrisName": "{{i18n:MV.Municipal.Morris.Name.{{HasMod |contains=LeelooStardew.Morissa}}}}",
+                "MorrisFella": "{{i18n:MV.Municipal.Morris.Fella.{{HasMod |contains=LeelooStardew.Morissa}}}}",
+                "MorrisMr": "{{i18n:MV.Municipal.Morris.Mr.{{HasMod |contains=LeelooStardew.Morissa}}}}",
+                "MorrisSir": "{{i18n:MV.Municipal.Morris.Sir.{{HasMod |contains=LeelooStardew.Morissa}}}}",
+                "MorrisGenderHe": "{{i18n:MV.Municipal.Morris.Gender.He.{{HasMod |contains=LeelooStardew.Morissa}}}}",
+                "MorrisGenderHis": "{{i18n:MV.Municipal.Morris.Gender.His.{{HasMod |contains=LeelooStardew.Morissa}}}}",
+                "MorrisGenderHim": "{{i18n:MV.Municipal.Morris.Gender.Him.{{HasMod |contains=LeelooStardew.Morissa}}}}",
+                "MorrisGenderHimself": "{{i18n:MV.Municipal.Morris.Gender.Himself.{{HasMod |contains=LeelooStardew.Morissa}}}}",
+                //DSV Options
+                "MullnerName": "{{i18n:MV.Municipal.MullnerName.{{MullnerNameToken}}}}",
+                "AbiShes": "{{i18n:MV.Municipal.Abi.Shes.{{NonbinaryAbigailToken}}}}",
+                "AbiShe": "{{i18n:MV.Municipal.Abi.She.{{NonbinaryAbigailToken}}}}",
+                "AbiHer": "{{i18n:MV.Municipal.Abi.She.{{NonbinaryAbigailToken}}}}",
+                "EmilyShe": "{{i18n:MV.Municipal.Emily.She.{{NonbinaryEmilyToken}}}}",
+                "SebHimself": "{{i18n:MV.Municipal.Seb.Himself.{{NonbinarySebastianToken}}}}",
+                "SebBoy": "{{i18n:MV.Municipal.Seb.Boy.{{NonbinarySebastianToken}}}}",
+                "SebHe": "{{i18n:MV.Municipal.Seb.He.{{NonbinarySebastianToken}}}}",
+                "SebHim": "{{i18n:MV.Municipal.Seb.Him.{{NonbinarySebastianToken}}}}",
+                "SebHis": "{{i18n:MV.Municipal.Seb.His.{{NonbinarySebastianToken}}}}",
+                "SebHimShort": "{{i18n:MV.Municipal.Seb.Him.Short.{{NonbinarySebastianToken}}}}",
+                //Other Hasmods
+                "FreeLibrary": "{{i18n:MV.Municipal.LFL.{{HasMod |contains=tiakall.LFL}}}}",
+                "HarveyPhilip": "{{i18n:MV.Municipal.RSVPT.{{HasMod|contains=Rafseazz.RSVCP}}}}",
+                "MailCarrier": "{{i18n:MV.Municipal.MailCarrier.{{HasMod |contains=TheLimeyDragon.Ayeisha}}}}"
+            }
+        },
+        {
+            "LogName": "Municipal Dynamic Strings - SKE Compat",
+            "Action": "EditData",
+            "Target": "Strings/MV.Municipal",
+            "Entries": {
+                "WinterStarRas": "{{i18n:MV.Municipal.WinterStarRas.false}}"
+            },
+            "When": {
+                "HasMod |contains = BURAKMESE.SKE": "false"
+            }
+        },
+        {
+            "LogName": "Municipal Map Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": {
+                "MunicipalFlavorFair": "{{i18n:MV.Municipal.Flavor.Fair}}",
+                "MunicipalFlavorDTZ": "{{i18n:MV.Municipal.BlockPartyDialogue.{{Random:{{Range: 1, 3}}}}}}",
+                "MunicipalFlavor1": "{{i18n:MV.Municipal.Flavor.1}}",
+                "MunicipalFlavor2": "{{i18n:MV.Municipal.Flavor.2}}",
+                "MunicipalFlavor3": "{{i18n:MV.Municipal.Flavor.3}}",
+                "MunicipalFlavor4": "{{i18n:MV.Municipal.Flavor.4}}",
+                "MunicipalFlavor5": "{{i18n:MV.Municipal.Flavor.5}}",
+                "MunicipalFlavor6": "{{i18n:MV.Municipal.Flavor.6}}",
+                "MunicipalFlavor7": "{{i18n:MV.Municipal.Flavor.7}}",
+                "MunicipalFlavor8": "{{i18n:MV.Municipal.Flavor.8}}",
+                "MunicipalFlavor9": "{{i18n:MV.Municipal.Flavor.9.{{HasSeenEvent|contains=MV.Municipal_Bill2Heart}}}}",
+                "MunicipalFlavor10": "{{i18n:MV.Municipal.Flavor.10}}",
+                "MunicipalFlavor11": "{{i18n:MV.Municipal.Flavor.11}}",
+                "MunicipalFlavor12": "{{i18n:MV.Municipal.Flavor.12}}",
+                "MunicipalFlavor13": "{{i18n:MV.Municipal.Flavor.13}}",
+                "MunicipalFlavor14": "{{i18n:MV.Municipal.Flavor.14}}",
+                "MunicipalFlavor15": "{{i18n:MV.Municipal.Flavor.15}}",
+                "MunicipalFlavor16": "{{i18n:MV.Municipal.Flavor.16}}",
+                "MunicipalFlavor17": "{{i18n:MV.Municipal.Flavor.17}}",
+                "MunicipalFlavor18": "{{i18n:MV.Municipal.Flavor.18}}",
+                "MunicipalFlavor19": "{{i18n:MV.Municipal.Flavor.19.{{HasSeenEvent|contains=MV.Municipal_Bill2Heart}}}}",
+                "MunicipalFlavor20": "{{i18n:MV.Municipal.Flavor.20}}",
+                "MunicipalFlavor21": "{{i18n:MV.Municipal.Flavor.21}}",
+                "MunicipalFlavor22": "{{i18n:MV.Municipal.Flavor.22}}",
+                "MunicipalFlavor23": "{{i18n:MV.Municipal.Flavor.23}}",
+                "MunicipalFlavor24": "{{i18n:MV.Municipal.Flavor.24}}",
+                "MunicipalFlavor25": "{{i18n:MV.Municipal.Flavor.25}}",
+                "MunicipalFlavor26": "{{i18n:MV.Municipal.Flavor.26}}",
+                "MunicipalFlavor27": "{{i18n:MV.Municipal.Flavor.27}}",
+                "MunicipalFlavor28": "{{i18n:MV.Municipal.Flavor.28}}",
+                "MunicipalFlavor29": "{{i18n:MV.Municipal.Flavor.29}}",
+                "MunicipalFlavor30": "{{i18n:MV.Municipal.Flavor.30}}",
+                "MunicipalFlavor31": "{{i18n:MV.Municipal.Flavor.31}}",
+                "MunicipalFlavor32": "{{i18n:MV.Municipal.Flavor.32.{{HasMod |contains=Kantrip.OlderSebastian}}}}",
+                "MunicipalFlavor33": "{{i18n:MV.Municipal.Flavor.33}}",
+                "MunicipalFlavor34": "{{i18n:MV.Municipal.Flavor.34}}",
+                "MunicipalFlavor35": "{{i18n:MV.Municipal.Flavor.35}}",
+                "MunicipalFlavor36": "{{i18n:MV.Municipal.Flavor.36}}",
+                "MunicipalFlavor37": "{{i18n:MV.Municipal.Flavor.37}}",
+                "MunicipalFlavor38": "{{i18n:MV.Municipal.Flavor.38}}",
+                "MunicipalFlavor39": "{{i18n:MV.Municipal.Flavor.39}}",
+                "MunicipalFlavor40": "{{i18n:MV.Municipal.Flavor.40}}",
+                "MunicipalFlavor41": "{{i18n:MV.Municipal.Flavor.41}}",
+                "MunicipalFlavor42": "{{i18n:MV.Municipal.Flavor.42}}",
+                "MunicipalFlavor43": "{{i18n:MV.Municipal.Flavor.43}}",
+                "MunicipalFlavor44": "{{i18n:MV.Municipal.Flavor.44}}",
+                "MunicipalFlavor45": "{{i18n:MV.Municipal.Flavor.45}}",
+                "MunicipalFlavor46": "{{i18n:MV.Municipal.Flavor.46}}",
+                "MunicipalFlavor47": "{{i18n:MV.Municipal.Flavor.47}}",
+                "MunicipalFlavor48": "{{i18n:MV.Municipal.Flavor.48}}",
+                "MunicipalFlavor49": "{{i18n:MV.Municipal.Flavor.49}}",
+                "MunicipalFlavor50": "{{i18n:MV.Municipal.Flavor.50}}",
+                "MunicipalFlavor51": "{{i18n:MV.Municipal.Flavor.51}}",
+                "MunicipalFlavor52": "{{i18n:MV.Municipal.Flavor.52.{{HasFlag|contains=ccVault}}}}",
+                "MunicipalFlavor53": "{{i18n:MV.Municipal.Flavor.53}}",
+                "MunicipalFlavor54": "{{i18n:MV.Municipal.Flavor.54}}",
+                "MunicipalFlavor55": "{{i18n:MV.Municipal.Flavor.55.{{HasFlag|contains={{ModID}}_BillMet}}}}",
+                "MunicipalFlavor56": "{{i18n:MV.Municipal.Flavor.56}}",
+                "MunicipalFlavorWizard": "{{i18n:MV.Municipal.Flavor.Wizard}}"
+            }
+        },
+        {
+            "LogName": "Portraits for All - Sad Duke and Alicia Festivals",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Priority": "Late + 50",
+            "Entries": {
+                "MunicipalFlavorFair": "Portraits/MV.Municipal_SadDuke \"{{i18n:MV.Municipal.SadDuke}}\"🐬{{i18n:MV.Municipal.Flavor.Fair}}",
+                "MunicipalFlavorDTZ": "Portraits/MV.Municipal_ClerkAlicia \"{{i18n:MV.Municipal.Alicia}}\"🐬{{i18n:MV.Municipal.BlockPartyDialogue.{{Random:{{Range: 1, 3}}}}}}"
+            },
+            "When": {
+                "HasMod": "mushymato.PortraitsForAll"
+            }
+        },
+        {
+            "LogName": "Municipal Conditional CS Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "ItemDeliveryQuest.cs.13327": "{{i18n:MV.Municipal.SebRocks.{{HasSeenEvent|contains=MV.Municipal_BillSeb}}}}"
+            }
+        }
+    ]
+}

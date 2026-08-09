@@ -1,0 +1,790 @@
+{
+	"Changes": [
+        {
+            "LogName": "Map Patch - Municipal Chase Ramp Compatibility",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalChase.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 39,
+                "Width": 2,
+                "Height": 10
+            },
+            "When": {
+                "HasMod |contains=Bridunow.ChaseNPC": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": false
+            },
+            "Priority": "Late + 2"
+        },
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "Assets/Maps/TownRamp1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "HasMod |contains=AtlasV.PavedValley": false
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Paved Valley",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "Assets/Maps/TownRamp1-PV.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "HasMod |contains=AtlasV.PavedValley": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 1",
+			"Action": "EditMap",
+			"Target": "Maps/Town-EggFestival",
+			"FromFile": "Assets/Maps/TownRamp1-EggFestival1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 2",
+			"Action": "EditMap",
+			"Target": "Maps/Town-EggFestival2",
+			"FromFile": "Assets/Maps/TownRamp1-EggFestival2.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 1",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Fair",
+			"FromFile": "Assets/Maps/TownRamp1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 2",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Fair2",
+			"FromFile": "Assets/Maps/TownRamp1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 1",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Halloween",
+			"FromFile": "Assets/Maps/TownRamp1-Halloween1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 2",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Halloween2",
+			"FromFile": "Assets/Maps/TownRamp1-Halloween2.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 18,
+				"Y": 40,
+				"Width": 5,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 1",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Christmas",
+			"FromFile": "Assets/Maps/TownRamp1-Christmas1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 2",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Christmas2",
+			"FromFile": "Assets/Maps/TownRamp1-Christmas2.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Egg Festival 1",
+			"Action": "EditMap",
+			"Target": "Maps/Town-EggFestival",
+			"FromFile": "Assets/Maps/TownRamp1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Egg Festival 2",
+			"Action": "EditMap",
+			"Target": "Maps/Town-EggFestival2",
+			"FromFile": "Assets/Maps/TownRamp1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Fair 1",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Fair",
+			"FromFile": "Assets/Maps/TownRamp1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Fair 2",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Fair2",
+			"FromFile": "Assets/Maps/TownRamp1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Christmas 1",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Christmas",
+			"FromFile": "Assets/Maps/TownRamp1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Christmas 2",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Christmas2",
+			"FromFile": "Assets/Maps/TownRamp1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "Assets/Maps/TownRamp1-SVE.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "HasMod |contains=AtlasV.PavedValley": false
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - SVE - Paved Valley",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-PV.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "HasMod |contains=AtlasV.PavedValley": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 1 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-EggFestival",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-EggFestival1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 2 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-EggFestival2",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-EggFestival2.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 1 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Fair",
+			"FromFile": "Assets/Maps/TownRamp1-SVE.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 2 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Fair2",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-Fair2.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 1 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Halloween",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-Halloween1.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 2 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Halloween2",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-Halloween2.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 18,
+				"Y": 40,
+				"Width": 5,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 3 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Halloween",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-Halloween3.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97",
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+            },
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 1 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Christmas",
+			"FromFile": "Assets/Maps/TownRamp1-SVE.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 2 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Christmas2",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-Christmas2.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Egg Festival 1 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-EggFestival",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-EggFestival-RSV.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Egg Festival 2 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-EggFestival2",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-EggFestival-RSV.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Fair 1 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Fair",
+			"FromFile": "Assets/Maps/TownRamp1-SVE.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Fair 2 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Fair2",
+			"FromFile": "Assets/Maps/TownRamp1-SVE.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Christmas 1 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Christmas",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-Christmas-RSV.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Christmas 2 - SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town-Christmas2",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-Christmas-RSV.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - SDS",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "Assets/Maps/TownRamp1-SDS.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 36,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - SDS + SVE",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "Assets/Maps/TownRamp1-SVE-SDS.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 36,
+				"Width": 4,
+				"Height": 7
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+		{
+			"LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fashion Festival",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_FF_FashionShow",
+			"FromFile": "Assets/Maps/TownRamp1-FashionShow.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 19,
+				"Y": 40,
+				"Width": 4,
+				"Height": 8
+			},
+			"When": {
+				"HasMod |contains=UNA.FF.CP": true,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+			},
+			"Priority": "Late + 2"
+		},
+        {
+            "LogName": "Map Patch Municipal - Mayor Mod Pavement",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-MayorPave.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 4,
+                "Height": 6
+            },
+            "When": {
+                "HasFlag: hostPlayer | contains=EmuEngine.MayorModCP_TownRoads": true,
+                "HasMod |contains=EmuEngine.MayorModCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": false
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late + 10"
+        },
+        {
+            "LogName": "Map Patch Municipal - Mayor Mod Pavement SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVE-MayorPave.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 4,
+                "Height": 6
+            },
+            "When": {
+                "HasFlag: hostPlayer | contains=EmuEngine.MayorModCP_TownRoads": true,
+                "HasMod |contains=EmuEngine.MayorModCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent: hostPlayer|contains=5553210": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": false
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late + 10"
+        },
+        {
+            "LogName": "Map Patch Municipal - Mayor Mod Pavement - Ramps",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-MayorPave-Ramp.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 37,
+                "Width": 6,
+                "Height": 6
+            },
+            "When": {
+                "HasFlag: hostPlayer | contains=EmuEngine.MayorModCP_TownRoads": true,
+                "HasMod |contains=EmuEngine.MayorModCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late + 10"
+        },
+        {
+            "LogName": "Map Patch Municipal - Mayor Mod Pavement SVE - Ramps",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVE-MayorPave-Ramp.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 37,
+                "Width": 6,
+                "Height": 6
+            },
+            "When": {
+                "HasFlag: hostPlayer | contains=EmuEngine.MayorModCP_TownRoads": true,
+                "HasMod |contains=EmuEngine.MayorModCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent: hostPlayer|contains=5553210": false,
+				"Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
+            },
+            "Update": "OnDayStart",
+            "Priority": "Late + 10"
+        }
+	]
+}

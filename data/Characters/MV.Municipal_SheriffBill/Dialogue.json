@@ -1,0 +1,894 @@
+{
+    "Changes": [
+        {
+            "LogName": "Bill's Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Entries": {
+                //SPECIFIC DAY DIALOG
+                "summer_24": "{{i18n:MV.Municipal.Dialogue.WillyBirthday}}",
+                "fall_5": "{{i18n:MV.Municipal.Dialogue.ElliottBirthday}}",
+                "winter_3": "{{i18n:MV.Municipal.Dialogue.BillBirthdayBefore}}",
+                "winter_4": "{{i18n:MV.Municipal.Dialogue.BillBirthday}}",
+                "winter_17": "{{i18n:MV.Municipal.Dialogue.WizardBirthday}}",
+                //CONDITIONAL DIALOG
+                "HitBySlingshot": "{{i18n:MV.Municipal.HitBySlingshot}}",
+                "GreenRain": "{{i18n:MV.Municipal.GreenRain.{{HasMod |contains=Nom0ri.RomRas}}}}",
+                "GreenRain2": "{{i18n:MV.Municipal.GreenRain2}}",
+                "GreenRainFinished": "{{i18n:MV.Municipal.GreenRainFinished}}",
+                "DumpsterDiveComment": "{{i18n:MV.Municipal.Dumpster}}",
+                "FlowerDance_Decline": "{{i18n:MV.Municipal.FlowerDance_Decline}}",
+                "Fair_Judging": "{{i18n:MV.Municipal.Fair_Judging}}",
+                "Fair_Judged_PlayerLost_PurpleShorts": "{{i18n:MV.Municipal.Fair_PlayerLost_PurpleShorts}}",
+                "Fair_Judged_PlayerLost_Skipped": "{{i18n:MV.Municipal.Fair_PlayerLost_Skipped}}",
+                "Fair_Judged_PlayerLost": "{{i18n:MV.Municipal.Fair_PlayerLost}}",
+                "Fair_Judged_PlayerWon": "{{i18n:MV.Municipal.Fair_PlayerWon}}",
+                "Fair_Judged": "{{i18n:MV.Municipal.Fair_Judged}}",
+                "WinterStar_GiveGift_Before": "{{i18n:MV.Municipal.WinterStar_GiveGift_Before}}",
+                "WinterStar_GiveGift_After": "{{i18n:MV.Municipal.WinterStar_GiveGift_After}}",
+                "WinterStar_ReceiveGift": "{{i18n:MV.Municipal.WinterStar_ReceiveGift}}",
+                "MovieInvitation": "{{i18n:MV.Municipal.MovieInvitation}}",
+                "RejectBouquet": "{{i18n:MV.Municipal.RejectBouquet.}}",
+                "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:MV.Municipal.RejectMovieTicket_AlreadyInvited}}",
+                "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:MV.Municipal.RejectMovieTicket_AlreadyWatched}}",
+                "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:MV.Municipal.RejectMovieTicket_DontWantToSeeThatMovie}}",
+                "Resort_Entering": "{{i18n:MV.Municipal.Resort_Entering}}",
+                "Resort": "{{i18n:MV.Municipal.Resort}}",
+                "Resort_Shore": "{{i18n:MV.Municipal.Resort_Shore}}",
+                "Resort_Towel": "{{i18n:MV.Municipal.Resort_Towel}}",
+                "Resort_Bar": "{{i18n:MV.Municipal.Resort_Bar}}",
+                "Resort_Leaving": "{{i18n:MV.Municipal.Resort_Leaving}}",
+                //Mobile Phone
+                "MobilePhoneGreeting": "{{i18n:MV.Municipal.MobilePhoneGreeting.{{Random: {{Range: 1,5}}}}}}",
+                "MobilePhoneReminisce": "{{i18n:MV.Municipal.MobilePhoneReminisce}}",
+                "MobilePhoneGoodBye": "{{i18n:MV.Municipal.MobilePhoneGoodBye}}",
+                //Vanilla CTs
+                "cc_Begin": "{{i18n:MV.Municipal.CT.CC_Begin}}",
+                "cc_Boulder": "{{i18n:MV.Municipal.CT.CC_Boulder}}",
+                "cc_Bus": "{{i18n:MV.Municipal.CT.CC_Bus}}",
+                "joja_Begin": "{{i18n:MV.Municipal.CT.Joja_Begin}}",
+                "movieTheater": "{{i18n:MV.Municipal.CT.MovieTheater}}",
+                "pamHouseUpgrade": "{{i18n:MV.Municipal.CT.pamHouseUpgrade}}",
+                "pamHouseUpgradeAnon": "{{i18n:MV.Municipal.CT.pamHouseUpgradeAnon}}",
+                "married": "{{i18n:MV.Municipal.CT.Married}}",
+                "willyCrabs": "{{i18n:MV.Municipal.CT.WillyCrabs}}",
+                "wonEggHunt": "{{i18n:MV.Municipal.CT.WonEggHunt}}",
+                "wonGrange": "{{i18n:MV.Municipal.CT.WonGrange.{{HasMod |contains=Heliax.PiperAPierreRewrite}}}}",
+                "wonIceFishing": "{{i18n:MV.Municipal.CT.WonIceFishing}}",
+                "eventSeen_63": "{{i18n:MV.Municipal.CT.KentHome}}",
+                "eventSeen_Zilch.ALittleMoreCutscenes_FamilyReunited": "{{i18n:MV.Municipal.CT.KentHome}}",
+                "elliottGone": "{{i18n:MV.Municipal.CT.elliottGone}}",
+                "haleyCakewalk2": "{{i18n:MV.Municipal.CT.haleyCakewalk2}}",
+                "sebastianFrog2": "{{i18n:MV.Municipal.CT.sebastianFrog2}}",
+                "married_Elliott": "{{i18n:MV.Municipal.CT.married_Elliott}}",
+                "married_Wizard": "{{i18n:MV.Municipal.CT.married_Wizard}}",
+                "married_{{Marlon}}": "{{i18n:MV.Municipal.CT.married_Marlon}}",
+                "married_{{Morris}}": "{{i18n:MV.Municipal.CT.married_Morris}}",
+                "married_Willy": "{{i18n:MV.Municipal.CT.married_Willy}}",
+                "married_Gil": "{{i18n:MV.Municipal.CT.married_Gil}}",
+                "married_Gabriel": "{{i18n:MV.Municipal.CT.married_MarlonNibling}}",
+                "married_Zinnia": "{{i18n:MV.Municipal.CT.married_MarlonNibling}}",
+                "eventSeen_53": "{{i18n:MV.Municipal.CT.LeahArtShow}}",
+                "eventSeen_1848481": "{{i18n:MV.Municipal.CT.ElliottReading}}",
+                "eventSeen_4081148": "{{i18n:MV.Municipal.CT.SamShow}}",
+                //Municipal CTs
+                "MV.SheriffGuild": "{{i18n:MV.Municipal.CT.SheriffGuild_Bill}}",
+                "MV.SheriffWizard": "{{i18n:MV.Municipal.CT.SheriffWizard_Bill.{{HasMod |contains=Nom0ri.RomRas}}}}",
+                "MV.SheriffLinus": "{{i18n:MV.Municipal.CT.SheriffLinus_Bill}}",
+                "MV.SheriffMorris": "{{i18n:MV.Municipal.CT.SheriffMorris_Bill}}",
+                "MV.SheriffShane1": "{{i18n:MV.Municipal.CT.BillShane1_Bill}}",
+                "MV.SheriffShane2": "{{i18n:MV.Municipal.CT.BillShane2_Bill}}",
+                "MV.Sheriff2H": "{{i18n:MV.Municipal.CT.Sheriff2H_Bill}}",
+                "MV.Sheriff4H": "{{i18n:MV.Municipal.CT.Sheriff4H_Bill}}",
+                "MV.Sheriff6H": "{{i18n:MV.Municipal.CT.Sheriff6H_Bill}}",
+                "MV.Sheriff8H": "{{i18n:MV.Municipal.CT.Sheriff8H_Bill}}",
+                "MV.Sheriff10H": "{{i18n:MV.Municipal.CT.Sheriff10H_Bill}}",
+                "MV.BillRivalHearts": "{{i18n:MV.Municipal.CT.BillRivalHearts_Bill}}",
+                "MV.BillRasDate3": "{{i18n:MV.Municipal.CT.BillRasDate3_Bill}}",
+                "MV.BillRasDate4": "{{i18n:MV.Municipal.CT.BillRasDate4_Bill}}",
+                "MV.MorrisPunch": "{{i18n:MV.Municipal.CT.CCPunch}}",
+                //Trigger Action CTs
+                "RailroadAccessible": "{{i18n:MV.Municipal.CT.RailroadAccessible.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP, DolphINaF.Susan}}}}",
+                "ccComplete": "{{i18n:MV.Municipal.CT.CCComplete}}",
+                "jojaComplete": "{{i18n:MV.Municipal.CT.joja_Complete}}",
+                "abandonedJojaMartAccessible": "{{i18n:MV.Municipal.CT.abandonedJojaMartAccessible}}",
+                "willyBoatRepaired": "{{i18n:MV.Municipal.CT.WillyBoatRepaired}}",
+                "islandResortUnlocked": "{{i18n:MV.Municipal.CT.islandResortUnlocked}}",
+                "leoMoved": "{{i18n:MV.Municipal.CT.LeoMoved}}",
+                "adoptionLetter": "{{i18n:MV.Municipal.CT.adoptionLetter}}",
+                "childArrive": "{{i18n:MV.Municipal.CT.childArrive}}",
+                "MV.CaughtLegend": "{{i18n:MV.Municipal.CT.CaughtLegend}}",
+                //Mod CTs
+                "EliasHouseBegin": "{{i18n:MV.Municipal.CT.EliasHouseBegin}}",
+                "ReihanaIntro": "{{i18n:MV.Municipal.CT.ReihanaIntro}}",
+                "ReihanaIntro_memory_oneweek": "{{i18n:MV.Municipal.CT.ReihanaIntro_memory_oneweek}}",
+                "eventSeen_skellady.SBVCP_20031472": "{{i18n:MV.Municipal.CT.SilasWizard}}",
+                "SterlingTrain": "{{i18n:MV.Municipal.CT.SterlingTrain}}",
+                "SterlingDrugs": "{{i18n:MV.Municipal.CT.SterlingDrugs}}",
+                "SterlingDrugsShaneSober": "{{i18n:MV.Municipal.CT.SterlingDrugs}}",
+                "SterlingSobriety": "{{i18n:MV.Municipal.CT.SterlingSobriety}}",
+                "SterlingRelapse": "{{i18n:MV.Municipal.CT.SterlingRelapse}}",
+                "SterlingDinner": "{{i18n:MV.Municipal.CT.SterlingDinner}}",
+                "SterlingRiver": "{{i18n:MV.Municipal.CT.SterlingRiver}}",
+                "hayforhorses": "{{i18n:MV.Municipal.CT.hayforhorses}}",
+                "JasperGone2": "{{i18n:MV.Municipal.CT.JasperGone2}}",
+                "JasperHomeA": "{{i18n:MV.Municipal.CT.JasperHomeA}}",
+                "eventSeen_86571115": "{{i18n:MV.Municipal.CT.JulietSmashMelons}}",
+                "eventSeen_57874015": "{{i18n:MV.Municipal.CT.JulietMomsGossip}}",
+                "eventSeen_63984302": "{{i18n:MV.Municipal.CT.JulietStaying}}",
+                "eventSeen_6398311": "{{i18n:MV.Municipal.CT.JulietParents}}",
+                "Juliet_TalentShow": "{{i18n:MV.Municipal.CT.Juliet_TalentShow}}",
+                "eventSeen_57877008": "{{i18n:MV.Municipal.CT.EyvinderTown}}",
+                "Kataryna_Visits": "{{i18n:MV.Municipal.CT.Kataryna_Visits}}",
+                "AbyssRoosterGrow": "{{i18n:MV.Municipal.CT.AbyssRoosterGrow}}",
+                "eventSeen_57876015": "{{i18n:MV.Municipal.CT.AbyssVBear}}",
+                "GuntherKatarynaCoverse": "{{i18n:MV.Municipal.CT.GuntherKatarynaCoverse}}",
+                "LitD_CT_SenMet": "{{i18n:MV.Municipal.CT.LitD_CT_SenMet}}",
+                "NoraSad": "{{i18n:MV.Municipal.CT.NoraSad}}",
+                "NoraBusy": "{{i18n:MV.Municipal.CT.NoraBusy}}",
+                "NoraProud": "{{i18n:MV.Municipal.CT.NoraProud}}",
+                "NoraChameleon": "{{i18n:MV.Municipal.CT.NoraChameleon}}",
+                "talkWithGunther": "{{i18n:MV.Municipal.CT.TalkWithGunther}}",
+                "RodneyPoetryReading": "{{i18n:MV.Municipal.CT.RodneyPoetryReading}}",
+                "FerngillNationalLibraryReading": "{{i18n:MV.Municipal.CT.FerngillNationalLibraryReading}}",
+                "CamieOrchidKnife": "{{i18n:MV.Municipal.CT.CamieOrchidKnife}}",
+                "eliIntro": "{{i18n:MV.Municipal.CT.EliIntro}}",
+                "DylanBeach": "{{i18n:MV.Municipal.CT.DylanBeach}}",
+                "PTJ03": "{{i18n:MV.Municipal.CT.PTJ03}}",
+                "BearFamTimeForBees": "{{i18n:MV.Municipal.CT.BearFamTimeForBees}}",
+                "BearFamFireDrill": "{{i18n:MV.Municipal.CT.BearFamFireDrill}}",
+                "eventSeen_MadDog.BearFam.16191002": "{{i18n:MV.Municipal.CT.SigDineAndDash}}",
+                "SigVersusCrabs": "{{i18n:MV.Municipal.CT.SigVersusCrabs}}",
+                "SigTheSoldier": "{{i18n:MV.Municipal.CT.SigTheSoldier}}",
+                "SigTheHero": "{{i18n:MV.Municipal.CT.SigTheHero}}",
+                "SigSoItBegins": "{{i18n:MV.Municipal.CT.SigSoItBegins}}",
+                "SigTheraBees": "{{i18n:MV.Municipal.CT.SigTheraBees}}",
+                "SigandHonors": "{{i18n:MV.Municipal.CT.SigandHonors}}",
+                "GunnarBuildsaBomb": "{{i18n:MV.Municipal.CT.GunnarBuildsaBomb}}",
+                "GunnarBreaksASword": "{{i18n:MV.Municipal.CT.GunnarBreaksASword}}",
+                "GunnarGetsaLecture": "{{i18n:MV.Municipal.CT.GunnarGetsaLecture}}",
+                "GunnarMissing": "{{i18n:MV.Municipal.CT.GunnarMissing}}",
+                "GunnartheLost": "{{i18n:MV.Municipal.CT.GunnartheLost}}",
+                "GunnarCellarBomb": "{{i18n:MV.Municipal.CT.GunnarCellarBomb}}",
+                "GunnarTalkofTheTown": "{{i18n:MV.Municipal.CT.GunnarTalkofTheTown}}",
+                "SondraAerobicsAttempt": "{{i18n:MV.Municipal.CT.SondraAerobicsAttempt}}",
+                "SondraFundraiser": "{{i18n:MV.Municipal.CT.SondraFundraiser}}",
+                "ASongforSondra": "{{i18n:MV.Municipal.CT.ASongforSondra}}",
+                "GudrunAgainsttheMachine": "{{i18n:MV.Municipal.CT.GudrunAgainsttheMachine}}",
+                "GudrunCollegeFears": "{{i18n:MV.Municipal.CT.GudrunCollegeFears}}",
+                "GudrunRunAway": "{{i18n:MV.Municipal.CT.GudrunRunAway}}",
+                "GudrunComesHome": "{{i18n:MV.Municipal.CT.GudrunComesHome}}",
+                "JojaAccusations": "{{i18n:MV.Municipal.CT.JojaAccusations}}",
+                "GudrunCollegeIdeas": "{{i18n:MV.Municipal.CT.GudrunCollegeIdeas}}",
+                "GudrunVJoja": "{{i18n:MV.Municipal.CT.GudrunVJoja}}",
+                "MeetSassy": "{{i18n:MV.Municipal.CT.MeetSassy}}",
+                "TerenSelfEsteem": "{{i18n:MV.Municipal.CT.TerenSelfEsteem}}",
+                "TerenCaritasBakery": "{{i18n:MV.Municipal.CT.TerenCaritasBakery}}",
+                "HurstBackstoryDrop": "{{i18n:MV.Municipal.CT.HurstBackstoryDrop}}",
+                "HurstStopsObeying": "{{i18n:MV.Municipal.CT.HurstStopsObeying}}",
+                "MateoAcceptance": "{{i18n:MV.Municipal.CT.MateoAcceptance}}",
+                "HectorHeal": "{{i18n:MV.Municipal.CT.HectorHeal}}",
+                "CirrusArrives": "{{i18n:MV.Municipal.CT.CirrusArrives}}",
+                "DandelionSettling": "{{i18n:MV.Municipal.CT.DandelionSettling}}",
+                "WyattReturns": "{{i18n:MV.Municipal.CT.WyattReturns}}",
+                "Naomi_Return": "{{i18n:MV.Municipal.CT.Naomi_Return}}",
+                "RSV_Ariah8Hearts": "{{i18n:MV.Municipal.CT.RSV_Ariah8Hearts}}",
+                "RSV_Maive8Hearts": "{{i18n:MV.Municipal.CT.RSV_Maive8Hearts}}",
+                "RSV_Bryle2Hearts": "{{i18n:MV.Municipal.CT.RSV_Bryle2Hearts}}",
+                "eventSeen_jkkps.quinn_jojaparsnip": "{{i18n:MV.Municipal.CT.QuinnIntro}}",
+                "jkkps.quinnnogetuppie": "{{i18n:MV.Municipal.CT.QuinnInBed}}",
+                "jkkps.quinn_next": "{{i18n:MV.Municipal.CT.QuinnBetter}}",
+                "MeetTheCats": "{{i18n:MV.Municipal.CT.MeetTheCats}}",
+                "OpenAllTheDoors": "{{i18n:MV.Municipal.CT.OpenAllTheDoors}}",
+                "LucikielArrives": "{{i18n:MV.Municipal.CT.LucikielArrives}}",
+                "ReputationIncreased": "{{i18n:MV.Municipal.CT.ReputationIncreased}}",
+                "RangerFirstMet": "{{i18n:MV.Municipal.CT.RangerFirstMet}}",
+                "SebFrogLake": "{{i18n:MV.Municipal.CT.SebFrogLake}}",
+                "SebFrogVideo": "{{i18n:MV.Municipal.CT.SebFrogVideo}}",
+                "SebFrogSick": "{{i18n:MV.Municipal.CT.SebFrogSick}}",
+                "SebFrogFrog": "{{i18n:MV.Municipal.CT.SebFrogFrog}}",
+                "questComplete_22743157": "{{i18n:MV.Municipal.CT.AlchemistryPotionQuest}}",
+                "questComplete_22743158": "{{i18n:MV.Municipal.CT.AlchemistryPotionQuest2}}",
+                "SiMorrisCC": "{{i18n:MV.Municipal.CT.SiMorrisCC}}",
+                "SiMorrisFriendly": "{{i18n:MV.Municipal.CT.SiMorrisFriendly}}",
+                "DH.Inauguration_Church": "{{i18n:MV.Municipal.CT.DH.Inauguration_Church}}",
+                "SVTNikiandSam": "{{i18n:MV.Municipal.CT.SVTNikiandSam}}",
+                "AdvAbiFirstMine": "{{i18n:MV.Municipal.CT.AdvAbiFirstMine}}",
+                "eventSeen_7101": "{{i18n:MV.Municipal.CT.Maple}}",
+                "eventSeen_7001": "{{i18n:MV.Municipal.CT.Daulton}}",
+                "eventSeen_987678": "{{i18n:MV.Municipal.CT.PamPennySaloon}}",
+                "eventSeen_987651": "{{i18n:MV.Municipal.CT.PamHealth}}",
+                "Rekindle_JobOffer": "{{i18n:MV.Municipal.CT.Rekindle_JobOffer}}",
+                "Rekindle_CampingTrip": "{{i18n:MV.Municipal.CT.Rekindle_CampingTrip}}",
+                "Rekindle_JodiKentAway": "{{i18n:MV.Municipal.CT.Rekindle_JodiKentAway}}",
+                "Rekindle_JigsawPuzzle": "{{i18n:MV.Municipal.CT.Rekindle_JigsawPuzzle}}",
+                "CasperNameDrop": "{{i18n:MV.Municipal.CT.CasperNameDrop}}",
+                "CasperTheThief": "{{i18n:MV.Municipal.CT.CasperTheThief}}",
+                "CasperMockApology": "{{i18n:MV.Municipal.CT.CasperMockApology}}",
+                "CasperRealApology": "{{i18n:MV.Municipal.CT.CasperRealApology}}",
+                "FleurineIntro": "{{i18n:MV.Municipal.CT.FleurineIntro}}",
+                "TouchofClass": "{{i18n:MV.Municipal.CT.TouchofClass}}",
+                "FleurineGlimmeringMoments": "{{i18n:MV.Municipal.CT.FleurineGlimmeringMoments}}",
+                "GoodDeeds": "{{i18n:MV.Municipal.CT.GoodDeeds}}",
+                "FleurineRefinesWizard": "{{i18n:MV.Municipal.CT.FleurineRefinesWizard}}",
+                "PastelWizard": "{{i18n:MV.Municipal.CT.PastelWizard}}",
+                "FleuRasAnnualReview": "{{i18n:MV.Municipal.CT.FleuRasAnnualReview}}",
+                "eventSeen_totsFleurine_FleuRas02": "{{i18n:MV.Municipal.CT.eventSeen_FleuRas02}}",
+                "eventSeen_totsFleurine_FleuRas05": "{{i18n:MV.Municipal.CT.eventSeen_FleuRas05}}",
+                "gabrielArrive": "{{i18n:MV.Municipal.CT.GabrielArrive}}",
+                "sillyRevealed": "{{i18n:MV.Municipal.CT.SillyRevealed}}",
+                "gabeFinished": "{{i18n:MV.Municipal.CT.GabeFinished}}",
+                "boxosoup.birthday_birthday": "{{i18n:MV.Municipal.CT.PlayerBirthday}}",
+                "BarleyZP.FailedQuestsLoseFriendship_questFailed_id_MV.Municipal_SheriffBill": "{{i18n:MV.Municipal.CT.QuestFailed}}",
+                //Added Mod CTs
+                "MV.KrobusSen_memory_oneweek": "{{i18n:MV.Municipal.CT.KrobusSen}}",
+                "MV.SchoolRepaired": "{{i18n:MV.Municipal.CT.SchoolRepaired}}",
+                "MV.AlchemistryStabilizer": "{{i18n:MV.Municipal.CT.AlchemistryStabilizer}}",
+                "MV.RangerMentionSmuggler": "{{i18n:MV.Municipal.CT.RangerMentionSmuggler}}",
+                "MV.SheriffJuliet": "{{i18n:MV.Municipal.CT.SheriffJuliet}}",
+                "MV.AliyahFamily": "{{i18n:MV.Municipal.CT.AliyahFamily}}",
+                "MV.TallLadies": "{{i18n:MV.Municipal.CT.TallLadies}}"
+            }
+        },
+        //This should make sure the line happens once, after the last event that mentions therapy.
+        {
+            "LogName": "Bill's Dialogue - Jean and Jorts Kent Event",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "When": {
+                "HasMod |contains=tiakall.jortsandjean": true,
+                "HasMod |contains=Airyn.KentGetsTherapy, Airyn.Rekindle": false
+            },
+            "Entries": {
+                "eventSeen_10950102": "{{i18n:MV.Municipal.CT.KentTherapy}}"
+            }
+        },
+        {
+            "LogName": "Bill's Dialogue - Kent Gets Therapy",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "When": {
+                "HasMod |contains=Airyn.KentGetsTherapy": true,
+                "HasMod |contains=Airyn.Rekindle": false
+            },
+            "Entries": {
+                "eventSeen_100": "{{i18n:MV.Municipal.CT.KentTherapy}}"
+            }
+        },
+        {
+            "LogName": "Bill's Dialogue - Kent and Jodi Rekindle",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "When": {
+                "HasMod |contains=Airyn.Rekindle": true
+            },
+            "Entries": {
+                "Rekindle_Therapy": "{{i18n:MV.Municipal.CT.KentTherapy}}"
+            }
+        },
+        //Bill's Daily Dialog Randomization Section, this is Axell's fault (Thanks Axell for the method!)
+        {
+            "LogName": "Bill's 0-4 Heart Dialogue",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Daily.{{Random:{{Range: 1, 16}}}}}}"
+            },
+            "When": {
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false
+            }
+        },
+        {
+            "LogName": "Bill's 5-10 Heart Dialogue",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Daily.{{Random:{{Range: 1, 34}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 5, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's 10 Heart Post-Event Dialogue",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Daily.{{Random:{{Range: 1, 41}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasFlag: hostPlayer |contains={{ModID}}_Bill10H": true
+            }
+        },
+        {
+            "LogName": "Bill's Seasonal Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.{{season}}.{{Random:{{Range: 1, 6}}|key={{Time}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 15}}|key=SDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false
+            }
+        },
+        {
+            "LogName": "Bill's Weather Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.{{Weather}}.{{Random:{{Range: 1, 3}}|key={{Time}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 20}}|key=WDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "Weather |contains=Snow, Rain, Storm": true
+            }
+        },
+        {
+            "LogName": "Bill's Monday Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "Mon": "{{i18n:MV.Municipal.Dialogue.Monday.{{Random:{{Range: 1, 2}}|key={{Time}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 15}}|key=DDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "DayOfWeek": "Monday"
+            }
+        },
+        {
+            "LogName": "Bill's Thursday Dialogue Override - Rasmodius",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "Thu": "{{i18n:MV.Municipal.Dialogue.Thursday.{{Random:{{Range: 1, 2}}|key={{Time}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 15}}|key=DDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasSeenEvent: hostPlayer |contains={{ModID}}_WizardIntro": true,
+                "DayOfWeek": "Thursday",
+                "HasFlag: |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Thursday Dialogue Override - Rasmodia",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "Thu": "{{i18n:MV.Municipal.Dialogue.Thursday.{{Random:{{Range: 1, 2}}|key={{Time}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 15}}|key=DDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasSeenEvent: hostPlayer |contains={{ModID}}_WizardIntro": true,
+                "HasFlag: |contains=GreenRainGus": "true",
+                "HasMod": "Nom0ri.RomRas",
+                "DayOfWeek": "Thursday"
+            }
+        },
+        {
+            "LogName": "Bill's Friday Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "Fri": "{{i18n:MV.Municipal.Dialogue.Friday.{{Random:{{Range: 1, 2}}|key={{Time}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 15}}|key=DDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "DayOfWeek": "Friday"
+            }
+        },
+        {
+            "LogName": "Bill's Saturday Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "Sat": "{{i18n:MV.Municipal.Dialogue.Saturday.{{Random:{{Range: 1, 2}}|key={{Time}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 15}}|key=DDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasSeenEvent: hostPlayer |contains={{ModID}}_GuildIntro": true,
+                "DayOfWeek": "Saturday"
+            }
+        },
+        {
+            "LogName": "Bill's Sunday Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "Sun": "{{i18n:MV.Municipal.Dialogue.Sunday.{{Random:{{Range: 1, 2}}|key={{Time}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 15}}|key=DDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "DayOfWeek": "Sunday"
+            }
+        },
+        {
+            "LogName": "Bill's Kent Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Kent}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=KentDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasSeenEvent: hostPlayer |contains=63, Zilch.ALittleMoreCutscenes_FamilyReunited": true
+            }
+        },
+        {
+            "LogName": "Bill's Krobus Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Krobus}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=KrobusDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasSeenEvent: hostPlayer |contains={{ModID}}_BillKrobus": true
+            }
+        },
+        {
+            "LogName": "Bill's Sandy Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Sandy}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=SandyDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasFlag: |contains=ccVault": true
+            }
+        },
+        {
+            "LogName": "Bill's Leo Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Leo}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=LeoDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasSeenEvent: hostPlayer |contains=8959199": true
+            }
+        },
+        {
+            "LogName": "Bill's Rival Hearts Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.RH.{{Random:{{Range: 1, 2}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=RHeartDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasFlag: |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        //Mod Dialog Pools
+        {
+            "LogName": "Bill's SVE Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.SVE.{{Random:{{Range: 1, 4}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=SVEDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Claire the Part Timer Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.SVE.2}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=CTPTDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=DolphINaF.Claire": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Ridgeside Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Ridgeside.{{Random:{{Range: 1, 6}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=RSVDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Rafseazz.RSVCP": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Ridgeside - Naomi Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Ridgeside.Naomi}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=RSVNDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Rafseazz.RSVCP": true,
+                "HasSeenEvent: hostPlayer |contains=75160249": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Sunberry Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Sunberry.{{Random:{{Range: 1, 3}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=SunberryDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=skellady.SBVCP": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Ripley Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Ripley.{{Random:{{Range: 1, 2}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=RipleyDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Clara.Ripley": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Wren Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Wren.{{Random:{{Range: 1, 2}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=WrenDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=tiakall.wren": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Jonghyuk Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Jonghyuk.1}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=JSDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Arknir.Jonghyuk": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Spanner Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Jonghyuk.2}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=JS2DO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Arknir.Jonghyuk": true,
+                "HasSeenEvent: hostPlayer |contains=SpannerIntroConclusion": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's East Scarp Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.EastScarp.{{Random:{{Range: 1, 4}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=ESDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Lemurkat.EastScarpNPCs": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's East Scarp = Rosa and Juliet Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.EastScarp.RJ}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=ESRJDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Lemurkat.EastScarpNPCs": true,
+                "HasSeenEvent: hostPlayer |contains=57874026": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Eli and Dylan Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.EnD.{{Random:{{Range: 1, 2}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=EnDDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=TenebrousNova.EliDylan.CP": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Metalcore Goes Cottagecore Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.MGC.{{Random:{{Range: 1, 2}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=MGCDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Squeaks.MGC.CP": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Nora Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Nora.{{Random:{{Range: 1, 2}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=NoraDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Bagi.Nora.CP": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Bear Family Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.BearFam.{{Random:{{Range: 1, 5}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=BearDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=MadDog.HashtagBearFam": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Promise of Choice Aliyah Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.TPoC.1}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=TPoCADO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Daine.TPOChoice": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Promise of Choice Dahlia Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.TPoC.2}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=TPoCDDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Daine.TPOChoice": true,
+                "HasSeenEvent: hostPlayer |contains=Daine.Dahlia.0H": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Garden Cottage Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.TGC.{{Random:{{Range: 1, 2}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=TGCDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=AvianRPG.TheGardenCottage": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Garden Cottage Grandkids Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.TGC.3}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=TGCGDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=AvianRPG.TheGardenCottage": true,
+                "HasSeenEvent: hostPlayer |contains=AvianRPG.TheGardenCottage_EventTwinsArrive": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Downhill Project Dialogue Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Downhill.{{Random:{{Range: 1, 3}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=DownhillDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=DH.Kiyuga.Main": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Adventurer's Guild Expanded Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.AGE.{{Random:{{Range: 1, 3}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=AGEDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=supert.adventureguildexpanded": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Joja Movie Theater and Super Jojamart Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.JojaMT.{{Random:{{Range: 1, 3}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=JMTDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=MV.JojaMovieTheater": true,
+                "IsJojaMartComplete": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        //FLAG REMOVER
+        {
+            "LogName": "Bill's Daily Dialog Flag Remover",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}.TriggerActions.SheriffBill.OverrideSeenToday.Removal": {
+                    "Id": "{{ModID}}_SheriffBill_OverrideSeenToday.Removal",
+                    "MarkActionApplied": false,
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current SheriffBill_OverrideSeenToday Any",
+                    "Actions": [
+                        "RemoveMail Current SheriffBill_OverrideSeenToday"
+                    ]
+                }
+            }
+        },
+        //COFFEE ZONE
+        {
+            "LogName": "Municipal Coffee Zone",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Entries": {
+                "coffee": "$action Spiderbuttons.BETAS_EatObject (O)395 false#{{i18n:MV.Municipal.Dialogue.Coffee}}"
+            }
+        }
+    ]
+}

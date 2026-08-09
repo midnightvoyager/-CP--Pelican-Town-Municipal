@@ -1,0 +1,329 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal New Shops",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "{{ModId}}_Shop": {
+                    "Id": "{{ModId}}_Shop",
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Id": "{{ModId}}_Shop",
+                            "Condition": "TIME 900 1600",
+                            "Portrait": "Portraits/MV.Municipal_ClerkAlicia",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:MV.Municipal.Shop.{{Random:{{Range: 1, 3}}}}}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "{{ModId}}_FireExt",
+                            "ItemId": "{{ModID}}_FireExt",
+                            "Price": 300
+                        },
+                        {
+                            "Id": "{{ModId}}_FireExtWall",
+                            "ItemId": "{{ModID}}_FireExtWall",
+                            "Price": 300
+                        },
+                        {
+                            "Id": "{{ModId}}_Pride",
+                            "ItemId": "{{ModID}}_StampPride"
+                        },
+                        {
+                            "Id": "{{ModId}}_Chicken",
+                            "Condition": "SEASON Spring",
+                            "ItemId": "{{ModID}}_StampChicken"
+                        },
+                        {
+                            "Id": "{{ModId}}_Duck",
+                            "Condition": "SEASON Spring",
+                            "ItemId": "{{ModID}}_StampDuck"
+                        },
+                        {
+                            "Id": "{{ModId}}_Possum",
+                            "Condition": "SEASON Spring",
+                            "ItemId": "{{ModID}}_StampPossum"
+                        },
+                        {
+                            "Id": "{{ModId}}_Junimo",
+                            "Condition": "SEASON Spring",
+                            "ItemId": "{{ModID}}_StampJunimo"
+                        },
+                        {
+                            "Id": "{{ModId}}_Pufferfish",
+                            "Condition": "SEASON Summer",
+                            "ItemId": "{{ModID}}_StampPufferfish"
+                        },
+                        {
+                            "Id": "{{ModId}}_Parrot",
+                            "Condition": "SEASON Summer",
+                            "ItemId": "{{ModID}}_StampParrot"
+                        },
+                        {
+                            "Id": "{{ModId}}_Frog",
+                            "Condition": "SEASON Summer",
+                            "ItemId": "{{ModID}}_StampFrog"
+                        },
+                        {
+                            "Id": "{{ModId}}_Plane",
+                            "Condition": "SEASON Summer",
+                            "ItemId": "{{ModID}}_StampPlane"
+                        },
+                        {
+                            "Id": "{{ModId}}_Shadow",
+                            "Condition": "SEASON Fall",
+                            "ItemId": "{{ModID}}_StampShadow"
+                        },
+                        {
+                            "Id": "{{ModId}}_Sunflower",
+                            "Condition": "SEASON Fall",
+                            "ItemId": "{{ModID}}_StampSunflower"
+                        },
+                        {
+                            "Id": "{{ModId}}_Gridball",
+                            "Condition": "SEASON Fall",
+                            "ItemId": "{{ModID}}_StampGridball"
+                        },
+                        {
+                            "Id": "{{ModId}}_Cat",
+                            "Condition": "SEASON Fall",
+                            "ItemId": "{{ModID}}_StampCat"
+                        },
+                        {
+                            "Id": "{{ModId}}_WinterStar",
+                            "Condition": "SEASON Winter",
+                            "ItemId": "{{ModID}}_StampWinterStar"
+                        },
+                        {
+                            "Id": "{{ModId}}_Mushroom",
+                            "Condition": "SEASON Winter",
+                            "ItemId": "{{ModID}}_StampMushroom"
+                        },
+                        {
+                            "Id": "{{ModId}}_Robot",
+                            "Condition": "SEASON Winter",
+                            "ItemId": "{{ModID}}_StampRobot"
+                        },
+                        {
+                            "Id": "{{ModId}}_DwarvishHelm",
+                            "Condition": "SEASON Winter",
+                            "ItemId": "{{ModID}}_StampDwarvishHelm"
+                        }
+                    ]
+                },
+                "{{ModId}}_ClothingDonations": {
+                    "Id": "{{ModId}}_ClothingDonations",
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Id": "{{ModId}}_ClothingDonations",
+                            "Portrait": "None",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:MV.Municipal.Dialogue.ClothingDonations}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "SalableItemTags": [
+                        "category_hat",
+                        "category_boots",
+                        "category_clothing"
+                    ],
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Set",
+                            "Amount": 0
+                        }
+                    ],
+                    "Items": []
+                },
+                "{{ModId}}_Pantry": {
+                    "Id": "{{ModId}}_Pantry",
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Id": "{{ModId}}_Pantry",
+                            "Portrait": "None",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:MV.Municipal.Dialogue.Pantry}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "SalableItemTags": [
+                        "jelly_item",
+                        "juice_item",
+                        "pickle_item",
+                        "wine_item",
+                        "category_fish",
+                        "category_egg",
+                        "category_milk",
+                        "category_cooking",
+                        "category_ingredients",
+                        "category_syrup",
+                        "category_vegetable",
+                        "category_fruits",
+                        "category_greens"
+                    ],
+                    "Items": [
+                        {
+                            "Id": "{{ModId}}_FruitsAndVeg",
+                            "ItemId": "RANDOM_ITEMS (O) @isRandomSale @requirePrice",
+                            "MaxItems": 5,
+                            "PerItemCondition": "ITEM_CATEGORY Target -79 -75, !ITEM_ID_PREFIX Target Morghoula.AlchemistryCP_ Wildflour.SASS_ SOJA.AncientCrops_, ITEM_EDIBILITY Target 1, !ITEM_ID Target 889,!ITEM_CONTEXT_TAG Target sns_druidiccrop_item",
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        },
+                        {
+                            "Id": "{{ModId}}_Forage",
+                            "ItemId": "RANDOM_ITEMS (O) @isRandomSale @requirePrice",
+                            "MaxItems": 3,
+                            "PerItemCondition": "ITEM_CATEGORY Target -81, !ITEM_ID_PREFIX Target Morghoula.AlchemistryCP_ Wildflour.SASS_, ITEM_EDIBILITY Target 1",
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player"
+                        }
+                    ]
+                },
+                "{{ModId}}_Donations": {
+                    "Id": "{{ModId}}_Donations",
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Id": "{{ModId}}_Donations",
+                            "Portrait": "None",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:MV.Municipal.Dialogue.Donations}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "{{ModId}}_Donation2",
+                            "ItemId": "mushymato.PeliQ_ACTION_SALABLE {{ModID}}_Donation2",
+                            "Price": 1000,
+                            "ActionsOnPurchase": [
+                                "Spiderbuttons.BETAS_RegionalFriendship Town 5"
+                            ]
+                        },
+                        {
+                            "Id": "{{ModId}}_Donation3",
+                            "ItemId": "mushymato.PeliQ_ACTION_SALABLE {{ModID}}_Donation3",
+                            "Price": 5000,
+                            "ActionsOnPurchase": [
+                                "Spiderbuttons.BETAS_RegionalFriendship Town 25"
+                            ]
+                        },
+                        {
+                            "Id": "{{ModId}}_Donation4",
+                            "ItemId": "mushymato.PeliQ_ACTION_SALABLE {{ModID}}_Donation4",
+                            "Price": 10000,
+                            "ActionsOnPurchase": [
+                                "Spiderbuttons.BETAS_RegionalFriendship Town 50"
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Municipal Donations - Vapius",
+            "Action": "EditData",
+            "When": {
+                "HasMod |contains=Lumisteria.MtVapius": true
+            },
+            "Target": "Data/Shops",
+            "TargetField": [
+                "{{ModId}}_Donations",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModID}}_Donation5": {
+                    "Id": "{{ModID}}_Donation5",
+                    "ItemId": "mushymato.PeliQ_ACTION_SALABLE {{ModID}}_Donation5",
+                    "Price": 1000,
+                    "ActionsOnPurchase": [
+                        "AddFriendshipPoints AdelaideRosierVMV 5",
+                        "AddFriendshipPoints AsterPellegrinVMV 5",
+                        "AddFriendshipPoints CelestineDuboisVMV 5",
+                        "AddFriendshipPoints ChandraFaycombeSereneVMV 5",
+                        "AddFriendshipPoints PriyaFaycombeSereneVMV 5",
+                        "AddFriendshipPoints OdalisDuboisVelezVMV 5",
+                        "AddFriendshipPoints NaveenFaycombeSereneVMV 5",
+                        "AddFriendshipPoints MoiraDuboisVMV 5",
+                        "AddFriendshipPoints MariamFortinVMV 5",
+                        "AddFriendshipPoints MaddyPellegrinVMV 5",
+                        "AddFriendshipPoints HeliaDiamantiVMV 5",
+                        "AddFriendshipPoints GavinPommerelVMV 5"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Municipal Donations - CC",
+            "Action": "EditData",
+            "When": {
+                "IsCommunityCenterComplete": "true"
+            },
+            "Target": "Data/Shops",
+            "TargetField": [
+                "{{ModId}}_Donations",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModID}}_Donation1": {
+                    "Id": "{{ModId}}_Donation1",
+                    "ItemId": "mushymato.PeliQ_ACTION_SALABLE {{ModID}}_Donation2",
+                    "Price": 3000,
+                    "ActionsOnPurchase": [
+                        "Spiderbuttons.BETAS_RegionalFriendship Town 15"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Municipal Addition Shadow Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "ShadowShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModID}}_Chime": {
+                    "Id": "{{ModID}}_Chime",
+                    "ItemId": "{{ModID}}_Chime",
+                    "Price": 200
+                }
+            }
+        },
+        {
+            "LogName": "Municipal Addition Shadow Shop - Mana Blooms",
+            "Action": "EditData",
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_ManaBloomSeedMailRH, {{ModID}}_ManaBloomSeedMail": true
+            },
+            "Target": "Data/Shops",
+            "TargetField": [
+                "ShadowShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModID}}_ManaBloomSeeds": {
+                    "Id": "{{ModID}}_ManaBloomSeeds",
+                    "ItemId": "{{ModID}}_ManaBloomSeeds",
+                    "Price": 80
+                }
+            }
+        }
+    ]
+}

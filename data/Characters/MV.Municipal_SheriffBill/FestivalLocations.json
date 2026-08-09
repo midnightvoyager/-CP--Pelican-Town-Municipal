@@ -1,0 +1,2138 @@
+{
+    "Changes": [
+        {
+            "LogName": "Bill's Egg Festival Position Y1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 42 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 22 69 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Egg Festival Position Y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 34 63 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 22 63 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Egg Festival Position Y1 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 18 74 1/Wizard 18 75 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 18 74 1/Wizard 18 75 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Egg Festival Position Y2 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 20 73 1/Wizard 20 74 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 20 73 1/Wizard 20 74 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Flower Dance Position Y1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 23 20 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 22 21 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Flower Dance Position Y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 1 41 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 23 20 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Flower Dance Position Y1 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 15 11 2/Wizard 16 11 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 15 11 2/Wizard 16 11 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Flower Dance Position Y2 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 8 11 2/Wizard 7 11 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 8 11 2/Wizard 7 11 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Summer Luau Position Y1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 55 7 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 45 11 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Summer Luau Position Y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 54 7 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 24 18 0",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Summer Luau Position Y1 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 55 6 2/Wizard 56 6 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 45 11 3/Wizard 45 12 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Summer Luau Position Y2 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "set-up_y2"
+                    ],
+                    "Search": "animate Wizard false true 100 20",
+                    "Delimiter": "/",
+                    "ReplaceMode": "All"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 54 7 2/Wizard 55 7 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 29 5 2/Wizard 30 5 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Moonlight Jellies Position Y1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 87 5 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 87 5 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Moonlight Jellies Position Y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 87 5 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 87 5 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Moonlight Jellies Position Y1 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 93 6 1/Wizard 93 7 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 19 4 2/Wizard 20 4 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Moonlight Jellies Position Y2 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 93 6 1/Wizard 93 7 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 13 27 1/Wizard 13 26 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's SDV Fair Position Y1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 34 78 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill"
+            }
+        },
+        {
+            "LogName": "Bill's SDV Fair Position Y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 36 89 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        5
+                    ],
+                    "Value": "/animate {{ModID}}_SheriffBill true true 100 33 33 33 33 33 33 33 33 33 33 33 33 33 33 34 34 34 35 34 35 34 35 34 35 34 35 34 35 34 35 34 35 33 33 33 33 33 33 33 33 34 35 34 35 34 35 34 35 34 35"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill"
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 36 70 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 14 59 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y1 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 29 49 1/Wizard 30 49 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y2 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 4 64 1/Wizard 4 63 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Festival of Ice Position Y1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 64 12 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 78 33 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Festival of Ice Position Y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 73 43 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 63 35 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Festival of Ice Position Y1 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Search": "Wizard 63 12 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Search": "Wizard 80 30 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 64 12 2/Wizard 63 12 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 80 31 3/Wizard 80 30 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Festival of Ice Position Y2 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 73 43 0/Wizard 74 43 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 63 34 1/Wizard 63 35 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Winter Star Position Y1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 35 57 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Winter Star Position Y2",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 35 57 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Winter Star Position Y1 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 16 75 1/Wizard 18 75 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Winter Star Position Y2 - RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 16 75 1/Wizard 18 75 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Lemurkat.EastScarp": false,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Winter Star Position Y2 - RH - ESR",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Search": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 10 74 1/Wizard 12 74 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=Lemurkat.EastScarp": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Immersive Sandy fix",
+            "Action": "EditData",
+            "Target": "data/festivals/winter25",
+            "Priority": "Late + 100",
+            "When": {
+                "HasSeenEvent": "13609001",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+                "HasMod |contains=foggy.LfL": "false",
+                "HasMod |contains=beyondrecovery.immersivesandy": "true"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Search": "Sandy 27 49 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Search": "Sandy 27 49 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Search": "Sandy 27 49 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Search": "Sandy 27 49 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Sandy 28 72 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Sandy 28 72 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Sandy 28 50 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Sandy 28 50 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        //SVE Festivals
+        {
+            "LogName": "Bill's Egg Festival Position Y1 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 42 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 38 70 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Egg Festival Position Y2 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 34 63 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 31 62 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Egg Festival Position Y1 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 19 73 1/Wizard 19 72 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 19 73 1/Wizard 19 72 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Egg Festival Position Y2 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 20 73 1/Wizard 20 74 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 20 73 1/Wizard 20 74 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Flower Dance Position Y1 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 13 41 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 22 21 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Flower Dance Position Y2 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 13 42 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 22 21 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Flower Dance Position Y1 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 8 11 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 8 11 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Flower Dance Position Y2 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 15 11 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 15 11 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Summer Luau Position Y1 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 55 7 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 37 20 0",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Summer Luau Position Y2 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 54 7 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 26 18 0",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Summer Luau Position Y1 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 55 6 2/Wizard 56 6 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 45 11 3/Wizard 45 12 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Summer Luau Position Y2 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "RemoveDelimited",
+                    "Target": [
+                        "Entries",
+                        "set-up_y2"
+                    ],
+                    "Search": "animate Wizard false true 100 20",
+                    "Delimiter": "/",
+                    "ReplaceMode": "All"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 54 7 2/Wizard 55 7 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 20 19 0/Wizard 19 19 0",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Moonlight Jellies Position Y1 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 85 5 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 85 5 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Moonlight Jellies Position Y2 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 85 5 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 85 5 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Moonlight Jellies Position Y1 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 93 6 1/Wizard 93 7 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 81 25 2/Wizard 82 25 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Moonlight Jellies Position Y2 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 93 6 1/Wizard 93 7 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 81 25 2/Wizard 82 25 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's SDV Fair Position Y1 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 46 77 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        5
+                    ],
+                    "Value": "/animate {{ModID}}_SheriffBill true true 100 33 33 33 33 33 33 33 33 33 33 33 33 33 33 34 34 34 35 34 35 34 35 34 35 34 35 34 35 34 35 34 35 33 33 33 33 33 33 33 33 34 35 34 35 34 35 34 35 34 35"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill"
+            }
+        },
+        {
+            "LogName": "Bill's SDV Fair Position Y2 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 27 54 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill"
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y1 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 40 59 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false,
+                "Year": "1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y2 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 23 63 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y3 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 33 57 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false,
+                "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97"
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y1 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 40 59 3/Wizard 39 58 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true,
+                "Year": "1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y2 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 4 64 1/Wizard 4 63 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Spirit's Eve Position Y3 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 18 36 0",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true,
+                "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97"
+            }
+        },
+        {
+            "LogName": "Bill's Festival of Ice Position Y1 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 64 13 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 81 43 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Festival of Ice Position Y2 - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 71 44 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 59 35 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Festival of Ice Position Y1 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 64 12 2/Wizard 63 12 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 80 31 3/Wizard 80 30 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Festival of Ice Position Y2 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 73 43 0/Wizard 74 43 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 63 34 1/Wizard 63 35 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Winter Star Position - SVE",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 36 56 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 36 57 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Winter Star Position Y1 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 16 75 1/Wizard 18 75 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Winter Star Position Y2 - SVE RH",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 16 75 1/Wizard 18 75 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        // CUSTOM FESTIVALS 
+        {
+            "LogName": "Bill's Ridgeside Gathering Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 100 40 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 64 44 0",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasFlag": "{{ModID}}_MetBill"
+            }
+        },
+        {
+            "LogName": "Bill's Ember of Resolutions Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 25 38 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 32 41 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "LogName": "Bill's Ember of Resolutions Position - Rival Hearts",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 23 38 1/Wizard 22 38 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 28 43 1/Wizard 28 44 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Fireworks Festival Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Summer20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 40 36 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=violetlizabet.FireworksFestival": true,
+                "HasFlag": "{{ModID}}_MetBill"
+            }
+        },
+        {
+            "LogName": "Bill's Fashion Show Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 63 25 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 41 10 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=UNA.FF.CP": true,
+                "HasFlag": "{{ModID}}_MetBill"
+            }
+        },
+        {
+            "LogName": "Bill and Wizard's Love Festival Position - Rival Hearts Only",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Winter6",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 32 48 2/Wizard 33 48 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=AvalonMFX.LoveFestival": true,
+                "HasFlag": "{{ModID}}_MetBill",
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Bill's Reveillon Position",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Winter28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{ModID}}_SheriffBill 28 70 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=marizoocamd.NewYearsEve": true,
+                "HasFlag": "{{ModID}}_MetBill"
+            }
+        }
+    ]
+}

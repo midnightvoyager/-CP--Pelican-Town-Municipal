@@ -1,0 +1,836 @@
+{
+    "Format": "2.9.0",
+    "ConfigSchema": {
+        "AutoRecolor": {
+            "Description": "Exterior recolor. Defaults to automatic, based on your installed mods.",
+            "AllowValues": "Automatic, Vanilla, Earthy, Starblue, Vibrant",
+            "Default": "Automatic",
+            "AllowBlank": false
+        },
+        "AutoRecolorMap": {
+            "Description": "World map recolor. Defaults to automatic, based on your installed mods.",
+            "AllowValues": "Automatic, Vanilla, Earthy, Starblue, Vibrant, VibrantGreen, OvergrownVintage",
+            "Default": "Automatic",
+            "AllowBlank": false
+        },
+        "PerfectionScoreNpc": {
+            "Description": "Exclude or Include Bill from perfection score.",
+            "AllowValues": "Exclude, Include",
+            "Default": "Exclude",
+            "AllowBlank": false
+        },
+        "PerfectionScoreObjects": {
+            "Description": "Exclude or Include Mana Blooms from perfection score.",
+            "AllowValues": "Exclude, Include",
+            "Default": "Exclude",
+            "AllowBlank": false
+        },
+        "FireSafety": {
+            "Description": "Add fire extinguishers to houses in Pelican Town after the Municipal Building opens.",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false
+        },
+        "MarlonPortrait": {
+            "Description": "A portrait for Marlon that has expressions. Works with DSV! (Unneeded if you have one already, like from Ranch Expansion)",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false
+        },
+        "WizardPortrait": {
+            "Description": "A portrait for the Wizard that has 9 frames of expressions and RR's sprite with a sleep frame. Works with DSV! (Unneeded if you have one already, like Romanceable Rasmodius or SVE)",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false
+        },
+        "RivalHearts": {
+            "Description": "Rival hearts for Bill and Rasmodius. I do not recommend changing this on a game you've played this mod in for a while! This will be disabled despite settings if you have RRRR enabled or a mod to make Rasmodius a woman.",
+            "AllowValues": "Enable, Disable",
+            "Default": "Enable",
+            "AllowBlank": false
+        },
+        "WizardSprite": {
+            "Description": "What sprite do you use for the wizard? For placement of the sleep frame only in Rival Hearts. Not needed if you use my Wizard Portrait option.",
+            "AllowValues": "Vanilla, VanillaNiko, SVE, Other",
+            "Default": "Vanilla",
+            "AllowBlank": false
+        },
+        "ManaBloomSeeds": {
+            "Description": "What style of seed bag do you want for the Mana Bloom?",
+            "AllowValues": "ManaBloomVanilla, ManaBloomVanillaSeasonal, ManaBloomVT, ManaBloomVTSeasonal, ManaBloomVTSunny, ManaBloomVTSunnySeasonal",
+            "Default": "ManaBloomVanilla",
+            "AllowBlank": false
+        }
+    },
+    "DynamicTokens": [
+        {
+            "Name": "RecolorTag",
+            "Value": "vanilla",
+            "When": {
+                "AutoRecolor": "Automatic, Vanilla"
+            }
+        },
+        {
+            "Name": "RecolorTag",
+            "Value": "earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour",
+                "AutoRecolor": "Automatic"
+            }
+        },
+        {
+            "Name": "RecolorTag",
+            "Value": "starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValleyUnofficial",
+                "AutoRecolor": "Automatic"
+            }
+        },
+        {
+            "Name": "RecolorTag",
+            "Value": "vibrant",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor",
+                "AutoRecolor": "Automatic"
+            }
+        },
+        {
+            "Name": "RecolorTag",
+            "Value": "{{AutoRecolor}}",
+            "When": {
+                "AutoRecolor |contains=Automatic": "false"
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "vanilla",
+            "When": {
+                "AutoRecolorMap": "Automatic, Vanilla",
+                "HasMod |contains=nuu.overgrownmap": false
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour",
+                "HasMod |contains=nuu.overgrownmap": false,
+                "AutoRecolorMap": "Automatic"
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValleyUnofficial",
+                "HasMod |contains=nuu.overgrownmap": false,
+                "AutoRecolorMap": "Automatic"
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "vibrant",
+            "When": {
+                "HasMod": "VibrantPastoral.C",
+                "VibrantPastoral.C/GreenFall": false,
+                "HasMod |contains=nuu.overgrownmap": false,
+                "AutoRecolorMap": "Automatic"
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "vibrantgreen",
+            "When": {
+                "HasMod": "VibrantPastoral.C",
+                "VibrantPastoral.C/GreenFall": true,
+                "HasMod |contains=nuu.overgrownmap": false,
+                "AutoRecolorMap": "Automatic"
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "overgrown",
+            "When": {
+                "HasMod": "nuu.overgrownmap",
+                "AutoRecolorMap": "Automatic"
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "{{AutoRecolorMap}}",
+            "When": {
+                "AutoRecolorMap |contains=Automatic": "false"
+            }
+        },
+        {
+            "Name": "MullnerNameToken",
+            "Value": "Default"
+        },
+        {
+            "Name": "MullnerNameToken",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:GeorgeVariant": "Mexican"
+            },
+            "Value": "Mexican"
+        },
+        {
+            "Name": "MullnerNameToken",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:GeorgeVariant": "Samoan"
+            },
+            "Value": "Samoan"
+        },
+        {
+            "Name": "NonbinaryAbigailToken",
+            "Value": "false"
+        },
+        {
+            "Name": "NonbinaryAbigailToken",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:NonbinaryAbigail": "true"
+            },
+            "Value": "true"
+        },
+        {
+            "Name": "NonbinarySebastianToken",
+            "Value": "false"
+        },
+        {
+            "Name": "NonbinarySebastianToken",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:NonbinarySebastian": "true"
+            },
+            "Value": "true"
+        },
+        {
+            "Name": "NonbinaryEmilyToken",
+            "Value": "false"
+        },
+        {
+            "Name": "NonbinaryEmilyToken",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:NonbinaryEmily": "true"
+            },
+            "Value": "true"
+        },
+        {
+            "Name": "RivalHeartsRas",
+            "Value": "false",
+            "When": {
+                "RivalHearts": "Disable"
+            }
+        },
+        {
+            "Name": "RivalHeartsRas",
+            "Value": "false",
+            "When": {
+                "RivalHearts": "Enable",
+                "HasMod |contains=Nom0ri.RomRas, Sasara.Witch-Princess, Lineyakitty.WitchEdit, VWW.CP.FemaleWizard, misscoriel.razolyn, Ran.HarvestGoddess, Jellonip.RRRR": true
+            }
+        },
+        {
+            "Name": "RivalHeartsRas",
+            "Value": "true",
+            "When": {
+                "RivalHearts": "Enable",
+                "HasMod |contains=Nom0ri.RomRas, Sasara.Witch-Princess, Lineyakitty.WitchEdit, VWW.CP.FemaleWizard, misscoriel.razolyn, Ran.HarvestGoddess, Jellonip.RRRR": false
+            }
+        },
+        {
+            "Name": "WizardSingle",
+            "Value": "true",
+            "When": {
+                "Relationship:Wizard anyPlayer |contains=Dating, Engaged, Married": false
+            }
+        },
+        {
+            "Name": "WizardSingle",
+            "Value": "false",
+            "When": {
+                "Relationship:Wizard anyPlayer |contains=Dating, Engaged, Married": true
+            }
+        },
+        {
+            "Name": "WizardAvailable",
+            "Value": "true",
+            "When": {
+                "HasFlag |contains=MV.Municipal_BillRivalHearts1": false
+            }
+        },
+        {
+            "Name": "WizardAvailable",
+            "Value": "false",
+            "When": {
+                "HasFlag |contains=MV.Municipal_BillRivalHearts1": true
+            }
+        },
+        {
+            "Name": "WizardSleep",
+            "Value": "18",
+            "When": {
+                "RivalHeartsRas": false
+            }
+        },
+        {
+            "Name": "WizardSleep",
+            "Value": "24",
+            "When": {
+                "WizardSprite |contains=vanilla,vanillaniko": true,
+                "WizardPortrait": false
+            }
+        },
+        {
+            "Name": "WizardSleep",
+            "Value": "29",
+            "When": {
+                "WizardSprite |contains=SVE": true,
+                "WizardPortrait": false
+            }
+        },
+        {
+            "Name": "WizardSleep",
+            "Value": "29",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Parrot.RomRas": false,
+                "WizardPortrait": false
+            }
+        },
+        {
+            "Name": "WizardSleep",
+            "Value": "51",
+            "When": {
+                "HasMod |contains=Parrot.RomRas": true,
+                "WizardPortrait": false
+            }
+        },
+        {
+            "Name": "WizardSleep",
+            "Value": "51",
+            "When": {
+                "WizardSprite |contains=other": true,
+                "WizardPortrait": false
+            }
+        },
+        {
+            "Name": "WizardSleep",
+            "Value": "51",
+            "When": {
+                "WizardPortrait": true
+            }
+        },
+        {
+            "Name": "Wizard10HEmote",
+            "Value": "emote Wizard 32",
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": false
+            }
+        },
+        {
+            "Name": "Wizard10HEmote",
+            "Value": "emote Wizard 20",
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "Name": "KrobusEventSpot",
+            "Value": "31 17",
+            "When": {
+                "Roommate: anyPlayer |contains=Krobus": false
+            }
+        },
+        {
+            "Name": "KrobusEventSpot",
+            "Value": "30 17",
+            "When": {
+                "Roommate: anyPlayer |contains=Krobus": true
+            }
+        },
+        {
+            "Name": "IncludePerfection",
+            "Value": "false"
+        },
+        {
+            "Name": "IncludePerfection",
+            "When": {
+                "PerfectionScoreNpc": "Include"
+            },
+            "Value": "true"
+        },
+        {
+            "Name": "ExcludeObjects",
+            "Value": "true"
+        },
+        {
+            "Name": "ExcludeObjects",
+            "When": {
+                "PerfectionScoreObjects": "Include"
+            },
+            "Value": "false"
+        },
+        {
+            "Name": "RecolorTag",
+            "Value": "vanilla"
+        },
+        {
+            "Name": "RecolorTag",
+            "Value": "earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour"
+            }
+        },
+        {
+            "Name": "RecolorTag",
+            "Value": "starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValleyUnofficial"
+            }
+        },
+        {
+            "Name": "RecolorTag",
+            "Value": "vibrant",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor"
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "vanilla"
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour",
+                "HasMod |contains=nuu.overgrownmap": false
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValleyUnofficial",
+                "HasMod |contains=nuu.overgrownmap": false
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "vibrant",
+            "When": {
+                "HasMod": "VibrantPastoral.C",
+                "VibrantPastoral.C/GreenFall": false,
+                "HasMod |contains=nuu.overgrownmap": false
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "vibrantgreen",
+            "When": {
+                "HasMod": "VibrantPastoral.C",
+                "VibrantPastoral.C/GreenFall": true,
+                "HasMod |contains=nuu.overgrownmap": false
+            }
+        },
+        {
+            "Name": "MapRecolorTag",
+            "Value": "overgrownvintage",
+            "When": {
+                "HasMod": "nuu.overgrownmap"
+            }
+        },
+        {
+            "Name": "Gunther",
+            "Value": "Gunther"
+        },
+        {
+            "Name": "Gunther",
+            "Value": "GuntherSilvian",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=andril11.charlie": false
+            }
+        },
+        {
+            "Name": "Gunther",
+            "Value": "GuntherWoods",
+            "When": {
+                "HasMod |contains=andril11.charlie": true
+            }
+        },
+        {
+            "Name": "GuntherEvent",
+            "Value": "51 29 0"
+        },
+        {
+            "Name": "GuntherEvent",
+            "Value": "51 29 0/showFrame Gunther 8",
+            "When": {
+                "HasMod |contains=Wolf.Gun": false,
+                "HasMod |contains=Yoshimax.BefriendMarlon": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=andril11.charlie": false
+            }
+        },
+        {
+            "Name": "Marlon",
+            "Value": "Marlon"
+        },
+        {
+            "Name": "Marlon",
+            "Value": "MarlonFay",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Name": "Morris",
+            "Value": "Morris"
+        },
+        {
+            "Name": "Morris",
+            "Value": "MorrisTod",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Yoshimax.MarryMorris": true,
+                "HasMod |contains=SiTheGreat.MorrisRedeemed": false,
+                "HasSeenEvent": "191393"
+            }
+        },
+        {
+            "Name": "Morris",
+            "Value": "Si_MR_Morris",
+            "When": {
+                "HasMod |contains=SiTheGreat.MorrisRedeemed": true,
+                "HasSeenEvent": "26220101"
+            }
+        },
+        {
+            "Name": "WillyDSV",
+            "Value": "false"
+        },
+        {
+            "Name": "WillyDSV",
+            "Value": "true",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:WillyVariant |contains= VanillaDisabled, TonganDisabled, AddOnTonganDisabledLongHair": true
+            }
+        },
+        {
+            "Name": "WizardApprentice",
+            "Value": "1"
+        },
+        {
+            "Name": "WizardApprentice",
+            "Value": "2",
+            "When": {
+                "HasMod |contains=starfyzz.ivaraswolfgang, Aviroen.SBCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        {
+            "Name": "WizardApprentice",
+            "Value": "2",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+                "HasSeenEvent: hostPlayer |contains=5978924": true
+            }
+        },
+        {
+            "Name": "WizardApprentice",
+            "Value": "3",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+                "HasSeenEvent: hostPlayer |contains=5978924": false
+            }
+        },
+        {
+            "Name": "JojaLocation",
+            "Value": "Town 80 58 2 MV.Municipal_bill_fish \"Strings\\schedules\\MV.Municipal_SheriffBill:MV.Municipal_SheriffBillStakeout\""
+        },
+        {
+            "Name": "JojaLocation",
+            "Value": "MunicipalFloor1 22 7 1 MV.Municipal_bill_working",
+            "When": {
+                "IsJojaMartComplete": true,
+                "HasMod |contains=MV.JojaMovieTheater": true
+            }
+        },
+        {
+            "Name": "JojaLocation",
+            "Value": "CommunityCenter 42 11 0 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"",
+            "When": {
+                "IsCommunityCenterComplete": true
+            }
+        },
+        //Abbreviated weekday check (thanks Axell and Pooh and Nova!)
+        {
+            "Name": "WeekDayList",
+            "Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+        },
+        {
+            "Name": "WeekDay",
+            "Value": "{{WeekDayList |valueAt={{Query: {{Day}}%7}}}}"
+        }
+    ],
+    "EventLimiterExceptions": [
+        "3102768",
+        "MV.Municipal_Intro",
+        "MV.Municipal_Bill10Heart",
+        "MV.Municipal_BillRivalHeartsEvent"
+    ],
+    "Changes": [
+        //Technical Includes
+        {
+            "LogName": "Technical Includes",
+            "Action": "Include",
+            "FromFile": "Data/Technical/MapPatches.json, Data/Technical/WorldMap.json, Data/Technical/Loadables.json, Data/Technical/LocationalMaps.json, Data/Technical/Strings.json, Data/Technical/Objects.json, Data/Technical/Mail.json, Data/Technical/Shop.json, Data/Technical/TempActors.json, Data/Technical/NPCGiftTaste.json, Data/Technical/TriggerActions.json, Data/Technical/Crops.json, Data/Technical/Quests.json"
+        },
+        {
+            "LogName": "Character Info",
+            "Action": "Include",
+            "FromFile": "Data/Characters/MV.Municipal_SheriffBill/DispositionsGiftTaste.json, Data/Characters/MV.Municipal_SheriffBill/Schedules.json, Data/Characters/MV.Municipal_SheriffBill/Events.json, Data/Characters/MV.Municipal_SheriffBill/FestivalLocations.json, Data/Characters/MV.Municipal_SheriffBill/FestivalDialogue.json, Data/Characters/MV.Municipal_SheriffBill/GiftDialogue.json, Data/Characters/MV.Municipal_SheriffBill/Dialogue.json, Data/Characters/MV.Municipal_SheriffBill/DialogueChanges.json, Data/Characters/MV.Municipal_SheriffBill/VillagersCT.json, Data/Characters/MV.Municipal_SheriffBill/Movies.json, Data/Characters/MV.Municipal_SheriffBill/VillagerGiftDialogue.json, Data/Characters/MV.Municipal_SheriffBill/NPCSChedulesSVE.json"
+        },
+        {
+            "LogName": "SVE Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/NPCGiftTasteSVE.json",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "LogName": "Ridgeside Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/NPCGiftTasteRSV.json",
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            }
+        },
+        {
+            "LogName": "Museum Expansion Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/NPCGiftTasteMuseumExp.json",
+            "When": {
+                "HasMod": "andril11.charlie"
+            }
+        },
+        {
+            "LogName": "Make Gil Real Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/NPCGiftTasteGil.json",
+            "When": {
+                "HasMod": "Wolf.Gil"
+            }
+        },
+        {
+            "LogName": "Gunther Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/NPCGiftTasteGunther.json",
+            "When": {
+                "HasMod |contains=Wolf.Gun, ChicoLopes.GuntherToNPC, Yoshimax.BefriendMarlon": "true"
+            }
+        },
+        {
+            "LogName": "Marlon Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/NPCGiftTasteMarlon.json",
+            "When": {
+                "HasMod |contains=Wolf.Marlon, Yoshimax.BefriendMarlon": "true"
+            }
+        },
+        {
+            "LogName": "Morris Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/NPCGiftTasteMorris.json",
+            "When": {
+                "HasMod |contains=SiTheGreat.MorrisRedeemed, Yoshimax.MarryMorris": "true"
+            }
+        },
+        {
+            "LogName": "Wizard Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/NPCGiftTasteWizard.json",
+            "When": {
+                "HasMod |contains=Nom0ri.RomRas, Wolf.RomRas, FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts",
+            "Action": "Include",
+            "FromFile": "Data/Technical/RivalHearts.json",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Wolf.RomRas": "false",
+                "RivalHeartsRas": "true"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Compatibility - SVE and SVE+RR",
+            "Action": "Include",
+            "FromFile": "Data/Technical/RivalHeartsSVE.json",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+                "RivalHeartsRas": "true"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Compatibility - RR",
+            "Action": "Include",
+            "FromFile": "Data/Technical/RivalHeartsRR.json",
+            "When": {
+                "HasMod |contains=Wolf.RomRas": "true",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+                "RivalHeartsRas": "true"
+            }
+        },
+        {
+            "LogName": "Wizard Rival Hearts Compatibility - WE",
+            "Action": "Include",
+            "FromFile": "Data/Technical/RivalHeartsWE.json",
+            "When": {
+                "HasMod |contains=jenf1.wizardenhanced": "true",
+                "RivalHeartsRas": "true"
+            }
+        },
+        {
+            "LogName": "Lurking in the Dark Alpha Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/LitDAlpha.json",
+            "When": {
+                "HasMod |contains=7thAxis.LitD": "true"
+            }
+        },
+        {
+            "LogName": "CJB Warp - Municipal",
+            "Action": "Include",
+            "FromFile": "Data/Technical/CJBWarp.json",
+            "When": {
+                "HasMod |contains=CJBok.CheatsMenu": "true"
+            }
+        },
+        {
+            "LogName": "Vegas Better Item Categories Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/ObjectsVegas.json",
+            "When": {
+                "HasMod |contains=VegasOctober.BetterItemCategories": "true"
+            }
+        },
+        {
+            "LogName": "Less Ugly Town Interiors Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/MapPatchesLUTI.json",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=uglynt.town.interiors": true,
+                "HasMod |contains=Morghoula.AlchemistryCP": false
+            }
+        },
+        {
+            "LogName": "Alchemistry Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/MapPatchesAlch.json",
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": false,
+                "HasMod |contains=Morghoula.AlchemistryCP": true
+            }
+        },
+        {
+            "LogName": "LUTI + Alchemistry Compatibility",
+            "Action": "Include",
+            "FromFile": "Data/Technical/MapPatchesAlchLUTI.json",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=uglynt.town.interiors": true,
+                "HasMod |contains=Morghoula.AlchemistryCP": true
+            }
+        },
+        {
+            "LogName": "Municipal Interiors",
+            "Action": "Include",
+            "FromFile": "Data/Technical/Interiors.json"
+        },
+        {
+            "LogName": "Municipal Recipes",
+            "Action": "Include",
+            "FromFile": "Data/Technical/Recipes.json"
+        },
+        {
+            "LogName": "Municipal Recipes - Cornucopia Cooking Recipes",
+            "Action": "Include",
+            "FromFile": "Data/Technical/RecipesCornucopia.json",
+            "When": {
+                "HasMod": "Cornucopia.CookingRecipes"
+            }
+        },
+        {
+            "LogName": "Municipal Starblue Interiors",
+            "Action": "Include",
+            "FromFile": "Data/Technical/InteriorsStarblue.json",
+            "When": {
+                "HasMod": "Lita.StarblueValleyUnofficial"
+            }
+        },
+        {
+            "LogName": "Municipal Overgrown Map Patch",
+            "Action": "Include",
+            "FromFile": "Data/Technical/MapPatchesOvergrown.json",
+            "When": {
+                "HasMod": "lune.overgrown"
+            }
+        },
+        {
+            "LogName": "Municipal Feast of the Sun Patch",
+            "Action": "Include",
+            "FromFile": "Data/Technical/MapPatchesFotS.json",
+            "When": {
+                "HasMod": "KaileyStardew.FeastOfTheSun"
+            }
+        },
+        {
+            "LogName": "Municipal Stardew Kids Expansion Patch",
+            "Action": "Include",
+            "FromFile": "Data/Technical/SKECompat.json",
+            "When": {
+                "HasMod": "BURAKMESE.SKE"
+            }
+        },
+        {
+            "LogName": "Municipal Custom Wedding Ceremony Patch",
+            "Action": "Include",
+            "FromFile": "Data/Characters/MV.Municipal_SheriffBill/EventsCWC.json",
+            "When": {
+                "HasMod": "Airyn.CWC"
+            }
+        },
+        {
+            "LogName": "Municipal Merchant Patch",
+            "Action": "Include",
+            "FromFile": "Data/Characters/MV.Municipal_SheriffBill/Merchant.json",
+            "When": {
+                "HasMod": "mushymato.Merchant"
+            }
+        },
+        {
+            "LogName": "Municipal Tourists",
+            "Action": "Include",
+            "FromFile": "Data/Technical/Tourists.json",
+            "When": {
+                "HasMod": "Pathoschild.CentralStation.Content"
+            }
+        },
+        {
+            "LogName": "Municipal Accessibility Patch",
+            "Action": "Include",
+            "FromFile": "Data/Technical/MapPatchesRamps.json",
+            "When": {
+                "HasMod": "MV.PelicanTownAccessibility"
+            }
+        }
+    ]
+}

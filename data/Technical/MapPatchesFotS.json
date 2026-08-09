@@ -1,0 +1,23 @@
+{
+	"Changes": [
+		{
+			"LogName": "Map Patch Municipal Feast of the Sun Town Wreaths",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "Assets/Maps/MunicipalFotS.tmx",
+			"PatchMode": "Replace",
+			"ToArea": {
+				"X": 26,
+				"Y": 46,
+				"Width": 2,
+				"Height": 1
+			},
+			"When": {
+				"Season": "summer",
+				"Day": "10,11",
+				"Spiderbuttons.CMCT/Config: KaileyStardew.FeastOfTheSun, Town Wreaths": true
+			},
+			"Priority": "Late"
+		}
+	]
+}

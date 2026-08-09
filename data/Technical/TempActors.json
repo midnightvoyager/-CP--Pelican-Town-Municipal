@@ -1,0 +1,10 @@
+{
+	"Changes": [
+		{
+			"LogName": "Municipal Temporary Actors",
+			"Action": "Load",
+			"Target": "Portraits/MV.Municipal_ClerkAlicia,Characters/MV.Municipal_ClerkAlicia,Portraits/MV.Municipal_BillMom,Characters/MV.Municipal_BillMom,Portraits/MV.Municipal_BillDad,Characters/MV.Municipal_BillDad,Portraits/MV.Municipal_BillYoung,Characters/MV.Municipal_BillYoung,Portraits/MV.Municipal_SadDuke",
+			"FromFile": "Assets/NPCs/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+		}
+	]
+}

@@ -1,0 +1,183 @@
+{
+    "Changes": [
+        {
+            "LogName": "Marlon Portraits with expressions",
+            "Action": "Load",
+            "Target": "Portraits/Marlon",
+            "FromFile": "Assets/Npcs/Portraits/Marlon.png",
+            "Priority": "Low",
+            "When": {
+                "MarlonPortrait": true
+            }
+        },
+        {
+            "LogName": "Wizard Portraits with expressions",
+            "Action": "Load",
+            "Target": "Portraits/Wizard",
+            "FromFile": "Assets/Npcs/Portraits/Wizard.png",
+            "Priority": "Low",
+            "When": {
+                "WizardPortrait": true
+            }
+        },
+        {
+            "LogName": "Expanded Wizard Sprite",
+            "Action": "Load",
+            "Target": "Characters/Wizard",
+            "FromFile": "Assets/Npcs/Characters/Wizard.png",
+            "Priority": "Low",
+            "When": {
+                "WizardPortrait": true
+            }
+        },
+        {
+            "LogName": "Wizard Vanilla Sprite Sleep Frame",
+            "Action": "EditImage",
+            "Target": "Characters/Wizard",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Npcs/Characters/WizardVanilla.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 192,
+                "Width": 16,
+                "Height": 32
+            },
+            "Update": "OnLocationChange",
+            "When": {
+                "WizardSprite |contains=vanilla": true,
+                "WizardPortrait": false,
+                "RivalHeartsRas": true
+            }
+        },
+        {
+            "LogName": "Wizard Vanilla Sprite Sleep Frame - Niko Colors",
+            "Action": "EditImage",
+            "Target": "Characters/Wizard",
+            "FromFile": "Assets/Npcs/Characters/WizardVanillaNiko.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 192,
+                "Width": 16,
+                "Height": 32
+            },
+            "Update": "OnLocationChange",
+            "When": {
+                "WizardSprite |contains=vanillaniko": true,
+                "WizardPortrait": false,
+                "RivalHeartsRas": true
+            }
+        },
+        {
+            "LogName": "Wizard Sprite Frame for Teleport",
+            "Action": "EditImage",
+            "Target": "Characters/Wizard",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Npcs/Characters/WizardWarpOverlay.png",
+            "ToArea": {
+                "X": 48,
+                "Y": 160,
+                "Width": 16,
+                "Height": 32
+            },
+            "Update": "OnLocationChange",
+            "When": {
+                "WizardPortrait": false,
+                "RivalHeartsRas": true
+            }
+        },
+        {
+            "LogName": "Tripod Squirrel Sprite",
+            "Action": "Load",
+            "Target": "Characters/TripodSquirrel",
+            "FromFile": "Assets/Npcs/Characters/TripodSquirrel.png",
+            "Priority": "Low"
+        },
+        {
+            "LogName": "Snow Dome Effect Sprite",
+            "Action": "Load",
+            "Target": "Effects/SnowDome",
+            "FromFile": "Assets/Objects/snowdome_{{RecolorTag}}.png",
+            "Priority": "Low"
+        },
+        {
+            "LogName": "Bill Portraits and Characters",
+            "Action": "Load",
+            "Target": "Portraits/{{ModID}}_SheriffBill,Characters/{{ModID}}_SheriffBill,Portraits/{{ModID}}_SheriffBill_Winter,Characters/{{ModID}}_SheriffBill_Winter,Portraits/{{ModID}}_SheriffBill_Beach,Characters/{{ModID}}_SheriffBill_Beach,Portraits/{{ModID}}_SheriffBill_SpiritsEve,Characters/{{ModID}}_SheriffBill_SpiritsEve,Portraits/{{ModID}}_SheriffBill_Pride,Characters/{{ModID}}_SheriffBill_Pride",
+            "FromFile": "Assets/NPCs/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Bill's Wizard Amulet Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/{{ModId}}_SheriffBill,Portraits/{{ModId}}_SheriffBill_Winter,Portraits/{{ModId}}_SheriffBill_Beach,Portraits/{{ModId}}_SheriffBill_Pride",
+            "PatchMode": "Overlay",
+            "FromFile": "Assets/NPCs/Portraits/{{TargetWithoutPath}}_Overlay.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            }
+        },
+        {
+            "LogName": "Municipal Blank Loads",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/{{ModID}}_Alicia,Characters/Dialogue/{{ModID}}_SheriffBill,Strings/schedules/{{ModID}}_SheriffBill,Characters/schedules/{{ModID}}_SheriffBill,Data/Events/AdventureGuild,Data/Events/MunicipalFloor1,Data/Events/MunicipalFloor2,Strings/MV.Municipal",
+            "FromFile": "Data/Empty.json",
+            "Priority": "Low"
+        },
+        {
+            "LogName": "Wizard RH Schedule Loads",
+            "Action": "Load",
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true
+            },
+            "Target": "Characters/schedules/Wizard",
+            "FromFile": "Data/Empty.json",
+            "Priority": "Low"
+        },
+        {
+            "LogName": "Load Municipal Indoor Maps",
+            "Action": "Load",
+            "Target": "Maps/MunicipalFloor1,Maps/MunicipalFloor2,Maps/MunicipalPhotos,Maps/Municipal-Flashback,Maps/MunicipalFloor2-Temp,Maps/Municipal-WizardTeleport,Maps/Municipal-BillZone,Maps/MunicipalCells",
+            "FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx"
+        },
+        {
+            "LogName": "Municipal Object Loads",
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/Objects,Mods/{{ModID}}/Furniture,Mods/{{ModID}}/Crops",
+            "FromFile": "Assets/Objects/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Municipal Seed Bag Overlay",
+            "Action": "EditImage",
+            "Target": "Mods/{{ModID}}/Objects",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Objects/{{ManaBloomSeeds}}.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+            }
+        },
+        {
+            "LogName": "Municipal Outdoor Tilesheet Loads",
+            "Action": "Load",
+            "Target": "Maps/spring_municipalbuilding_tiles,Maps/summer_municipalbuilding_tiles,Maps/fall_municipalbuilding_tiles,Maps/winter_municipalbuilding_tiles",
+            "FromFile": "Assets/Maps/TileSheets/{{RecolorTag}}Exterior/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Load Tilesheets - Photos",
+            "Action": "Load",
+            "Target": "Maps/municipal_photos",
+            "FromFile": "Assets/Maps/TileSheets/municipal_photos.png"
+        },
+        {
+            "LogName": "Load Tilesheets Haley's Bakery - Shack",
+            "Action": "Load",
+            "Target": "Maps/spring_shack,Maps/summer_shack,Maps/fall_shack,Maps/winter_shack",
+            "FromFile": "Assets/Maps/Tilesheets/HaleysBakery/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasMod |contains=kabulla.bakery": true
+            }
+        }
+    ]
+}
