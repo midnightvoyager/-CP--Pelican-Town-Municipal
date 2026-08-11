@@ -89,7 +89,7 @@
             "LogName": "Municipal Mail - Load Bill's Envelope",
             "Action": "Load",
             "Target": "aedenthorn.CPMBMEnvelopes/SheriffBill",
-            "FromFile": "assets/Objects/envelope.png",
+            "FromFile": "assets/Mail/{{MailStyle}}/envelope.png",
             "When": {
                 "HasMod |contains=aedenthorn.MailboxMenu,tem696969696969.MailboxMenu": true
             }
@@ -98,7 +98,7 @@
             "LogName": "Municipal Mail - Load Bill's Personal Envelope",
             "Action": "Load",
             "Target": "aedenthorn.CPMBMEnvelopes/SheriffBillPersonal",
-            "FromFile": "assets/Objects/envelopepersonal.png",
+            "FromFile": "assets/Mail/{{MailStyle}}/envelopepersonal.png",
             "When": {
                 "HasMod |contains=aedenthorn.MailboxMenu,tem696969696969.MailboxMenu": true
             }
