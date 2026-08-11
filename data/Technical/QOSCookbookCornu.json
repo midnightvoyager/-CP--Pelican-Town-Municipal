@@ -37,7 +37,7 @@
                                 },
                                 {
                                     "Type": "Paragraph",
-                                    "Text": "Sheriff Bill",
+                                    "Text": "{{i18n:MV.Municipal.SheriffBill2}}",
                                     "Scale": 1,
                                     "Position": {
                                         "X": 60,
@@ -67,7 +67,7 @@
                     "Elements": [
                         {
                             "Type": "Title",
-                            "Text": "Sheriff Bill's Recipes",
+                            "Text": "{{i18n:SheriffBillRecipes.Title}}",
                             "Alignment": "Center"
                         },
                         {
@@ -186,7 +186,7 @@
                     "Elements": [
                         {
                             "Type": "Paragraph",
-                            "Text": "Unlock Conditions",
+                            "Text": "{{i18n:UnlockConditions}}",
                             "Alignment": "Center",
                             "SpacingAfter": 10
                         },
@@ -547,11 +547,11 @@
                                             "Tags": [
                                                 "NpcId.{{ModId}}_SheriffBill"
                                             ],
-                                            "DisplayName": "Bill"
+                                            "DisplayName": "{{i18n:MV.Municipal.SheriffBill}}"
                                         },
                                         {
                                             "Type": "Paragraph",
-                                            "Text": "Bill {{i18n:Love}}",
+                                            "Text": "{{i18n:MV.Municipal.SheriffBill}} {{i18n:Love}}",
                                             "Position": {
                                                 "X": 60,
                                                 "Y": 0
@@ -902,11 +902,11 @@
                                             "Tags": [
                                                 "NpcId.{{ModId}}_SheriffBill"
                                             ],
-                                            "DisplayName": "Bill"
+                                            "DisplayName": "{{i18n:MV.Municipal.SheriffBill}}"
                                         },
                                         {
                                             "Type": "Paragraph",
-                                            "Text": "Bill {{i18n:Love}}",
+                                            "Text": "{{i18n:MV.Municipal.SheriffBill}} {{i18n:Love}}",
                                             "Position": {
                                                 "X": 60,
                                                 "Y": 0
