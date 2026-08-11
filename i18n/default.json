@@ -43,6 +43,10 @@
     "Config.ManaBloomSeeds.description": "What style of seed bag do you want for the Mana Bloom?",
     "Config.ManaBloomSeeds.values.ManaBloomVanilla": "Vanilla",
     "Config.ManaBloomSeeds.values.ManaBloomVanillaSeasonal": "Seasonal Vanilla",
+    "Config.MailVersion.name": "Mail Version",
+    "Config.MailVersion.description": "What style of envelope do you want for Mailbox Menu?",
+    "Config.MailVersion.values.Aedenthorn": "Aedenthorn",
+    "Config.MailVersion.values.Zilchaz": "Zilchaz",
     //OBJECTS
     "MV.Municipal.Objects.TrashTicket_Name": "Torn Bus Ticket",
     "MV.Municipal.Objects.TrashTicket_Description": "A torn-up old bus ticket.",
@@ -112,6 +116,7 @@
     "MV.Municipal.MapInfo2": "Bill's Apartment",
     "MV.Municipal.MapInfo3": "Pelican Town Municipal - Unused Cells",
     "MV.Municipal.SheriffBill": "Bill",
+    "MV.Municipal.SheriffBill2": "Sheriff Bill",
     "MV.Municipal.SheriffBill.Mom": "Ma",
     "MV.Municipal.SheriffBill.Dad": "Pa",
     //DYNAMIC STRING BLOCK
@@ -785,6 +790,8 @@
     "Love": "loves this",
     "NotMade": "You haven't made this recipe before.",
     "Made": "You've made this recipe at least once.",
+    "UnlockConditions": "Unlock Conditions:",
+    "SheriffBillRecipes.Title": "Sheriff Bill's Recipes",
     "SheriffBillRecipes.Desc1": "These are recipes Bill remembers from home.",
     "SheriffBillRecipes.Desc2": "(Modder's Note: And from my home, too!)",
     "SheriffBill.Foreword1": "Bill says:",

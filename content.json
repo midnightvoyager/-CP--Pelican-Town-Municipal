@@ -63,8 +63,8 @@
         },
         "MailVersion": {
             "Description": "What style of envelope do you want for Mailbox Menu?",
-            "AllowValues": "Aedenthorn, Zilch",
-            "Default": "Zilch",
+            "AllowValues": "Aedenthorn, Zilchaz",
+            "Default": "Zilchaz",
             "AllowBlank": false
         }
     },
