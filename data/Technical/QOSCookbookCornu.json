@@ -1,0 +1,996 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Search Entry",
+            "Action": "EditData",
+            "Target": "Data/PeacefulEnd.Parchment/Books",
+            "TargetField": [
+                "Wem.QOS_Cookbook",
+                "Pages",
+                "Modded_1",
+                "Elements"
+            ],
+            "Entries": {
+                "{{ModId}}_SearchEntry.Bill": {
+                    "Type": "Grid",
+                    "Columns": 1,
+                    "CellWidth": 128,
+                    "CellHeight": 10,
+                    "ColumnSpacing": 1,
+                    "RowSpacing": 15,
+                    "Padding": 0,
+                    "MarginLeft": 15,
+                    "MarginRight": 15,
+                    "Scale": 2,
+                    "SpacingAfter": 15,
+                    "Children": [
+                        {
+                            "Type": "Panel",
+                            "VerticalAlignment": "Center",
+                            "Background": [
+                                {
+                                    "Type": "Image",
+                                    "ItemId": "{{ModID}}_BiscuitandGravy",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Action": "PeacefulEnd.Parchment_JumpToPageId {{ModId}}_Contents"
+                                },
+                                {
+                                    "Type": "Paragraph",
+                                    "Text": "Sheriff Bill",
+                                    "Scale": 1,
+                                    "Position": {
+                                        "X": 60,
+                                        "Y": 0
+                                    },
+                                    "VerticalAlignment": "Center",
+                                    "Action": "PeacefulEnd.Parchment_JumpToPageId {{ModId}}_Contents"
+                                }
+                            ],
+                            "Condition": "PeacefulEnd.Parchment_InputMatches search Bill"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/PeacefulEnd.Parchment/Books",
+            "TargetField": [
+                "Wem.QOS_Cookbook",
+                "Pages"
+            ],
+            "Entries": {
+                "{{ModId}}_Contents": {
+                    "Id": "{{ModId}}_Contents",
+                    "ChapterId": "{{ModId}}_Chapter",
+                    "Elements": [
+                        {
+                            "Type": "Title",
+                            "Text": "Sheriff Bill's Recipes",
+                            "Alignment": "Center"
+                        },
+                        {
+                            "Type": "Divider",
+                            "TexturePath": "Assets/Wem.QOS/divider1",
+                            "Sizing": "ShrinkToFit",
+                            "Alignment": "Center",
+                            "Scale": 3
+                        },
+                        {
+                            "Type": "Grid",
+                            "Columns": 2,
+                            "CellWidth": 100,
+                            "CellHeight": 100,
+                            "ColumnSpacing": 0,
+                            "RowSpacing": 50,
+                            "SpacingAfter": 45,
+                            "Alignment": "Center",
+                            "Background": [
+                                {
+                                    "Type": "Image",
+                                    "TexturePath": "Assets/Wem.QOS/ForkKnifeDecal1",
+                                    "Scale": 5,
+                                    "Alignment": "Left",
+                                    "Position": {
+                                        "X": 0,
+                                        "Y": 0
+                                    }
+                                },
+                                {
+                                    "Type": "Image",
+                                    "TexturePath": "Assets/Wem.QOS/ForkKnifeDecal1",
+                                    "Scale": 5,
+                                    "Alignment": "Left",
+                                    "Position": {
+                                        "X": 100,
+                                        "Y": 0
+                                    }
+                                }
+                            ],
+                            "Children": [
+                                {
+                                    //Biscuit and Gravy
+                                    "Type": "Image",
+                                    "ItemId": "{{ModID}}_BiscuitandGravy",
+                                    "Scale": 5,
+                                    "Alignment": "Center",
+                                    "VerticalAlignment": "Center",
+                                    "Action": "PeacefulEnd.Parchment_JumpToPageId {{ModID}}_BiscuitandGravy_1",
+                                    "Description": "{{i18n:GOTORecipe}}",
+                                    "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_BiscuitandGravy"
+                                },
+                                {
+                                    "Type": "Image",
+                                    "ItemId": "{{ModID}}_BiscuitandGravy",
+                                    "Scale": 5,
+                                    "Alignment": "Center",
+                                    "VerticalAlignment": "Center",
+                                    "DisplayName": "{{i18n:Question}}",
+                                    "Description": "{{i18n:NotLearned}}",
+                                    "TintColor": "black",
+                                    "Condition": "!PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_BiscuitandGravy"
+                                },
+                                {
+                                    //Hush Puppies
+                                    "Type": "Image",
+                                    "ItemId": "{{ModID}}_HushPuppies",
+                                    "Scale": 5,
+                                    "Alignment": "Center",
+                                    "VerticalAlignment": "Center",
+                                    "Action": "PeacefulEnd.Parchment_JumpToPageId {{ModID}}_HushPuppies_1",
+                                    "Description": "{{i18n:GOTORecipe}}",
+                                    "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_HushPuppies"
+                                },
+                                {
+                                    "Type": "Image",
+                                    "ItemId": "{{ModID}}_HushPuppies",
+                                    "Scale": 5,
+                                    "Alignment": "Center",
+                                    "VerticalAlignment": "Center",
+                                    "TintColor": "black",
+                                    "DisplayName": "{{i18n:Question}}",
+                                    "Description": "{{i18n:NotLearned}}",
+                                    "Condition": "!PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_HushPuppies"
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "Text": "{{i18n:SheriffBillRecipes.Desc1}}",
+                            "MarginLeft": 16,
+                            "MarginRight": 16,
+                            "Alignment": "Center",
+                            "SpacingAfter": 25
+                        },
+                        {
+                            "Type": "Image",
+                            "TexturePath": "Mods/{{ModID}}/Objects",
+                            "TextureSourceRectangle": {
+                                "X": 112,
+                                "Y": 16,
+                                "Width": 16,
+                                "Height": 16
+                            },
+                            "MarginLeft": 16,
+                            "MarginRight": 16,
+                            "Scale": 6,
+                            "Alignment": "Center"
+                        }
+                    ]
+                },
+                "{{ModId}}_Contents_1": {
+                    "Id": "{{ModId}}_Contents_1",
+                    "ChapterId": "{{ModId}}_Chapter",
+                    "Background": [],
+                    "Elements": [
+                        {
+                            "Type": "Paragraph",
+                            "Text": "Unlock Conditions",
+                            "Alignment": "Center",
+                            "SpacingAfter": 10
+                        },
+                        {
+                            "Type": "Divider",
+                            "TexturePath": "Assets/Wem.QOS/divider2",
+                            "Sizing": "ShrinkToFit",
+                            "Alignment": "Center",
+                            "Scale": 3,
+                            "SpacingAfter": 5
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "Text": "{{i18n:Unlock1}}",
+                            "MarginLeft": 16,
+                            "MarginRight": 16,
+                            "Alignment": "Left",
+                            "SpacingAfter": 10
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "Text": "{{i18n:Unlock2}}",
+                            "MarginLeft": 16,
+                            "MarginRight": 16,
+                            "Alignment": "Left",
+                            "SpacingAfter": 10
+                        },
+                        {
+                            "Type": "Image",
+                            "TexturePath": "Maps/z_municipalbuilding_interior_tiles",
+                            "TextureSourceRectangle": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 32,
+                                "Height": 48
+                            },
+                            "Scale": 4,
+                            "Alignment": "Center"
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "Text": "{{i18n:SheriffBill.Foreword1}}",
+                            "MarginLeft": 16,
+                            "MarginRight": 16,
+                            "Alignment": "Center"
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "Text": "{{i18n:SheriffBill.Foreword2}}",
+                            "MarginLeft": 16,
+                            "MarginRight": 16,
+                            "Alignment": "Center"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Biscuit and Gravy Pages",
+            "Action": "EditData",
+            "Target": "Data/PeacefulEnd.Parchment/Books",
+            "TargetField": [
+                "Wem.QOS_Cookbook",
+                "Pages"
+            ],
+            "Entries": {
+                "{{ModID}}_BiscuitandGravy_1": {
+                    "Id": "{{ModID}}_BiscuitandGravy_1",
+                    "ChapterId": "{{ModId}}_Chapter",
+                    "Foreground": [],
+                    "Background": [
+                        {
+                            "Type": "Image",
+                            "TexturePath": "Assets/Wem.QOS/PanDecal1",
+                            "Scale": 7.5,
+                            "Alignment": "Center",
+                            "Position": {
+                                "X": -25,
+                                "Y": 115
+                            }
+                        }
+                    ],
+                    "Elements": [
+                        {
+                            "Type": "Title",
+                            "Text": "{{i18n:Question}}",
+                            "Alignment": "Center",
+                            "Condition": "!PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_BiscuitandGravy"
+                        },
+                        {
+                            "Type": "Title",
+                            "Text": "[ItemName (O){{ModID}}_BiscuitandGravy]",
+                            "Alignment": "Center",
+                            "FontType": "Dialogue",
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_BiscuitandGravy"
+                        },
+                        {
+                            "Type": "Divider",
+                            "TexturePath": "Assets/Wem.QOS/divider1",
+                            "Sizing": "ShrinkToFit",
+                            "Alignment": "Center",
+                            "Scale": 3
+                        },
+                        {
+                            "Type": "Grid",
+                            "Columns": 1,
+                            "Rows": 1,
+                            "CellWidth": 150,
+                            "CellHeight": 150,
+                            "ColumnSpacing": 100,
+                            "RowSpacing": 50,
+                            "Alignment": "Center",
+                            "SpacingAfter": 115,
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_BiscuitandGravy",
+                            "Children": [
+                                {
+                                    "Type": "Image",
+                                    "ItemId": "{{ModID}}_BiscuitandGravy",
+                                    "Scale": 9,
+                                    "VerticalAlignment": "Center",
+                                    "Position": {
+                                        "X": 14,
+                                        "Y": 27
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "MarginLeft": 16,
+                            "MarginRight": 16,
+                            "Text": "{{i18n:BiscuitandGravy.Desc}}",
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_BiscuitandGravy"
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "MarginLeft": 16,
+                            "MarginRight": 56,
+                            "Alignment": "Right",
+                            "Text": "- Bill",
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_BiscuitandGravy"
+                        }
+                    ]
+                },
+                "{{ModID}}_BiscuitandGravy_2": {
+                    "Id": "{{ModID}}_BiscuitandGravy_2",
+                    "ChapterId": "{{ModId}}_Chapter",
+                    "Foreground": [],
+                    "Elements": [
+                        {
+                            "Type": "Paragraph",
+                            "Text": "{{i18n:Ingredients}}",
+                            "Alignment": "Center"
+                        },
+                        {
+                            "Type": "Grid",
+                            "Columns": 1,
+                            "CellWidth": 500,
+                            "CellHeight": 10,
+                            "ColumnSpacing": 0,
+                            "RowSpacing": 30,
+                            "Padding": 15,
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_BiscuitandGravy",
+                            "SpacingAfter": 25,
+                            "Children": [
+                                //Milk
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "ItemId": "(O)184",
+                                            "Scale": 2,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 15,
+                                                "Y": 0
+                                            }
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "1x [ItemName (O)184] {{i18n:Any}}",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        }
+                                    ]
+                                },
+                                //2 x Flour
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Condition": "ANY \"!{{CornucopiaRecipeTrigger}}\" \"!{{Spiderbuttons.CMCT/Config: Cornucopia.CookingRecipes, World Traveler}}\"",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "ItemId": "(O)246",
+                                            "Scale": 2,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 15,
+                                                "Y": 0
+                                            }
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "2x [ItemName (O)246]",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        }
+                                    ]
+                                },
+                                //1 x Flour
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Condition": "{{CornucopiaRecipeTrigger}}, {{Spiderbuttons.CMCT/Config: Cornucopia.CookingRecipes, World Traveler}}",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "ItemId": "(O)246",
+                                            "Scale": 2,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 15,
+                                                "Y": 0
+                                            }
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "1x [ItemName (O)246]",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        }
+                                    ]
+                                },
+                                //Cornucopia Biscuit
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Condition": "{{CornucopiaRecipeTrigger}}, {{Spiderbuttons.CMCT/Config: Cornucopia.CookingRecipes, World Traveler}}",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "ItemId": "Cornucopia_Biscuit",
+                                            "Scale": 2,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 15,
+                                                "Y": 0
+                                            }
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "1x [ItemName Cornucopia_Biscuit]",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        }
+                                    ]
+                                },
+                                //Cornucopia Peppercorn
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Condition": "{{CornucopiaRecipeTrigger}}, {{Spiderbuttons.CMCT/Config: Cornucopia.CookingRecipes, World Traveler}}",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "ItemId": "Cornucopia_Peppercorn",
+                                            "Scale": 2,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 15,
+                                                "Y": 0
+                                            }
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "1x [ItemName Cornucopia_Peppercorn]",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "Divider",
+                            "TexturePath": "Assets/Wem.QOS/divider1",
+                            "Sizing": "ShrinkToFit",
+                            "Alignment": "Center",
+                            "Scale": 3,
+                            "SpacingAfter": 5
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "Text": "{{i18n:Preferences}}",
+                            "Alignment": "Center"
+                        },
+                        {
+                            "Type": "Grid",
+                            "Columns": 1,
+                            "CellWidth": 500,
+                            "CellHeight": 10,
+                            "ColumnSpacing": 0,
+                            "RowSpacing": 30,
+                            "Padding": 15,
+                            "SpacingAfter": 20,
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_BiscuitandGravy",
+                            "Children": [
+                                //Preferences
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "TexturePath": "Characters/{{ModId}}_SheriffBill",
+                                            "TextureSourceRectangle": {
+                                                "X": 0,
+                                                "Y": 0,
+                                                "Width": 16,
+                                                "Height": 13
+                                            },
+                                            "Scale": 2.5,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 12,
+                                                "Y": 0
+                                            },
+                                            "Tags": [
+                                                "NpcId.{{ModId}}_SheriffBill"
+                                            ],
+                                            "DisplayName": "Bill"
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "Bill {{i18n:Love}}",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        },
+                                        {
+                                            "Type": "Image",
+                                            "TexturePath": "LooseSprites/Cursors",
+                                            "TextureSourceRectangle": {
+                                                "X": 172,
+                                                "Y": 512,
+                                                "Width": 9,
+                                                "Height": 12
+                                            },
+                                            "Scale": 2.5,
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 254,
+                                                "Y": -20
+                                            },
+                                            "Condition": "{{Spiderbuttons.CMCT/Config: Wem.QOS, EmojisToggle | contains = true}}"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasMod | contains = Spiderbuttons.CMCT": true
+            }
+        },
+        //Checkboxes 
+        {
+            "LogName": "Add Checkboxes - Biscuit and Gravy",
+            "Action": "EditData",
+            "Target": "Data/PeacefulEnd.Parchment/Books",
+            "TargetField": [
+                "Wem.QOS_Cookbook",
+                "Pages",
+                "{{ModID}}_BiscuitandGravy_2",
+                "Foreground"
+            ],
+            "Entries": {
+                "{{ModId}}_BiscuitandGravy.Checkbox1": {
+                    "Type": "Image",
+                    "TexturePath": "LooseSprites/Cursors",
+                    "TextureSourceRectangle": {
+                        "X": 227,
+                        "Y": 425,
+                        "Width": 9,
+                        "Height": 9
+                    },
+                    "Position": {
+                        "X": 395,
+                        "Y": -5
+                    },
+                    "Scale": 4,
+                    "Description": "{{i18n:NotMade}}",
+                    "Condition": "!Spiderbuttons.BETAS_PLAYER_HAS_COOKED_ITEM {{Spiderbuttons.CMCT/Dynamic: Wem.QOS, MP}} {{ModID}}_BiscuitandGravy"
+                },
+                "{{ModId}}_BiscuitandGravy.Checkbox2": {
+                    "Type": "Image",
+                    "TexturePath": "LooseSprites/Cursors",
+                    "TextureSourceRectangle": {
+                        "X": 236,
+                        "Y": 425,
+                        "Width": 9,
+                        "Height": 9
+                    },
+                    "Position": {
+                        "X": 395,
+                        "Y": -5
+                    },
+                    "Scale": 4,
+                    "Description": "{{i18n:Made}}",
+                    "Condition": "Spiderbuttons.BETAS_PLAYER_HAS_COOKED_ITEM {{Spiderbuttons.CMCT/Dynamic: Wem.QOS, MP}} {{ModID}}_BiscuitandGravy"
+                }
+            },
+            "When": {
+                "HasMod": "Spiderbuttons.CMCT"
+            }
+        },
+        //Hush Puppies
+        {
+            "LogName": "Add Hush Puppies Pages",
+            "Action": "EditData",
+            "Target": "Data/PeacefulEnd.Parchment/Books",
+            "TargetField": [
+                "Wem.QOS_Cookbook",
+                "Pages"
+            ],
+            "Entries": {
+                "{{ModID}}_HushPuppies_1": {
+                    "Id": "{{ModID}}_HushPuppies_1",
+                    "ChapterId": "{{ModId}}_Chapter",
+                    "Background": [
+                        {
+                            "Type": "Image",
+                            "TexturePath": "Assets/Wem.QOS/PanDecal1",
+                            "Scale": 7.5,
+                            "Alignment": "Center",
+                            "Position": {
+                                "X": -25,
+                                "Y": 115
+                            }
+                        }
+                    ],
+                    "Elements": [
+                        {
+                            "Type": "Title",
+                            "Text": "{{i18n:Question}}",
+                            "Alignment": "Center",
+                            "Condition": "!PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_HushPuppies"
+                        },
+                        {
+                            "Type": "Title",
+                            "Text": "[ItemName {{ModID}}_HushPuppies]",
+                            "Alignment": "Center",
+                            "FontType": "Dialogue",
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_HushPuppies"
+                        },
+                        {
+                            "Type": "Divider",
+                            "TexturePath": "Assets/Wem.QOS/divider1",
+                            "Sizing": "ShrinkToFit",
+                            "Alignment": "Center",
+                            "Scale": 3
+                        },
+                        {
+                            "Type": "Grid",
+                            "Columns": 1,
+                            "Rows": 1,
+                            "CellWidth": 150,
+                            "CellHeight": 150,
+                            "ColumnSpacing": 100,
+                            "RowSpacing": 50,
+                            "Alignment": "Center",
+                            "SpacingAfter": 145,
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_HushPuppies",
+                            "Children": [
+                                {
+                                    "Type": "Image",
+                                    "ItemId": "{{ModID}}_HushPuppies",
+                                    "Scale": 9,
+                                    "VerticalAlignment": "Center",
+                                    "Alignment": "Center",
+                                    "Position": {
+                                        "X": 0,
+                                        "Y": 20
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "MarginLeft": 16,
+                            "MarginRight": 16,
+                            "Alignment": "Center",
+                            "Text": "{{i18n:HushPuppies.Desc}}",
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_HushPuppies"
+                        }
+                    ]
+                },
+                "{{ModID}}_HushPuppies_2": {
+                    "Id": "{{ModID}}_HushPuppies_2",
+                    "ChapterId": "{{ModId}}_Chapter",
+                    "Foreground": [],
+                    "Elements": [
+                        {
+                            "Type": "Paragraph",
+                            "Text": "{{i18n:Ingredients}}",
+                            "Alignment": "Center"
+                        },
+                        {
+                            "Type": "Grid",
+                            "Columns": 1,
+                            "CellWidth": 500,
+                            "CellHeight": 10,
+                            "ColumnSpacing": 0,
+                            "RowSpacing": 30,
+                            "Padding": 15,
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_HushPuppies",
+                            "Children": [
+                                //Cornucopia Cornflour
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Condition": "{{HasMod | contains = Cornucopia.CookingRecipes}}",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "ItemId": "Cornucopia_CornFlour",
+                                            "Scale": 2,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 15,
+                                                "Y": 0
+                                            }
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "1x [ItemName Cornucopia_CornFlour]",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        }
+                                    ]
+                                },
+                                //Flour
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "ItemId": "(O)246",
+                                            "Scale": 2,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 15,
+                                                "Y": 0
+                                            }
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "1x [ItemName (O)246]",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        }
+                                    ]
+                                },
+                                //Milk
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "ItemId": "(O)184",
+                                            "Scale": 2,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 15,
+                                                "Y": 0
+                                            }
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "1x [ItemName (O)184] {{i18n:Any}}",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        }
+                                    ]
+                                },
+                                //Egg
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "ItemId": "(O)176",
+                                            "Scale": 2,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 15,
+                                                "Y": 0
+                                            }
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "1x [ItemName (O)176] {{i18n:Any}}",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Type": "Divider",
+                            "TexturePath": "Assets/Wem.QOS/divider1",
+                            "Sizing": "ShrinkToFit",
+                            "Alignment": "Center",
+                            "Scale": 3,
+                            "SpacingAfter": 5
+                        },
+                        {
+                            "Type": "Paragraph",
+                            "Text": "{{i18n:Preferences}}",
+                            "Alignment": "Center"
+                        },
+                        {
+                            "Type": "Grid",
+                            "Columns": 1,
+                            "CellWidth": 500,
+                            "CellHeight": 10,
+                            "ColumnSpacing": 0,
+                            "RowSpacing": 30,
+                            "Padding": 15,
+                            "SpacingAfter": 20,
+                            "Condition": "PLAYER_HAS_COOKING_RECIPE Current {{ModID}}_HushPuppies",
+                            "Children": [
+                                //Preferences
+                                {
+                                    "Type": "Panel",
+                                    "Scale": 2,
+                                    "VerticalAlignment": "Center",
+                                    "Foreground": [
+                                        {
+                                            "Type": "Image",
+                                            "TexturePath": "Characters/{{ModId}}_SheriffBill",
+                                            "TextureSourceRectangle": {
+                                                "X": 0,
+                                                "Y": 0,
+                                                "Width": 16,
+                                                "Height": 13
+                                            },
+                                            "Scale": 2.5,
+                                            "VerticalAlignment": "Center",
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 12,
+                                                "Y": 0
+                                            },
+                                            "Tags": [
+                                                "NpcId.{{ModId}}_SheriffBill"
+                                            ],
+                                            "DisplayName": "Bill"
+                                        },
+                                        {
+                                            "Type": "Paragraph",
+                                            "Text": "Bill {{i18n:Love}}",
+                                            "Position": {
+                                                "X": 60,
+                                                "Y": 0
+                                            },
+                                            "VerticalAlignment": "Center"
+                                        },
+                                        {
+                                            "Type": "Image",
+                                            "TexturePath": "LooseSprites/Cursors",
+                                            "TextureSourceRectangle": {
+                                                "X": 172,
+                                                "Y": 512,
+                                                "Width": 9,
+                                                "Height": 12
+                                            },
+                                            "Scale": 2.5,
+                                            "Alignment": "Left",
+                                            "Position": {
+                                                "X": 254,
+                                                "Y": -20
+                                            },
+                                            "Condition": "{{Spiderbuttons.CMCT/Config: Wem.QOS, EmojisToggle | contains = true}}"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasMod | contains = Spiderbuttons.CMCT": true
+            }
+        },
+        //Checkboxes
+        {
+            "LogName": "Add Checkboxes - Hush Puppies",
+            "Action": "EditData",
+            "Target": "Data/PeacefulEnd.Parchment/Books",
+            "TargetField": [
+                "Wem.QOS_Cookbook",
+                "Pages",
+                "{{ModID}}_HushPuppies_2",
+                "Foreground"
+            ],
+            "Entries": {
+                "{{ModId}}_HushPuppies.Checkbox1": {
+                    "Type": "Image",
+                    "TexturePath": "LooseSprites/Cursors",
+                    "TextureSourceRectangle": {
+                        "X": 227,
+                        "Y": 425,
+                        "Width": 9,
+                        "Height": 9
+                    },
+                    "Position": {
+                        "X": 395,
+                        "Y": -5
+                    },
+                    "Scale": 4,
+                    "Description": "{{i18n:NotMade}}",
+                    "Condition": "!Spiderbuttons.BETAS_PLAYER_HAS_COOKED_ITEM {{Spiderbuttons.CMCT/Dynamic: Wem.QOS, MP}} {{ModID}}_HushPuppies"
+                },
+                "{{ModId}}_HushPuppies.Checkbox2": {
+                    "Type": "Image",
+                    "TexturePath": "LooseSprites/Cursors",
+                    "TextureSourceRectangle": {
+                        "X": 236,
+                        "Y": 425,
+                        "Width": 9,
+                        "Height": 9
+                    },
+                    "Position": {
+                        "X": 395,
+                        "Y": -5
+                    },
+                    "Scale": 4,
+                    "Description": "{{i18n:Made}}",
+                    "Condition": "Spiderbuttons.BETAS_PLAYER_HAS_COOKED_ITEM {{Spiderbuttons.CMCT/Dynamic: Wem.QOS, MP}} {{ModID}}_HushPuppies"
+                }
+            },
+            "When": {
+                "HasMod": "Spiderbuttons.CMCT"
+            }
+        }
+    ]
+}

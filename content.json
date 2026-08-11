@@ -568,6 +568,22 @@
                 "IsCommunityCenterComplete": true
             }
         },
+        {
+            "Name": "CornucopiaRecipeTrigger",
+            "Value": "false"
+        },
+        {
+            "Name": "CornucopiaRecipeTrigger",
+            "Value": "true",
+            "When": {
+                "HasMod|contains=Cornucopia.MoreFlowers": true,
+                "HasMod|contains=Cornucopia.ArtisanMachines": true,
+                "HasMod|contains=Cornucopia.MoreCrops": true,
+                "HasReadLetter: hostPlayer |contains=Cornucopia.MoreCrops_ExtendedCropsPackEnabled": true,
+                "HasReadLetter: hostPlayer |contains=Cornucopia.MoreCrops_ExtendedTreesPackEnabled": true,
+                "HasReadLetter: hostPlayer |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true
+            }
+        },
         //Abbreviated weekday check (thanks Axell and Pooh and Nova!)
         {
             "Name": "WeekDayList",
@@ -830,6 +846,24 @@
             "FromFile": "Data/Technical/MapPatchesRamps.json",
             "When": {
                 "HasMod": "MV.PelicanTownAccessibility"
+            }
+        },
+        {
+            "LogName": "Municipal Queen of Sauce Cookbook Patch",
+            "Action": "Include",
+            "FromFile": "Data/Technical/QOSCookbook.json",
+            "When": {
+                "HasMod |contains=Cornucopia.CookingRecipes": false,
+                "HasMod |contains=Wem.QOS": true
+            }
+        },
+        {
+            "LogName": "Municipal Queen of Sauce Cookbook Patch - Cornucopia",
+            "Action": "Include",
+            "FromFile": "Data/Technical/QOSCookbookCornu.json",
+            "When": {
+                "HasMod |contains=Cornucopia.CookingRecipes": true,
+                "HasMod |contains=Wem.QOS": true
             }
         }
     ]
