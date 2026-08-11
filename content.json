@@ -60,6 +60,12 @@
             "AllowValues": "ManaBloomVanilla, ManaBloomVanillaSeasonal, ManaBloomVT, ManaBloomVTSeasonal, ManaBloomVTSunny, ManaBloomVTSunnySeasonal",
             "Default": "ManaBloomVanilla",
             "AllowBlank": false
+        },
+        "MailVersion": {
+            "Description": "What style of envelope do you want for Mailbox Menu?",
+            "AllowValues": "Aedenthorn, Zilch",
+            "Default": "Zilch",
+            "AllowBlank": false
         }
     },
     "DynamicTokens": [
