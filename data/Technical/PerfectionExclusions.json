@@ -1,0 +1,16 @@
+{
+    "Changes": [
+        {
+            "LogName": "Mana Bloom Elixir Perfection Exclusion",
+            "Action": "EditData",
+            "Target": "rokugin.perfectionexclusions/recipes",
+            "Entries": {
+                "{{ModId}}_ManaBloomElixirExclusion": {
+                    "CraftingRecipes": [
+                        "{{ModID}}_ManaBloomElixir"
+                    ]
+                }
+            }
+        }
+    ]
+}

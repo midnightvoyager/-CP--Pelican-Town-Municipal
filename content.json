@@ -879,6 +879,14 @@
             "When": {
                 "HasMod |contains=jpp.WildFlowersReimagined": true
             }
+        },
+        {
+            "LogName": "Municipal Recipe Perfection Exclusions",
+            "Action": "Include",
+            "FromFile": "Data/Technical/PerfectionExclusions.json",
+            "When": {
+                "HasMod |contains=rokugin.perfectionexclusions": true
+            }
         }
     ]
 }
