@@ -606,7 +606,9 @@
                     "ExcludeFromFishingCollection": true,
                     "ExcludeFromShippingCollection": true,
                     "ExcludeFromRandomSale": false,
-                    "CustomFields": null,
+                    "CustomFields": {
+                        "mushymato.MixAllTheSeeds/NoMix": "T"
+                    },
                     "ContextTags": []
                 },
                 "{{ModID}}_ManaBloom": {
@@ -701,7 +703,7 @@
                         "color_yellow",
                         "food_bakery",
                         "food_nonvegan",
-						"food_breakfast",
+                        "food_breakfast",
                         "allergen_gluten",
                         "allergen_egg"
                     ]
