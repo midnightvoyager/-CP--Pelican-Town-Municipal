@@ -9,7 +9,7 @@
                 "{{ModID}}_Municipal_Open": "{{i18n:MV.Municipal.Mail.2.{{HasMod |contains=TheLimeyDragon.Ayeisha}}}} %item id {{ModID}}_FireExt 1%%[#]{{i18n:MV.Municipal.Mail.Title.2}}",
                 "{{ModID}}_Bill10HEvent": "{{i18n:MV.Municipal.Mail.3}} [#]{{i18n:MV.Municipal.Mail.Title.3}}",
                 "{{ModID}}_Bill10H": "{{i18n:MV.Municipal.Mail.4.{{HasMod |contains=tiakall.LFL}}.{{HasMod |contains=TheLimeyDragon.Ayeisha}}}} [#]{{i18n:MV.Municipal.Mail.Title.4}}",
-                "{{ModID}}_RivalHeartsRasMail1": "{{i18n:MV.Municipal.Mail.RH.1}} %item id {{ModID}}_ManaBloomSeedsQ 1%%%item quest {{ModID}}_ManaBloomQuest true%%[#]{{i18n:MV.Municipal.Mail.Title.RH.1}}",
+                "{{ModID}}_RivalHeartsRasMail1": "{{i18n:MV.Municipal.Mail.RH.1}} %item id {{ModID}}_ManaBloomSeeds 1%%%item quest {{ModID}}_ManaBloomQuest true%%[#]{{i18n:MV.Municipal.Mail.Title.RH.1}}",
                 "{{ModID}}_RivalHeartsRasMail2": "{{i18n:MV.Municipal.Mail.RH.2}} [letterbg 2][#]{{i18n:MV.Municipal.Mail.Title.RH.2}}",
                 "{{ModID}}_ManaBloomSeedMailRH": "{{i18n:MV.Municipal.Mail.ManaBloom.RH}} %item craftingRecipe {{ModID}}_ManaBloomElixir %%[letterbg 2][#]{{i18n:MV.Municipal.Mail.ManaBloom.Title.RH}}",
                 "{{ModID}}_ManaBloomSeedMail": "{{i18n:MV.Municipal.Mail.ManaBloom.{{HasMod |contains=Nom0ri.RomRas}}}} %item craftingRecipe {{ModID}}_ManaBloomElixir %%[letterbg 2][#]{{i18n:MV.Municipal.Mail.ManaBloom.Title}}",
