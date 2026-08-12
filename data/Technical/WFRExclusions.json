@@ -1,0 +1,28 @@
+{
+    "Changes": [
+        {
+            "LogName": "Wild Flowers Reimagined Ignore List - Flowers",
+            "Action": "EditData",
+            "Target": "Mods/jpp.WildFlowersReimagined/IgnoreList",
+            "TargetField": [
+                "Flowers"
+            ],
+            "Entries": {
+                "{{ModID}}_ManaBloomQ": "{{ModID}}_ManaBloomQ",
+                "{{ModID}}_ManaBloom": "{{ModID}}_ManaBloom"
+            }
+        },
+        {
+            "LogName": "Wild Flowers Reimagined Ignore List - Seeds",
+            "Action": "EditData",
+            "Target": "Mods/jpp.WildFlowersReimagined/IgnoreList",
+            "TargetField": [
+                "Seeds"
+            ],
+            "Entries": {
+                "{{ModID}}_ManaBloomSeedsQ": "{{ModID}}_ManaBloomSeedsQ",
+                "{{ModID}}_ManaBloomSeeds": "{{ModID}}_ManaBloomSeeds"
+            }
+        }
+    ]
+}

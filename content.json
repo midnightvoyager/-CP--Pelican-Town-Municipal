@@ -871,6 +871,14 @@
                 "HasMod |contains=Cornucopia.CookingRecipes": true,
                 "HasMod |contains=Wem.QOS": true
             }
+        },
+        {
+            "LogName": "Municipal Wild Flowers Reimagined Exclusions",
+            "Action": "Include",
+            "FromFile": "Data/Technical/WFRExclusions.json",
+            "When": {
+                "HasMod |contains=jpp.WildFlowersReimagined": true
+            }
         }
     ]
 }

@@ -5,7 +5,7 @@
       "Action": "EditData",
       "Target": "Data/Quests",
       "Entries": {
-        "{{ModID}}_ManaBloomQuest": "ItemDelivery/{{i18n:MV.Municipal.Quest.Title.RH}}/{{i18n:MV.Municipal.Quest.Description.RH}}/{{i18n:MV.Municipal.Quest.Instructions.RH}}/{{ModID}}_SheriffBill {{ModID}}_ManaBloom/-1/500/-1/false/{{i18n:MV.Municipal.Quest.Response.RH}}#$action AddMail Current {{ModID}}_BillRivalHeartsQuest received"
+        "{{ModID}}_ManaBloomQuest": "ItemDelivery/{{i18n:MV.Municipal.Quest.Title.RH}}/{{i18n:MV.Municipal.Quest.Description.RH}}/{{i18n:MV.Municipal.Quest.Instructions.RH}}/{{ModID}}_SheriffBill {{ModID}}_ManaBloomQ/-1/500/-1/false/{{i18n:MV.Municipal.Quest.Response.RH}}#$action AddMail Current {{ModID}}_BillRivalHeartsQuest received"
       }
     }
   ]

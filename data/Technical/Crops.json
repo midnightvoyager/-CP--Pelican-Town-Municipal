@@ -1,6 +1,41 @@
 {
   "Changes": [
     {
+      "LogName": "Municipal Crop Data - Quest",
+      "Action": "EditData",
+      "Target": "Data/Crops",
+      "Entries": {
+        "{{ModID}}_ManaBloomSeedsQ": {
+          "Seasons": [
+            "Fall"
+          ],
+          "DaysInPhase": [
+            1,
+            4,
+            4,
+            3
+          ],
+          "RegrowDays": -1,
+          "IsRaised": false,
+          "IsPaddyCrop": false,
+          "NeedsWatering": true,
+          "PlantableLocationRules": null,
+          "HarvestItemId": "{{ModID}}_ManaBloomQ",
+          "HarvestMinStack": 1,
+          "HarvestMaxStack": 1,
+          "HarvestMaxIncreasePerFarmingLevel": 0.0,
+          "ExtraHarvestChance": 0.0,
+          "HarvestMethod": "Grab",
+          "HarvestMinQuality": 0,
+          "HarvestMaxQuality": null,
+          "TintColors": [],
+          "Texture": "Mods/{{ModID}}/Crops",
+          "SpriteIndex": 0,
+          "CustomFields": {}
+        }
+      }
+    },
+    {
       "LogName": "Municipal Crop Data",
       "Action": "EditData",
       "Target": "Data/Crops",
