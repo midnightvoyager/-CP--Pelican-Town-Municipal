@@ -606,9 +606,7 @@
                     "ExcludeFromFishingCollection": true,
                     "ExcludeFromShippingCollection": true,
                     "ExcludeFromRandomSale": false,
-                    "CustomFields": {
-                        "mushymato.MixAllTheSeeds/NoMix": "T"
-                    },
+                    "CustomFields": null,
                     "ContextTags": []
                 },
                 "{{ModID}}_ManaBloom": {
