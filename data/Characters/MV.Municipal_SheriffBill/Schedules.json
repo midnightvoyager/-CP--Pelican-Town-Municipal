@@ -438,7 +438,26 @@
                 "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
                 "IsCommunityCenterComplete": true,
                 "HasSeenEvent: hostPlayer |contains=221961715": true,
-                "HasMod: |contains=FlashShifter.SVECode": true
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod: |contains=DN.SnS": false
+            }
+        },
+        {
+            "LogName": "SVE Community Day - Sword and Sorcery",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{ModId}}_SheriffBill",
+            "Entries": {
+                "spring_22": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 42 10 0 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "summer_22": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 42 10 0 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "fall_22": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 42 10 0 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "winter_22": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 42 10 0 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+            },
+            "When": {
+                "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
+                "IsCommunityCenterComplete": true,
+                "HasSeenEvent: hostPlayer |contains=221961715": true,
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod: |contains=DN.SnS": true
             }
         },
         {
