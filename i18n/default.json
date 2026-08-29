@@ -1,5 +1,7 @@
 {
     //SETTINGS
+    "Config.SeasonalBill.name": "More Seasonal Bill",
+    "Config.SeasonalBill.description": "Adds spring and summer variants to Bill. His default will be for fall and he already has Winter. Nothing more than a short sleeved uniform for both and a flower for spring.",
     "Config.AutoRecolor.name": "External Recolor",
     "Config.AutoRecolor.description": "Exterior recolor. Defaults to automatic, based on your installed mods.",
     "Config.AutoRecolor.values.Automatic": "Automatic",

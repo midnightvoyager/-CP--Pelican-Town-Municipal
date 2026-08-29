@@ -102,7 +102,7 @@
         {
             "LogName": "Bill Portraits and Characters",
             "Action": "Load",
-            "Target": "Portraits/{{ModID}}_SheriffBill,Characters/{{ModID}}_SheriffBill,Portraits/{{ModID}}_SheriffBill_Winter,Characters/{{ModID}}_SheriffBill_Winter,Portraits/{{ModID}}_SheriffBill_Beach,Characters/{{ModID}}_SheriffBill_Beach,Portraits/{{ModID}}_SheriffBill_SpiritsEve,Characters/{{ModID}}_SheriffBill_SpiritsEve,Portraits/{{ModID}}_SheriffBill_Pride,Characters/{{ModID}}_SheriffBill_Pride",
+            "Target": "Portraits/{{ModID}}_SheriffBill,Characters/{{ModID}}_SheriffBill,Portraits/{{ModID}}_SheriffBill_Winter,Characters/{{ModID}}_SheriffBill_Winter,Portraits/{{ModID}}_SheriffBill_Beach,Characters/{{ModID}}_SheriffBill_Beach,Portraits/{{ModID}}_SheriffBill_SpiritsEve,Characters/{{ModID}}_SheriffBill_SpiritsEve,Portraits/{{ModID}}_SheriffBill_Pride,Characters/{{ModID}}_SheriffBill_Pride,Portraits/{{ModID}}_SheriffBill_Spring,Characters/{{ModID}}_SheriffBill_Spring,Characters/{{ModID}}_SheriffBill_Summer",
             "FromFile": "Assets/NPCs/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
         },
         {

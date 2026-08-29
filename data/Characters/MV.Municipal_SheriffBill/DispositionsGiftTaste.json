@@ -96,6 +96,30 @@
                             "IsIslandAttire": false
                         },
                         {
+                            "ID": "{{ModId}}_SheriffBill_Spring",
+                            "Season": "spring",
+                            "Condition": "{{SeasonalBill}}",
+                            "Portrait": "Portraits/{{ModId}}_SheriffBill_Spring",
+                            "Sprite": "Characters/{{ModId}}_SheriffBill_Spring",
+                            "Precedence": -100,
+                            "Weight": 1,
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "IsIslandAttire": false
+                        },
+                        {
+                            "ID": "{{ModId}}_SheriffBill_Summer",
+                            "Season": "summer",
+                            "Condition": "{{SeasonalBill}}",
+                            "Portrait": "Portraits/{{ModId}}_SheriffBill",
+                            "Sprite": "Characters/{{ModId}}_SheriffBill_Summer",
+                            "Precedence": -100,
+                            "Weight": 1,
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "IsIslandAttire": false
+                        },
+                        {
                             "ID": "{{ModId}}_SheriffBill_Beach",
                             "Portrait": "Portraits/{{ModId}}_SheriffBill_Beach",
                             "Sprite": "Characters/{{ModId}}_SheriffBill_Beach",
@@ -104,6 +128,17 @@
                             "Outdoors": true,
                             "Indoors": false,
                             "IsIslandAttire": true
+                        },
+                        {
+                            "ID": "{{ModId}}_SheriffBill_FlowerFestival",
+                            "Condition": "EVENT_ID festival_spring24",
+                            "Portrait": "Portraits/{{ModId}}_SheriffBill_Spring",
+                            "Sprite": "Characters/{{ModId}}_SheriffBill_Spring",
+                            "Weight": 1,
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "IsIslandAttire": false,
+                            "Precedence": -1000
                         },
                         {
                             "ID": "{{ModId}}_SheriffBill_SpiritsEve",

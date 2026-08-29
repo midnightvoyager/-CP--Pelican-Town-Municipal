@@ -1,6 +1,12 @@
 {
     "Format": "2.9.0",
     "ConfigSchema": {
+        "SeasonalBill": {
+            "Description": "Adds spring and summer variants to Bill. His default will be for fall and he already has Winter. Nothing more than a short sleeved uniform for both and a flower for spring.",
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false
+        },
         "AutoRecolor": {
             "Description": "Exterior recolor. Defaults to automatic, based on your installed mods.",
             "AllowValues": "Automatic, Vanilla, Earthy, Starblue, Vibrant",

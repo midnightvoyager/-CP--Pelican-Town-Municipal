@@ -743,6 +743,25 @@
             "Update": "OnLocationChange",
             "Priority": "Late"
         },
+        {
+            "LogName": "Map Patch Municipal Closed - Cherrim's Valley Bench Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-CVBench.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 39,
+                "Y": 77,
+                "Width": 2,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
         ///Misc story related map changes
         {
             "LogName": "Map Patch Municipal Snowgoon",
@@ -1563,6 +1582,24 @@
                 "Y": 37,
                 "Width": 15,
                 "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1 - Cherrim's Valley - Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/Municipal-Halloween-CV-Patch.tmx",
+            "PatchMode": "ReplaceByLayer",
+            "ToArea": {
+                "X": 24,
+                "Y": 54,
+                "Width": 2,
+                "Height": 1
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
