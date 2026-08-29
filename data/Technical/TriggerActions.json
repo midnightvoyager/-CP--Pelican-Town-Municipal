@@ -293,6 +293,25 @@
                     ]
                 }
             }
+        },
+        {
+            "LogName": "Trigger Actions - Cherrim's Valley",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Entries": {
+                "{{ModId}}_RTFCV": {
+                    "Id": "{{ModId}}_RTFCV",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_ClearTerrainFeatures Town All 39 77 41 79",
+                        "Spiderbuttons.BETAS_ClearObjects Town All 39 77 41 79",
+                        "Spiderbuttons.BETAS_RegeneratePathsLayer Town 39 77 41 79"
+                    ]
+                }
+            }
         }
     ]
 }
