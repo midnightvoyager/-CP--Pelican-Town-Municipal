@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" width="15" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="22" nextobjectid="22">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="15" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="22" nextobjectid="22">
  <tileset firstgid="1" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="fall_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
@@ -2934,7 +2934,7 @@
 3737,3738,276,276,3771,3737,3832,3739,326,329,352,352,352,352,352,
 3865,3739,151,276,3771,3864,3865,3739,351,352,352,352,352,352,352,
 3866,3738,276,276,3771,3864,3865,3739,351,352,352,306,352,352,352,
-3865,3800,3707,0,3801,3832,3832,3739,351,305,352,301,352,352,352
+3865,3800,3707,3707,3801,3832,3832,3739,351,305,352,301,352,352,352
 </data>
  </layer>
  <layer id="15" name="Back1" width="15" height="17">

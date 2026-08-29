@@ -13,10 +13,8 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "HasMod |contains=Peekaboo.TownFields": false,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, ricehit.SevenDeadlySinsCP, heathinwillows.maplevaley": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false
             },
             "Update": "OnLocationChange",
             "Priority": "Late",
@@ -63,10 +61,8 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasFlag |contains={{ModID}}_Municipal_Open": true,
-                "HasMod |contains=Peekaboo.TownFields": false,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, ricehit.SevenDeadlySinsCP, heathinwillows.maplevaley": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true
             },
             "Update": "OnLocationChange",
             "Priority": "Late",
@@ -115,7 +111,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+                "HasMod |contains=ricehit.SevenDeadlySinsCP, heathinwillows.maplevaley": false
             },
             "Update": "OnLocationChange",
             "Priority": "Late",
@@ -164,7 +160,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+                "HasMod |contains=ricehit.SevenDeadlySinsCP, heathinwillows.maplevaley": false
             },
             "Update": "OnLocationChange",
             "Priority": "Late",
@@ -707,6 +703,46 @@
             "Update": "OnLocationChange",
             "Priority": "Late"
         },
+        {
+            "LogName": "Map Patch Municipal Closed - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalClosed-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
         ///Misc story related map changes
         {
             "LogName": "Map Patch Municipal Snowgoon",
@@ -759,8 +795,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -776,8 +811,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -793,8 +827,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -810,8 +843,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -827,8 +859,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -844,8 +875,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -861,8 +891,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -878,8 +907,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -896,8 +924,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
@@ -915,8 +942,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
@@ -934,8 +960,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
@@ -953,8 +978,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
@@ -973,8 +997,7 @@
                 "Height": 5
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
@@ -992,8 +1015,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
@@ -1011,8 +1033,7 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=Peekaboo.TownFields": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
@@ -1048,7 +1069,8 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -1064,7 +1086,8 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -1080,7 +1103,8 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -1096,7 +1120,8 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -1113,6 +1138,7 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "Year": "1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
             },
             "Priority": "Late"
@@ -1129,7 +1155,8 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -1146,6 +1173,7 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97"
             },
             "Priority": "Late"
@@ -1162,7 +1190,8 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -1178,7 +1207,8 @@
                 "Height": 17
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false
             },
             "Priority": "Late"
         },
@@ -1197,6 +1227,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
             "Priority": "Late"
@@ -1215,6 +1246,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
             "Priority": "Late"
@@ -1233,6 +1265,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
             "Priority": "Late"
@@ -1252,6 +1285,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
             "Priority": "Late"
@@ -1270,6 +1304,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
             "Priority": "Late"
@@ -1288,6 +1323,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
             "Priority": "Late"
@@ -1306,6 +1342,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "HasMod |contains=Peekaboo.TownFields, heathinwillows.maplevaley": false,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
             "Priority": "Late"
@@ -1323,7 +1360,8 @@
                 "Height": 19
             },
             "When": {
-                "HasMod |contains=Peekaboo.TownFields": true
+                "HasMod |contains=Peekaboo.TownFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
             "Priority": "Late"
         },
@@ -1339,7 +1377,8 @@
                 "Height": 19
             },
             "When": {
-                "HasMod |contains=Peekaboo.TownFields": true
+                "HasMod |contains=Peekaboo.TownFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
             "Priority": "Late"
         },
@@ -1355,7 +1394,8 @@
                 "Height": 19
             },
             "When": {
-                "HasMod |contains=Peekaboo.TownFields": true
+                "HasMod |contains=Peekaboo.TownFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
             "Priority": "Late"
         },
@@ -1371,7 +1411,8 @@
                 "Height": 19
             },
             "When": {
-                "HasMod |contains=Peekaboo.TownFields": true
+                "HasMod |contains=Peekaboo.TownFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
             "Priority": "Late"
         },
@@ -1387,7 +1428,8 @@
                 "Height": 19
             },
             "When": {
-                "HasMod |contains=Peekaboo.TownFields": true
+                "HasMod |contains=Peekaboo.TownFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
             "Priority": "Late"
         },
@@ -1403,7 +1445,8 @@
                 "Height": 19
             },
             "When": {
-                "HasMod |contains=Peekaboo.TownFields": true
+                "HasMod |contains=Peekaboo.TownFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
             "Priority": "Late"
         },
@@ -1419,7 +1462,8 @@
                 "Height": 19
             },
             "When": {
-                "HasMod |contains=Peekaboo.TownFields": true
+                "HasMod |contains=Peekaboo.TownFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
             "Priority": "Late"
         },
@@ -1435,7 +1479,145 @@
                 "Height": 19
             },
             "When": {
-                "HasMod |contains=Peekaboo.TownFields": true
+                "HasMod |contains=Peekaboo.TownFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        //Cherrim's Valley
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/Municipal-EggFestival-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/Municipal-EggFestival2-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/Municipal-Fair-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/Municipal-Fair2-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/Municipal-Halloween-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween2",
+            "FromFile": "Assets/Maps/Municipal-Halloween2-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/Municipal-Christmas-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/Municipal-Christmas2-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=heathinwillows.maplevaley": true
             },
             "Priority": "Late"
         },
