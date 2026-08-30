@@ -1,6 +1,1217 @@
 {
     "Changes": [
         {
+            "LogName": "Map Patch Municipal Closed",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalClosed.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVEClosed.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 12,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVE.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 12,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal SVE - Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSVE2.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 33,
+                "Y": 37,
+                "Width": 3,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDSClosed.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 16,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins - Seasonal Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDSClosed-Shop.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 16,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasSeenEvent |contains=19215319": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open - Seven Deadly Sins",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 16,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasSeenEvent |contains=19215319": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open - Seven Deadly Sins - Seasonal Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-Shop.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 16,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasSeenEvent |contains=19215319": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVEClosed.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 15,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasSeenEvent |contains=19215319": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE - Seasonal Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVEClosed-Shop.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 15,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasSeenEvent |contains=19215319": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE - Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVE2.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 36,
+                "Y": 38,
+                "Width": 2,
+                "Height": 10
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+				"Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Map Patch Municipal Open - Seven Deadly Sins and SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVE.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 15,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasSeenEvent |contains=19215319": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Map Patch Municipal Open - Seven Deadly Sins and SVE - Seasonal Shop",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVE-Shop.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 38,
+                "Width": 15,
+                "Height": 20
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasSeenEvent |contains=19215319": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        // Festival Maps
+        //Vanilla
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/Municipal-EggFestival.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/Municipal-EggFestival2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/Municipal-Fair.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/Municipal-Fair2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/Municipal-Halloween.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween2",
+            "FromFile": "Assets/Maps/Municipal-Halloween2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/Municipal-Christmas.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/Municipal-Christmas2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        //Vanilla + RSV
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/MunicipalRSV-EggFestival.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/MunicipalRSV-EggFestival2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/MunicipalRSV-Fair.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/MunicipalRSV-Fair2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        //This bit is to fudge an inconsistency with Ridgeside vs recent Vanilla changes
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1 PATCH RSV Vanilla",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/MunicipalRSV-HalloweenTEMP.tmx",
+            "ToArea": {
+                "X": 35,
+                "Y": 6,
+                "Width": 13,
+                "Height": 5
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/MunicipalRSV-Christmas.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 2 RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/MunicipalRSV-Christmas2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        //SVE
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/MunicipalSVE-EggFestival.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/MunicipalSVE-EggFestival2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/MunicipalSVE-Fair.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/MunicipalSVE-Fair2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/MunicipalSVE-Halloween.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "Year": "1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 2 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween2",
+            "FromFile": "Assets/Maps/MunicipalSVE-Halloween2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 3 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/MunicipalSVE-Halloween3.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97"
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/MunicipalSVE-Christmas.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 2 SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/MunicipalSVE-Christmas2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false
+            },
+            "Priority": "Late"
+        },
+        //SVE Expanded + RSV
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-EggFestival.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-EggFestival2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-Fair.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        //This bit is to fudge an inconsistency with Ridgeside's SVE patch vs recent SVE changes
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 PATCH SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-FairTEMP.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 34,
+                "Width": 19,
+                "Height": 4
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-Fair2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-Christmas.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 SVE + RSV",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/MunicipalSVE-RSV-Christmas2.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Rafseazz.RidgesideVillage": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": false,
+                "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
+            },
+            "Priority": "Late"
+        },
+        //Cherrim's Valley Stuff
+        {
             "LogName": "Map Patch Municipal Closed - Cherrim's Valley",
             "Action": "EditMap",
             "Target": "Maps/Town",
