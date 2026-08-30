@@ -813,17 +813,17 @@
             }
         },
         {
-            "LogName": "Municipal Town Fields Map Patch",
+            "LogName": "Municipal Town Fields Map Patches",
             "Action": "Include",
-            "FromFile": "Data/Technical/MapPatchesOvergrown.json",
+            "FromFile": "Data/Technical/MapPatches-TF.json",
             "When": {
                 "HasMod": "Peekaboo.TownFields"
             }
         },
         {
-            "LogName": "Municipal Cherrim's Valley Map Patch",
+            "LogName": "Municipal Cherrim's Valley Map Patches",
             "Action": "Include",
-            "FromFile": "Data/Technical/MapPatchesOvergrown.json",
+            "FromFile": "Data/Technical/MapPatches-CV.json",
             "When": {
                 "HasMod": "heathinwillows.maplevaley"
             }
