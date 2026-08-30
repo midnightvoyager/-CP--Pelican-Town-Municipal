@@ -1,0 +1,156 @@
+{
+    "Changes": [
+        {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/TownRamp1-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 40,
+                "Width": 4,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late + 2"
+        },
+        {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 1 and 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival,Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/TownRamp1-EggFestival-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 40,
+                "Width": 4,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late + 2"
+        },
+        {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/TownRamp1-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 40,
+                "Width": 4,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late + 2"
+        },
+        {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/TownRamp1-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 40,
+                "Width": 4,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late + 2"
+        },
+        {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/TownRamp1-Halloween1-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 40,
+                "Width": 4,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late + 2"
+        },
+        {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween2",
+            "FromFile": "Assets/Maps/TownRamp1-Halloween2-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 18,
+                "Y": 40,
+                "Width": 5,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late + 2"
+        },
+        {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/TownRamp1-Christmas1-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 40,
+                "Width": 4,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late + 2"
+        },
+        {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/TownRamp1-Christmas2-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 40,
+                "Width": 4,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late + 2"
+        }
+    ]
+}

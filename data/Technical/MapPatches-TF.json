@@ -1,0 +1,215 @@
+{
+    "Changes": [
+        {
+            "LogName": "Map Patch Municipal Closed - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalClosed-TF.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-TF.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Town Fields Map Properties",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "Update": "OnLocationChange",
+            "Priority": "Early",
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "MapProperties": {
+                "DayTiles": "AlwaysFront 6 54 907 AlwaysFront 17 47 907 AlwaysFront 33 53 907 AlwaysFront 38 60 907 AlwaysFront 21 55 907 AlwaysFront 21 64 907 AlwaysFront 27 72 907 AlwaysFront 30 72 907 AlwaysFront 27 83 907 AlwaysFront 17 86 907 AlwaysFront 5 63 907 AlwaysFront 47 66 907 AlwaysFront 56 82 907 AlwaysFront 65 88 907 AlwaysFront 52 98 907 AlwaysFront 56 98 907 AlwaysFront 19 27 907 AlwaysFront 19 21 907 AlwaysFront 33 21 907 AlwaysFront 33 27 907 AlwaysFront 74 6 907 AlwaysFront 89 9 907 AlwaysFront 98 9 907 AlwaysFront 98 14 907 AlwaysFront 89 14 907 AlwaysFront 110 38 907 AlwaysFront 104 38 907 AlwaysFront 105 60 907 AlwaysFront 108 75 907 AlwaysFront 103 75 907 AlwaysFront 108 84 907 AlwaysFront 98 85 907 AlwaysFront 90 77 907 AlwaysFront 82 87 907 AlwaysFront 82 96 907 AlwaysFront 89 60 907 AlwaysFront 53 55 907 Buildings 92 79 186 Buildings 41 69 560 Buildings 71 67 720 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                "NightTiles": "AlwaysFront 6 54 908 AlwaysFront 17 47 908 AlwaysFront 33 53 908 AlwaysFront 38 60 908 AlwaysFront 21 55 908 AlwaysFront 21 64 908 AlwaysFront 27 72 908 AlwaysFront 30 72 908 AlwaysFront 27 83 908 AlwaysFront 17 86 908 AlwaysFront 5 63 908 AlwaysFront 47 66 908 AlwaysFront 56 82 908 AlwaysFront 65 88 908 AlwaysFront 52 98 908 AlwaysFront 56 98 908 AlwaysFront 19 27 908 AlwaysFront 19 21 908 AlwaysFront 33 21 908 AlwaysFront 33 27 908 AlwaysFront 74 6 908 AlwaysFront 89 9 908 AlwaysFront 98 9 908 AlwaysFront 98 14 908 AlwaysFront 89 14 908 AlwaysFront 110 38 908 AlwaysFront 104 38 908 AlwaysFront 105 60 908 AlwaysFront 108 75 908 AlwaysFront 103 75 908 AlwaysFront 108 84 908 AlwaysFront 98 85 908 AlwaysFront 90 77 908 AlwaysFront 82 87 908 AlwaysFront 82 96 908 AlwaysFront 89 60 908 AlwaysFront 53 55 908 Buildings 92 79 190 Buildings 41 69 653 Buildings 71 67 726 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                "Light": "33 53 4 21 55 4 21 64 4 17 86 4 27 83 4 38 60 4 30 72 4 27 72 4 41 69 4 71 67 4 52 98 4 56 98 4 92 79 4 6 84 4 38 71 4 52 42 4 52 45 4 63 45 4 63 35 4 58 35 4 61 17 4 65 18 4 67 78 4 70 82 4 93 98 4 100 108 4 110 100 4 41 89 4 45 86 4 51 87 4 32 95 4 37 97 4 47 66 4 6 54 4 5 63 4 17 47 4 18 41 4 11 30 4 19 27 4 33 27 4 7 20 4 19 21 4 33 21 4 74 6 4 117 26 4 105 26 4 104 38 4 110 38 4 105 60 4 98 86 4 90 75 4 82 87 4 82 96 4 65 88 4 56 82 4 89 9 4 89 14 4 98 14 4 98 9 4 110 75 4 108 84 4 108 75 4 103 75 4 107 49 4 107 45 4 54 41 4 84 46 4 87 46 4 89 60 4 53 55 4 25 46 4 28 46 4 31 42 4"
+            }
+        },
+        {
+            "LogName": "Map Patch Municipal - TF Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town, Maps/Town-EggFestival, Maps/Town-EggFestival2, Maps/Town-Fair, Maps/Town-Fair2, Maps/Town-Halloween, Maps/Town-Halloween2, Maps/Town-Christmas, Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/Municipal-TFPatch.tmx",
+            "PatchMode": "ReplaceByLayer",
+            "ToArea": {
+                "X": 26,
+                "Y": 37,
+                "Width": 3,
+                "Height": 1
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1 - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/Municipal-EggFestival-TF.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2 - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/Municipal-EggFestival2-TF.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/Municipal-Fair-TF.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/Municipal-Fair2-TF.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1 - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/Municipal-Halloween-TF.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 2 - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween2",
+            "FromFile": "Assets/Maps/Municipal-Halloween2-TF.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/Municipal-Christmas-TF.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 2 - Town Fields",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/Municipal-Christmas2-TF.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 38,
+                "Width": 15,
+                "Height": 19
+            },
+            "When": {
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Priority": "Late"
+        }
+    ]
+}

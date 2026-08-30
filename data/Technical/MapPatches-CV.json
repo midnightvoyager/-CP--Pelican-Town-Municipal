@@ -1,0 +1,217 @@
+{
+    "Changes": [
+        {
+            "LogName": "Map Patch Municipal Closed - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/MunicipalClosed-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-CV.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasFlag |contains={{ModID}}_Municipal_Open": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Closed - Cherrim's Valley Bench Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/Municipal-CVBench.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 39,
+                "Y": 77,
+                "Width": 3,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival",
+            "FromFile": "Assets/Maps/Municipal-EggFestival-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Egg 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-EggFestival2",
+            "FromFile": "Assets/Maps/Municipal-EggFestival2-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "Assets/Maps/Municipal-Fair-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Fair 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair2",
+            "FromFile": "Assets/Maps/Municipal-Fair2-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/Municipal-Halloween-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 1 - Cherrim's Valley - Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "Assets/Maps/Municipal-Halloween-CV-Patch.tmx",
+            "PatchMode": "ReplaceByLayer",
+            "ToArea": {
+                "X": 24,
+                "Y": 54,
+                "Width": 2,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Halloween 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween2",
+            "FromFile": "Assets/Maps/Municipal-Halloween2-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 1 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "Assets/Maps/Municipal-Christmas-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Map Patch Municipal Festival Christmas 2 - Cherrim's Valley",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "Assets/Maps/Municipal-Christmas2-CV.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 37,
+                "Width": 15,
+                "Height": 17
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
+            },
+            "Priority": "Late"
+        }
+    ]
+}

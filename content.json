@@ -861,6 +861,24 @@
             }
         },
         {
+            "LogName": "Municipal Accessibility Patch - Town Fields",
+            "Action": "Include",
+            "FromFile": "Data/Technical/MapPatchesRamps-TF.json",
+            "When": {
+                "HasMod |contains=MV.PelicanTownAccessibility": true,
+                "HasMod |contains=Peekaboo.TownFields": true
+            }
+        },
+        {
+            "LogName": "Municipal Accessibility Patch - Cherrim's Valley",
+            "Action": "Include",
+            "FromFile": "Data/Technical/MapPatchesRamps-CV.json",
+            "When": {
+                "HasMod |contains=MV.PelicanTownAccessibility": true,
+                "HasMod |contains=heathinwillows.maplevaley": true
+            }
+        },
+        {
             "LogName": "Municipal Queen of Sauce Cookbook Patch",
             "Action": "Include",
             "FromFile": "Data/Technical/QOSCookbook.json",
