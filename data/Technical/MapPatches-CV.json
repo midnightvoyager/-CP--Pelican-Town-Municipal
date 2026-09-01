@@ -1229,7 +1229,36 @@
                 "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
         },
         {
             "LogName": "Map Patch Municipal Closed - Cherrim's Valley",
@@ -1249,7 +1278,36 @@
                 "Spiderbuttons.CMCT/Config: heathinwillows.maplevaley, Town": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
         },
         {
             "LogName": "Map Patch Municipal Closed - Cherrim's Valley Bench Patch",
