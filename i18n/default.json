@@ -547,13 +547,13 @@
     "MV.Municipal.SheriffBill.gift.neutral": "Just felt like gift givin'? Well, thanks!",
     "MV.Municipal.SheriffBill.gift.dislike": "Can't say that's one of my favorite. Thanks anyway. $u",
     "MV.Municipal.SheriffBill.gift.hate": "That's... Not sure why you're giving me that, but it's the thought that counts, I suppose. $u",
-    //Birthday
+    //Winter Star
     "MV.Municipal.SheriffBill.Gift.WinterStar.Before": "Guess you're stuck with me for your gift-giver. Hope you like it.$h",
     "MV.Municipal.SheriffBill.Gift.WinterStar.After": "Just a little somethin' that made me feel of you. Have a nice season.",
     "MV.Municipal.SheriffBill.Gift.Receive.Book": "I'm gonna head home this evenin' and curl up with this next to the fire. Thank you, farmer.$h",
     "MV.Municipal.SheriffBill.Gift.Receive.Tackle": "Just in time to get in some more fishin' before the season's out. You know me well.$h",
     "MV.Municipal.SheriffBill.Gift.Receive.General": "Thanks for thinkin' of me, farmer. This is real nice.$h",
-    //Winter Star
+    //Birthday
     "MV.Municipal.SheriffBill.gift.birthday.love": "That's a damn thoughtful gift! Thanks for remembering my birthday.$h",
     "MV.Municipal.SheriffBill.gift.birthday.like": "Well now, ain't that nice? Thanks for remembering my birthday.$h",
     "MV.Municipal.SheriffBill.gift.birthday.neutral": "It's good've you to remember my birthday.",
