@@ -14,10 +14,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP, AtlasV.PavedValley": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Paved Valley",
@@ -33,11 +33,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
                 "HasMod |contains=AtlasV.PavedValley": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 1",
@@ -53,10 +53,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 2",
@@ -72,10 +72,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 1",
@@ -91,10 +91,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 2",
@@ -110,10 +110,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 1",
@@ -129,10 +129,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 2",
@@ -148,10 +148,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 1",
@@ -167,10 +167,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 2",
@@ -186,10 +186,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Egg Festival 1",
@@ -205,12 +205,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Egg Festival 2",
@@ -226,12 +226,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Fair 1",
@@ -247,12 +247,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Fair 2",
@@ -268,12 +268,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Christmas 1",
@@ -289,12 +289,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Christmas 2",
@@ -310,12 +310,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - SVE",
@@ -332,11 +332,11 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
                 "HasMod |contains=AtlasV.PavedValley": false
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - SVE - Paved Valley",
@@ -353,11 +353,11 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
                 "HasMod |contains=AtlasV.PavedValley": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 1 - SVE",
@@ -373,10 +373,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 2 - SVE",
@@ -392,10 +392,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 1 - SVE",
@@ -411,10 +411,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 2 - SVE",
@@ -430,10 +430,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 1 - SVE",
@@ -449,10 +449,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 2 - SVE",
@@ -468,10 +468,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 3 - SVE",
@@ -487,11 +487,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 1 - SVE",
@@ -507,10 +507,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 2 - SVE",
@@ -526,10 +526,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Egg Festival 1 - SVE",
@@ -545,12 +545,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Egg Festival 2 - SVE",
@@ -566,12 +566,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Fair 1 - SVE",
@@ -587,12 +587,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Fair 2 - SVE",
@@ -608,12 +608,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Christmas 1 - SVE",
@@ -629,12 +629,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - RSV - Christmas 2 - SVE",
@@ -650,12 +650,12 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - SDS",
@@ -671,11 +671,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - SDS + SVE",
@@ -691,11 +691,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch Municipal - Mayor Mod Pavement",
@@ -713,7 +713,7 @@
                 "HasFlag: hostPlayer |contains=EmuEngine.MayorModCP_TownRoads": true,
                 "HasMod |contains=EmuEngine.MayorModCP": true,
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": false
             },
             "Update": "OnDayStart",
@@ -735,7 +735,7 @@
                 "HasFlag: hostPlayer |contains=EmuEngine.MayorModCP_TownRoads": true,
                 "HasMod |contains=EmuEngine.MayorModCP": true,
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasSeenEvent: hostPlayer|contains=5553210": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": false
             },
@@ -758,7 +758,7 @@
                 "HasFlag: hostPlayer |contains=EmuEngine.MayorModCP_TownRoads": true,
                 "HasMod |contains=EmuEngine.MayorModCP": true,
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
             "Update": "OnDayStart",
@@ -780,7 +780,7 @@
                 "HasFlag: hostPlayer |contains=EmuEngine.MayorModCP_TownRoads": true,
                 "HasMod |contains=EmuEngine.MayorModCP": true,
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasSeenEvent: hostPlayer|contains=5553210": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true
             },
@@ -802,9 +802,9 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Town Fields - SVE",
@@ -821,9 +821,29 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
+        },
+        {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Town Fields - SVE - SDS",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/TownRamp1-SVE-TF.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 40,
+                "Width": 4,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
+            },
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 1 - Town Fields",
@@ -840,9 +860,9 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 2 - Town Fields",
@@ -859,9 +879,9 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 1 - Town Fields",
@@ -878,9 +898,9 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Fair 2 - Town Fields",
@@ -897,9 +917,9 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 1 - Town Fields",
@@ -916,9 +936,9 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Spirit's Eve 2 - Town Fields",
@@ -935,9 +955,9 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 1 - Town Fields",
@@ -954,9 +974,9 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         },
         {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Christmas 2 - Town Fields",
@@ -973,9 +993,9 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
-            "Priority": "Late + 2"
+            "Priority": "Late + 3"
         }
     ]
 }

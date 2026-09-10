@@ -331,6 +331,19 @@
             "Priority": "Late + 2"
         },
         {
+            "LogName": "Map Patch Municipal - Seven Deadly Sins - Angel Door Fix",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SDS.AngelWaitingRoom",
+            "MapProperties": {
+                "Warp": "0 1 Custom_SDS.AngelRetreatHall 42 32 4 1 Town 28 52 4 2 Mountain 14 7"
+            },
+            "When": {
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true
+            },
+            "Update": "OnLocationChange",
+            "Priority": "Late + 2"
+        },
+        {
             "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE",
             "Action": "EditMap",
             "Target": "Maps/Town",

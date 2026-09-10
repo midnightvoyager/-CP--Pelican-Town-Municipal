@@ -14,11 +14,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasFlag |contains={{ModID}}_Municipal_Open": false
             },
             "Update": "OnLocationChange",
-            "Priority": "Late",
+            "Priority": "Late + 2",
             "TextOperations": [
                 {
                     "Operation": "Append",
@@ -63,11 +63,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasFlag |contains={{ModID}}_Municipal_Open": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late",
+            "Priority": "Late + 2",
             "TextOperations": [
                 {
                     "Operation": "Append",
@@ -114,10 +114,10 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
             "Update": "OnLocationChange",
-            "Priority": "Late",
+            "Priority": "Late + 2",
             "TextOperations": [
                 {
                     "Operation": "Append",
@@ -164,10 +164,10 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
             "Update": "OnLocationChange",
-            "Priority": "Late",
+            "Priority": "Late + 2",
             "TextOperations": [
                 {
                     "Operation": "Append",
@@ -213,10 +213,10 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Closed - Seven Deadly Sins",
@@ -232,7 +232,7 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
@@ -284,7 +284,7 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
             "Update": "OnLocationChange",
             "Priority": "Late + 1",
@@ -334,7 +334,7 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
             "Update": "OnLocationChange",
             "Priority": "Late + 1",
@@ -383,7 +383,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-				"Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+				"Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
             "Update": "OnLocationChange",
             "Priority": "Late + 1"
@@ -404,7 +404,7 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
             "Update": "OnLocationChange",
             "Priority": "Late + 1",
@@ -453,9 +453,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Egg 2",
@@ -470,9 +470,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 1",
@@ -487,9 +487,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 2",
@@ -504,9 +504,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Halloween 1",
@@ -521,9 +521,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Halloween 2",
@@ -538,9 +538,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 1",
@@ -555,9 +555,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 2",
@@ -572,9 +572,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         //Vanilla + RSV
         {
@@ -590,11 +590,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Egg 2 RSV",
@@ -609,11 +609,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 1 RSV",
@@ -628,11 +628,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 2 RSV",
@@ -647,11 +647,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         //This bit is to fudge an inconsistency with Ridgeside vs recent Vanilla changes
         {
@@ -667,11 +667,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 1 RSV",
@@ -686,11 +686,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 2 RSV",
@@ -705,11 +705,11 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         //SVE
         {
@@ -725,9 +725,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Egg 2 SVE",
@@ -742,9 +742,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 1 SVE",
@@ -759,9 +759,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 2 SVE",
@@ -776,9 +776,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Halloween 1 SVE",
@@ -793,10 +793,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Year": "1, 5, 9, 13, 17, 21, 25,  29, 33, 37, 41, 45, 49, 53, 56, 59, 63, 67, 71, 75, 79, 83, 87, 91, 95, 99"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Halloween 2 SVE",
@@ -811,9 +811,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Halloween 3 SVE",
@@ -828,10 +828,10 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Year": "3, 7, 11, 15, 19, 23, 27, 31, 35, 39, 43, 47, 51, 55, 57, 61, 65, 69, 73, 77, 81, 85, 89, 93, 97"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 1 SVE",
@@ -846,9 +846,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 2 SVE",
@@ -863,9 +863,9 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off"
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         //SVE Expanded + RSV
         {
@@ -882,10 +882,10 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Egg 2 SVE + RSV",
@@ -901,10 +901,10 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 1 SVE + RSV",
@@ -920,10 +920,10 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         //This bit is to fudge an inconsistency with Ridgeside's SVE patch vs recent SVE changes
         {
@@ -940,10 +940,10 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 2 SVE + RSV",
@@ -959,10 +959,10 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 1 SVE + RSV",
@@ -978,10 +978,10 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 1 SVE + RSV",
@@ -997,10 +997,10 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=Rafseazz.RidgesideVillage": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "off",
                 "Rafseazz.RidgesideVillage/ExpandedFestivalMaps": true
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         //Town Fields Stuff
         {
@@ -1017,11 +1017,11 @@
             },
             "When": {
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Open - Town Fields",
@@ -1037,11 +1037,11 @@
             },
             "When": {
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal - TF Patch",
@@ -1056,11 +1056,11 @@
                 "Height": 1
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal - Town Fields Map Properties",
@@ -1069,7 +1069,7 @@
             "Update": "OnLocationChange",
             "Priority": "Early",
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP, ricehit.SevenDeadlySinsCP": false
             },
             "MapProperties": {
@@ -1082,7 +1082,7 @@
             "LogName": "Map Patch Municipal Closed - Town Fields - Stardew Valley Expanded",
             "Action": "EditMap",
             "Target": "Maps/Town",
-            "FromFile": "Assets/Maps/MunicipalClosedSVE-TF.tmx",
+            "FromFile": "Assets/Maps/MunicipalSVEClosed-TF.tmx",
             "PatchMode": "Replace",
             "ToArea": {
                 "X": 21,
@@ -1092,12 +1092,12 @@
             },
             "When": {
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Open - Town Fields - Stardew Valley Expanded",
@@ -1113,12 +1113,12 @@
             },
             "When": {
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal- Town Fields - Stardew Valley Expanded Patch",
@@ -1135,19 +1135,18 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": false
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on"
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal - Town Fields Map Properties - Stardew Valley Expanded",
             "Action": "EditMap",
             "Target": "Maps/Town",
             "Update": "OnLocationChange",
-            "Priority": "Early",
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
             },
             "TextOperations": [
@@ -1194,12 +1193,12 @@
             },
             "When": {
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Open - Town Fields - Seven Deadly Sins",
@@ -1215,12 +1214,12 @@
             },
             "When": {
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal - Town Fields Map Properties - Seven Deadly Sins",
@@ -1229,7 +1228,7 @@
             "Update": "OnLocationChange",
             "Priority": "Early",
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
@@ -1246,19 +1245,19 @@
             "FromFile": "Assets/Maps/MunicipalSDSClosed-SVE-TF.tmx",
             "PatchMode": "Replace",
             "ToArea": {
-                "X": 19,
+                "X": 21,
                 "Y": 38,
-                "Width": 14,
+                "Width": 12,
                 "Height": 20
             },
             "When": {
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Open - Town Fields - Seven Deadly Sins - Stardew Valley Expanded",
@@ -1267,19 +1266,19 @@
             "FromFile": "Assets/Maps/MunicipalSDS-SVE-TF.tmx",
             "PatchMode": "Replace",
             "ToArea": {
-                "X": 19,
+                "X": 21,
                 "Y": 38,
-                "Width": 14,
+                "Width": 12,
                 "Height": 20
             },
             "When": {
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Open - Town Fields - Seven Deadly Sins - Stardew Valley Expanded - Patch 1",
@@ -1294,12 +1293,12 @@
                 "Height": 8
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Open - Town Fields - Seven Deadly Sins - Stardew Valley Expanded - Patch 2",
@@ -1314,12 +1313,12 @@
                 "Height": 8
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal - TF Patch - Festivals",
@@ -1334,11 +1333,11 @@
                 "Height": 1
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
             "Update": "OnLocationChange",
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Egg 1 - Town Fields",
@@ -1352,10 +1351,10 @@
                 "Height": 19
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Egg 2 - Town Fields",
@@ -1369,10 +1368,10 @@
                 "Height": 19
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 1 - Town Fields",
@@ -1386,10 +1385,10 @@
                 "Height": 19
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Fair 2 - Town Fields",
@@ -1403,10 +1402,10 @@
                 "Height": 19
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Halloween 1 - Town Fields",
@@ -1420,10 +1419,10 @@
                 "Height": 19
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Halloween 2 - Town Fields",
@@ -1437,10 +1436,10 @@
                 "Height": 19
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 1 - Town Fields",
@@ -1454,10 +1453,10 @@
                 "Height": 19
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Festival Christmas 2 - Town Fields",
@@ -1471,10 +1470,10 @@
                 "Height": 19
             },
             "When": {
-                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": "on",
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             },
-            "Priority": "Late"
+            "Priority": "Late + 2"
         }
     ]
 }

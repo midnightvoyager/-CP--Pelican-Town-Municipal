@@ -442,7 +442,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/{{ModId}}_SheriffBill",
             "Entries": {
-                "FlashShifter.StardewValleyExpandedCP_CommunityDay": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 44 10 0 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
+                "FlashShifter.StardewValleyExpandedCP_CommunityDay": "610 Town 24 49 2 {{ModID}}_bill_readfront/900 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1300 CommunityCenter 40 10 0 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillCC\"/1530 SeedShop 16 29 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillShopping\"/1800 MunicipalFloor2 24 7 0/1830 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
             },
             "When": {
                 "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
@@ -472,6 +472,18 @@
             "When": {
                 "HasFlag: hostPlayer |contains={{ModID}}_MetBill": "true",
                 "HasMod": "Si.BC"
+            }
+        },
+        {
+            "LogName": "SDS Cupid Fix",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Cupid",
+            "Entries": {
+                "Mon": "610 Town 28 53 2 Cupid_Look2/800 Town 45 85 2 Cupid_Standby1/1040 Town 140 90 2 Cupid_Look2/1230 Town 151 77 2 Cupid_Polish/1510 Town 166 71 3 Cupid_Drinking2/1640 Town 166 71 2 Cupid_Drunk/1730 Town 166 71 2 Cupid_Look1/2030 Town 28 53 2 Cupid_Standby1"
+            },
+            "Priority": "Late + 2",
+            "When": {
+                "HasMod": "ricehit.SevenDeadlySinsCP"
             }
         }
     ]
