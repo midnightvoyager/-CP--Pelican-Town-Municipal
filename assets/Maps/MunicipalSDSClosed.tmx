@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="16" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="19" nextobjectid="76">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="16" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="19" nextobjectid="76">
  <tileset firstgid="1" name="v16_landscape2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
   <image source="spring_outdoorsTileSheet2.png" width="256" height="1120"/>
   <tile id="568">
@@ -3069,7 +3069,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,5828,5829,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,1537,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,1569,1570,1571,1572,
-0,0,0,0,0,0,0,0,6147,6148,6148,6149,1601,1602,1603,1604,
+0,0,0,0,0,0,0,0,0,0,0,0,1601,1602,1603,1604,
 0,0,0,2124,0,0,0,0,0,0,0,0,1633,1634,1635,1636,
 0,0,0,0,0,0,0,0,19576,0,0,0,19580,1666,1667,1668,
 0,0,0,0,0,0,0,19668,19669,0,0,0,19673,1698,1699,1700,
@@ -3192,7 +3192,7 @@
 0,0,0,0,0,0,0,0,0,0,0,5802,5803,5804,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,2028,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2060,0,0,0,0,6122,6123,6123,6124,19301,0,0,0,
+0,0,0,2060,0,0,0,0,0,0,0,0,19301,0,0,0,
 0,0,0,2092,0,0,0,0,19390,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,19575,0,0,0,0,0,19581,19582,0,

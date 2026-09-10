@@ -111,7 +111,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP, heathinwillows.maplevaley": false
+                "HasMod |contains=ricehit.SevenDeadlySinsCP, heathinwillows.maplevaley, Peekaboo.TownFields": false
             },
             "Update": "OnLocationChange",
             "Priority": "Late",
@@ -160,7 +160,7 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP, heathinwillows.maplevaley": false
+                "HasMod |contains=ricehit.SevenDeadlySinsCP, heathinwillows.maplevaley, Peekaboo.TownFields": false
             },
             "Update": "OnLocationChange",
             "Priority": "Late",
@@ -208,7 +208,7 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": false
+                "HasMod |contains=ricehit.SevenDeadlySinsCP, Peekaboo.TownFields": false
             },
             "Update": "OnLocationChange",
             "Priority": "Late"
@@ -226,60 +226,9 @@
                 "Height": 20
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields": false,
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "HasSeenEvent |contains=19215319": false
-            },
-            "Update": "OnLocationChange",
-            "Priority": "Late + 1",
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Light"
-                    ],
-                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "DayTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "NightTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
-                    "Delimiter": " "
-                }
-            ]
-        },
-        {
-            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins - Seasonal Shop",
-            "Action": "EditMap",
-            "Target": "Maps/Town",
-            "FromFile": "Assets/Maps/MunicipalSDSClosed-Shop.tmx",
-            "PatchMode": "Replace",
-            "ToArea": {
-                "X": 21,
-                "Y": 38,
-                "Width": 16,
-                "Height": 20
-            },
-            "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "HasSeenEvent |contains=19215319": true
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
             "Priority": "Late + 1",
@@ -326,10 +275,9 @@
                 "Height": 20
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Peekaboo.TownFields": false,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "HasSeenEvent |contains=19215319": false
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
             "Priority": "Late + 1",
@@ -364,54 +312,23 @@
             ]
         },
         {
-            "LogName": "Map Patch Municipal Open - Seven Deadly Sins - Seasonal Shop",
+            "LogName": "Map Patch Municipal - Seven Deadly Sins - Seasonal Shop",
             "Action": "EditMap",
             "Target": "Maps/Town",
             "FromFile": "Assets/Maps/MunicipalSDS-Shop.tmx",
             "PatchMode": "Replace",
             "ToArea": {
-                "X": 21,
-                "Y": 38,
-                "Width": 16,
-                "Height": 20
+                "X": 30,
+                "Y": 54,
+                "Width": 3,
+                "Height": 3
             },
             "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasFlag |contains={{ModID}}_Municipal_Open": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
                 "HasSeenEvent |contains=19215319": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late + 1",
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Light"
-                    ],
-                    "Value": "22 42 4 25 46 4 28 46 4 31 42 4",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "DayTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "NightTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
-                    "Delimiter": " "
-                }
-            ]
+            "Priority": "Late + 2"
         },
         {
             "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE",
@@ -428,109 +345,40 @@
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "HasSeenEvent |contains=19215319": false
-            },
-            "Update": "OnLocationChange",
-            "Priority": "Late + 1",
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Light"
-                    ],
-                    "Value": "22 44 4 25 47 4 28 47 4 31 43 4",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "DayTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "NightTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
-                    "Delimiter": " "
-                }
-            ]
-        },
-        {
-            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE - Seasonal Shop",
-            "Action": "EditMap",
-            "Target": "Maps/Town",
-            "FromFile": "Assets/Maps/MunicipalSDS-SVEClosed-Shop.tmx",
-            "PatchMode": "Replace",
-            "ToArea": {
-                "X": 21,
-                "Y": 38,
-                "Width": 15,
-                "Height": 20
-            },
-            "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "HasFlag |contains={{ModID}}_Municipal_Open": false,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "HasSeenEvent |contains=19215319": true
-            },
-            "Update": "OnLocationChange",
-            "Priority": "Late + 1",
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Light"
-                    ],
-                    "Value": "22 44 4 25 47 4 28 47 4 31 43 4",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "DayTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "NightTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
-                    "Delimiter": " "
-                }
-            ]
-        },
-        {
-            "LogName": "Map Patch Municipal Closed - Seven Deadly Sins and SVE - Patch",
-            "Action": "EditMap",
-            "Target": "Maps/Town",
-            "FromFile": "Assets/Maps/MunicipalSDS-SVE2.tmx",
-            "PatchMode": "Replace",
-            "ToArea": {
-                "X": 36,
-                "Y": 38,
-                "Width": 2,
-                "Height": 10
-            },
-            "When": {
-                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=Peekaboo.TownFields": false,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late + 1"
+            "Priority": "Late + 1",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "22 44 4 25 47 4 28 47 4 31 43 4",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "DayTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NightTiles"
+                    ],
+                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
+                    "Delimiter": " "
+                }
+            ]
         },
         {
             "LogName": "Map Patch Municipal Open - Seven Deadly Sins and SVE",
@@ -548,7 +396,7 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
                 "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "HasSeenEvent |contains=19215319": false
+                "HasMod |contains=Peekaboo.TownFields": false
             },
             "Update": "OnLocationChange",
             "Priority": "Late + 1",
@@ -583,54 +431,24 @@
             ]
         },
         {
-            "LogName": "Map Patch Municipal Open - Seven Deadly Sins and SVE - Seasonal Shop",
+            "LogName": "Map Patch Municipal - Seven Deadly Sins and SVE - Patch",
             "Action": "EditMap",
             "Target": "Maps/Town",
-            "FromFile": "Assets/Maps/MunicipalSDS-SVE-Shop.tmx",
+            "FromFile": "Assets/Maps/MunicipalSDS-SVE2.tmx",
             "PatchMode": "Replace",
             "ToArea": {
-                "X": 21,
+                "X": 36,
                 "Y": 38,
-                "Width": 15,
-                "Height": 20
+                "Width": 2,
+                "Height": 10
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
-                "HasFlag |contains={{ModID}}_Municipal_Open": true,
-                "HasMod |contains=ricehit.SevenDeadlySinsCP": true,
-                "HasSeenEvent |contains=19215319": true
+                "HasMod |contains=Peekaboo.TownFields": false,
+                "HasMod |contains=ricehit.SevenDeadlySinsCP": true
             },
             "Update": "OnLocationChange",
-            "Priority": "Late + 1",
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "Light"
-                    ],
-                    "Value": "22 44 4 25 47 4 28 47 4 31 43 4",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "DayTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 907 AlwaysFront 25 46 90 AlwaysFront 28 46 90 AlwaysFront 31 42 845",
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "Append",
-                    "Target": [
-                        "MapProperties",
-                        "NightTiles"
-                    ],
-                    "Value": "AlwaysFront 22 42 908 AlwaysFront 25 46 91 AlwaysFront 28 46 91 AlwaysFront 31 42 846",
-                    "Delimiter": " "
-                }
-            ]
+            "Priority": "Late + 1"
         },
         ///Misc story related map changes
         {
@@ -638,7 +456,7 @@
             "Action": "EditMap",
             "Target": "Maps/Town",
             "FromFile": "Assets/Maps/MunicipalSnowGoon.tmx",
-            "PatchMode": "Replace",
+            "PatchMode": "Overlay",
             "ToArea": {
                 "X": 23,
                 "Y": 51,

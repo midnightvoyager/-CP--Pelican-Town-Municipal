@@ -807,6 +807,25 @@
             "Priority": "Late + 2"
         },
         {
+            "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Town Fields - SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Maps/TownRamp1-SVE-TF.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 40,
+                "Width": 4,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Spiderbuttons.CMCT/Config: MV.PelicanTownAccessibility, Ramp1": true,
+                "Spiderbuttons.CMCT/Config: Peekaboo.TownFields, Town": true
+            },
+            "Priority": "Late + 2"
+        },
+        {
             "LogName": "Map Patch - Municipal - Town Accessibility Ramp 1 - Egg Festival 1 - Town Fields",
             "Action": "EditMap",
             "Target": "Maps/Town-EggFestival",
