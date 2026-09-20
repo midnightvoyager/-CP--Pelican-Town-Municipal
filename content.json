@@ -596,6 +596,17 @@
                 "HasReadLetter: hostPlayer |contains=Cornucopia.MoreCrops_HerbsPackEnabled": true
             }
         },
+        {
+            "Name": "PotionCategory",
+            "Value": "0"
+        },
+        {
+            "Name": "PotionCategory",
+            "Value": "-26",
+            "When": {
+                "HasMod": "VegasOctober.BetterItemCategories"
+            }
+        },
         //Abbreviated weekday check (thanks Axell and Pooh and Nova!)
         {
             "Name": "WeekDayList",

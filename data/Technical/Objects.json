@@ -643,7 +643,7 @@
                     "DisplayName": "{{i18n:MV.Municipal.Objects.ManaBloomElixir_Name}}",
                     "Description": "{{i18n:MV.Municipal.Objects.ManaBloomElixir_Description}}",
                     "Type": "Crafting",
-                    "Category": 0,
+                    "Category": "{{PotionCategory}}",
                     "Price": 1000,
                     "Texture": "Mods/{{ModID}}/Objects",
                     "SpriteIndex": 20,
