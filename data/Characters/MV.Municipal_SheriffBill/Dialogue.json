@@ -864,6 +864,23 @@
                 "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
             }
         },
+        {
+            "LogName": "Bill's DSV Genderfluid Rasmodius Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.GenderfluidRas}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=GFRDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasFlag: hostPlayer |contains={{ModID}}_BillRivalHeartsFin": true,
+                "HasMod: |contains=DSV.Core": true,
+                "DSV.Core/ConfigValue:GenderfluidWizard": true
+            }
+        },
         //FLAG REMOVER
         {
             "LogName": "Bill's Daily Dialog Flag Remover",

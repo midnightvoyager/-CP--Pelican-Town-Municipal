@@ -305,6 +305,18 @@
             }
         },
         {
+            "LogName": "Sheriff Bill's Wizard Intro - DSV Genderfluid",
+            "Action": "EditData",
+            "Target": "Data/Events/WizardHouse",
+            "Entries": {
+                "{{ModId}}_WizardIntro/e 112/e {{ModId}}_GuildIntro/GameStateQuery PLAYER_VISITED_LOCATION Current WizardHouse/A MV.SheriffGuildTimer/LocalMail DSVTeam.DiverseStardewValley_DSVWizardMale": "WizardSong/7 17/farmer 7 17 1 Wizard 8 17 3 {{ModId}}_SheriffBill -1000 -1000 0/addConversationTopic MV.SheriffWizard/addConversationTopic MV.SheriffWizardTimer/skippable/pause 1500/speak Wizard \"{{i18n:MV.Municipal.RasIntro.01}}\"/pause 100/faceDirection Wizard 2/pause 100/emote farmer 8/faceDirection farmer 2/pause 400/playSound doorClose/warp {{ModId}}_SheriffBill 8 23/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.02}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.03}}\"/move {{ModId}}_SheriffBill 0 -4 0/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.04}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.05}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.06}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.07.{{HasMod |contains=Nom0ri.RomRas}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.08}}\"/pause 100/emote farmer 8/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.09}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.10}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.11}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.12}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.13}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.14}}\"/faceDirection Wizard 3/faceDirection farmer 1/move {{ModId}}_SheriffBill 0 4 2/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.15.{{HasMod |contains=Nom0ri.RomRas}}}}\"/pause 1800/end"
+            },
+            "When": {
+                "HasMod: |contains=DSV.Core": true,
+                "DSV.Core/ConfigValue:GenderfluidWizard": true
+            }
+        },
+        {
             "LogName": "Followup with Morris",
             "Action": "EditData",
             "Target": "Data/Events/MunicipalFloor1",
