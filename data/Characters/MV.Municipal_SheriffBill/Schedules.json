@@ -233,6 +233,8 @@
             "Action": "EditData",
             "Target": "Characters/schedules/{{ModId}}_SheriffBill",
             "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
                 "winter_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
             },
             "When": {
@@ -266,6 +268,8 @@
             "Action": "EditData",
             "Target": "Characters/schedules/{{ModId}}_SheriffBill",
             "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 MunicipalFloor2 24 7 0/1800 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 MunicipalFloor2 24 7 0/1800 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
                 "winter_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 MunicipalFloor2 24 7 0/1800 MunicipalFloor2 22 14 2 {{ModID}}_bill_readside/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
             },
             "When": {
@@ -300,6 +304,8 @@
             "Action": "EditData",
             "Target": "Characters/schedules/{{ModId}}_SheriffBill",
             "Entries": {
+                "rain": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
+                "rain2": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\"",
                 "winter_Thu": "610 Beach 40 36 2 {{ModID}}_bill_fish/700 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1100 Saloon 42 23 2 {{ModID}}_bill_saloon_lunch/1330 MunicipalFloor1 22 7 1 {{ModID}}_bill_working/1600 WizardHouse 6 20 3 \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillWizard\"/2200 MunicipalFloor2 6 7 2 {{ModID}}_bill_sleep \"Strings\\schedules\\{{ModId}}_SheriffBill:{{ModId}}_SheriffBillSleeping\""
             },
             "When": {
