@@ -2320,6 +2320,16 @@
                 "Width": 1,
                 "Height": 2
             },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 24,
+                        "Y": 9
+                    },
+                    "Layer": "Front",
+                    "Remove": true
+                }
+            ],
             "When": {
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
                 "FireSafety": true

@@ -25,13 +25,13 @@
             "LogName": "Municipal Fire Safety Map Patch - Elliott - LUTI",
             "Action": "EditMap",
             "Target": "Maps/ElliottHouse",
-            "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
             "PatchMode": "Overlay",
             "ToArea": {
                 "X": 4,
                 "Y": 2,
                 "Width": 1,
-                "Height": 1
+                "Height": 2
             },
             "When": {
                 "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Elliott's Cabin": true,
@@ -106,7 +106,7 @@
             "LogName": "Municipal Fire Safety Map Patch - Hospital - LUTI",
             "Action": "EditMap",
             "Target": "Maps/Hospital",
-            "FromFile": "Assets/Maps/FireSafety-WallF.tmx",
+            "FromFile": "Assets/Maps/FireSafety-WallB2.tmx",
             "PatchMode": "Overlay",
             "ToArea": {
                 "X": 12,
@@ -122,6 +122,14 @@
                     },
                     "Layer": "Buildings",
                     "SetProperties": null
+                },
+                {
+                    "Position": {
+                        "X": 12,
+                        "Y": 12
+                    },
+                    "Layer": "Front",
+                    "Remove": true
                 }
             ],
             "When": {
