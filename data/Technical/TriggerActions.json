@@ -289,7 +289,7 @@
                     "Actions": [
                         "Spiderbuttons.BETAS_ClearTerrainFeatures Town All 23 40 32 51",
                         "Spiderbuttons.BETAS_ClearObjects Town All 23 40 32 51",
-                        "Spiderbuttons.BETAS_RegeneratePathsLayer Town 23 40 9 11"
+                        "Spiderbuttons.BETAS_RegeneratePathsLayer Town 23 40 32 51"
                     ]
                 }
             }

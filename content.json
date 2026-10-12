@@ -940,6 +940,14 @@
             "When": {
                 "HasMod |contains=rokugin.perfectionexclusions": true
             }
+        },
+        {
+            "LogName": "Municipal Recipe Star-Crossed Includes",
+            "Action": "Include",
+            "FromFile": "Data/Characters/MV.Municipal_SheriffBill/EventsStarCrossed.json",
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true
+            }
         }
     ]
 }

@@ -1,0 +1,190 @@
+{
+    "Changes": [
+        {
+            "LogName": "Bill Attends Star-Crossed Weddings: Abigail and Sebastian",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "Spiderbuttons.CMCT/Config: kcspace.StarCrossed, Sebastian and Abigail": "Original, Infertility Version, Childfree"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "SebastianAbigailWedding/w sunny/t 600 900/e SAEngagement/n SebastianAbigailInvitation/!FestivalDay",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 0 0 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "SebastianAbigailWedding/w sunny/t 600 900/e SAEngagement/n SebastianAbigailInvitation/!FestivalDay"
+                    ],
+                    "Search": "warp farmer 30 66",
+                    "Value": "warp MV.Municipal_SheriffBill? 31 66/warp farmer 30 66",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Star-Crossed Weddings: Elliott and Penny",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "Spiderbuttons.CMCT/Config: kcspace.StarCrossed, Elliott and Penny": "Original, Family Version, Childfree"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "ElliottPennyWedding/w sunny/t 600 900/e EPEngagement/n ElliottPennyInvitation/!FestivalDay/Year 1",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 0 0 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "ElliottPennyWedding/w sunny/t 600 900/e EPEngagement/n ElliottPennyInvitation/!FestivalDay/Year 2",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 0 0 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "ElliottPennyWedding/w sunny/t 600 900/e EPEngagement/n ElliottPennyInvitation/!FestivalDay/Year 1"
+                    ],
+                    "Search": "warp farmer 30 65",
+                    "Value": "warp MV.Municipal_SheriffBill? 31 65/warp farmer 30 65",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "ElliottPennyWedding/w sunny/t 600 900/e EPEngagement/n ElliottPennyInvitation/!FestivalDay/Year 2"
+                    ],
+                    "Search": "warp farmer 30 65",
+                    "Value": "warp MV.Municipal_SheriffBill? 31 65/warp farmer 30 65",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Star-Crossed Weddings: Emily and Leah",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "Spiderbuttons.CMCT/Config: kcspace.StarCrossed, Emily and Leah": "Original, Family Version, Childfree"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "EmilyLeahWedding/w sunny/t 600 900/e ELEngagement/n EmilyLeahInvitation/!FestivalDay",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 0 0 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "EmilyLeahWedding/w sunny/t 600 900/e ELEngagement/n EmilyLeahInvitation/!FestivalDay"
+                    ],
+                    "Search": "warp farmer 29 65",
+                    "Value": "warp MV.Municipal_SheriffBill? 29 67/warp farmer 29 65",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Star-Crossed Weddings: Haley and Shane",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "Spiderbuttons.CMCT/Config: kcspace.StarCrossed, Haley and Shane": "Original, Family Version, Childfree"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "HaleyShaneWedding/w sunny/t 600 900/e HSEngagement/n HaleyShaneInvitation/!FestivalDay",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 0 0 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "HaleyShaneWedding/w sunny/t 600 900/e HSEngagement/n HaleyShaneInvitation/!FestivalDay"
+                    ],
+                    "Search": "warp farmer 26 66",
+                    "Value": "warp MV.Municipal_SheriffBill? 25 66/warp farmer 26 66",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Star-Crossed Weddings: Harvey and Maru",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=kcspace.StarCrossed": true,
+                "Spiderbuttons.CMCT/Config: kcspace.StarCrossed, Harvey and Maru": "Original, Childfree"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "HarveyMaruWedding/w sunny/t 600 900/e HMEngagement/n HarveyMaruInvitation/!FestivalDay",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 0 0 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "HarveyMaruWedding/w sunny/t 600 900/e HMEngagement/n HarveyMaruInvitation/!FestivalDay"
+                    ],
+                    "Search": "warp farmer 26 66",
+                    "Value": "warp MV.Municipal_SheriffBill? 29 67/warp farmer 26 66",
+                    "Delimiter": "/"
+                }
+            ]
+        }
+    ]
+}

@@ -37,7 +37,6 @@
                 "HasMod |contains=MV.SpousesMoveHouse": false,
                 "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Elliott's Cabin": true,
                 "HasSeenEvent |contains=ElliottPennyWedding": false,
-                "HasFlag |contains=ElliottPennyHouseUpgradeMail": false,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
                 "FireSafety": true
             },
@@ -58,6 +57,7 @@
             "When": {
                 "Relationship:Elliott |contains=married": false,
                 "HasMod |contains=MV.SpousesMoveHouse": true,
+                "HasSeenEvent |contains=ElliottPennyWedding": false,
                 "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Elliott's Cabin": true,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
                 "FireSafety": true
