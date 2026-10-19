@@ -178,7 +178,7 @@
     "MV.Municipal.Marlon.Gender.He.true": "she",
     "MV.Municipal.Marlon.Gender.He.false": "he",
     "MV.Municipal.Marlon.Gender.Him.true": "her",
-    "MV.Municipal.Marlon.Gender.Him.false": "his",
+    "MV.Municipal.Marlon.Gender.Him.false": "him",
     "MV.Municipal.Pierre.Name.true": "Piper",
     "MV.Municipal.Pierre.Name.false": "Pierre",
     "MV.Municipal.Pierre.Gender.He.true": "she",
@@ -765,14 +765,14 @@
     "MV.Municipal.Resort_Towel": "Zzz...",
     "MV.Municipal.Resort_Bar": "I love a good Piña Colada. %revealtaste:MV.Municipal_SheriffBill:873 $h",
     "MV.Municipal.Resort_Leaving": "What a day. Better get back to town, though.",
-    //DIALOG FOR MOBILE PHONE
+    //DIALOGUE FOR MOBILE PHONE
     "MV.Municipal.MobilePhoneGreeting.1": "Pelican Town Sheriff- damnit, force o' habit. Howdy there, {0}.",
     "MV.Municipal.MobilePhoneGreeting.2": "Howdy there, {0}. Need somethin'?",
     "MV.Municipal.MobilePhoneGreeting.3": "Howdy there, {0}. Need somethin'?",
     "MV.Municipal.MobilePhoneGreeting.4": "Howdy there, {0}. Need somethin'?",
     "MV.Municipal.MobilePhoneGreeting.5": "Howdy there, {0}. Need somethin'?",
     "MV.Municipal.MobilePhoneGoodBye": "Alright, see ya 'round then.",
-    //DIALOG FOR MERCHANT
+    //DIALOGUE FOR MERCHANT
     "MV.Municipal.Haggle_Ask_SheriffBill": "Howdy! How's {1}$ for this {0}?",
     "MV.Municipal.Haggle_Compromise_SheriffBill": "How's {1} strike you?",
     "MV.Municipal.Haggle_Overpriced_SheriffBill": "That's a bit more'n I can pay for that.",
@@ -845,7 +845,7 @@
     "MV.Municipal.CT.adoptionLetter": "I heard you're gonna adopt! Don't let anyone say that kid isn't yours once you've got 'em.$h",
     "MV.Municipal.CT.childArrive": "I'm damn happy for you, you know. It ain't for everyone, but for the people who want a kid, a kid's a real blessing.$h",
     "MV.Municipal.CT.CaughtLegend": "Willy's been goin' on and on about you catchin' a legend. You really made his day.$h",
-    //DIALOG FOR MUNICIPAL CTs
+    //DIALOGUE FOR MUNICIPAL CTs
     "MV.Municipal.CT.SheriffGuild_Bill": "Been a while since I've seen [LocalizedText Strings/MV.Municipal:MarlonName] and Gil in person. Good to know they're doin' well.$h",
     "MV.Municipal.CT.SheriffWizard_Bill.true": "Good to know the witch is there if somethin' goes weird.",
     "MV.Municipal.CT.SheriffWizard_Bill.false": "Think I might stop by that wizard's again sometime. Can't hurt to know more about what can go wrong, can it?",
@@ -888,6 +888,7 @@
     "MV.Municipal.CT.AbyssRoosterGrow": "That little chicken followin' Kataryna around's an odd one, but he's awful cute.$h",
     "MV.Municipal.CT.AbyssVBear": "I'm glad Abyss is alright. Ain't surprised he did it. Roosters are protective little guys.#$b#I've ordered some bear-proofing so folks can secure their trashcans better, hopefully avoid another bear situation.",
     "MV.Municipal.CT.GuntherKatarynaCoverse": "Glad Kataryna's mellowed out a bit. Don't know what her problem was, but she seems to have simmered down.",
+    "MV.Municipal.CT.TristanReturns": "Hell of a thing Tristan went through. You know, [LocalizedText Strings/MV.Municipal:MarlonName] was awful upset when he first went missing.#$b#Happy for [LocalizedText Strings/MV.Municipal:MarlonGenderHer] and Jas that he's back now.",
     //Lurking in the Dark
     "MV.Municipal.CT.LitD_CT_SenMet": "Keep seein' these kinda person-shaped shadows outta the corner of my eye. Think cop work in the city really got to my nerves.$3",
     //Nora
@@ -1027,8 +1028,6 @@
     "MV.Municipal.CT.SchoolRepaired": "I heard you got the old schoolhouse repaired!$h#$b#Real good of you. Hard enough teachin' kids without distractions all round 'em.",
     //Alchemistry
     "MV.Municipal.CT.AlchemistryStabilizer": "Ras says you're 'more than adequate' as a potion-brewer. Big praise from [LocalizedText Strings/MV.Municipal:RasGenderHim].$h",
-    //Ranger Taro
-    "MV.Municipal.CT.RangerMentionSmuggler": "A smuggler? Huh. She ain't said a thing to me about it.$10",
     //East Scarp
     "MV.Municipal.CT.SheriffJuliet": "You be good to Juliet, you hear? Everyone deserves a second chance, no matter what they did.#$b#What did she do? That ain't my place to say.$3",
     //The Promise of Choice

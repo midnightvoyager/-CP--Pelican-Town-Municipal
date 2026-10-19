@@ -103,7 +103,7 @@
                         "Entries",
                         "Set-Up_additionalCharacters_y2"
                     ],
-                    "Value": "{{ModID}}_SheriffBill 20 73 1/Wizard 20 74 1",
+                    "Value": "{{ModID}}_SheriffBill 20 75 1/Wizard 20 74 1",
                     "Delimiter": "/"
                 },
                 {
@@ -112,7 +112,7 @@
                         "Entries",
                         "MainEvent_additionalCharacters_y2"
                     ],
-                    "Value": "{{ModID}}_SheriffBill 20 73 1/Wizard 20 74 1",
+                    "Value": "{{ModID}}_SheriffBill 20 75 1/Wizard 20 74 1",
                     "Delimiter": "/"
                 }
             ],

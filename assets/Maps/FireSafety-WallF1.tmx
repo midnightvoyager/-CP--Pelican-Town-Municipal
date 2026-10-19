@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="27">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="27">
  <tileset firstgid="1" name="MidnightsMisc" tilewidth="16" tileheight="16" tilecount="480" columns="12">
   <image source="MidnightsMisc.png" width="192" height="640"/>
   <tile id="291">
@@ -91,13 +91,19 @@
    </animation>
   </tile>
  </tileset>
+ <layer id="16" name="Front" width="1" height="2">
+  <data encoding="csv">
+90,
+102
+</data>
+ </layer>
  <layer id="4" name="Front1" width="1" height="2">
   <properties>
    <property name="Draw" value="Front"/>
   </properties>
   <data encoding="csv">
-90,
-102
+0,
+429
 </data>
  </layer>
 </map>

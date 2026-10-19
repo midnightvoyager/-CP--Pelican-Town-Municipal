@@ -948,6 +948,14 @@
             "When": {
                 "HasMod |contains=kcspace.StarCrossed": true
             }
+        },
+        {
+            "LogName": "Municipal Recipe Coal Point Farm Includes",
+            "Action": "Include",
+            "FromFile": "Data/Characters/MV.Municipal_SheriffBill/NPCSchedulesCPF.json",
+            "When": {
+                "HasMod |contains=AndrewJC.CoalPointFarm": true
+            }
         }
     ]
 }

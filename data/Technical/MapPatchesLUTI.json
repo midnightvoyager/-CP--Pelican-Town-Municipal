@@ -15,7 +15,6 @@
             "When": {
                 "Spiderbuttons.CMCT/Config: uglynt.town.interiors, Elliott's Cabin": false,
                 "HasSeenEvent |contains=ElliottPennyWedding": false,
-                "HasFlag |contains=ElliottPennyHouseUpgradeMail": false,
                 "HasFlag |contains={{ModID}}_Municipal_Open": true,
                 "FireSafety": true
             },

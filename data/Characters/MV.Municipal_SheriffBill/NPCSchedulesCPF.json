@@ -1,0 +1,34 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Coal Point Schedule Position Change - Marcus",
+            "Action": "EditData",
+            "Target": "Characters/schedules/APTMarcus",
+            "Entries": {
+                "spring": "610 APTMMHouse 23 5 1 MarcusPunchingBag \"Strings\\schedules\\APTMarcus:APTMMHouse.000\"/900 CoalPointFarm 17 38 3 MarcusFarmingLeft/1100 CoalPointFarm 35 31 1 MarcusFarmingLeft/1230 Town 32 39 2/1800 Saloon 3 21 0/2100 APTMMHouse 29 11 1",
+                "spring_1": "610 SeedShop 3 26 1 MarcusThinking \"Strings\\schedules\\APTMarcus:SeedShop.000\"/1300 Town 32 39 2/1600 Saloon 3 21 0/2100 APTMMHouse 29 11 1",
+                "summer_1": "610 SeedShop 3 26 1 MarcusThinking \"Strings\\schedules\\APTMarcus:SeedShop.000\"/1300 Town 32 39 2/1600 Saloon 3 21 0/2100 APTMMHouse 29 11 1",
+                "fall_1": "610 SeedShop 3 26 1 MarcusThinking \"Strings\\schedules\\APTMarcus:SeedShop.000\"/1300 Town 32 39 2/1600 Saloon 3 21 0/2100 APTMMHouse 29 11 1",
+                "spring_15": "610 SeedShop 3 26 1 MarcusThinking \"Strings\\schedules\\APTMarcus:SeedShop.000\"/1300 Town 32 39 2/1600 Saloon 3 21 0/2100 APTMMHouse 29 11 1",
+                "summer_15": "610 SeedShop 3 26 1 MarcusThinking \"Strings\\schedules\\APTMarcus:SeedShop.000\"/1300 Town 32 39 2/1600 Saloon 3 21 0/2100 APTMMHouse 29 11 1",
+                "fall_15": "610 SeedShop 3 26 1 MarcusThinking \"Strings\\schedules\\APTMarcus:SeedShop.000\"/1300 Town 32 39 2/1600 Saloon 3 21 0/2100 APTMMHouse 29 11 1"
+            },
+            "Priority": "Late + 1"
+        },
+        {
+            "LogName": "Municipal Coal Point Schedule Position Change - Mora",
+            "Action": "EditData",
+            "Target": "Characters/schedules/APTMora",
+            "Entries": {
+                "spring": "610 APTMMHouse 9 7 2 MoraBed/1000 APTMMHouse 24 15 0/1100 CoalPointFarm 6 38 1 MoraFarmingRight/1230 Town 33 39 2/1800 Saloon 5 20 3/2100 APTMMHouse 9 7 2 MoraPhone",
+                "spring_1": "610 SeedShop 2 21 3 \"Strings\\schedules\\APTMora:SeedShop.001\"/1300 Town 33 39 2/1600 Saloon 5 21 3/2100 APTMMHouse 9 7 2 MoraPhone",
+                "summer_1": "610 SeedShop 2 21 3 \"Strings\\schedules\\APTMora:SeedShop.001\"/1300 Town 33 39 2/1600 Saloon 5 21 3/2100 APTMMHouse 9 7 2 MoraPhone",
+                "fall_1": "610 SeedShop 2 21 3 \"Strings\\schedules\\APTMora:SeedShop.001\"/1300 Town 33 39 2/1600 Saloon 5 21 3/2100 APTMMHouse 9 7 2 MoraPhone",
+                "spring_15": "610 SeedShop 2 21 3 \"Strings\\schedules\\APTMora:SeedShop.001\"/1300 Town 33 39 2/1600 Saloon 5 21 3/2100 APTMMHouse 9 7 2 MoraPhone",
+                "summer_15": "610 SeedShop 2 21 3 \"Strings\\schedules\\APTMora:SeedShop.001\"/1300 Town 33 39 2/1600 Saloon 5 21 3/2100 APTMMHouse 9 7 2 MoraPhone",
+                "fall_15": "610 SeedShop 2 21 3 \"Strings\\schedules\\APTMora:SeedShop.001\"/1300 Town 33 39 2/1600 Saloon 5 21 3/2100 APTMMHouse 9 7 2 MoraPhone"
+            },
+            "Priority": "Late + 1"
+        }
+    ]
+}

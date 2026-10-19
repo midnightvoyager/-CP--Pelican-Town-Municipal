@@ -234,14 +234,6 @@
                         "AddConversationTopic MV.AlchemistryStabilizer"
                     ]
                 },
-                "{{ModId}}_OnRangerMentionSmuggler": {
-                    "Id": "{{ModId}}_OnRangerMentionSmuggler",
-                    "Trigger": "DayStarted",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 21226",
-                    "Actions": [
-                        "AddConversationTopic MV.RangerMentionSmuggler"
-                    ]
-                },
                 "{{ModId}}_OnJulietMet": {
                     "Id": "{{ModId}}_OnJulietMet",
                     "Trigger": "DayStarted",

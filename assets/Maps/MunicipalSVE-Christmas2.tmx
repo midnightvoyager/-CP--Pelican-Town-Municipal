@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" width="15" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="19">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="15" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="19">
  <tileset firstgid="1" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="winter_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
@@ -3084,314 +3084,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="15275" name="v16_landscape2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
-  <image source="winter_outdoorsTileSheet2" width="256" height="1120"/>
-  <tile id="568">
-   <animation>
-    <frame tileid="568" duration="1000"/>
-    <frame tileid="572" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="570">
-   <animation>
-    <frame tileid="570" duration="1000"/>
-    <frame tileid="574" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="736">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="737">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="738">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="739">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="740">
-   <properties>
-    <property name="Type" value="Grass"/>
-   </properties>
-  </tile>
-  <tile id="741">
-   <properties>
-    <property name="Type" value="Grass"/>
-   </properties>
-  </tile>
-  <tile id="752">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="753">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="754">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="755">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="756">
-   <properties>
-    <property name="Type" value="Grass"/>
-   </properties>
-  </tile>
-  <tile id="757">
-   <properties>
-    <property name="Type" value="Grass"/>
-   </properties>
-  </tile>
-  <tile id="772">
-   <properties>
-    <property name="Type" value="Grass"/>
-   </properties>
-  </tile>
-  <tile id="773">
-   <properties>
-    <property name="Type" value="Grass"/>
-   </properties>
-  </tile>
-  <tile id="816">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="817">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="820">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="821">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="822">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="832">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="833">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="834">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="835">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="836">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="837">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="838">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="848">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="849">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="850">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="851">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="852">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="853">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="854">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="864">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="865">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="866">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="867">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="868">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="869">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="870">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="880">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="881">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="882">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="883">
-   <properties>
-    <property name="Water" value="T"/>
-   </properties>
-  </tile>
-  <tile id="897">
-   <animation>
-    <frame tileid="897" duration="1000"/>
-    <frame tileid="929" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="912">
-   <animation>
-    <frame tileid="912" duration="1000"/>
-    <frame tileid="944" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="913">
-   <animation>
-    <frame tileid="913" duration="1000"/>
-    <frame tileid="945" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="914">
-   <animation>
-    <frame tileid="914" duration="1000"/>
-    <frame tileid="915" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="930">
-   <animation>
-    <frame tileid="930" duration="1000"/>
-    <frame tileid="931" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="960">
-   <animation>
-    <frame tileid="960" duration="1000"/>
-    <frame tileid="992" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="962">
-   <animation>
-    <frame tileid="962" duration="1000"/>
-    <frame tileid="963" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="976">
-   <animation>
-    <frame tileid="976" duration="1000"/>
-    <frame tileid="1008" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="977">
-   <animation>
-    <frame tileid="977" duration="1000"/>
-    <frame tileid="1009" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="978">
-   <animation>
-    <frame tileid="978" duration="1000"/>
-    <frame tileid="979" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="1056">
-   <animation>
-    <frame tileid="1056" duration="1000"/>
-    <frame tileid="1057" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="1058">
-   <animation>
-    <frame tileid="1058" duration="1000"/>
-    <frame tileid="1059" duration="1000"/>
-   </animation>
-  </tile>
- </tileset>
- <tileset firstgid="16395" name="MidnightsMiscExt2" tilewidth="16" tileheight="16" tilecount="50" columns="25">
+ <tileset firstgid="15275" name="MidnightsMiscExt2" tilewidth="16" tileheight="16" tilecount="50" columns="25">
   <image source="winter_MidnightsMiscExt2.png" width="400" height="32"/>
  </tileset>
  <layer id="1" name="Back" width="15" height="17">
@@ -3400,8 +3093,8 @@
 376,377,404,379,327,327,327,328,176,151,326,327,327,328,251,
 151,276,329,404,352,352,352,379,327,327,329,352,352,379,327,
 153,176,352,352,352,352,352,352,352,352,352,354,377,377,377,
-202,180,181,352,352,352,352,352,352,352,352,352,377,276,151,
-7457,1610620191,3758103839,352,352,352,352,352,352,352,352,377,176,0,0,
+202,180,181,352,352,352,352,352,352,352,352,352,327,276,151,
+7457,1610620191,3758103839,352,352,352,352,352,352,352,352,377,331,0,0,
 2907,2684357147,352,352,352,352,352,352,352,352,355,356,356,0,0,
 2939,2684357147,352,352,352,352,352,352,352,352,380,381,381,0,0,
 2975,2619,2618,352,352,352,352,352,352,352,405,381,381,381,381,
@@ -3444,8 +3137,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,6100,6138,0,0,
 0,6100,6272,0,0,0,0,0,0,0,0,6119,6272,0,0,
-0,6119,6272,0,0,0,0,0,0,0,0,6100,6272,0,0,
-0,6119,6272,0,0,0,0,0,0,5154,5155,6119,6272,0,0,
+0,6119,6272,0,0,0,0,0,0,4910,4911,6100,6272,0,0,
+0,6119,6272,0,0,0,0,0,0,0,0,6119,6272,0,0,
 0,6119,6272,0,0,0,0,0,0,0,0,6119,6272,0,0,
 0,6119,6272,0,0,0,0,0,0,0,0,6081,6137,6272,0,
 0,6119,6272,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -3463,11 +3156,11 @@
 0,0,0,0,0,0,0,0,0,0,0,3091,3092,3093,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,384,385,385,435,385,385,435,385,435,385,385,386,385,384,
-0,0,6579,6580,6581,6582,6583,6584,6585,6586,4554,4555,442,308,103,
-0,0,6587,6588,6589,6590,6591,6592,6593,6594,4584,4585,467,468,468,
+0,0,6579,6580,6581,6582,6583,6584,6585,6586,6652,6653,442,308,103,
+0,0,6587,6588,6589,6590,6591,6592,6593,6594,6660,6661,467,468,468,
 0,0,6595,6596,6597,6598,6599,6600,6601,6602,0,2054,492,493,493,
 0,0,6603,6604,6605,6606,6607,6608,6609,6610,0,2064,517,518,518,
-0,2979,6611,6612,6613,6614,6615,6616,6617,6618,0,16423,542,543,543,
+0,2979,6611,6612,6613,6614,6615,6616,6617,6618,0,15303,542,543,543,
 0,0,6619,6620,6621,6622,6623,6624,6625,6626,0,2808,2809,2809,2809,
 15038,15039,6627,6628,6629,6630,6631,6632,6633,6634,15056,2840,7981,7975,7978,
 0,0,2298,2299,6637,0,0,6640,2298,2299,15088,2840,7836,8061,7936,
@@ -3487,7 +3180,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,2032,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,16398,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,15278,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,2266,2267,0,0,0,0,2266,2267,0,0,0,0,0,

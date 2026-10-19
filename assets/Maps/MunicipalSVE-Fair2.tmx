@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" width="15" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="19">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" width="15" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="19">
  <tileset firstgid="1" name="Town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
   <image source="fall_town" width="512" height="1152"/>
   <tile id="45">
@@ -3087,104 +3087,12 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="15419" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="Festivals" width="512" height="512"/>
-  <tile id="15">
-   <animation>
-    <frame tileid="15" duration="100"/>
-    <frame tileid="16" duration="100"/>
-    <frame tileid="17" duration="100"/>
-    <frame tileid="16" duration="100"/>
-    <frame tileid="15" duration="100"/>
-    <frame tileid="18" duration="100"/>
-    <frame tileid="19" duration="100"/>
-    <frame tileid="18" duration="100"/>
-   </animation>
-  </tile>
-  <tile id="63">
-   <animation>
-    <frame tileid="63" duration="750"/>
-    <frame tileid="31" duration="750"/>
-   </animation>
-  </tile>
-  <tile id="273">
-   <animation>
-    <frame tileid="273" duration="1000"/>
-    <frame tileid="274" duration="1000"/>
-    <frame tileid="274" duration="1000"/>
-    <frame tileid="274" duration="1000"/>
-    <frame tileid="273" duration="1000"/>
-   </animation>
-  </tile>
-  <tile id="308">
-   <animation>
-    <frame tileid="308" duration="500"/>
-    <frame tileid="309" duration="500"/>
-   </animation>
-  </tile>
-  <tile id="428">
-   <animation>
-    <frame tileid="428" duration="200"/>
-    <frame tileid="430" duration="200"/>
-    <frame tileid="432" duration="200"/>
-    <frame tileid="430" duration="200"/>
-   </animation>
-  </tile>
-  <tile id="429">
-   <animation>
-    <frame tileid="429" duration="200"/>
-    <frame tileid="431" duration="200"/>
-    <frame tileid="433" duration="200"/>
-    <frame tileid="431" duration="200"/>
-   </animation>
-  </tile>
-  <tile id="460">
-   <animation>
-    <frame tileid="460" duration="200"/>
-    <frame tileid="462" duration="200"/>
-    <frame tileid="464" duration="200"/>
-    <frame tileid="462" duration="200"/>
-   </animation>
-  </tile>
-  <tile id="461">
-   <animation>
-    <frame tileid="461" duration="200"/>
-    <frame tileid="463" duration="200"/>
-    <frame tileid="465" duration="200"/>
-    <frame tileid="463" duration="200"/>
-   </animation>
-  </tile>
-  <tile id="492">
-   <animation>
-    <frame tileid="492" duration="100"/>
-    <frame tileid="494" duration="100"/>
-    <frame tileid="495" duration="100"/>
-    <frame tileid="496" duration="100"/>
-    <frame tileid="497" duration="100"/>
-    <frame tileid="497" duration="100"/>
-    <frame tileid="496" duration="100"/>
-    <frame tileid="495" duration="100"/>
-    <frame tileid="494" duration="100"/>
-    <frame tileid="492" duration="100"/>
-    <frame tileid="492" duration="100"/>
-    <frame tileid="492" duration="100"/>
-    <frame tileid="492" duration="100"/>
-    <frame tileid="492" duration="100"/>
-    <frame tileid="492" duration="100"/>
-   </animation>
-  </tile>
-  <tile id="539">
-   <properties>
-    <property name="Passable" value="T"/>
-   </properties>
-  </tile>
- </tileset>
- <tileset firstgid="16443" name="MidnightsMiscExt2" tilewidth="16" tileheight="16" tilecount="50" columns="25">
+ <tileset firstgid="15419" name="MidnightsMiscExt2" tilewidth="16" tileheight="16" tilecount="50" columns="25">
   <image source="fall_MidnightsMiscExt2.png" width="400" height="32"/>
  </tileset>
  <layer id="1" name="Back" width="15" height="17">
   <data encoding="csv">
-13847,13748,13795,15886,15886,15886,13821,13619,12743,12743,12743,12743,12743,13619,13644,
+13847,13748,13795,12743,12743,12743,13821,13619,12743,12743,12743,12743,12743,13619,13644,
 13819,13820,13847,13822,13770,13770,13770,13771,13619,13594,13769,13770,13770,13771,13694,
 13594,13719,13772,13847,13795,13795,13795,13822,13770,13770,13772,13795,13795,13822,13770,
 13596,13619,13795,13795,13795,13795,13795,13795,13795,13795,13795,13797,13820,13820,13820,
@@ -3232,8 +3140,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,4125,4163,0,0,
 0,4125,4297,0,0,0,0,0,0,0,0,4144,4297,0,0,
-0,4144,4297,0,0,0,0,0,0,0,0,4125,4297,0,0,
-0,4144,4297,0,0,0,0,0,0,3179,3180,4144,4297,0,0,
+0,4144,4297,0,0,0,0,0,0,2935,2936,4125,4297,0,0,
+0,4144,4297,0,0,0,0,0,0,0,0,4144,4297,0,0,
 0,4144,4297,0,0,0,0,0,0,0,0,4144,4297,0,0,
 0,4144,4297,0,0,0,0,0,0,0,0,4106,4162,4297,0,
 0,4144,4297,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -3247,15 +3155,15 @@
  </layer>
  <layer id="3" name="Buildings" width="15" height="17">
   <data encoding="csv">
-0,13713,14966,15917,15918,15919,0,0,15917,15918,15918,15918,15919,0,15490,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,15522,
-0,0,0,0,0,0,0,0,0,0,13689,13690,13689,13690,15554,
+0,13713,14966,12774,12775,12776,0,0,12774,12775,12775,12775,12776,0,12347,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,12379,
+0,0,0,0,0,0,0,0,0,0,13689,13690,13689,13690,12411,
 0,13827,13828,13828,13878,13828,13828,13878,13828,13878,13828,13828,13829,13828,13827,
-0,0,4604,4605,4606,4607,4608,4609,4610,4611,2579,2580,13885,13751,13546,
-0,0,4612,4613,4614,4615,4616,4617,4618,4619,2609,2610,13910,13911,13911,
+0,0,4604,4605,4606,4607,4608,4609,4610,4611,4677,4678,13885,13751,13546,
+0,0,4612,4613,4614,4615,4616,4617,4618,4619,4685,4686,13910,13911,13911,
 0,0,4620,4621,4622,4623,4624,4625,4626,4627,0,79,13935,13936,13936,
 0,0,4628,4629,4630,4631,4632,4633,4634,4635,0,89,13960,13961,13961,
-0,1004,4636,4637,4638,4639,4640,4641,4642,4643,0,16471,13985,13986,13986,
+0,1004,4636,4637,4638,4639,4640,4641,4642,4643,0,15447,13985,13986,13986,
 0,0,4644,4645,4646,4647,4648,4649,4650,4651,0,833,834,834,834,
 0,0,4652,4653,4654,4655,4656,4657,4658,4659,0,865,6006,6000,6003,
 0,0,323,324,4662,0,0,4665,323,324,0,865,5861,6086,5961,
@@ -3275,7 +3183,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,57,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,16446,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,15422,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,291,292,0,0,0,0,291,292,0,0,0,0,0,
@@ -3372,7 +3280,7 @@
 </data>
  </layer>
  <objectgroup id="6" name="Back"/>
- <objectgroup id="5" name="Buildings">
+ <objectgroup id="5" name="Buildings" visible="0">
   <object id="12" name="TileData" x="176" y="96" width="16" height="16">
    <properties>
     <property name="Action" value="Garbage MV.Municipal"/>
