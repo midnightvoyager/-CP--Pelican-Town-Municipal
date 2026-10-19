@@ -1,0 +1,22 @@
+{
+    "Changes": [
+        {
+            "LogName": "Municipal Simple Foliage Bushes",
+            "Action": "EditImage",
+            "Target": "Maps/spring_municipalbuilding_tiles,Maps/summer_municipalbuilding_tiles,Maps/fall_municipalbuilding_tiles,Maps/winter_municipalbuilding_tiles",
+            "PatchMode": "Replace",
+            "FromFile": "Assets/Maps/TileSheets/{{RecolorTag}}Exterior/{{TargetWithoutPath}}_SF.png",
+            "ToArea": {
+                "X": 16,
+                "Y": 192,
+                "Width": 32,
+                "Height": 32
+            },
+            "When": {
+                "HasMod |contains=Az.Foliage": true,
+                "Spiderbuttons.CMCT/Config: Az.Foliage, Bushes": true,
+                "FoliageType": "Automatic"
+            }
+        }
+    ]
+}

@@ -19,6 +19,12 @@
             "Default": "Automatic",
             "AllowBlank": false
         },
+        "SimpleFoliage": {
+            "Description": "Simple Foliage settings for Bill's yard bush. Defaults to automatic, based on your installed mods.",
+            "AllowValues": "Vanilla, SimpleFoliage, Automatic",
+            "Default": "Automatic",
+            "AllowBlank": false
+        },
         "PerfectionScoreNpc": {
             "Description": "Exclude or Include Bill from perfection score.",
             "AllowValues": "Exclude, Include",
@@ -77,14 +83,14 @@
     "DynamicTokens": [
         {
             "Name": "RecolorTag",
-            "Value": "vanilla",
+            "Value": "Vanilla",
             "When": {
                 "AutoRecolor": "Automatic, Vanilla"
             }
         },
         {
             "Name": "RecolorTag",
-            "Value": "earthy",
+            "Value": "Earthy",
             "When": {
                 "HasMod": "DaisyNiko.EarthyRecolour",
                 "AutoRecolor": "Automatic"
@@ -92,7 +98,7 @@
         },
         {
             "Name": "RecolorTag",
-            "Value": "starblue",
+            "Value": "Starblue",
             "When": {
                 "HasMod": "Lita.StarblueValleyUnofficial",
                 "AutoRecolor": "Automatic"
@@ -100,7 +106,7 @@
         },
         {
             "Name": "RecolorTag",
-            "Value": "vibrant",
+            "Value": "Vibrant",
             "When": {
                 "HasMod": "grapeponta.VibrantPastoralRecolor",
                 "AutoRecolor": "Automatic"
@@ -115,7 +121,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "vanilla",
+            "Value": "Vanilla",
             "When": {
                 "AutoRecolorMap": "Automatic, Vanilla",
                 "HasMod |contains=nuu.overgrownmap": false
@@ -123,7 +129,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "earthy",
+            "Value": "Earthy",
             "When": {
                 "HasMod": "DaisyNiko.EarthyRecolour",
                 "HasMod |contains=nuu.overgrownmap": false,
@@ -132,7 +138,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "starblue",
+            "Value": "Starblue",
             "When": {
                 "HasMod": "Lita.StarblueValleyUnofficial",
                 "HasMod |contains=nuu.overgrownmap": false,
@@ -141,7 +147,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "vibrant",
+            "Value": "Vibrant",
             "When": {
                 "HasMod": "VibrantPastoral.C",
                 "VibrantPastoral.C/GreenFall": false,
@@ -151,7 +157,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "vibrantgreen",
+            "Value": "VibrantGreen",
             "When": {
                 "HasMod": "VibrantPastoral.C",
                 "VibrantPastoral.C/GreenFall": true,
@@ -161,7 +167,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "overgrown",
+            "Value": "Overgrown",
             "When": {
                 "HasMod": "nuu.overgrownmap",
                 "AutoRecolorMap": "Automatic"
@@ -172,6 +178,29 @@
             "Value": "{{AutoRecolorMap}}",
             "When": {
                 "AutoRecolorMap |contains=Automatic": "false"
+            }
+        },
+        {
+            "Name": "FoliageType",
+            "Value": "Vanilla",
+            "When": {
+                "HasMod |contains=Az.Foliage": false,
+                "AutoRecolorMap": "Automatic"
+            }
+        },
+        {
+            "Name": "FoliageType",
+            "Value": "SimpleFoliage",
+            "When": {
+                "HasMod": "Az.Foliage",
+                "AutoRecolorMap": "Automatic"
+            }
+        },
+        {
+            "Name": "FoliageType",
+            "Value": "{{SimpleFoliage}}",
+            "When": {
+                "SimpleFoliage |contains=Automatic": "false"
             }
         },
         {
@@ -390,36 +419,36 @@
         },
         {
             "Name": "RecolorTag",
-            "Value": "vanilla"
+            "Value": "Vanilla"
         },
         {
             "Name": "RecolorTag",
-            "Value": "earthy",
+            "Value": "Earthy",
             "When": {
                 "HasMod": "DaisyNiko.EarthyRecolour"
             }
         },
         {
             "Name": "RecolorTag",
-            "Value": "starblue",
+            "Value": "Starblue",
             "When": {
                 "HasMod": "Lita.StarblueValleyUnofficial"
             }
         },
         {
             "Name": "RecolorTag",
-            "Value": "vibrant",
+            "Value": "Vibrant",
             "When": {
                 "HasMod": "grapeponta.VibrantPastoralRecolor"
             }
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "vanilla"
+            "Value": "Vanilla"
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "earthy",
+            "Value": "Earthy",
             "When": {
                 "HasMod": "DaisyNiko.EarthyRecolour",
                 "HasMod |contains=nuu.overgrownmap": false
@@ -427,7 +456,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "starblue",
+            "Value": "Starblue",
             "When": {
                 "HasMod": "Lita.StarblueValleyUnofficial",
                 "HasMod |contains=nuu.overgrownmap": false
@@ -435,7 +464,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "vibrant",
+            "Value": "Vibrant",
             "When": {
                 "HasMod": "VibrantPastoral.C",
                 "VibrantPastoral.C/GreenFall": false,
@@ -444,7 +473,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "vibrantgreen",
+            "Value": "VibrantGreen",
             "When": {
                 "HasMod": "VibrantPastoral.C",
                 "VibrantPastoral.C/GreenFall": true,
@@ -453,7 +482,7 @@
         },
         {
             "Name": "MapRecolorTag",
-            "Value": "overgrownvintage",
+            "Value": "OvergrownVintage",
             "When": {
                 "HasMod": "nuu.overgrownmap"
             }
@@ -942,7 +971,7 @@
             }
         },
         {
-            "LogName": "Municipal Recipe Star-Crossed Includes",
+            "LogName": "Municipal Star-Crossed Includes",
             "Action": "Include",
             "FromFile": "Data/Characters/MV.Municipal_SheriffBill/EventsStarCrossed.json",
             "When": {
@@ -950,11 +979,19 @@
             }
         },
         {
-            "LogName": "Municipal Recipe Coal Point Farm Includes",
+            "LogName": "Municipal Coal Point Farm Includes",
             "Action": "Include",
             "FromFile": "Data/Characters/MV.Municipal_SheriffBill/NPCSchedulesCPF.json",
             "When": {
                 "HasMod |contains=AndrewJC.CoalPointFarm": true
+            }
+        },
+        {
+            "LogName": "Municipal Simple Foliage Includes",
+            "Action": "Include",
+            "FromFile": "Data/Technical/LoadablesSF.json",
+            "When": {
+                "HasMod |contains=Az.Foliage": true
             }
         }
     ]
