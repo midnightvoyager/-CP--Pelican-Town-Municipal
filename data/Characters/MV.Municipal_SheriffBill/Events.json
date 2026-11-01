@@ -236,7 +236,246 @@
                 }
             ]
         },
-        //Weddings
+        {
+            "LogName": "Bill Attends East Scarp's Talent Show",
+            "Action": "EditData",
+            "Target": "Data/Events/CommunityCenter",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=Lemurkat.EastScarpNPCs": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "6398444/A Juliet_TalentShow/e 6398443/t 1200 1800",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 43 12 3",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Part of a Saloon Breakfast Omelette Opening",
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=agentlyoko.stardropbreakfast": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "177755/SawEvent 177754/!ActiveDialogueEvent townbreakfast/DayOfWeek Fri Sat/Time 800 1200/DaysPlayed 113",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 4 19 2",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Aurel's Mermaid Reveal",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=CaptainWolfe11.AurelNPC": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "AMIC.aurel.13/e AMIC.aurel.12/t 800 1800/f {{ModId}}_aurel 2500/n mermaidRevealTown",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 35 68 3",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Reiner's Celebration",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=LittlePippi.Reiner": true,
+                "HasMod |contains=LittlePippi.Erwin": false,
+                "HasMod |contains=LittlePippi.Levi": false,
+                "HasMod |contains=LittlePippi.Hange": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Reiner_eightheart/Friendship Reiner 2000/Weather sunny/Time 600 1700/LocalMail Reinereightheartletter",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 100 100 3",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "Reiner_eightheart/Friendship Reiner 2000/Weather sunny/Time 600 1700/LocalMail Reinereightheartletter"
+                    ],
+                    "Search": "faceDirection Wizard 3",
+                    "Value": "faceDirection Wizard 3/warp {{ModID}}_SheriffBill? 29 8/faceDirection {{ModID}}_SheriffBill? 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Reiner's Celebration Variant",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=LittlePippi.Reiner": true,
+                "HasMod |contains=LittlePippi.Erwin": true,
+                "HasMod |contains=LittlePippi.Levi": true,
+                "HasMod |contains=LittlePippi.Hange": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Reiner_eightheartvets/Friendship Reiner 2000/Weather sunny/Time 600 1700/",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 100 100 3",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "Reiner_eightheartvets/Friendship Reiner 2000/Weather sunny/Time 600 1700/"
+                    ],
+                    "Search": "faceDirection Wizard 3",
+                    "Value": "faceDirection Wizard 3/warp {{ModID}}_SheriffBill? 29 8/faceDirection {{ModID}}_SheriffBill? 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Clark's Award",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=Wem.Clark": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Wem.Clark_Conclusion/Time 800 1700/Friendship Wem.Clark_Clark 2000/SawEvent Wem.Clark_Article/!ActiveDialogueEvent Wem.Clark_Published/Weather sunny",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 31 69 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "Wem.Clark_Conclusion/Time 800 1700/Friendship Wem.Clark_Clark 2000/SawEvent Wem.Clark_Article/!ActiveDialogueEvent Wem.Clark_Published/Weather sunny"
+                    ],
+                    "Search": "emote Caroline 32 true",
+                    "Value": "emote Caroline 32 true/emote {{ModID}}_SheriffBill 32 true",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Clark's BBQ",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=Wem.Clark": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Wem.Clark_BBQ/Time 1200 1900/Friendship Wem.Clark_Clark 2000/SawEvent Wem.Clark_Conclusion/!Season winter/DayOfWeek Fri Sat/Weather sunny",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 33 10 2",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends the Tilly Market",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=Wem.Bundle": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Wem.Bundle.Tilly_7Hearts.2/Time 900 1200/Weather sunny/SawEvent 1848481/!SawEvent 502261/SawEvent Wem.Bundle.Tilly_6Hearts.2/LocalMail Wem.Bundle_MarketNotice/!ActiveDialogueEvent Wem.Bundle_AuctionBuffer",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 34 34 3",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Bill Attends Jeric and Alex's Wedding",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=ZoeDoll.JericAlexRivalHearts": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "955807/n AlexJericWeddingLetter/t 900 1700/w sunny/!G PLAYER_NPC_RELATIONSHIP Any Jeric Married/!G PLAYER_NPC_RELATIONSHIP Any Alex Married",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 29 70 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "955807/n AlexJericWeddingLetter/t 900 1700/w sunny/!G PLAYER_NPC_RELATIONSHIP Any Jeric Married/!G PLAYER_NPC_RELATIONSHIP Any Alex Married"
+                    ],
+                    "Search": "warp Abigail -100 -100",
+                    "Value": "warp Abigail -100 -100/warp {{ModID}}_SheriffBill? -100 -100",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        //Player Weddings
         {
             "LogName": "Vanilla Wedding Position",
             "Action": "EditData",
@@ -293,7 +532,7 @@
             "Action": "EditData",
             "Target": "Data/Events/AdventureGuild",
             "Entries": {
-                "{{ModId}}_GuildIntro/e {{ModId}}_Intro/GameStateQuery PLAYER_VISITED_LOCATION Current AdventureGuild/A MV.NewSheriffTimer": "MarlonsTheme/7 13/farmer -1000 -1000 0 Gil -1000 -1000 0 {{Marlon}} 4 11 2 {{ModId}}_SheriffBill 7 12 3/addConversationTopic MV.SheriffGuild/addConversationTopic MV.SheriffGuildTimer/skippable/pause 1500/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.01}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.02.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.03}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.04}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.05}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.06}}\"/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.07}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.08}}\"/pause 400/playSound doorClose/warp farmer 6 18/move farmer 0 -4 0/pause 100/emote farmer 32/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.09}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.10.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.11}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.12}}\"/move {{ModId}}_SheriffBill 0 6 2/move {{ModId}}_SheriffBill -1 0 3/move {{ModId}}_SheriffBill 0 1 2/warp {{ModId}}_SheriffBill -1000 -1000/playSound doorClose/pause 400/emote farmer 8/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.13}}\"/pause 400/emote farmer 8/speak Gil \"{{i18n:MV.Municipal.GuildIntro.14}}\"/facedirection farmer 1/emote farmer 8/speak Gil \"{{i18n:MV.Municipal.GuildIntro.15}}\"/pause 400/emote farmer 40/facedirection farmer 0/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.16}}\"/pause 800/end"
+                "{{ModId}}_GuildIntro/e {{ModId}}_Intro/GameStateQuery PLAYER_VISITED_LOCATION Current AdventureGuild/A MV.NewSheriffTimer": "MarlonsTheme/7 13/farmer -1000 -1000 0 Gil -1000 -1000 0 {{Marlon}} 4 11 2 {{ModId}}_SheriffBill 7 12 3/addConversationTopic MV.SheriffGuild/addConversationTopic MV.SheriffGuildTimer/skippable/pause 1500/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.01}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.02.{{HasMod |contains=Wolf.Marlon}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.03}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.04.{{HasMod |contains=Wolf.Marlon}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.05}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.06.{{HasMod |contains=Wolf.Marlon}}}}\"/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.07}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.08.{{HasMod |contains=Wolf.Marlon}}}}\"/pause 400/playSound doorClose/warp farmer 6 18/move farmer 0 -4 0/pause 100/emote farmer 32/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.09}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.10.{{HasMod |contains=Wolf.Marlon}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.GuildIntro.11}}\"/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.12}}\"/move {{ModId}}_SheriffBill 0 6 2/move {{ModId}}_SheriffBill -1 0 3/move {{ModId}}_SheriffBill 0 1 2/warp {{ModId}}_SheriffBill -1000 -1000/playSound doorClose/pause 400/emote farmer 8/pause 400/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.13.{{HasMod |contains=Wolf.Marlon}}}}\"/pause 400/emote farmer 8/speak Gil \"{{i18n:MV.Municipal.GuildIntro.14}}\"/facedirection farmer 1/emote farmer 8/speak Gil \"{{i18n:MV.Municipal.GuildIntro.15}}\"/pause 400/emote farmer 40/facedirection farmer 0/speak {{Marlon}} \"{{i18n:MV.Municipal.GuildIntro.16}}\"/pause 800/end"
             }
         },
         {

@@ -1,0 +1,36 @@
+{
+    "Changes": [
+        {
+            "LogName": "Bill Attends Sam and Alissa's Wedding",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Priority": "Late + 100",
+            "When": {
+                "HasMod |contains=ZoeDoll.SamAndAlissaRivalHearts": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "902207/n SamAlissaWeddingLetter/!G PLAYER_NPC_RELATIONSHIP Any Sam Married/!G PLAYER_NPC_RELATIONSHIP Any Alissa Married/t 900 1700/w sunny/z spring/!G {{Spiderbuttons.CMCT/Config: ZoeDoll.SamAndAlissaRivalHearts, Version |contains= platonic, dating}}",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 29 70 0",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "902207/n SamAlissaWeddingLetter/!G PLAYER_NPC_RELATIONSHIP Any Sam Married/!G PLAYER_NPC_RELATIONSHIP Any Alissa Married/t 900 1700/w sunny/z spring/!G {{Spiderbuttons.CMCT/Config: ZoeDoll.SamAndAlissaRivalHearts, Version |contains= platonic, dating}}"
+                    ],
+                    "Search": "warp Alex -100 -10",
+                    "Value": "warp Alex -100 -100/warp {{ModID}}_SheriffBill? -100 -100",
+                    "Delimiter": "/"
+                }
+            ]
+        }
+    ]
+}

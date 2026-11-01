@@ -116,7 +116,7 @@
     "MV.Municipal.Objects.Donation5_Description": "A donation towards maintaining Mt Vapius's infrastructure.",
     //LABELS
     "MV.Municipal.MapInfo.1": "Pelican Town Municipal",
-    "MV.Municipal.MapInfo.2": "Open 9:00AM to 4:00PM",
+    "MV.Municipal.MapInfo.2": "Open 9:00AM to 5:00PM",
     "MV.Municipal.MapInfo.3": "Bill's Apartment",
     "MV.Municipal.MapInfo.4": "Pelican Town Municipal - Unused Cells",
     "MV.Municipal.MapInfo1": "Pelican Town Municipal",
@@ -210,6 +210,16 @@
     "MV.Municipal.LFL.false": "It's down by the mayor's house, on the side towards the library.",
     "MV.Municipal.WinterStarRas.true": "I do not have an easy time with children who aren't my son, but Bill is right.",
     "MV.Municipal.WinterStarRas.false": "I never wanted children, but Bill is right.",
+    "MV.Municipal.MarlonSmile.true": "$2",
+    "MV.Municipal.MarlonSmile.false": "$h",
+    "MV.Municipal.WheelchairUsers.1": "George",
+    "MV.Municipal.WheelchairUsers.2": "George and Aurel",
+    "MV.Municipal.WheelchairUsers.3": "George and Rosalie",
+    "MV.Municipal.WheelchairUsers.4": "George, Aurel, and Rosalie",
+    "MV.Municipal.WheelchairUsersAppreciate.1": "George appreciates",
+    "MV.Municipal.WheelchairUsersAppreciate.2": "George and Aurel appreciate",
+    "MV.Municipal.WheelchairUsersAppreciate.3": "George and Rosalie appreciate",
+    "MV.Municipal.WheelchairUsersAppreciate.4": "George, Aurel, and Rosalie appreciate",
     //ALICIA
     "MV.Municipal.Alicia": "Alicia",
     "MV.Municipal.Shop.1": "It's so worth the commute here for the peaceful work environment.",
@@ -266,7 +276,7 @@
     "MV.Municipal.Flavor.7": "Unisex restrooms.",
     "MV.Municipal.Flavor.8": "A sign that can be flipped around to read if the sheriff is in or out. It indicates that he plans to always be in from 9-11",
     "MV.Municipal.Flavor.9.false": "A picture of a young girl who doesn't look like Bill at all. Looks like she's won a spelling bee.",
-    "MV.Municipal.Flavor.9.true": "A picture of the Bill's daughter when she was very young. Looks like she's won a spelling bee.",
+    "MV.Municipal.Flavor.9.true": "A picture of Bill's daughter when she was very young. Looks like she's won a spelling bee.",
     "MV.Municipal.Flavor.10": "The mug says 'World's Best Second Dad'.",
     "MV.Municipal.Flavor.11": "The sign looks like it once said 'Holding Cells.' A paper sign has been taped over it to read 'Storage.' The door is locked.",
     "MV.Municipal.Flavor.12": "Looks like a gun safe. There's already dust on the dial and handle.",
@@ -407,10 +417,10 @@
     "MV.Municipal.Dialogue.Daily.24": "[LocalizedText Strings/MV.Municipal:MarlonName]'s got so many stories, I don't think [LocalizedText Strings/MV.Municipal:MarlonGenderHe]'ll ever run out of 'em.$h",
     "MV.Municipal.Dialogue.Daily.25": "Willy's elbow started botherin' him again. It's the castin' motion, wears on it a bit.$3#$b#Told 'im he should go to [LocalizedText Strings/MV.Municipal:HarveyPhilip] and ask about exercises that'll help it.",
     "MV.Municipal.Dialogue.Daily.26": "I wish Jodi and Caroline would ease up just a tad.$3#$b#It's easy to be paranoid when you've got a kid, easy to feel like you need to smother 'em to keep 'em safe.$3",
-    "MV.Municipal.Dialogue.Daily.27": "$query ANY \"PLAYER_NPC_RELATIONSHIP Current Sebastian Married\" \"PLAYER_HAS_SEEN_EVENT Current Kantrip.OlderSebastian_Event_Reconciliation\"#Sebastian seems happier lately. Glad [LocalizedText Strings/MV.Municipal:SebHe]'s in a better place in life.|Sebastian was tellin' me about [LocalizedText Strings/MV.Municipal:SebHis] work earlier. I don't understand much of it, but I think [LocalizedText Strings/MV.Municipal:SebHe] liked havin' someone to listen.#$b#Wish [LocalizedText Strings/MV.Municipal:SebHis] home situation was better.$3",
-    "MV.Municipal.Dialogue.Daily.28": "Sorry if I'm yawnin'. Elena needed to talk out a problem she's been havin', so I stayed up later'n I should.",
+    "MV.Municipal.Dialogue.Daily.27": "$query ANY \"PLAYER_NPC_RELATIONSHIP Current Sebastian Married\" \"PLAYER_HAS_SEEN_EVENT Current Kantrip.OlderSebastian_Event_Reconciliation\" \"PLAYER_HAS_SEEN_EVENT Current SebastianAbigailWedding\"#Sebastian seems happier lately. Glad [LocalizedText Strings/MV.Municipal:SebHe]'s in a better place in life.|Sebastian was tellin' me about [LocalizedText Strings/MV.Municipal:SebHis] work earlier. I don't understand much of it, but I think [LocalizedText Strings/MV.Municipal:SebHe] liked havin' someone to listen.#$b#Wish [LocalizedText Strings/MV.Municipal:SebHis] home situation was better.$3",
+    "MV.Municipal.Dialogue.Daily.28": "Sorry if I'm yawnin'. [CapitalizeFirstLetter [LocalizedText Strings/MV.Municipal:BillDaughter]] needed to talk out a problem she's been havin', so I stayed up later'n I should.",
     "MV.Municipal.Dialogue.Daily.29": "I don't miss bar patrol in the city. Had to deal with some of the meanest drunks you've ever met.$3#$b#And they expect a cop to be hard on 'em, so they don't take to talkin' it out well.$3",
-    "MV.Municipal.Dialogue.Daily.30": "Alma's off on some new adventure again. Livin' her best life. Wish everyone could end up in as good a place as her.$h",
+    "MV.Municipal.Dialogue.Daily.30": "[CapitalizeFirstLetter [LocalizedText Strings/MV.Municipal:BillMother]]'s off on some new adventure again. Livin' her best life. Wish everyone could end up in as good a place as her.$h",
     "MV.Municipal.Dialogue.Daily.31": "Think [LocalizedText Strings/MV.Municipal:PierreName] and Abigail are feudin' again.$3#$b#I know where [LocalizedText Strings/MV.Municipal:AbiShes] comin' from. Some people expect their kids to be one way and don't know what to do when that ain't what they end up with.$3",
     "MV.Municipal.Dialogue.Daily.32": "Alex is a good kid, despite his pa. Glad he made good instead a' followin' in his footsteps.",
     "MV.Municipal.Dialogue.Daily.33": "It must be hard for Penny, seein' her ma struggle like that...$3#$b#Doesn't help that alcohol and strugglin' can give you a short temper.$3",
@@ -513,6 +523,66 @@
     "MV.Municipal.Dialogue.AGE.1": "[LocalizedText Strings/MV.Municipal:MarlonName]'s proud of [LocalizedText Strings/MV.Municipal:MarlonGenderHe] niece and nephew, and I can't blame [LocalizedText Strings/MV.Municipal:MarlonGenderHim]. They're good kids.",
     "MV.Municipal.Dialogue.AGE.2": "People talk about how Zinnia's just like her ma, but Gabe's sure got her mind for research.",
     "MV.Municipal.Dialogue.AGE.3": "Both Zinnia and Gabe put everything into what they do. [LocalizedText Strings/MV.Municipal:MarlonName] couldn't ask for more dedicated help.",
+    //Wilford
+    "MV.Municipal.Dialogue.Wilford": "$query PLAYER_FRIENDSHIP_POINTS 1000#Glad Wilford's found someone to get on with 'round here. Hate to see anyone alone as he seemed.|Ain't sure if Wilford even wants any friends. Fella seems to turn prickly when anyone gets near.$3",
+    //Faust the Gravekeeper
+    "MV.Municipal.Dialogue.Faust": "$query PLAYER_HAS_SEEN_EVENT Current 95790305#Elliott's been makin' friends with Faust, I hear.#$b#I know Elliott really likes him, but I think he took it as a challenge, too.$h|The gravekeeper seems like a ghost himself some days.#$b#I say hello when I pass, but that's about the most he'll talk. Guess he's shy.",
+    //Darcy's Coffee Shop
+    "MV.Municipal.Dialogue.Darcy": "Was in the mood for a fancy coffee, so I stopped by Darcy's this morning. Her place is a whole lot nicer than the chains back in the city.",
+    //Shopkeeper Leela
+    "MV.Municipal.Dialogue.Leela": "Surprised y'all got enough business out here to support both Pierre and Leela. But it's nice to have competition on the same level.#$b#Not like what Joja does.$3",
+    //Therapist NPC
+    "MV.Municipal.Dialogue.Therapist": "Ain't often a town this small has its own therapist. Y'all are lucky.#$b#It can be hard for people to get help when they have to go all the way to the city for it.$3",
+    //Ben of Mountainside Orchard
+    "MV.Municipal.Dialogue.BenOrchard": "Ben's got a real nice movie collection. Wouldn't say it's all good movies, but watchin' a bad movie with friends is a good time.$h",
+    //Ivaras
+    "MV.Municipal.Dialogue.Ivaras": "Ras's apprentice Ivaras is a good kid.#$b#Hear he has trouble with his dad. Seems like a real trend in these parts.$3",
+    //Aliyah
+    "MV.Municipal.Dialogue.Aliyah": "Good knowin' Aliyah's able to help [LocalizedText Strings/MV.Municipal:MarlonName] and Gil out with their work. They ain't gettin' any younger.",
+    //Hidden Place
+    "MV.Municipal.Dialogue.Lowell": "Robin says Lowell's a real help around her shop. Even though he talks to the wood.#$b#He might be an odd fella, but I can't argue with respectin' nature more.",
+    //Two for Joy
+    "MV.Municipal.Dialogue.TwoForJoy": "$query PLAYER_HAS_SEEN_EVENT Current handwrittenhello.TFJ_hearts8#Can't imagine how I'd deal with losin' [LocalizedText Strings/MV.Municipal:BillDaughter]. But I'm glad Miriam's openin' up a bit.|Miriam's grieving. Give 'er time and patience. I'm sure she could use some care, even if she pushes it away.$3",
+    //Voice of the Valley
+    "MV.Municipal.Dialogue.VoiceValley": "Sat with Rosalie earlier while she took a rest. She's into some of the same things as [LocalizedText Strings/MV.Municipal:BillDaughter], so I ain't lost when she talks about 'em.",
+    "MV.Municipal.Dialogue.VoiceValleyRadio": "Rosalie really lights up on that radio show. I'm glad she's found somethin' she loves doin'.$h",
+    //Lucia
+    "MV.Municipal.Dialogue.Lucia": "Don't tell the other cats, but Void's my favorite. Always had a soft spot for black cats.",
+    "MV.Municipal.Dialogue.LuciaCafe": "Lucia's got a nice little thing goin' with her cafe. Pettin' cats goes well with coffee.$h",
+    //A Moth's Inner Compass
+    "MV.Municipal.Dialogue.Aurel": "Aurel keeps me an' Willy company sometimes when we're fishin'. She's real sweet.#$b#Ain't surprised Willy's sweet on 'er.$7",
+    //Visit Mount Vapius
+    "MV.Municipal.Dialogue.Vapius": "Pam's friend in Mount Vapius and her girl make an awful cute couple.$h#$b#Nice for the younger ones to see there's always been people like us out there.",
+    //Arumi
+    "MV.Municipal.Dialogue.Arumi.1": "Arumi's good company while I'm out fishin'. Sometimes her kid tags along, an' that's even better.",
+    "MV.Municipal.Dialogue.Arumi.2": "Don't know how Arumi did what she did in those movies with those heels. Her balance must be somethin' else.",
+    //Aspen
+    "MV.Municipal.Dialogue.Aspen": "Ain't much can get Aspen down. Not even getting stuck away from her home could do it.",
+    //Hange
+    "MV.Municipal.Dialogue.Hange": "You know, [LocalizedText Strings/MV.Municipal:BillHusband] worked with some people like Hange. Brains never took a break from their work.",
+    //Levi
+    "MV.Municipal.Dialogue.Levi": "Guys like Levi turn their pain to anger. Use it as a shield to block everything out.$3#$b#Just hope he doesn't push everyone away.$3",
+    //Erwin
+    "MV.Municipal.Dialogue.Erwin": "Nice to meet Erwin after all this time. Heard plenty from [LocalizedText Strings/MV.Municipal:MarlonName] about him. Seems to live up to the tales, too.",
+    //Reiner
+    "MV.Municipal.Dialogue.Reiner": "Saw Reiner with the kids earlier. Don't care what people say about 'im in the past, he seems like a good man now.",
+    //Clark the Reporter
+    "MV.Municipal.Dialogue.Clark": "Ain't ever seen anyone as keen to help out as Clark. Just hope he don't burn himself out.",
+    //Tilly the Tea-Loving Librarian
+    "MV.Municipal.Dialogue.Tilly": "$query PLAYER_HAS_MAIL Current Wem.Bundle.Tilly_GrandOpeningMail#Stopped by Tilly's for a sweet tea and a honey cake earlier. She's really made that place a cozy spot to take a break.$h|Saw Tilly at the library earlier. She knows those shelves like the back of her hand.",
+    //Sometimes The Wolf
+    "MV.Municipal.Dialogue.STW.1": "Had a pet snake as a kid, but it was a little garden snake. Not a rattler like Socrates.",
+    "MV.Municipal.Dialogue.STW.2": "Had a chat with Moneypenny this mornin'. Can't understand her, but she's got plenty to say.",
+    "MV.Municipal.Dialogue.STW.3": "$query PLAYER_HAS_SEEN_EVENT Current MadDog.STW_Tybalt_7Hearts#Tybalt's a good fella. Glad people're startin' to give him a chance.|Tybalt's a good fella. Wish more of the people round here would give him a chance.",
+    "MV.Municipal.Dialogue.STW.4": "$query PLAYER_HAS_SEEN_EVENT Current MadDog.STW_Cherri_7Hearts#Desperation can make people do all kinds of things. But I'm glad Cherri's on the right side of things again.|Hope Cherri's not gettin' bothered too much 'bout her background. Ain't often people hear about royalty in these parts.",
+    //Dead Boy Detectives
+    "MV.Municipal.Dialogue.DBD.1": "Jenny really ain't takin' to the countryside. But I guess everyplace ain't for everyone. I hated the city myself.",
+    "MV.Municipal.Dialogue.DBD.2": "Crystal's in the graveyard more often than not. Think she must have more friends dead'n living.",
+    "MV.Municipal.Dialogue.DBD.3": "I ain't really into the horoscope, but Monty seems a little starved for friendship. So I humored him. Apparently I'm a Virgo.",
+    "MV.Municipal.Dialogue.DBD.4": "$query PLAYER_HAS_SEEN_EVENT Current handwrittenhello.dbda_catkinghearts10#You know, knowin what I know now, makes sense how Thomas was actin'. Met a lotta cats like that.|That shy fella was in the saloon again. The one from the cannery? Gus is goin' outta his mind tryin' to connect with 'im.",
+    //Wheelchair Access, with or without Pelican Town Accessibility
+    "MV.Municipal.Dialogue.Wheelchair.true": "You know, Pelican Town's got better accessibility than most small towns I've seen.#$b#Y'all ought to be proud. I'm sure [LocalizedText Strings/MV.Municipal:WheelchairUsersAppreciate] bein' able to get around easier.",
+    "MV.Municipal.Dialogue.Wheelchair.false": "They really ought to put in some wheelchair ramps round here.#$b#[LocalizedText Strings/MV.Municipal:WheelchairUsers] ought not have to struggle to get around.",
     //Joja Movie Theater and Super Jojamart
     "MV.Municipal.Dialogue.JojaMT.1": "Now that Joja's away from the river, the litter problem's gone down. Small favors, I guess.",
     "MV.Municipal.Dialogue.JojaMT.2": "You know, there's an empty Jojamart and an empty Super Jojamart back where I'm from. Joja kept the land the Super Jojamart was on.$3#b#Why? Real estate nonsense. Leasing agreements. If they can squeeze a penny outta the place, they will.$3",
@@ -595,7 +665,7 @@
     "MV.Municipal.SheriffBill.gift.BookofYoba": "Ah... Well, thank you. Afraid I've been given ten of these though.",
     "MV.Municipal.SheriffBill.gift.GettingChicksToLoveYou": "You know, I might not be the target audience for this one.#$b#I'm kidding, I'm kidding. I like chickens just fine.$7",
     "MV.Municipal.SheriffBill.gift.GuideToSculptingWithGold": "Must not be easy if you gotta specialize. Or maybe it is easy, since it's a soft metal? Huh, well now I'm curious.",
-    "MV.Municipal.SheriffBill.gift.Cider": "I do love a good cider. Especially in the right season.$h",
+    "MV.Municipal.SheriffBill.gift.Cider": "I do like a good cider. Especially in the right season.$h",
     "MV.Municipal.SheriffBill.gift.PotentMead": "Whew! Think I'll save this one for a day off.$h",
     "MV.Municipal.SheriffBill.gift.GunnarPotion": "Give it to me straight: will this one blow me up?$u",
     "MV.Municipal.SheriffBill.gift.Colacrab": "Well, at least somebody's having a good time with litter in the water.$u",
@@ -619,6 +689,7 @@
     "MV.Municipal.SheriffBill.gift.FriedTomatoes": "My grandma used to make this when I was little. She'd pick 'em green from her garden and fry 'em up.$h",
     "MV.Municipal.SheriffBill.gift.CowboyChili": "Ahh, this is the one place I can stand beer. A splash in chili, where it belongs.$h",
     "MV.Municipal.SheriffBill.gift.SweetTea": "Now this is the way to drink tea. Nothin' beats it on a hot day.$h",
+    "MV.Municipal.SheriffBill.gift.HoneyCake": "Tilly's bees really do good work, don't they? An' so does Tilly.$h",
     "MV.Municipal.SheriffBill.gift.HushPuppies": "Can't have fish without some a' these! Thank you!$h",
     "MV.Municipal.SheriffBill.gift.BiscuitandGravy": "Well, that's my breakfast settled! This was always my favorite.$h",
     //NPC GIFT DIALOG
@@ -830,17 +901,20 @@
     "MV.Municipal.CT.Married": "Congratulations! Hope your marriage's even half as happy as mine was.$h",
     "MV.Municipal.CT.married_Elliott": "Congratulations! I suppose Elliott finally got his muse.$h#$b#Hope your marriage's even half as happy as mine was.",
     "MV.Municipal.CT.married_Wizard": "Congratulations! [CapitalizeFirstLetter [LocalizedText Strings/MV.Municipal:RasGenderHe]] may not think it sometimes, but [LocalizedText Strings/MV.Municipal:RasGenderHe] deserves happiness.$h#$b#Hope your marriage's even half as happy as mine was.",
+    "MV.Municipal.CT.married_Ivaras": "Congratulations! Suppose ol' Ras'll have an empty nest now.$h#$b#Hope your marriage's even half as happy as mine was.",
     "MV.Municipal.CT.married_Willy": "Congratulations! Guess you really got yourself a catch.$h#$b#Hope your marriage's even half as happy as mine was.",
-    "MV.Municipal.CT.married_Marlon": "Congratulations! Didn't think anybody could catch the ol' man's eye.$h#$b#Hope your marriage's even half as happy as mine was.",
+    "MV.Municipal.CT.married_Marlon": "Congratulations! Didn't think anybody could catch the ol' [LocalizedText Strings/MV.Municipal:MarlonFella]'s eye.$h#$b#Hope your marriage's even half as happy as mine was.",
     "MV.Municipal.CT.married_Gil": "Congratulations! Can't believe you got Gil to do a ceremony. He must really be in love.$h#$b#Hope your marriage's even half as happy as mine was.$h",
     "MV.Municipal.CT.married_Morris": "Congratulations! Can't say I get the appeal, but I ain't the one gettin' married, am I?$7#$b#Hope your marriage's even half as happy as mine was.$h",
-    "MV.Municipal.CT.married_MarlonNibling": "Congratulations! Guess ol' Marlon's family's gettin' even bigger.#$b#Hope your marriage's even half as happy as mine was.$h",
+    "MV.Municipal.CT.married_MarlonNibling": "Congratulations! Guess ol' [LocalizedText Strings/MV.Municipal:MarlonName]'s family's gettin' even bigger.#$b#Hope your marriage's even half as happy as mine was.$h",
     "MV.Municipal.CT.LeahArtShow": "Glad Leah's show was a hit. Not surprised, what with her talent!$h#$b#I tried whittlin', but I always ended up cuttin' away mistakes 'til there was nothin' left.",
     "MV.Municipal.CT.ElliottReading": "I think Elliott's reading went well! He was nervous 'bout everyone gettin' bored and leaving.$h",
     "MV.Municipal.CT.SamShow": "Those kids put on a good show! Got a spare copy of their disk to send to [LocalizedText Strings/MV.Municipal:BillDaughter].$h",
     //DIALOGUE FOR TRIGGER ACTION CTs
-    "MV.Municipal.CT.RailroadAccessible.false": "Damn Joja. They could drop a rock on your head and expect you to thank 'em for it.$5#$b#Least the railway and mines're both clear now.$3",
-    "MV.Municipal.CT.RailroadAccessible.true": "Damn Joja. They could drop a rock on your head and expect you to thank 'em for it.$5#$b#Least the railway and mines're both clear now. And poor Susan can finally get into town!$3",
+    "MV.Municipal.CT.RailroadAccessible.false.false": "Damn Joja. They could drop a rock on your head and expect you to thank 'em for it.$5#$b#Least the railway and mines're both clear now.$3",
+    "MV.Municipal.CT.RailroadAccessible.true.false": "Damn Joja. They could drop a rock on your head and expect you to thank 'em for it.$5#$b#Least the railway and mines're both clear now. And poor Susan can finally get into town!$3",
+    "MV.Municipal.CT.RailroadAccessible.false.true": "Damn Joja. They could drop a rock on your head and expect you to thank 'em for it.$5#$b#Least the railway and mines're both clear now. And poor Aspen can finally get home!$3",
+    "MV.Municipal.CT.RailroadAccessible.true.true": "Damn Joja. They could drop a rock on your head and expect you to thank 'em for it.$5#$b#Least the railway and mines're both clear now. And poor Aspen and Susan can get back and forth!$3",
     "MV.Municipal.CT.abandonedJojaMartAccessible": "Even the sky hates that eyesore.$h#$b#Though I'm glad the damn thing didn't catch fire.",
     "MV.Municipal.CT.ccComplete": "You did some damn fine work on that old community center.$h#$b#Don't know how you did it so quiet, but the place is good as new.",
     "MV.Municipal.CT.jojaComplete": "Just remember, was your money that fixed up this town. Not Joja's.$3",
@@ -893,7 +967,7 @@
     "MV.Municipal.CT.AbyssRoosterGrow": "That little chicken followin' Kataryna around's an odd one, but he's awful cute.$h",
     "MV.Municipal.CT.AbyssVBear": "I'm glad Abyss is alright. Ain't surprised he did it. Roosters are protective little guys.#$b#I've ordered some bear-proofing so folks can secure their trashcans better, hopefully avoid another bear situation.",
     "MV.Municipal.CT.GuntherKatarynaCoverse": "Glad Kataryna's mellowed out a bit. Don't know what her problem was, but she seems to have simmered down.",
-    "MV.Municipal.CT.TristanReturns": "Hell of a thing Tristan went through. You know, [LocalizedText Strings/MV.Municipal:MarlonName] was awful upset when he first went missing.#$b#Happy for [LocalizedText Strings/MV.Municipal:MarlonGenderHer] and Jas that he's back now.",
+    "MV.Municipal.CT.TristanReturns": "Hell of a thing Tristan went through. You know, [LocalizedText Strings/MV.Municipal:MarlonName] was awful upset when he first went missing.#$b#Happy for [LocalizedText Strings/MV.Municipal:MarlonGenderHim] and Jas that he's back now.",
     //Lurking in the Dark
     "MV.Municipal.CT.LitD_CT_SenMet": "Keep seein' these kinda person-shaped shadows outta the corner of my eye. Think cop work in the city really got to my nerves.$3",
     //Nora
@@ -978,8 +1052,11 @@
     //Lucikiel
     "MV.Municipal.CT.LucikielArrives": "You know, there ain't a law against summoning a demon. Don't think anybody thought that was somethin' we needed a law against.$5#$b#Least the demon seems alright. He's got sense enough to not work for Joja, and he ain't hurtin' anybody.$3",
     "MV.Municipal.CT.ReputationIncreased": "Well, all's well that ends well. [LocalizedText Strings/MV.Municipal:MorrisName] never figured [LocalizedText Strings/MV.Municipal:MorrisGenderHis] little summon would end up being a fine addition to the town, did [LocalizedText Strings/MV.Municipal:MorrisGenderHe]?$h",
-    //Ranger Taro
+    //Trolley
     "MV.Municipal.CT.RangerFirstMet": "Don't know why they're sendin' out a forest ranger when it ain't a national forest, but I guess they got their reasons.#$b#Doesn't hurt to have someone keepin' an eye on conservation 'round here.$h",
+    "MV.Municipal.CT.RangerAdmits": "Ras's been keepin' an eye on that forest ranger. [LocalizedText Strings/MV.Municipal:RasGenderHe] can be protective of that forest.",
+    "MV.Municipal.CT.RangerSettles": "Glad we've been seein' more of Ranger Taro around. She's a pleasant sort, ain't she?",
+    "MV.Municipal.CT.CC_FIASAintro": "Somethin' odd about that FIASA captain. Can't quite put my finger on it.$3",
     //Sebastian's Frog Sanctuary
     "MV.Municipal.CT.SebFrogLake": "It's nice to see kids so set on doin' the world some good. And the world wouldn't be as nice without frogs.$h",
     "MV.Municipal.CT.SebFrogVideo": "Haley might be embarrassed, but a funny clip like that could really get some eyes on the project who might not have looked otherwise.",
@@ -1022,13 +1099,87 @@
     "MV.Municipal.CT.GabrielArrive": "I heard Gabe and Zinnia were gonna be movin' into town. Good to see 'em again.$h",
     "MV.Municipal.CT.SillyRevealed": "I got no problem with Silly. Don't see why anyone'd have problem with a friendly little fella like that.",
     "MV.Municipal.CT.GabeFinished": "I imagine you and the other guild members'll have a safer time if you found a way to protect people from slimes.",
+    //Make Marlon Real
+    "MV.Municipal.CT.MakeMarlonReal1": "[LocalizedText Strings/MV.Municipal:MarlonName] may not show it well, but [LocalizedText Strings/MV.Municipal:MarlonGenderHe] likes you. Give it some time and you'll see.",
+    //Make Gil Real
+    "MV.Municipal.CT.MakeGilReal1": "Gil ain't been himself for a long time. Wish he'd see someone about it.$3",
+    "MV.Municipal.CT.MakeGilReal2": "Been seein' more of the old Gil lately. Good to see 'im out of his chair.",
+    //Make Gunther Real
+    "MV.Municipal.CT.Cecily": "Gunther already told me 'bout Cecily. If her stepdad shows his face let me know, I ain't gonna let him get anywhere near her.$3",
+    //A Pelican Town
+    "MV.Municipal.CT.Thompson4HeartCT": "Thompson's... a bit much, ain't he?$3#$b#Lotta things he should be spendin' that money on before accessories, and he ain't even tryin' to make arrangements to cover it.$3",
+    "MV.Municipal.CT.Thompson8HeartCT": "Glad Thompson's come around. Ain't sayin' to give up on his dreams, but a little humility goes a long way.",
+    "MV.Municipal.CT.Kenzie10HeartCT2": "You heard about that Daniel Rows? Never was a fan of his politics, but...$3#$b#The first openly gay candidate goin' missing right after the election? I don't like the sound of that.%3",
+    //Coal Point Farm
+    "MV.Municipal.CT.CPFBirthBackground": "I met little Isaac earlier. Cute little fella.#$b#Though it must be rough for Mora, givin' birth while her husband's off at war.$3",
+    "MV.Municipal.CT.CPFIsaacReturns": "Glad big Isaac's back. Must be hard to miss the birth of his little 'un, but at least he won't have missed much.$h",
+    //Enya the CatSith
+    "MV.Municipal.CT.enyaArrive": "Wonder where that little black cat's gone. Hate to think she's been caught by somethin' in the wild.$3",
+    //Anna Lollipop
+    "MV.Municipal.CT.AnnaHouse": "Not sure I ever seen a house quite like Anna's before. But she knows what she likes, and I'm glad she managed to get it.",
+    //Prince Teddy the Kitten
+    "MV.Municipal.CT.teddy_Stray": "You seen the new addition at Marnie's yet? He's a cute little fella.",
+    //Part of a Saloon Breakfast
+    "MV.Municipal.CT.breakfastopen": "Gus makes a damn fine breakfast. Just wish more people showed up to try it...$3",
+    "MV.Municipal.CT.townbreakfast": "That omelet event ain't a bad idea.",
+    "MV.Municipal.CT.completebreakfast": "Gus really knocked it outta the park with that omelet. Think he'll have all the business he needs now.",
+    //Stardrop Soda
+    "MV.Municipal.CT.StarfruitSodaUnlockTopic": "That Starfruit soda ain't half bad. Not always in the mood for somethin' sour, but it's not too-too sour, you know?",
+    "MV.Municipal.CT.StardropSodaUnlockTopic": "Don't know how Gus did it with that new soda. Tastes just like this grape soda we had back home when I was a kid.", //Grapico
+    //Sydney
+    "MV.Municipal.CT.SydneyTalk": "If you see any strangers looking for Sydney, let me know instead of tellin' em. Even if they say they're family.$3#$b#Ain't my place to say why, just to keep her safe.",
+    "MV.Municipal.CT.SydneyRescue": "Damn good thing Sydney was there when Vincent went into the water...$3#$b#Far as I'm concerned, she's a hero.",
+    //Honeyfuggle
+    "MV.Municipal.CT.Honeyfuggle_Suspicious": "That Honeyfuggle's been hangin' round Ras's place, actin awful suspicious.$3#$b#But Ras says not to worry. So I guess I won't.",
+    "MV.Municipal.CT.Honeyfuggle_Depart": "Ras told me about Honeyfuggle's whole... well, you know. Hope they have better luck wherever they're goin' next.",
+    //Hidden Place
+    "MV.Municipal.CT.LowellInTown": "So how d' you know that Lowell fella? He seemed torn between runnin' off and excitement when you brought 'im by.",
+    //Ridgeside Rival Hearts Jeric and Alex
+    "MV.Municipal.CT.AlexJericMarried": "Alex an' Jeric make a fine couple, don't they? Two peas in a pod.$h",
+    //Ridgeside Rival Hearts Sam and Alissa
+    "MV.Municipal.CT.SamAlissaMarried": "Leave it to Sam to bring Alissa out've her shell. Happy for 'em both.$h",
+    "MV.Municipal.CT.WelcomeBabyCadence": "You met the new little one yet? Cadence is cute as can be.",
+    //Defense Division
+    "MV.Municipal.CT.DD.Evento.02": "The Defense Division? Nah, ain't ever worked with 'em before. Never was my kind of beat.#$b#Imagine I'll still go through [LocalizedText Strings/MV.Municipal:MarlonName] either way.",
+    //Marlon x Marnie and Ranch Expansion
+    "MV.Municipal.CT.MarlonMarnie": "Guess ol' [LocalizedText Strings/MV.Municipal:MarlonName] ain't as immune to fallin' head over heels as [LocalizedText Strings/MV.Municipal:MarlonGenderHe] thought.$h",
+    //Star Crossed
+    "MV.Municipal.CT.ASWedTopic": "I'm damn proud of Alex. It can be hard to come out with grandparents you aren't sure'll accept you.$h#$b#Sounds like George turned out fine with it though.",
+    "MV.Municipal.CT.MeetJack": "Ain't easy to get through the adoption process, but I'm sure Alex and Sam know it's all worth it now they've met Jack.$h",
+    "MV.Municipal.CT.SAWedTopic": "Sebastian and Abigail, huh? Couldn't ever tell if they were joined at the hip 'cause they were like siblings or what.#$b#Guess it was the 'or what.'",
+    "MV.Municipal.CT.EPWedTopic": "Elliott's been over the moon since Penny said yes.$h#$b#Think it'll do Penny good to have some space more her own, too.",
+    "MV.Municipal.CT.MeetFable": "Elliott asked me if 'Fable' was cliche for a writer's daughter. It is, of course, but what's he care? It's the name they both wanted.",
+    "MV.Municipal.CT.ELWedTopic": "Me an' Willy saw those two get engaged while were were out fishin'. Had more rocks involved than I'd expect, but they made it work.",
+    "MV.Municipal.CT.MetDominiqueAndre": "Saw Leah and Emily's new little ones earlier. Andre's on board, but I think Dominique needs a little time to get used to things.",
+    "MV.Municipal.CT.HSWedTopic": "Never'd guess Haley an' Shane'd end up together. But love ain't always the kind of thing that makes sense to people on the outside.",
+    "MV.Municipal.CT.MeetChelseaCody": "Twins! Double the trouble. Haley an' Shane'll have their hands full. But they've got family to help out.$h",
+    "MV.Municipal.CT.HMWedTopic": "I thought Harvey'd sweat through his suit, he was so nervous. Told 'im he'd forget his nerves when he saw Maru up there.",
+    //A Moth's Inner Compass
+    "MV.Municipal.CT.MermaidReveal": "A mermaid, huh? Well, it's still Aurel underneath that tail, as far's I'm concerned.",
+    //Visit Mount Vapius
+    "MV.Municipal.CT.VapiusGuild": "Been a while since [LocalizedText Strings/MV.Municipal:MarlonName] heard from the guild in Mount Vapius, but I hear it's pickin' up again.",
+    //Erwin
+    "MV.Municipal.CT.Erwin_Armchange": "Saw Erwin's new arm earlier! Said you got the materials for Ras to fix it with. Damn good of you. Can't imagine it wasn't expensive.",
+    //Reiner
+    "MV.Municipal.CT.Reiner": "Nice to see so many people turn out to support Reiner. Was a little worried the turnout might be lighter.",
+    //Clark the Reporter
+    "MV.Municipal.CT.Clark_AwardBuzz": "The world needs more fellas like Clark who'll speak out about things no matter the risk.",
+    //Tilly the Tea-Loving Librarian
+    "MV.Municipal.CT.Tilly": "Local groceries ain't the only stores Joja's practices shut down. Lotta shops go under when they move into an industry.",
+    //Sometimes the Wolf
+    "MV.Municipal.CT.STW_Cherri_6Hearts": "Awful lot of things goin' missing all the sudden. Don't much like the way people're talkin' about it and Tybalt either.$3",
+    "MV.Municipal.CT.STW_Cherri_7Hearts": "Cherri admitted all her wrongdoin' earlier. She's dedicated to makin' it right, so no need for it to go farther than that.",
+    "MV.Municipal.CT.STW_Socrates_4Hearts": "Can you really understand Socrates an' Moneypenny? Hell of a talent.",
+    //Dead Boy Detectives
+    "MV.Municipal.CT.NikoIntroduced": "Crystal seems a hell of a lot more cheerful lately. Always good to see people doin' better.",
+    "MV.Municipal.CT.montyhearts10": "Monty's old landlady musta' been a piece of work. He seems happier now that he's moved in above Jenny's.",
     //Birthday Conversation Topic and Game State Query
     "MV.Municipal.CT.PlayerBirthday": "Happy birthday! Thought you might like somethin' new to read. [SkillBook_0 SkillBook_1 SkillBook_2 SkillBook_3 SkillBook_4]$h",
     //Failed Quests Lose Friendship
-    "MV.Municipal.CT.QuestFailed": "Forget somethin? Don't burn yourself out acceptin' more requests than you can finish, now.",
+    "MV.Municipal.CT.QuestFailed": "Forget somethin? S'alright, just don't burn yourself out acceptin' more requests than you can finish, now.",
     //DIALOG FOR ADDED MOD CTs
     //Lurking in the Dark
-    "MV.Municipal.CT.KrobusSen": "Krobus says there's another one of those shadow fellas out there who's less of a homebody.#$b#Guess I know who I kept seein' in the corner of my eye. Maybe he'll say hi one day.",
+    "MV.Municipal.CT.KrobusSen": "Krobus says there's another one of those shadow fellas out there who's less of a homebody.#$b#Guess I know who I kept seein' in the corner of my eye. Maybe he'll say hello one day.",
     //Little Red Schoolhouse
     "MV.Municipal.CT.SchoolRepaired": "I heard you got the old schoolhouse repaired!$h#$b#Real good of you. Hard enough teachin' kids without distractions all round 'em.",
     //Alchemistry
@@ -1042,7 +1193,8 @@
     //NPC CTs
     "MV.NewSheriff_Pierre": "[LocalizedText Strings/MV.Municipal:MorrisName] hasn't been back in my store since Sheriff Bill gave [LocalizedText Strings/MV.Municipal:MorrisGenderHim] that ticket. And good riddance!$1",
     "MV.NewSheriff_Lewis": "Have you said hello to the new sheriff yet? [LocalizedText Strings/MV.Municipal:MarlonName] told me Bill's the most principled man [LocalizedText Strings/MV.Municipal:MarlonGenderHe] knows.$1",
-    "MV.NewSheriff_Marlon": "I've known Bill for years. He's a good man. He'll treat this town right.",
+    "MV.NewSheriff_Marlon.false": "I've known Bill for years. He's a good man. He'll do right by this town.",
+    "MV.NewSheriff_Marlon.true": "Bill's reliable, good instincts. Known him for years. Town'll do fine under his watch.",
     "MV.NewSheriff_Elliott": "I met Sheriff Bill at the library earlier! Gunther didn't have the novel that I was looking for, but Bill let me borrow his copy.$3",
     "MV.NewSheriff_Willy": "The sheriff's an angler! He came by earlier to talk about the fishing 'round here.#$b#I think we'll get along just fine.$1",
     "MV.NewSheriff_Wizard": "A sheriff? I wasn't aware that the town lacked law enforcement.",
@@ -1073,7 +1225,8 @@
     "MV.NewSheriff_Pam": "Yeah, a cop. Just one more thing for me to worry about.$2#$b#I ain't done anything wrong! I just don't get along with cops.$3",
     "MV.NewSheriff_Robin": "So, what do you think of the Municipal Building? It took work, but I think it came together well enough.",
     "MV.NewSheriff_Demetrius": "Robin's pleased to be done with the Municipal Building. She can put more creativity and artistry into private buildings.",
-    "MV.SheriffGuild_Marlon": "Good to see Bill again. It's been too long since we've met up in person.",
+    "MV.SheriffGuild_Marlon.false": "It's good to see Bill again! Been too long since we've met up in person.",
+    "MV.SheriffGuild_Marlon.true": "Good to see Bill again. Been too long since we've met up in person.",
     "MV.SheriffWizard_Wizard": "It is good to know that your law enforcement is willing to consider more than the mundane.$h",
     "MV.SheriffSam_Sam": "Turns out the sheriff's actually pretty cool.$h",
     "MV.SheriffSam_Abigail": "I'm glad Sam's not afraid of the sheriff anymore. He was getting really paranoid...",
@@ -1146,20 +1299,24 @@
     "MV.Municipal.Intro.13.true": "WHAT?$6",
     //Guild Intro Event
     "MV.Municipal.GuildIntro.01": "I really can't thank y'all enough for puttin' in a good word for me with Lewis.",
-    "MV.Municipal.GuildIntro.02.true": "We didn't say anything that wasn't true.$2#$b#And you needed to get out of that place before you got killed.",
-    "MV.Municipal.GuildIntro.02.false": "We didn't say anything that wasn't true.$h#$b#And you needed to get out of that place before you got killed.",
+    "MV.Municipal.GuildIntro.02.false": "We didn't say anything that wasn't true.[LocalizedText Strings/MV.Municipal:MarlonSmile]#$b#And you needed to get out of that place before you got killed.",
+    "MV.Municipal.GuildIntro.02.true": "Didn't say anything that wasn't true.[LocalizedText Strings/MV.Municipal:MarlonSmile]#$b#You needed to get out of that place before you got killed.",
     "MV.Municipal.GuildIntro.03": "I appreciate it all the same. And it's good to know I've got someone reliable to send anything outside of the ordinary to.",
-    "MV.Municipal.GuildIntro.04": "You should stop by the [LocalizedText Strings/MV.Municipal:RasJob] as well, if you haven't yet.",
+    "MV.Municipal.GuildIntro.04.false": "You should stop by the [LocalizedText Strings/MV.Municipal:RasJob] as well, if you haven't yet.",
+    "MV.Municipal.GuildIntro.04.true": "There's the [LocalizedText Strings/MV.Municipal:RasJob], too.",
     "MV.Municipal.GuildIntro.05": "The what?$10",
-    "MV.Municipal.GuildIntro.06": "The [LocalizedText Strings/MV.Municipal:RasJob]. Lives in the tower out in Cindersnap, far end. Can't miss it.#$b#We can take care of monsters, of course, but if it's something just weird, [LocalizedText Strings/MV.Municipal:RasGenderHe]'d be the one to go to.",
+    "MV.Municipal.GuildIntro.06.false": "The [LocalizedText Strings/MV.Municipal:RasJob]. Lives in the tower out in Cindersnap, far end. Can't miss it.#$b#We can take care of monsters, of course, but if it's something just weird, [LocalizedText Strings/MV.Municipal:RasGenderHe]'d be the one to go to.",
+    "MV.Municipal.GuildIntro.06.true": "The [LocalizedText Strings/MV.Municipal:RasJob]. Tower out in Cindersnap, far end. Can't miss it.#$b#We deal with monsters. [LocalizedText Strings/MV.Municipal:RasGenderHe] deals with the rest.",
     "MV.Municipal.GuildIntro.07": "Huh. Nobody in town mentioned 'em. Didn't know anybody even lived out there.$3",
-    "MV.Municipal.GuildIntro.08": "[CapitalizeFirstLetter [LocalizedText Strings/MV.Municipal:RasGenderHe]]'s a reclusive one, but not a bad sort. [CapitalizeFirstLetter [LocalizedText Strings/MV.Municipal:RasGenderHe]]'s helped us out in the past.",
+    "MV.Municipal.GuildIntro.08.false": "[CapitalizeFirstLetter [LocalizedText Strings/MV.Municipal:RasGenderHe]]'s a reclusive one, but not a bad sort. [CapitalizeFirstLetter [LocalizedText Strings/MV.Municipal:RasGenderHe]]'s helped us out in the past.",
+    "MV.Municipal.GuildIntro.08.true": "Reclusive sort, but not a bad one. [CapitalizeFirstLetter [LocalizedText Strings/MV.Municipal:RasGenderHe]]'s helped us out before.",
     "MV.Municipal.GuildIntro.09": "Howdy there, @. Got business with the guild?$h",
-    "MV.Municipal.GuildIntro.10.true": "@'s our newest member! And a promising one at that.$2",
-    "MV.Municipal.GuildIntro.10.false": "@'s our newest member! And a promising one at that.$h",
+    "MV.Municipal.GuildIntro.10.false": "@'s our newest member! And a promising one at that.[LocalizedText Strings/MV.Municipal:MarlonSmile]",
+    "MV.Municipal.GuildIntro.10.true": "@'s our newest. Shows promise.",
     "MV.Municipal.GuildIntro.11": "You don't say? Guess all that farmin' is good for the sword-arm, too.#$b#Well, y'all be careful, though I'm sure you're in good hands with these two. Got some more paperwork to do before I can settle in. Be seein' ya.$h",
     "MV.Municipal.GuildIntro.12": "You too, Bill.",
-    "MV.Municipal.GuildIntro.13": "Oh, Bill's an old friend. We met through his daughter's mom.",
+    "MV.Municipal.GuildIntro.13.false": "Oh, Bill's an old friend. We met through his daughter's mom.",
+    "MV.Municipal.GuildIntro.13.true": "Bill's an old friend. Met through his daughter's mother.",
     "MV.Municipal.GuildIntro.14": "It's... complicated.",
     "MV.Municipal.GuildIntro.15": "%Before he can elaborate, Gil falls right back asleep.",
     "MV.Municipal.GuildIntro.16": "...So, what brings you up here?",

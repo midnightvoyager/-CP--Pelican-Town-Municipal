@@ -593,6 +593,34 @@
             }
         },
         {
+            "Name": "WheelchairUsers",
+            "Value": "1"
+        },
+        {
+            "Name": "WheelchairUsers",
+            "Value": "2",
+            "When": {
+                "HasMod |contains=CaptainWolfe11.AurelNPC": true
+            }
+        },
+        {
+            "Name": "WheelchairUsers",
+            "Value": "3",
+            "When": {
+                "HasMod |contains=stardewaly.rosalie": true,
+                "HasFlag: hostPlayer |contains=stardewaly.rosalie_RosalieWelcomeMailArrival": true
+            }
+        },
+        {
+            "Name": "WheelchairUsers",
+            "Value": "4",
+            "When": {
+                "HasMod |contains=CaptainWolfe11.AurelNPC": true,
+                "HasMod |contains=stardewaly.rosalie": true,
+                "HasFlag: hostPlayer |contains=stardewaly.rosalie_RosalieWelcomeMailArrival": true
+            }
+        },
+        {
             "Name": "JojaLocation",
             "Value": "Town 80 58 2 MV.Municipal_bill_fish \"Strings\\schedules\\MV.Municipal_SheriffBill:MV.Municipal_SheriffBillStakeout\""
         },
@@ -992,6 +1020,14 @@
             "FromFile": "Data/Technical/LoadablesSF.json",
             "When": {
                 "HasMod |contains=Az.Foliage": true
+            }
+        },
+        {
+            "LogName": "Municipal Sam and Alissa Rival Hearts Includes",
+            "Action": "Include",
+            "FromFile": "Data/Characters/MV.Municipal_SheriffBill/EventsSamAlissa.json",
+            "When": {
+                "HasMod |contains=ZoeDoll.SamAndAlissaRivalHearts": true
             }
         }
     ]

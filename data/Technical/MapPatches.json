@@ -1874,8 +1874,8 @@
             "FromFile": "Assets/Maps/FireSafety-FloorB.tmx",
             "PatchMode": "Overlay",
             "ToArea": {
-                "X": 5,
-                "Y": 2,
+                "X": 6,
+                "Y": 4,
                 "Width": 1,
                 "Height": 1
             },

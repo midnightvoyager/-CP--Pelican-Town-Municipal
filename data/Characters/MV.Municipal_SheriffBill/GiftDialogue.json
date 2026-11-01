@@ -69,6 +69,7 @@
                 "AcceptGift_(O)MadDog.STW_FriedTomatoes": "{{i18n:MV.Municipal.SheriffBill.gift.FriedTomatoes}}",
                 "AcceptGift_(O)Sword.StarfruitSoda": "{{i18n:MV.Municipal.SheriffBill.gift.cola}}",
                 "AcceptGift_(O)Wem.Bundle.Tilly_SweetTea": "{{i18n:MV.Municipal.SheriffBill.gift.SweetTea}}",
+                "AcceptGift_(O)Wem.Bundle.Tilly_HoneyCake": "{{i18n:MV.Municipal.SheriffBill.gift.HoneyCake}}",
                 "AcceptGift_(O){{ModID}}_HushPuppies": "{{i18n:MV.Municipal.SheriffBill.gift.HushPuppies}}",
                 "AcceptGift_(O){{ModID}}_BiscuitandGravy": "{{i18n:MV.Municipal.SheriffBill.gift.BiscuitandGravy}}",
                 "RejectGift_(O)272": "{{i18n:MV.Municipal.SheriffBill.gift.eggplant}}",
@@ -110,6 +111,7 @@
                 "AcceptGift_bh.cider": "{{i18n:MV.Municipal.SheriffBill.gift.cider}}",
                 "AcceptGift_stw_cowboy_flavored_beer": "{{i18n:MV.Municipal.SheriffBill.gift.FlavoredBeer}}",
                 "RejectGift_bomb_item": "{{i18n:MV.Municipal.SheriffBill.gift.weapons}}",
+                "AcceptGift_xetyaj_cider": "{{i18n:MV.Municipal.SheriffBill.gift.Cider}}",
                 // Birthday Gifts
                 "AcceptBirthdayGift_Loved": "{{i18n:MV.Municipal.SheriffBill.gift.birthday.Love}}",
                 "AcceptBirthdayGift_Liked": "{{i18n:MV.Municipal.SheriffBill.gift.birthday.Like}}",

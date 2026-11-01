@@ -94,7 +94,7 @@
  <layer id="16" name="Front" width="1" height="2">
   <data encoding="csv">
 90,
-102
+0
 </data>
  </layer>
  <layer id="4" name="Front1" width="1" height="2">
@@ -103,7 +103,7 @@
   </properties>
   <data encoding="csv">
 0,
-429
+102
 </data>
  </layer>
 </map>

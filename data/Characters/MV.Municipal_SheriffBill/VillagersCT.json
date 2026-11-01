@@ -196,8 +196,8 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Marlon",
             "Entries": {
-                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Marlon}}",
-                "MV.SheriffGuild": "{{i18n:MV.SheriffGuild_Marlon}}",
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Marlon.{{HasMod |contains=Wolf.Marlon}}}}",
+                "MV.SheriffGuild": "{{i18n:MV.SheriffGuild_Marlon.{{HasMod |contains=Wolf.Marlon}}}}",
                 "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Marlon}}",
                 "MV.BillRivalHearts_memory_oneweek": "{{i18n:MV.BillRivalHearts_Marlon}}"
             }
@@ -207,8 +207,8 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/MarlonFay",
             "Entries": {
-                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Marlon}}",
-                "MV.SheriffGuild": "{{i18n:MV.SheriffGuild_Marlon}}",
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Marlon.{{HasMod |contains=Wolf.Marlon}}}}",
+                "MV.SheriffGuild": "{{i18n:MV.SheriffGuild_Marlon.{{HasMod |contains=Wolf.Marlon}}}}",
                 "MV.Sheriff10H": "{{i18n:MV.Sheriff10H_Marlon}}",
                 "MV.BillRivalHearts_memory_oneweek": "{{i18n:MV.BillRivalHearts_Marlon}}"
             }

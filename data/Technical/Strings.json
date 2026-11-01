@@ -51,7 +51,10 @@
                 //Other Hasmods
                 "FreeLibrary": "{{i18n:MV.Municipal.LFL.{{HasMod |contains=tiakall.LFL}}}}",
                 "HarveyPhilip": "{{i18n:MV.Municipal.RSVPT.{{HasMod|contains=Rafseazz.RSVCP}}}}",
-                "MailCarrier": "{{i18n:MV.Municipal.MailCarrier.{{HasMod |contains=TheLimeyDragon.Ayeisha}}}}"
+                "MailCarrier": "{{i18n:MV.Municipal.MailCarrier.{{HasMod |contains=TheLimeyDragon.Ayeisha}}}}",
+                "MarlonSmile": "{{i18n:MV.Municipal.MarlonSmile.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}",
+                "WheelchairUsers": "{{i18n:MV.Municipal.WheelchairUsers.{{WheelchairUsers}}}}",
+                "WheelchairUsersAppreciate": "{{i18n:MV.Municipal.WheelchairUsersAppreciate.{{WheelchairUsers}}}}"
             }
         },
         {
