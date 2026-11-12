@@ -54,7 +54,8 @@
                 "MailCarrier": "{{i18n:MV.Municipal.MailCarrier.{{HasMod |contains=TheLimeyDragon.Ayeisha}}}}",
                 "MarlonSmile": "{{i18n:MV.Municipal.MarlonSmile.{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}}}",
                 "WheelchairUsers": "{{i18n:MV.Municipal.WheelchairUsers.{{WheelchairUsers}}}}",
-                "WheelchairUsersAppreciate": "{{i18n:MV.Municipal.WheelchairUsersAppreciate.{{WheelchairUsers}}}}"
+                "WheelchairUsersAppreciate": "{{i18n:MV.Municipal.WheelchairUsersAppreciate.{{WheelchairUsers}}}}",
+                "ElliottSecondChance": "{{i18n:MV.Municipal.ElliottSecondChance.{{HasMod |contains=Charnoodle101.ElliottSecondChance}}}}"
             }
         },
         {

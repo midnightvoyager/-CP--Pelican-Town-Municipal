@@ -4,7 +4,7 @@
         "SeasonalBill": {
             "Description": "Adds spring and summer variants to Bill. His default will be for fall and he already has Winter. Nothing more than a short sleeved uniform for both and a flower for spring.",
             "AllowValues": "true, false",
-            "Default": "false",
+            "Default": "true",
             "AllowBlank": false
         },
         "AutoRecolor": {
@@ -1028,6 +1028,14 @@
             "FromFile": "Data/Characters/MV.Municipal_SheriffBill/EventsSamAlissa.json",
             "When": {
                 "HasMod |contains=ZoeDoll.SamAndAlissaRivalHearts": true
+            }
+        },
+        {
+            "LogName": "Municipal Older Sam Includes",
+            "Action": "Include",
+            "FromFile": "Data/Characters/MV.Municipal_SheriffBill/DialogueOlderSam.json",
+            "When": {
+                "HasMod |contains=Kantrip.OlderSam": true
             }
         }
     ]

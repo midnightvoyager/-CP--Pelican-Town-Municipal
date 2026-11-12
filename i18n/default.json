@@ -178,8 +178,8 @@
     "MV.Municipal.Seb.Him.Short.false": "'im",
     "MV.Municipal.Marlon.Name.true": "Marlen",
     "MV.Municipal.Marlon.Name.false": "Marlon",
-    "MV.Municipal.Marlon.Fella.true": "fella",
-    "MV.Municipal.Marlon.Fella.false": "gal",
+    "MV.Municipal.Marlon.Fella.true": "gal",
+    "MV.Municipal.Marlon.Fella.false": "fella",
     "MV.Municipal.Marlon.Gender.He.true": "she",
     "MV.Municipal.Marlon.Gender.He.false": "he",
     "MV.Municipal.Marlon.Gender.Him.true": "her",
@@ -192,8 +192,8 @@
     "MV.Municipal.Pierre.Gender.His.false": "his",
     "MV.Municipal.Morris.Name.true": "Morissa",
     "MV.Municipal.Morris.Name.false": "Morris",
-    "MV.Municipal.Morris.Fella.true": "fella",
-    "MV.Municipal.Morris.Fella.false": "gal",
+    "MV.Municipal.Morris.Fella.true": "gal",
+    "MV.Municipal.Morris.Fella.false": "fella",
     "MV.Municipal.Morris.Mr.true": "Ms.",
     "MV.Municipal.Morris.Mr.false": "Mr.",
     "MV.Municipal.Morris.Sir.true": "ma'am",
@@ -220,6 +220,8 @@
     "MV.Municipal.WheelchairUsersAppreciate.2": "George and Aurel appreciate",
     "MV.Municipal.WheelchairUsersAppreciate.3": "George and Rosalie appreciate",
     "MV.Municipal.WheelchairUsersAppreciate.4": "George, Aurel, and Rosalie appreciate",
+    "MV.Municipal.ElliottSecondChance.true": "I'm glad Elliott didn't give up on his passion when it went bad the first time. I'd hate for a bad promo run to have killed that for 'im.",
+    "MV.Municipal.ElliottSecondChance.false": "I'm glad Elliott followed his dream. Life ain't worth livin' if you never live for yourself even a little.",
     //ALICIA
     "MV.Municipal.Alicia": "Alicia",
     "MV.Municipal.Shop.1": "It's so worth the commute here for the peaceful work environment.",
@@ -424,7 +426,7 @@
     "MV.Municipal.Dialogue.Daily.31": "Think [LocalizedText Strings/MV.Municipal:PierreName] and Abigail are feudin' again.$3#$b#I know where [LocalizedText Strings/MV.Municipal:AbiShes] comin' from. Some people expect their kids to be one way and don't know what to do when that ain't what they end up with.$3",
     "MV.Municipal.Dialogue.Daily.32": "Alex is a good kid, despite his pa. Glad he made good instead a' followin' in his footsteps.",
     "MV.Municipal.Dialogue.Daily.33": "It must be hard for Penny, seein' her ma struggle like that...$3#$b#Doesn't help that alcohol and strugglin' can give you a short temper.$3",
-    "MV.Municipal.Dialogue.Daily.34": "I'm glad Elliott followed his dream. Life ain't worth livin' if you never live for yourself even a little.",
+    "MV.Municipal.Dialogue.Daily.34": "[LocalizedText Strings/MV.Municipal:ElliottSecondChance]",
     //10 hearts + 10H Event
     "MV.Municipal.Dialogue.Daily.35": "The donation box is doing well. We're doing good work in the community with the money.$h",
     "MV.Municipal.Dialogue.Daily.36": "You know, @, if you ever need any help, you've just got to ask. I'm more'n happy to lend a hand, 'specially for a good friend.",
@@ -563,7 +565,7 @@
     //Levi
     "MV.Municipal.Dialogue.Levi": "Guys like Levi turn their pain to anger. Use it as a shield to block everything out.$3#$b#Just hope he doesn't push everyone away.$3",
     //Erwin
-    "MV.Municipal.Dialogue.Erwin": "Nice to meet Erwin after all this time. Heard plenty from [LocalizedText Strings/MV.Municipal:MarlonName] about him. Seems to live up to the tales, too.",
+    "MV.Municipal.Dialogue.Erwin": "$query PLAYER_HAS_SEEN_EVENT Current Erwin_Starshard#Don't rightly know what to think of Erwin. Bit cold for my liking.$3|Nice to meet Erwin after all this time. Heard plenty from [LocalizedText Strings/MV.Municipal:MarlonName] about him. Seems to live up to the tales, too.",
     //Reiner
     "MV.Municipal.Dialogue.Reiner": "Saw Reiner with the kids earlier. Don't care what people say about 'im in the past, he seems like a good man now.",
     //Clark the Reporter
@@ -580,6 +582,17 @@
     "MV.Municipal.Dialogue.DBD.2": "Crystal's in the graveyard more often than not. Think she must have more friends dead'n living.",
     "MV.Municipal.Dialogue.DBD.3": "I ain't really into the horoscope, but Monty seems a little starved for friendship. So I humored him. Apparently I'm a Virgo.",
     "MV.Municipal.Dialogue.DBD.4": "$query PLAYER_HAS_SEEN_EVENT Current handwrittenhello.dbda_catkinghearts10#You know, knowin what I know now, makes sense how Thomas was actin'. Met a lotta cats like that.|That shy fella was in the saloon again. The one from the cannery? Gus is goin' outta his mind tryin' to connect with 'im.",
+    //The Collector
+    "MV.Municipal.Dialogue.Collector.1": "Grady's a real hoot. Gotta chaotic sort a' energy it's hard not to like.$h",
+    "MV.Municipal.Dialogue.Collector.2": "People ought not fuss over Grady so much. Seems like it's makin' his life all about his death.$3#$b#That's what [LocalizedText Strings/MV.Municipal:BillHusband] always said. That some people just had him pegged as dead before his time, an' he still had life left to enjoy.",
+    "MV.Municipal.Dialogue.Collector.3": "Poppy's a polite little lady, ain't she? Took some gettin' used to, havin' an animal that can talk around, but she made it easy.$h",
+    "MV.Municipal.Dialogue.Collector.4": "I think Pop wants me to be his nemesis, what with me bein' in law enforcement.#$b#Unfortunately for him, he's too cute for me to take him serious.$h",
+    //The Wayfarer
+    "MV.Municipal.Dialogue.Wayfarer.1": "Ain't ever met a fella quite like Lyell. He musta lived one hell of a life.$h",
+    "MV.Municipal.Dialogue.Wayfarer.2": "You know, I worry 'bout Lyell sometimes. Have to help 'im home every so often.$3#$b#But he ain't the kind of fella who likes bein' worried over, so what can you do.$3",
+    //Older Sam
+    "MV.Municipal.Dialogue.OlderSam.1": "Can't be easy for Sam as an army kid, movin' around like that. Like your whole life can't grow roots.$3",
+    "MV.Municipal.Dialogue.OlderSam.2": "$query PLAYER_HAS_MAIL Current Kantrip.OlderSam_Kent_Therapy#I get the feelin' Sam's dad was a sore subject even before this last deployment. But it seems like things are lookin up for 'em both.|I get the feelin' Sam's dad was a sore subject even before this last deployment.$3",
     //Wheelchair Access, with or without Pelican Town Accessibility
     "MV.Municipal.Dialogue.Wheelchair.true": "You know, Pelican Town's got better accessibility than most small towns I've seen.#$b#Y'all ought to be proud. I'm sure [LocalizedText Strings/MV.Municipal:WheelchairUsersAppreciate] bein' able to get around easier.",
     "MV.Municipal.Dialogue.Wheelchair.false": "They really ought to put in some wheelchair ramps round here.#$b#[LocalizedText Strings/MV.Municipal:WheelchairUsers] ought not have to struggle to get around.",
@@ -908,7 +921,8 @@
     "MV.Municipal.CT.married_Morris": "Congratulations! Can't say I get the appeal, but I ain't the one gettin' married, am I?$7#$b#Hope your marriage's even half as happy as mine was.$h",
     "MV.Municipal.CT.married_MarlonNibling": "Congratulations! Guess ol' [LocalizedText Strings/MV.Municipal:MarlonName]'s family's gettin' even bigger.#$b#Hope your marriage's even half as happy as mine was.$h",
     "MV.Municipal.CT.LeahArtShow": "Glad Leah's show was a hit. Not surprised, what with her talent!$h#$b#I tried whittlin', but I always ended up cuttin' away mistakes 'til there was nothin' left.",
-    "MV.Municipal.CT.ElliottReading": "I think Elliott's reading went well! He was nervous 'bout everyone gettin' bored and leaving.$h",
+    "MV.Municipal.CT.ElliottReading.true": "I think Elliott's reading went well! He was so worried 'bout gettin' his work into public again, but he really seemed to relax once he started.$h",
+    "MV.Municipal.CT.ElliottReading.false": "I think Elliott's reading went well! He was nervous 'bout everyone gettin' bored and leaving.$h",
     "MV.Municipal.CT.SamShow": "Those kids put on a good show! Got a spare copy of their disk to send to [LocalizedText Strings/MV.Municipal:BillDaughter].$h",
     //DIALOGUE FOR TRIGGER ACTION CTs
     "MV.Municipal.CT.RailroadAccessible.false.false": "Damn Joja. They could drop a rock on your head and expect you to thank 'em for it.$5#$b#Least the railway and mines're both clear now.$3",
@@ -1201,9 +1215,11 @@
     "MV.NewSheriff_Gunther": "I think Sheriff Bill unloaded more books than furniture into that apartment. A man after my own heart, it seems.",
     "MV.NewSheriff_Haley": "I thought they were sending a sheriff from Zuzu.$7#$b#I mean, have you heard his accent? He's more country than most people here.$3",
     "MV.NewSheriff_Emily": "I met the new sheriff earlier! He has a really soothing, positive energy.",
+    "MV.NewSheriff_OlderSam": "I guess I'll get to know the new sheriff well. What with my community service record and all...$2",
     "MV.NewSheriff_Sam.true": "I guess I'll get to know the new sheriff well. I still have some community service from the mayor...$2",
     "MV.NewSheriff_Sam.false": "I guess I'll get to know the new sheriff well. I still have some community service from the mayor...$2#$b#You don't think it'll go on my permanent record now, do you?$8",
-    "MV.NewSheriff_Abigail.true": "Sam's worried the new cop might hassle him over his community service.$2",
+    "MV.NewSheriff_Abigail": "Do we even need a sheriff?$2#$b#I guess the closer post office service is nice at least.",
+    "MV.NewSheriff_Abigail.true": "Sam's worried the new cop might hassle him over his old community service.$2",
     "MV.NewSheriff_Abigail.false": "I had to tell Sam that a 'permanent record' for informal community service isn't really a thing. He was super worried.$2",
     "MV.NewSheriff_Sebastian": "I don't really care about the new sheriff. It's not like anything happens here anyway.",
     "MV.NewSheriff_Alex": "That sheriff looks pretty fit. You think the police have a special workout or something?",

@@ -1,0 +1,21 @@
+{
+    "Changes": [
+        {
+            "LogName": "Bill's Older Sam Black Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.OlderSam.2}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=OldSamBDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Kantrip.OlderSam": true,
+                "Spiderbuttons.CMCT/Config: Kantrip.OlderSam, BlackEvents": "true",
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        }
+    ]
+}

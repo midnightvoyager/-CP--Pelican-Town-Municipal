@@ -250,6 +250,14 @@
                         "AddConversationTopic MV.AliyahFamily"
                     ]
                 },
+                "{{ModId}}_OlderSamTherapy": {
+                    "Id": "{{ModId}}_OlderSamTherapy",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current Kantrip.OlderSam_Kent_Therapy",
+                    "Actions": [
+                        "AddConversationTopic OlderSamTherapy"
+                    ]
+                },
                 "{{ModId}}_TallLadies": {
                     "Id": "{{ModId}}_TallLadies",
                     "Trigger": "DayStarted",

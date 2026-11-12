@@ -320,6 +320,17 @@
                 "Rekindle_Therapy": "{{i18n:MV.Municipal.CT.KentTherapy}}"
             }
         },
+        {
+            "LogName": "Bill's Dialogue - Kent and Jodi Rekindle",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "When": {
+                "HasMod |contains=Kantrip.OlderSam": true
+            },
+            "Entries": {
+                "OlderSamTherapy": "{{i18n:MV.Municipal.CT.KentTherapy}}"
+            }
+        },
         //Bill's Daily Dialog Randomization Section, this is Axell's fault (Thanks Axell for the method!)
         {
             "LogName": "Bill's 0-4 Heart Dialogue",
@@ -723,7 +734,7 @@
             }
         },
         {
-            "LogName": "Bill's East Scarp = Rosa and Juliet Dialogue Override",
+            "LogName": "Bill's East Scarp - Rosa and Juliet Dialogue Override",
             "Action": "EditData",
             "Update": "OnLocationChange",
             "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
@@ -1091,7 +1102,7 @@
                 "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.VoiceValleyRadio}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
             },
             "When": {
-                "Query: {{Random: {{Range: 1, 30}}|key=VotVDO}} = 1": true,
+                "Query: {{Random: {{Range: 1, 30}}|key=VotVRDO}} = 1": true,
                 "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
                 "HasMod: |contains=stardewaly.rosalie": true,
                 "HasSeenEvent: hostPlayer |contains=stardewaly.rosalie_Rosalie8HeartEvent": true,
@@ -1124,7 +1135,7 @@
                 "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.LuciaCafe}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
             },
             "When": {
-                "Query: {{Random: {{Range: 1, 30}}|key=LuciaDO}} = 1": true,
+                "Query: {{Random: {{Range: 1, 30}}|key=LuciaCDO}} = 1": true,
                 "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
                 "HasMod: |contains=yuninocorn.customnpclucia": true,
                 "HasSeenEvent: hostPlayer |contains=yuninocorn.customnpclucia.EightHeart.02": true,
@@ -1320,6 +1331,54 @@
                 "Query: {{Random: {{Range: 1, 30}}|key=DBDDO}} = 1": true,
                 "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
                 "HasMod: |contains=handwrittenhello.dbda": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's The Collector Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.{{Random:{{Range: 1, 4}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=CollDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Fellowclown.TC": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's The Wayfarer Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.Wayfarer.{{Random:{{Range: 1, 2}}}}}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=WayfDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Fellowclown.TW": true,
+                "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
+            }
+        },
+        {
+            "LogName": "Bill's Older Sam Override",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/{{ModID}}_SheriffBill",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:MV.Municipal.Dialogue.OlderSam.1}}#$action AddMail Current SheriffBill_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 30}}|key=OldSamDO}} = 1": true,
+                "HasFlag: |contains=SheriffBill_OverrideSeenToday": false,
+                "HasMod: |contains=Kantrip.OlderSam": true,
                 "Hearts:{{ModID}}_SheriffBill": "{{Range: 4, 10}}"
             }
         },

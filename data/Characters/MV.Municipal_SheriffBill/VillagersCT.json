@@ -7,6 +7,20 @@
             "Entries": {
                 "MV.NewSheriff": "{{i18n:MV.NewSheriff_Abigail.{{HasMod |contains=ghingerbread.SamOverhaul}}}}",
                 "MV.SheriffSam": "{{i18n:MV.SheriffSam_Abigail}}"
+            },
+            "When": {
+                "HasMod: |contains=Kantrip.OlderSam": false
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Abigail",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Abigail}}"
+            },
+            "When": {
+                "HasMod: |contains=Kantrip.OlderSam": true
             }
         },
         {
@@ -273,8 +287,22 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Sam",
             "Entries": {
-                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Sam.{{HasMod |contains=ghingerbread.SamOverhaul}}}}",
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_Sam.{{HasMod |contains=ghingerbread.SamOverhaul}}}}", 
                 "MV.SheriffSam": "{{i18n:MV.SheriffSam_Sam}}"
+            },
+            "When": {
+                "HasMod: |contains=Kantrip.OlderSam": false
+            }
+        },
+        {
+            "LogName": "Bill CT Dialogue: Sam",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries": {
+                "MV.NewSheriff": "{{i18n:MV.NewSheriff_OlderSam}}"
+            },
+            "When": {
+                "HasMod: |contains=Kantrip.OlderSam": true
             }
         },
         {

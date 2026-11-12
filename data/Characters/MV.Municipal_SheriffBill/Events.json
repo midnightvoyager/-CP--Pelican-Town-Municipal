@@ -50,7 +50,42 @@
                     "Value": "emote {{ModID}}_SheriffBill? 32/faceDirection Emily 0 true",
                     "Delimiter": "/"
                 }
-            ]
+            ],
+            "When": {
+                "HasMod |contains=Charnoodle101.ElliottSecondChance": false
+            }
+        },
+        {
+            "LogName": "Bill Attends Elliott's Reading - Elliott's Second Chance",
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Priority": "Late + 100",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Charnoodle101.ElliottSecondChance_08/SawEvent Charnoodle101.ElliottSecondChance_07/LocalMail elliottReading/Friendship Elliott 2000/Time 1300 1900",
+                        2
+                    ],
+                    "Value": "{{ModID}}_SheriffBill? 10 11 1",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "ReplaceMode": "First",
+                    "Target": [
+                        "Entries",
+                        "Charnoodle101.ElliottSecondChance_08/SawEvent Charnoodle101.ElliottSecondChance_07/LocalMail elliottReading/Friendship Elliott 2000/Time 1300 1900"
+                    ],
+                    "Search": "faceDirection Emily 0 true",
+                    "Value": "emote {{ModID}}_SheriffBill? 32/faceDirection Emily 0 true",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod |contains=Charnoodle101.ElliottSecondChance": true
+            }
         },
         {
             "LogName": "Bill Attends Sam's Show",
@@ -252,7 +287,7 @@
                         "6398444/A Juliet_TalentShow/e 6398443/t 1200 1800",
                         2
                     ],
-                    "Value": "{{ModID}}_SheriffBill? 43 12 3",
+                    "Value": "{{ModID}}_SheriffBill? 22 12 1",
                     "Delimiter": " "
                 }
             ]
@@ -565,7 +600,7 @@
                 "{{ModId}}_WizardIntro/e 112/e {{ModId}}_GuildIntro/GameStateQuery PLAYER_VISITED_LOCATION Current WizardHouse/A MV.SheriffGuildTimer/LocalMail DSVTeam.DiverseStardewValley_DSVWizardMale": "WizardSong/7 17/farmer 7 17 1 Wizard 8 17 3 {{ModId}}_SheriffBill -1000 -1000 0/addConversationTopic MV.SheriffWizard/addConversationTopic MV.SheriffWizardTimer/skippable/pause 1500/speak Wizard \"{{i18n:MV.Municipal.RasIntro.01}}\"/pause 100/faceDirection Wizard 2/pause 100/emote farmer 8/faceDirection farmer 2/pause 400/playSound doorClose/warp {{ModId}}_SheriffBill 8 23/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.02}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.03}}\"/move {{ModId}}_SheriffBill 0 -4 0/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.04}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.05}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.06}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.07.{{HasMod |contains=Nom0ri.RomRas}}}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.08}}\"/pause 100/emote farmer 8/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.09}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.10}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.11}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.12}}\"/pause 400/speak Wizard \"{{i18n:MV.Municipal.RasIntro.13}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.14}}\"/faceDirection Wizard 3/faceDirection farmer 1/move {{ModId}}_SheriffBill 0 4 2/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.RasIntro.15.{{HasMod |contains=Nom0ri.RomRas}}}}\"/pause 1800/end"
             },
             "When": {
-                "HasMod: |contains=DSV.Core": true,
+                "HasMod |contains=DSV.Core": true,
                 "DSV.Core/ConfigValue:GenderfluidWizard": true
             }
         },
@@ -583,6 +618,9 @@
             "Target": "Data/Events/Town",
             "Entries": {
                 "{{ModId}}_SamLewisFollowup/e {{ModId}}_Intro/e 45/t 900 1800/w sunny/r 0.5": "breezy/11 90/farmer -1000 -1000 0 Sam -1000 -1000 2 {{ModId}}_SheriffBill 17 90 3/addConversationTopic MV.SheriffSam/skippable/move {{ModId}}_SheriffBill -4 0 3 false/playSound doorClose/warp Sam 10 86/emote Sam 16/jump Sam/speak Sam \"{{i18n:MV.Municipal.SamLewis.01}}\"/faceDirection {{ModId}}_SheriffBill 0 false/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.02}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.03}}\"/pause 400/move Sam 0 4 1 true/move {{ModId}}_SheriffBill -1 0 3 false/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.04}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.05}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.06}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.07}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.08}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.09}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.10}}\"/pause 400/speak Sam \"{{i18n:MV.Municipal.SamLewis.11}}\"/pause 400/speak {{ModId}}_SheriffBill \"{{i18n:MV.Municipal.SamLewis.12}}\"/viewport move 2 1 2000/pause 1800/end"
+            },
+            "When": {
+                "HasMod |contains=Kantrip.OlderSam": false
             }
         },
         {
